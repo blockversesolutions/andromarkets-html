@@ -209,6 +209,10 @@
 	.footer-description ul{
 		justify-content: center;
 	}
+	.megamenu{
+		overflow-y: scroll;
+  		height: 600px;
+	}
 }
 
 @media all and (max-width:767px) {
