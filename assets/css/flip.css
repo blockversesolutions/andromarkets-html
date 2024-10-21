@@ -1,0 +1,47 @@
+
+.flip-container {
+  perspective: 1000px;
+}
+
+.flipper {
+  width: 320px;
+  height: 200px;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  animation: flip 4s infinite;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 200px;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Keyframes for continuous flipping */
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+

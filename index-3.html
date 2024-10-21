@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tradding Web App</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+   </head>
+   <body>
+      <header class="header-area">
+         <nav class="navbar navbar-expand-lg">
+            <div class="container position-relative">
+               <a class="navbar-brand" href="index.html">
+               <img src="assets/images/logo.png" alt="logo"/>
+               </a>
+               <div class="header-right">
+                  <ul class="d-flex align-items-center">
+                     <li class="nav-item dropdown mobile-view country-menu-parent  ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <img src="assets/images/icon/country.png" alt="icon">
+                        <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu country-menu" data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                           <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                           <li >
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/france.png" alt="icon">
+                              <span>France</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item active" href="#">
+                              <img src="assets/images/icon/us.png" alt="icon">
+                              <span>English (us)</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/espen.png" alt="icon">
+                              <span>Espen</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/bangladesh.png" alt="icon">
+                              <span>Bangla</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/italy.png" alt="icon">
+                              <span>Italy</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/portugal.png" alt="icon">
+                              <span>Portugal</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                     </li>
+                  </ul>
+               </div>
+               <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav nav-rounded" id="outside-click">
+                     <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trading   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                           <div class="container">
+                              <div class="row g-3">
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu m-0">
+                                       <h6>Your Finance</h6>
+                                       <ul>
+                                          <li><a href="#">Deposit & withdrawals</a></li>
+                                          <li><a href="#">Payment Option</a></li>
+                                          <li><a href="#">Negative balance</a></li>
+                                          <li><a href="#">Founds Security</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu">
+                                       <h6>Trading Condition</h6>
+                                       <ul>
+                                          <li><a href="#">Account types</a></li>
+                                          <li><a href="#">Islamic account</a></li>
+                                          <li><a href="#">Demo account</a></li>
+                                          <li><a href="#">Spreads & conditions</a></li>
+                                          <li><a href="#">Trading advantage</a></li>
+                                          <li><a href="#">Why choose us</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!-- end col-3 -->
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu">
+                                       <h6>Assets</h6>
+                                       <ul>
+                                          <li><a href="#">Live quotes</a></li>
+                                          <li><a href="#">Stocks</a></li>
+                                          <li><a href="#">Indices</a></li>
+                                          <li><a href="#">Currency pairs</a></li>
+                                          <li><a href="#">Commodities</a></li>
+                                          <li><a href="#">Derivatives: stocks and</a></li>
+                                          <li><a href="#">indices</a></li>
+                                          <li><a href="#">Shares</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h4>Our best spared and condition!</h4>
+                                       <a href="#" class="primary-btn">Explore Now</a>
+                                       <img src="assets/images/thumnails/1.png" alt="icon">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Analytics & education   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item"><a href="#" class="nav-link">Help Center</a></li>
+                  </ul>
+                  <ul class="navbar-nav ms-auto">
+                     <div class="header-right">
+                        <ul class="d-flex align-items-center">
+                           <li class="d-flex"><a href="#" class="primary-btn">Register</a
+                              ></li>
+                           <li class="d-flex"><a href="#" class="primary-btn primary-btn-bg-transparent">Login</a
+                              ></li>
+                           <li class="nav-item dropdown country-menu-parent large-view">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                              <img src="assets/images/icon/country.png" alt="icon">
+                              <i class="fa-solid fa-angle-down"></i>
+                              </a>
+                              <ul class="dropdown-menu country-menu"  data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                                 <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                                 <li >
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/france.png" alt="icon">
+                                    <span>France</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item active" href="#">
+                                    <img src="assets/images/icon/us.png" alt="icon">
+                                    <span>English (us)</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/espen.png" alt="icon">
+                                    <span>Espen</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/bangladesh.png" alt="icon">
+                                    <span>Bangla</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/italy.png" alt="icon">
+                                    <span>Italy</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/portugal.png" alt="icon">
+                                    <span>Portugal</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- start hero area -->
+      <section class="hero-main-area blur-content">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-12 col-lg-6">
+                  <div class="section-content-box hero-area-content">
+                     <h2>Unlock Your Trade with  <span id="typed-text"> </span></h2>
+                     <p>Ensuring secure, scam-free cryptocurrency transactions for individuals selling or exchanging digital goods.</p>
+                     <div class="btn-group">
+                        <ul class="d-flex align-items-center">
+                           <li class="d-flex"><a href="#" class="primary-btn">Register Now</a></li>
+                           <li class="d-flex"><a href="#" class="primary-btn primary-btn-bg-transparent">Try Free Demo</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 col-lg-6">
+                  <div class="row gy-4">
+                     <div class="col-md-6">
+                        <div class="card-view-data">
+                           <div class="card-view-data-header d-flex justify-content-between">
+                              <h3>EUR/USD</h3>
+                              <div class="view-data-header-right value-up">
+                                 <span>+0.00723% <i class="fa-solid fa-arrow-up-long"></i></span>
+                                 <p>Spread 0.8</p>
+                              </div>
+                           </div>
+                           <div class="card-view-body d-flex">
+                              <div class="card-view-body-item">
+                                 <p>Bid</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                              <div class="card-view-body-item">
+                                 <p>Ask</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                           </div>
+                           <div class="card-view-footer">
+                              <ul class="d-flex align-items-center justify-content-between">
+                                 <li>HIGH : 1.110</li>
+                                 <li>LOW : 1.100</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="card-view-data">
+                           <div class="card-view-data-header d-flex justify-content-between">
+                              <h3>USD/JPY</h3>
+                              <div class="view-data-header-right value-down">
+                                 <span>-0.00723% <i class="fa-solid fa-arrow-down-long"></i></span>
+                                 <p>Spread 0.8</p>
+                              </div>
+                           </div>
+                           <div class="card-view-body d-flex">
+                              <div class="card-view-body-item">
+                                 <p>Bid</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                              <div class="card-view-body-item">
+                                 <p>Ask</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                           </div>
+                           <div class="card-view-footer">
+                              <ul class="d-flex align-items-center justify-content-between">
+                                 <li>HIGH : 1.110</li>
+                                 <li>LOW : 1.100</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="card-view-data">
+                           <div class="card-view-data-header d-flex justify-content-between">
+                              <h3>GBP/USD</h3>
+                              <div class="view-data-header-right value-up">
+                                 <span>+0.00723% <i class="fa-solid fa-arrow-up-long"></i></span>
+                                 <p>Spread 0.8</p>
+                              </div>
+                           </div>
+                           <div class="card-view-body d-flex">
+                              <div class="card-view-body-item">
+                                 <p>Bid</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                              <div class="card-view-body-item">
+                                 <p>Ask</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                           </div>
+                           <div class="card-view-footer">
+                              <ul class="d-flex align-items-center justify-content-between">
+                                 <li>HIGH : 1.110</li>
+                                 <li>LOW : 1.100</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="card-view-data">
+                           <div class="card-view-data-header d-flex justify-content-between">
+                              <h3>AUD/USD</h3>
+                              <div class="view-data-header-right value-down">
+                                 <span>-0.00723% <i class="fa-solid fa-arrow-down-long"></i></span>
+                                 <p>Spread 0.8</p>
+                              </div>
+                           </div>
+                           <div class="card-view-body d-flex">
+                              <div class="card-view-body-item">
+                                 <p>Bid</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                              <div class="card-view-body-item">
+                                 <p>Ask</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                           </div>
+                           <div class="card-view-footer">
+                              <ul class="d-flex align-items-center justify-content-between">
+                                 <li>HIGH : 1.110</li>
+                                 <li>LOW : 1.100</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="card-view-data">
+                           <div class="card-view-data-header d-flex justify-content-between">
+                              <h3>USD/CHF</h3>
+                              <div class="view-data-header-right value-up">
+                                 <span>+0.00723% <i class="fa-solid fa-arrow-up-long"></i></span>
+                                 <p>Spread 0.8</p>
+                              </div>
+                           </div>
+                           <div class="card-view-body d-flex">
+                              <div class="card-view-body-item">
+                                 <p>Bid</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                              <div class="card-view-body-item">
+                                 <p>Ask</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                           </div>
+                           <div class="card-view-footer">
+                              <ul class="d-flex align-items-center justify-content-between">
+                                 <li>HIGH : 1.110</li>
+                                 <li>LOW : 1.100</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="card-view-data">
+                           <div class="card-view-data-header d-flex justify-content-between">
+                              <h3>USD/CAD</h3>
+                              <div class="view-data-header-right value-down">
+                                 <span>-0.00723% <i class="fa-solid fa-arrow-down-long"></i></span>
+                                 <p>Spread 0.8</p>
+                              </div>
+                           </div>
+                           <div class="card-view-body d-flex">
+                              <div class="card-view-body-item">
+                                 <p>Bid</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                              <div class="card-view-body-item">
+                                 <p>Ask</p>
+                                 <p>1.11<span>680</span></p>
+                              </div>
+                           </div>
+                           <div class="card-view-footer">
+                              <ul class="d-flex align-items-center justify-content-between">
+                                 <li>HIGH : 1.110</li>
+                                 <li>LOW : 1.100</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
