@@ -1488,6 +1488,7 @@ button.tablinks.active .tab-svg {
 	z-index: 9999;
 	width: 100%;
 	top: 0;
+	background-color:#020202;
   	margin-top: 0;
 	backdrop-filter: blur(35px);
 }
