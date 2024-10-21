@@ -1,18 +1,13 @@
 jQuery(document).ready(function ($) {
-  $('.flip-custom').slideShowAd({
-    interval: '2000',
-    slideShowType: 'flipY',
-    targetBlank: true
-  });
-   
+  
   // menu bg add
-  // $(window).on("scroll", function () {
-  //   if ($(window).scrollTop() >50) {
-  //     $("header").addClass("menu-bg");
-  //   } else {
-  //     $("header").removeClass("menu-bg");
-  //   }
-  // });
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() >50) {
+      $("header").addClass("menu-bg");
+    } else {
+      $("header").removeClass("menu-bg");
+    }
+  });
   // $(".close-mark").click(function(){
   //   $(".country-menu").hide();
   // });
@@ -23,36 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   new SimpleBar(document.getElementById('scrollbar'));
 });
  
-
-
-const toggleDropdown = $(".nav-link.dropdown-toggle");
-const dropdown = $(".terget-content");
-const mainContent = $(".blur-content");
-
-toggleDropdown.click(function () {
-  dropdown.toggleClass("show");
-
-  if (dropdown.hasClass("show")) {
-    mainContent.css({
-      "-webkit-filter": "blur(5px)",
-      "-moz-filter": "blur(5px)",
-      "-o-filter": "blur(5px)",
-      "-ms-filter": "blur(5px)",
-      filter: "blur(5px)",
-      
-      
-    });
-  } else {
-    mainContent.css({
-      "-webkit-filter": "none",
-      "-moz-filter": "none",
-      "-o-filter": "none",
-      "-ms-filter": "none",
-      filter: "none"
-    });
-  }
-});
-
+ 
 document.addEventListener("click", function (event) {
   const div = document.getElementById("outside-click");
   const navbarText = document.getElementById("main_nav");

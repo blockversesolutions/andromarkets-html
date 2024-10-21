@@ -4,8 +4,12 @@ body {
 	padding: 0;
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
+	 
+	
 }
-
+p{
+	color:#fff;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
 
@@ -94,7 +98,7 @@ p {
 .simplebar-scrollbar::before {
   background-color: #B1B5C3;
   width:8px; 
-  height: 32px;
+   
 }
 .country-menu-parent .nav-link:after {
 	color: white;
@@ -481,6 +485,12 @@ li.nav-item.dropdown li a {
 .ptb120{
 	padding: 120px 0;
 }
+.pt120{
+	padding-top: 120px;
+}
+.mt120{
+	margin-top: 120px;
+}
 .pb120{
 	padding-bottom: 120px;
 }
@@ -601,6 +611,7 @@ li.nav-item.dropdown li a {
 	}
 .plan-card:hover .plan-footer .primary-btn,.plan-card.active .plan-footer .primary-btn{
 	background-color:#FFF;
+	color: black !important;
 }
 /* .plan-card:hover:hover .plan-card-header span,.plan-card.active .plan-card-header span{
 	color: #f5c448;
@@ -1035,14 +1046,19 @@ button.tablinks.active .tab-svg {
 	background-color: #04151F;
 }
 .footer-inner{
-	gap: 79px;
+	gap:50px;
 }
 .footer-description{
-	min-width:329px
+	width: 30%;
 }
-.footer-widgets{
+.footer-widgets-area{
+	width: 70%;
+	gap: 50px;
+	display: flex;
+}
+/* .footer-widgets{
 	min-width:247px
-}
+} */
 .footer-description img{
 	max-width:215px;
 	width: 100%;
@@ -1133,7 +1149,7 @@ button.tablinks.active .tab-svg {
 /* End footer css */
 /* Start leverage page css */
 .common-page-heading-section{
-	padding-top: 210px;
+	padding-top:175px;
 	padding-bottom: 120px;
 	background-position: center center !important;
 	background-size: cover !important;
@@ -1148,6 +1164,7 @@ button.tablinks.active .tab-svg {
 	position: absolute;
 	width: 100%;
 	top: 0;
+	z-index: 999;
 }
 .common-page-inner .common-heading-area p{
 	font-size: 20px;
@@ -1359,4 +1376,116 @@ button.tablinks.active .tab-svg {
 	}
 
 /* End leverage page css */
- 
+/* .divider {
+	background: black;
+	height: 100px;
+} */
+/* .contact-us-section{
+	background-color:#111111;
+	padding-top:170px;
+}  */
+.contact-info-item{
+	margin-bottom: 20px;
+}
+.contact-info-icon {
+	height: 70px;
+	min-width: 70px;
+	background-color: #fff;
+	text-align: center;
+	border-radius: 50%;
+}
+.contact-info-icon i {
+	font-size: 30px;
+	line-height: 70px;
+	color: #f5c448;
+}
+.contact-info-content {
+	margin-left: 20px;
+}
+.contact-info-content h4 {
+	color: #F5C448;
+	font-size: 1.4em;
+	margin-bottom: 5px;
+}
+.contact-info-content p,.contact-info-content a {
+	color: #FFF;
+	font-size: 1em;
+}
+.contact-form {
+	padding: 30px;
+	background: #f5c448;
+	border-radius: 10px;
+}
+.contact-form .common-heading-area h3{
+	color:#fff;
+	font-size: 28px;
+}
+.label{
+	font-size: 15px;
+	color:#fff;
+	font-weight:600;
+	text-transform: capitalize;
+	margin: 10px 0;
+}
+.contact-heading h3{
+	color:#fff;
+}
+.contact-heading p{
+	max-width: 750px;
+	color:#fff;
+	margin: auto;
+	margin-bottom:80px;
+}
+.design-box-1{
+	border-radius: 10px;
+	padding:25px;
+	border-left: 5px solid rgba(245, 196, 72, 1);
+	box-shadow: 0px 16.9px 25.36px 0px rgba(196, 205, 218, 0.25);
+}
+.design-box-3{
+	border-radius: 10px;
+	padding:25px;
+	background-color: rgb(105, 105, 105);
+}
+.design-box-3 p{
+	color:#fff;
+}
+.listed-text h5{
+	margin-bottom: 15px;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-decoration: underline;
+}
+.design-box-2{
+	padding:25px;
+	box-shadow: 0px 16.9px 25.36px 0px rgba(196, 205, 218, 0.25);
+}
+.listed-text ul{
+	margin-top: 25px;
+}
+.listed-text ul li{
+	margin:10px 0;
+}
+.listed-text ul li i {
+	color: rgba(245, 196, 72, 1);
+	font-size: 18px;
+	line-height: 30px;
+	margin-right: 10px;
+}
+.mt90{
+	margin-top: 90px;
+}
+.design-box-1 a{
+	color: rgba(245, 196, 72, 1);
+	font-size: 20px;
+	text-decoration: underline;
+}
+.menu-bg {
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	top: 0;
+  	margin-top: 0;
+	backdrop-filter: blur(35px);
+}

@@ -178,6 +178,26 @@
 	.negative-balance-about-cont p {
 		margin: auto;
 	}
+	.footer-inner {
+		flex-wrap: wrap;
+	}
+	.footer-description p{
+		max-width: 450px;
+		width: 100%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.footer-description {
+		width: 100%;
+		text-align: center;
+	}
+	.footer-widgets-area{
+		width: 100%;
+		justify-content: space-around;
+	}
+	.footer-description ul{
+		justify-content: center;
+	}
 }
 
 @media all and (max-width:767px) {
@@ -230,16 +250,17 @@
 	}
 }
 @media all and (max-width:575px) {
-	.footer-widgets h4::after {
-		right: 0;
-		margin: 0 auto;
+	.footer-widgets-area {
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
-	.footer-widgets h4 {
-		text-align: center;
+	.footer-widgets-area {
+		gap: 30px;
 	}
-	.footer-widgets ul li a{
-		text-align: center;
+	.footer-widgets {
+		width: 45%;
 	}
+	 
 	.tab button {
 		width: 100%;
 		height: 90px;
