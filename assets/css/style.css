@@ -1149,7 +1149,7 @@ button.tablinks.active .tab-svg {
 /* End footer css */
 /* Start leverage page css */
 .common-page-heading-section{
-	padding-top:175px;
+	padding-top:175px !important;
 	padding-bottom: 120px;
 	background-position: center center !important;
 	background-size: cover !important;
@@ -1420,6 +1420,9 @@ button.tablinks.active .tab-svg {
 	color:#fff;
 	font-size: 28px;
 }
+.mt80{
+	margin-top: 80px;
+}
 .label{
 	font-size: 15px;
 	color:#fff;
@@ -1434,7 +1437,6 @@ button.tablinks.active .tab-svg {
 	max-width: 750px;
 	color:#fff;
 	margin: auto;
-	margin-bottom:80px;
 }
 .design-box-1{
 	border-radius: 10px;
