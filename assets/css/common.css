@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	font-size: 16px;
+	padding: 0;
+	/* font-family: "Roboto", sans-serif; */
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+input,
+textarea,
+input:focus,
+textarea:focus {
+	border: none;
+	outline: none;
+}
+a,
+a:hover {
+	text-decoration: none;
+}
+.container {
+	max-width: 1255px;
+}
+h2 {
+	font-size: 50px;
+	line-height: 64px;
+	color: #fff;
+	font-weight: 600;
+    margin-bottom: 16px;
+}
+h2 span {
+	color: #F5C448;
+}
+p {
+	color:#04151F;
+	font-size: 18px;
+	line-height: 30px;
+}
+.primary-btn {
+	font-size: 18px;
+	letter-spacing: -0.005em;
+	padding: 10px 22px;
+	display: inline-block;
+	color: #23262f !important;
+	background: #f5c448;
+	transition: 0.5s;
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+.primary-btn-bg-transparent {
+	font-size: 18px;
+	letter-spacing: -0.005em;
+	padding: 10px 22px;
+	display: inline-block;
+	transition: 0.5s;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+}
+.primary-btn:hover,.primary-btn-bg-transparent:hover{
+	background: #fff;
+	color: #23262f !important;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.gradient-bg{
+    background: linear-gradient(-90deg, #233946 0%, #04151F 50.39%);
+}
+.text-white{
+    color:#fff
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.common-heading-mw-70 p{
+    max-width:70%;
+}
+.mr-22{
+    margin-right: 22px;
+}
+.ptb-90{
+    padding: 90px 0;
+}
+.mt-30{
+	margin-top: 30px;
+}
+.mt-70{
+    margin-top: 70px;
+}
+.mb-10{
+	margin-bottom: 10px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mt-120{
+    margin-top: 120px;
+}

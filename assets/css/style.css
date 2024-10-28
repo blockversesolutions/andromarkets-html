@@ -1,67 +1,3 @@
-body {
-	margin: 0;
-	font-size: 16px;
-	padding: 0;
-	font-family: "Roboto", sans-serif;
-	font-weight: 400;
-	 
-	
-}
-p{
-	color:#fff;
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
-
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-	margin: 0;
-	padding: 0;
-}
-
-input,
-textarea,
-input:focus,
-textarea:focus {
-	border: none;
-	outline: none;
-}
-
-a,
-a:hover {
-	text-decoration: none;
-}
-
-.container {
-	max-width: 1255px;
-}
-h2 {
-	font-size: 50px;
-	line-height: 64px;
-	color: #fff;
-	font-weight: 600;
-}
-
-h2 span {
-	color: #F5C448;
-}
-
-p {
-	color:#04151F;
-	font-size: 18px;
-	line-height: 30px;
-}
 
 /* start header css */
 .header-area {
@@ -214,37 +150,6 @@ li.nav-item.dropdown li a {
 .navbar-nav li > a:active,.navbar-nav li > a:focus{
 	color:#fff !important;
 }
-.primary-btn {
-	font-size: 18px;
-	letter-spacing: -0.005em;
-	padding: 10px 22px;
-	display: inline-block;
-	color: #23262f !important;
-	background: #f5c448;
-	transition: 0.5s;
-	border: 1px solid transparent;
-	border-radius: 10px;
-}
-.primary-btn-bg-transparent {
-	font-size: 18px;
-	letter-spacing: -0.005em;
-	padding: 10px 22px;
-	display: inline-block;
-	transition: 0.5s;
-	border: 1px solid transparent;
-	border-radius: 10px;
-	background-color: transparent;
-	border-color: #fff;
-	color: #fff;
-}
-.primary-btn:hover,.primary-btn-bg-transparent:hover{
-	background: #fff;
-	color: #23262f !important;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-/* .primary-btn-bg-transparent:hover {
-	color: #111;
-} */
 /* end header */
 .hero-main-area {
 	background-color: #111111;
@@ -415,8 +320,12 @@ li.nav-item.dropdown li a {
 /* coin view css start  */
 .card-view-data {
 	background-color: #092139;
-	padding: 12px;
+	padding: 15px;
+	height: 100%;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .card-view-data-header h3 {
 	font-size: 18px;
@@ -446,7 +355,7 @@ li.nav-item.dropdown li a {
 }
 .card-view-body {
 	margin-top: 30px;
-	margin-bottom: 49px;
+	margin-bottom:30px;
 	gap: 12px;
 }
 .card-view-body-item p span {
@@ -454,10 +363,17 @@ li.nav-item.dropdown li a {
 	line-height: 29px;
 	padding-left: 5px;
 }
+
 .card-view-body-item p {
 	font-size: 12px;
 	line-height: 14px;
 	color: #fff;
+}
+.card-view-body-item p b{
+	font-size: 16px;
+	display: inline-block;
+	margin-top: 8px;
+	font-weight: 500;
 }
 .card-view-body-item {
 	background-color: #F5C448;
@@ -465,13 +381,13 @@ li.nav-item.dropdown li a {
 	flex-basis: 50%;
 	border-radius: 5px;
 }
-.card-view-body .card-view-body-item:first-child {
+.card-view-body .card-view-body-item:nth-child(odd){
 	background-color: #2C88C9;
 }
 .card-view-footer ul li {
 	color: #AAA7B5;
 	font-size: 12px;
-	line-height: 14px;
+	line-height: 18px;
 	font-weight: 500;
 }
 /* coin view css end  */
@@ -495,19 +411,19 @@ li.nav-item.dropdown li a {
 	padding-bottom: 120px;
 }
 .common-heading-area h3{
-	font-size: 40px;
-	line-height: 55px;
-	color: #04151F;
-	margin-bottom: 20px;
+	font-size:38px;
+	line-height:52px;
+	margin-bottom:16px;
 	font-weight: 600;
 	letter-spacing: -0.2px;
+}
+.common-heading-area h2{
+
 }
 .customer-satisfaction-text a{
 	margin-top: 40px;
 }
-.mb12{
-	margin-bottom: 12px;
-}
+
 .common-heading-area > span{
 	font-size: 16px;
 	line-height: 20px;
@@ -869,7 +785,9 @@ button.tablinks.active .tab-svg {
 }
 .app-version-btn ul{
 	border-radius: 10px;
+	display: inline-block;
 	/* border: 1.5px solid transparent; */
+	border: 1.5px solid rgba(4, 21, 31, 0.2);
 	background: #FFF;
 	margin-bottom: 40px;
 	box-shadow: 0px 16.904px 25.356px 0px rgba(196, 205, 218, 0.25);
@@ -1148,9 +1066,9 @@ button.tablinks.active .tab-svg {
 }
 /* End footer css */
 /* Start leverage page css */
-.common-page-heading-section{
-	padding-top:175px !important;
-	padding-bottom: 120px;
+.common-page-heading-section {
+	padding-top: 110px !important;
+	padding-bottom: 70px;
 	background-position: center center !important;
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
@@ -1491,4 +1409,72 @@ button.tablinks.active .tab-svg {
 	background-color: rgba(0, 0, 0, 0.6);
 	margin-top: 0;
 	backdrop-filter: blur(9px);
+}
+.option-list p{
+	color:#fff;
+	line-height: 26px;
+}
+.option-list{
+	height: 100%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	border: 1.5px solid rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+	text-align: center;
+	padding: 16px;
+	background: rgba(255, 255, 255, 0.1);
+}
+.account-step-thumnail{
+	box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.2) inset;
+	background: rgba(234, 234, 234, 1);
+	border-radius: 10px;
+	padding: 40px 90px;
+}
+ .account-step-section{
+	background: rgba(245, 196, 72, 0.06);
+ }
+ .step-item{
+	padding: 16px 20px;
+	background-color:#fff;
+	border-radius:10px;
+	box-shadow: 0px 16.9px 25.36px 0px rgba(196, 205, 218, 0.25);
+	cursor: pointer;
+	transition:0.5s;
+ }
+ .step-number {
+	min-width: 64px;
+	background: #F5C44833;
+	font-family: Poppins;
+	border-radius: 4px;
+	color: #F5C448;
+	transition: 0.5s;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 32px;
+	letter-spacing: -0.005em;
+	margin-right: 20px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.step-content h4{
+	font-size: 24px;
+	font-weight: 600;
+	color: #04151F;
+	margin-bottom: 4px;
+	line-height: 32px;
+	letter-spacing: -0.005em;
+}
+.step-content p{
+	color:#04151F;
+}
+.step-item:hover{
+	background-color: #F5C448;
+}
+.step-item:hover .step-number{
+	background-color:#fff;
+	color: #04151F;
 }

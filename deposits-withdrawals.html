@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tradding Web App</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+      <link rel="stylesheet" href="assets/css/common.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+   </head>
+   <body>
+      <header class="header-transparent">
+         <nav class="navbar navbar-expand-xl">
+            <div class="container position-relative">
+               <a class="navbar-brand" href="index.html">
+               <img src="assets/images/logo.png" alt="logo"/>
+               </a>
+               <div class="header-right">
+                  <ul class="d-flex align-items-center">
+                     <li class="nav-item dropdown mobile-view country-menu-parent  ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <img src="assets/images/icon/country.png" alt="icon">
+                        <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu country-menu" data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                           <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                           <li >
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/france.png" alt="icon">
+                              <span>France</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item active" href="#">
+                              <img src="assets/images/icon/us.png" alt="icon">
+                              <span>English (us)</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/espen.png" alt="icon">
+                              <span>Espen</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/bangladesh.png" alt="icon">
+                              <span>Bangla</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/italy.png" alt="icon">
+                              <span>Italy</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/portugal.png" alt="icon">
+                              <span>Portugal</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                     </li>
+                  </ul>
+               </div>
+               <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav nav-rounded" id="outside-click">
+                     <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trading   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                           <div class="container">
+                              <div class="row g-3">
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu m-0">
+                                       <h6>Your Finance</h6>
+                                       <ul>
+                                          <li><a href="#">Deposit & withdrawals</a></li>
+                                          <li><a href="#">Payment Option</a></li>
+                                          <li><a href="#">Negative balance</a></li>
+                                          <li><a href="#">Founds Security</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu">
+                                       <h6>Trading Condition</h6>
+                                       <ul>
+                                          <li><a href="#">Account types</a></li>
+                                          <li><a href="#">Islamic account</a></li>
+                                          <li><a href="#">Demo account</a></li>
+                                          <li><a href="#">Spreads & conditions</a></li>
+                                          <li><a href="#">Trading advantage</a></li>
+                                          <li><a href="#">Why choose us</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!-- end col-3 -->
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h6>Assets</h6>
+                                       <ul>
+                                          <li><a href="#">Live quotes</a></li>
+                                          <li><a href="#">Stocks</a></li>
+                                          <li><a href="#">Indices</a></li>
+                                          <li><a href="#">Currency pairs</a></li>
+                                          <li><a href="#">Commodities</a></li>
+                                          <li><a href="#">Derivatives: stocks and</a></li>
+                                          <li><a href="#">indices</a></li>
+                                          <li><a href="#">Shares</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h4>Our best spared and condition!</h4>
+                                       <a href="#" class="primary-btn">Explore Now</a>
+                                       <img src="assets/images/thumnails/1.png" alt="icon">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Analytics & education   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item"><a href="#" class="nav-link">Help Center</a></li>
+                  </ul>
+                  <ul class="navbar-nav ms-auto">
+                     <div class="header-right">
+                        <ul class="d-flex align-items-center">
+                           <li class="d-flex"><a href="#" class="primary-btn">Register</a
+                              ></li>
+                           <li class="d-flex"><a href="#" class="primary-btn-bg-transparent">Login</a
+                              ></li>
+                           <li class="nav-item dropdown country-menu-parent large-view">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                              <img src="assets/images/icon/country.png" alt="icon">
+                              <i class="fa-solid fa-angle-down"></i>
+                              </a>
+                              <ul class="dropdown-menu country-menu"  data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                                 <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                                 <li >
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/france.png" alt="icon">
+                                    <span>France</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item active" href="#">
+                                    <img src="assets/images/icon/us.png" alt="icon">
+                                    <span>English (us)</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/espen.png" alt="icon">
+                                    <span>Espen</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/bangladesh.png" alt="icon">
+                                    <span>Bangla</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/italy.png" alt="icon">
+                                    <span>Italy</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/portugal.png" alt="icon">
+                                    <span>Portugal</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+       <section class="common-page-heading-section gradient-bg">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-7">
+                  <div class="common-heading-area common-heading-mw-70">
+                     <h2>Deposits and <span class="span-color">Withdrawals</span>
+                      </h2>
+                     <p class="text-white">Enjoy fast, secure deposits and withdrawals with multiple payment options for a smooth trading experience.</p>
+                     <a href="#" class="primary-btn mt-40">Fund and trade</a>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="common-page-thumnails">
+                     <img src="assets/images/thumnails/global-economy.png" alt="img" class="w-100">
+                  </div>
+               </div>
+            </div>
+            <div class="row mt-50">
+               <div class="col-lg-3 col-md-6">
+                  <div class="option-list">
+                     <p>Unlimited Transactions After full Verification</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="option-list">
+                     <p>Global and Local Payment Methods</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="option-list">
+                     <p>Commission From 0%</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="option-list">
+                     <p>Instant Automated Withdrawals Available</p>
+                  </div>
+               </div>
+                
+            </div>
+         </div>
+      </section>
+      <section class="payment-option-section mt-100">
+         <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="common-heading-area text-center common-heading-mw-70">
+                  <h3>Over <span class="span-color">200</span> Payment Options</h3>
+                  <p class="m-auto">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+               </div>
+              </div>
+            </div>
+            <div class="row mt-70">
+               <div class="col-md-12">
+                  <div class="payment-option-heading d-flex align-items-center justify-content-between">
+                     <div class="app-version-btn">
+                        <ul class="d-flex align-items-center mb-0">
+                           <li class="applinks" onclick="appversion(event, 'deposit')" id="apprunning">To deposit</li>
+                           <li class="applinks" onclick="appversion(event, 'withdraw')">To withdraw</li>
+                           
+                        </ul>
+                     </div>
+                     <a href="#" class="primary-btn">Make Deposit</a>
+                  </div>
+               </div>
+            </div>
+            <div class="deposit-withdraw-data-box" id="deposit">
+               <div class="row g-3 mt-40">
+               <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>QRIS</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/qris.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Bank Central Asia..</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/bca.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Mandiri</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/mandiri.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Bank Negara Indo..</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/bni.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Bank Rakyat Indo..</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/bri.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>CIMB Niaga</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/gem.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>DANA</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/dana.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>OVO</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/ovo.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Permata Bank</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/pmib.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+             <div class="deposit-withdraw-data-box" id="withdraw" style="display: none;">
+               <div class="row g-3 mt-40">
+               <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>QRIS</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/qris.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Bank Central Asia..</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/bca.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Mandiri</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/mandiri.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Bank Negara Indo..</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/bni.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Bank Rakyat Indo..</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/bri.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>CIMB Niaga</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/gem.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>DANA</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/dana.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>OVO</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/ovo.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Permata Bank</h3>
+                        <div class="view-data-header-right">
+                           <img src="assets/images/icon/pmib.png" alt="icon">
+                        </div>
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Commotions</p>
+                           <p><b>0%</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Avg. time</p>
+                           <p><b>Instantly</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Limits</p>
+                           <p><b>60k to 10m</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+         </div>
+      </section>
+      <section class="account-step-section ptb-90 mt-100">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-5">
+                  <div class="account-step-thumnail mr-22">
+                      <img src="assets/images/thumnails/mobile-app.png" alt="logo" class="w-100">
+                  </div>
+               </div>
+               <div class="col-lg-7">
+                  <div class="common-heading-area">
+                     <h3>Fund Your Account in Three Simple Steps</h3>
+                     <p>Easily deposit funds with a quick, three-step process designed for convenience, speed, and secure transactions. </p>
+                  </div>
+                  <div class="step-item-box mt-30">
+                     <div class="step-item d-flex">
+                        <div class="step-number">
+                          Step <br> 1
+                        </div>
+                        <div class="step-content">
+                           <h4>Verify Your Account</h4>
+                           <p>Download the app or click Open account bellow and register. Then, proceed to our swift verification process.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+        <!-- Start Footer area -->
+         <footer class="footer-area mt120">
+           <div class="container">
+             <div class="row ptb70">
+               <div class="col-md-12 footer-inner d-flex">
+                   <div class="footer-description"> 
+                     <img src="assets/images/logo.png" alt="logo">
+                     <p>A human resources agency serves as a vital partner for businesses seeking to optimize their workforce management.</p>
+                     <h5>Follow Us</h5>
+                     <div class="social-menu">
+                        <ul class="d-flex align-items-center">
+                           <li><a href="#"><i class="fa fab fa-facebook"></i></a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-twitter"></i>
+                           </a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-instagram"></i>
+                           </a></li>
+                           <li><a href="#"><i class="fa fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                 <div class="footer-widgets-area">
+                   <div class="footer-widgets">
+                     <h4>Trading</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Markets</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Education</h4>
+                     <ul>
+                        <li><a href="#">Quick start</a></li>
+                        <li><a href="#">Online webinars</a></li>
+                        <li><a href="#">Forex articles</a></li>
+                        <li><a href="#">Forex glossary</a></li>
+                        <li><a href="#">Educational video</a></li>
+                        <li><a href="#">List of world currencies</a></li>
+                     </ul>
+                  </div>
+                 </div>
+               </div>
+            </div>
+           </div>
+           <div class="copyright-text">
+            <p>Copyright &copy; 2024 by <a href="index.html">market terminal</a></p>
+           </div>
+         </footer>
+        <!-- End Footer area -->
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
