@@ -156,6 +156,9 @@ li.nav-item.dropdown li a {
 .hero-main-area {
 	background-color: #111111;
 	position: relative;
+	background: linear-gradient(-160deg, #2d3235 0%, #000 40.39%);
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
 .hero-area-thumbnails {
@@ -171,8 +174,8 @@ li.nav-item.dropdown li a {
 .hero-area-content {
 	position: relative;
 	z-index: 9;
-	padding-top: 170px;
-	padding-bottom: 235px;
+	/* padding-top: 170px;
+	padding-bottom: 235px; */
 }
 
 .hero-area-content p {
@@ -504,7 +507,7 @@ li.nav-item.dropdown li a {
 	border-color:#04151F;
 	color:#04151F;
 }
-.plan-footer .primary-btn {
+.plan-footer .primary-btn,.plan-footer .primary-btn-bg-transparent {
 	border-color: transparent;
 	display: block;
 	text-align: center;
@@ -513,17 +516,13 @@ li.nav-item.dropdown li a {
 	font-weight: 500;
 	padding: 15px 0;
 }
+.plan-footer .primary-btn-bg-transparent{
+	background-color:#fff;
+	color:#000 !important;
+}
 .plan-card:hover,.plan-card.active{
 	background-color:#F5C448;
 }
-
-/* .plan-footer .primary-btn::after,.plan-card:hover:hover .plan-footer a,.plan-card.active .plan-footer a{
-	background: #F5C448;
-	border-color:#F5C448;
-} */
-/* .plan-card:hover .plan-card-header,.plan-card.active .plan-card-header{
-	background: #FFF9EC;
-} */
 .plan-card:hover .plan-card-header,.plan-card.active .plan-card-header{
 	background-color:#FFF;
 	}
@@ -531,15 +530,15 @@ li.nav-item.dropdown li a {
 	background-color:#FFF;
 	color: black !important;
 }
-/* .plan-card:hover:hover .plan-card-header span,.plan-card.active .plan-card-header span{
-	color: #f5c448;
-} */
 .plan-card:hover .plan-card-header span,.plan-card.active .plan-card-header span{
 	background: #F5C448;
 	color: #04151F;
 }
 .plan-card:hover .plan-card-option ul li i,.plan-card.active .plan-card-option ul li i{
 	color:#fff;
+}
+.app-version-content-area{
+	padding-bottom: 90px;
 }
 /* End plan css */
 /* Start blog post css */
@@ -943,7 +942,10 @@ button.tablinks.active .tab-svg {
 	padding: 10px;
 	filter: drop-shadow(0px 4px 19px rgba(0, 0, 0, 0.05));
 }
-.markets-terninal-about{
+.about-card-logo img{
+	width: 100%;
+}
+.markets-terminal-about{
 	gap: 51px;
 }
 .market-about-card:hover .about-card-logo{

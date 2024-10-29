@@ -1,11 +1,11 @@
 @media all and (max-width:1280px) {
 	.hero-area-thumbnails {
-		width: 46%;
+		width:52%;
 	}
 
-	.hero-area-content {
+	/* .hero-area-content {
 		padding-bottom: 146px;
-	}
+	} */
 
 	h2 {
 		font-size: 40px;
@@ -32,6 +32,10 @@
 	.mobile-view {
 		display: block;
 	}
+	.market-about-thumbnail {
+		width: 30%;
+	}
+	 
 
 }
 @media all and (min-width: 992px) {
@@ -101,9 +105,6 @@
 		border-radius: 15px;
 	}
 
-	
-	
-
 	.navbar-nav {
 		gap: 0px;
 	}
@@ -132,16 +133,8 @@
 		margin-top: 10px;
 	}
 
-	.hero-area-content {
-		padding-top: 50px;
-	}
-
 	.megamenu::after {
 		display: none;
-	}
-
-	.hero-area-content {
-		padding-bottom: 90px;
 	}
     .nav-link{
         padding: 15px 0;
@@ -161,6 +154,8 @@
 	}
 	.evaluation-text-box {
 		text-align: center;
+		margin-left: 0;
+		margin-top: 60px;
 	}
 	.evaluation-text-box ul {
 		margin-top: 40px;
@@ -233,8 +228,9 @@
 		text-align: center;
 		margin-bottom: 40px;
 	}
-	.app-version-section{
-		padding-bottom: 90px;
+	.hero-main-area {
+		padding-top: 130px;
+		padding-bottom: 110px;
 	}
 }
 
@@ -332,6 +328,39 @@
 		height: 45px;
 		width: 45px;
 	}
+	.customer-satisfaction-text {
+		text-align: center;
+	}
+	.customer-satisfaction-chart{
+		margin-top: 40px;
+	}
+	.markets-terminal-about {
+		gap:20px;
+		flex-wrap: wrap;
+	}
+	.market-about-thumbnail {
+		width: 100%;
+	}
+	.market-terminal-about {
+		width: 100%;
+	}
+	.market-about-card{
+		max-width: 100%;
+	}
+	.market-about-card.mt130{
+		margin-top: 60px;
+
+	}
+	.about-card-logo {
+		height: 55px;
+		width: 55px;
+	}
+	.evaluation-item-title span, .evaluation-item-value span {
+		font-size: 18px;
+	}
+	.plan-card-option ul li {
+		font-size: 18px;
+	}
 }
 @media all and (max-width:575px) {
 	.footer-widgets-area {
@@ -381,10 +410,15 @@
 	.app-download-logo img{
 		width: 40px;
 	}
+	
 }
 @media all and (max-width:480px) {
 	.country-menu.dropdown-menu[data-bs-popper] {
 		left: -220px;
 		 
+	}
+	.payment-option-heading{
+		flex-wrap: wrap;
+ 		 gap: 10px;
 	}
 }
