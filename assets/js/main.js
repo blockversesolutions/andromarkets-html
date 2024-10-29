@@ -27,20 +27,21 @@ document.addEventListener("click", function (event) {
     navbarText.classList.remove("show");
   }
 });
-document.addEventListener("DOMContentLoaded", function() {
-  const textToType = "Market Terminal";
-  const typedTextElement = document.getElementById("typed-text");
-  let index = 0;
+// text changes
+// document.addEventListener("DOMContentLoaded", function() {
+//   const textToType = "Market Terminal";
+//   const typedTextElement = document.getElementById("typed-text");
+//   let index = 0;
 
-  function typeText() {
-      if (index < textToType.length) {
-          typedTextElement.textContent += textToType.charAt(index);
-          index++;
-          setTimeout(typeText, 100); // Adjust speed by changing the timeout duration
-      }
-  }
-  typeText();
-});
+//   function typeText() {
+//       if (index < textToType.length) {
+//           typedTextElement.textContent += textToType.charAt(index);
+//           index++;
+//           setTimeout(typeText, 100);  
+//       }
+//   }
+//   typeText();
+// });
 //  app version
 function appversion(evt, appversion) {
   var i, appvarsionContent, applinks;

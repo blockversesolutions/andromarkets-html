@@ -180,7 +180,7 @@ li.nav-item.dropdown li a {
 
 .hero-area-content p {
 	color: #fff;
-	margin-top: 15px;
+	margin-top:75px;
 	margin-bottom: 40px;
 }
 
@@ -1510,3 +1510,34 @@ button.tablinks.active .tab-svg {
 .app-version-thumbnails img{
 	margin-bottom: -420px;
 }
+/* Start text animation */
+ 
+.word {
+	position: absolute;
+	opacity: 0;
+	width: 100%;
+	left: 0;
+  }
+  
+  .letter {
+	display: inline-block;
+	position: relative;
+	transform: translateZ(25px);
+	transform-origin: 50% 50% 25px;
+  }
+  
+  .letter.out {
+	transform: rotateX(90deg);
+	transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .letter.behind {
+	transform: rotateX(-90deg);
+  }
+  
+  .letter.in {
+	transform: rotateX(0deg);
+	transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  /* end text animation */
+   
