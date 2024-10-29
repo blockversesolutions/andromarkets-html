@@ -49,6 +49,9 @@ h2 {
 h2 span {
 	color: #F5C448;
 }
+.accordion-button:focus,.navbar-toggler:focus{
+	box-shadow:0 0 0 transparent
+}
 p {
 	color:#04151F;
 	font-size: 18px;
@@ -80,13 +83,16 @@ p {
 .primary-btn:hover,.primary-btn-bg-transparent:hover{
 	background: #fff;
 	color: #23262f !important;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 }
 .gradient-bg{
     background: linear-gradient(-90deg, #233946 0%, #04151F 50.39%);
 }
 .text-white{
     color:#fff
+}
+.mt-10{
+	margin-top: 10px;
 }
 .mt-40{
     margin-top: 40px;
@@ -118,3 +124,24 @@ p {
 .mt-120{
     margin-top: 120px;
 }
+.ml-5{
+	margin-left: 5px;
+}
+.lg-mr-22{
+margin-right: 22px;
+}
+.bg-color-f5{
+	background-color: #F5C4480F;
+}
+ .mb-30{
+	margin-bottom: 30px;
+ }
+ .rotation i{
+	transform: rotate(-40deg);
+ }
+ .pt-90{
+	padding-top: 90px;
+ }
+ .mt-20{
+	margin-top: 20px;
+ }

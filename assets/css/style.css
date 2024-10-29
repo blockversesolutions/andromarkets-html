@@ -14,12 +14,14 @@
 	border-radius: 70px;
 	padding: 5px 18px;
 	/* backdrop-filter: blur(42px); */
-	background: rgba(255, 255, 255, 0.10);
+	/* background: rgba(255, 255, 255, 0.10); */
 }
 .navbar-nav {
 	gap: 15px;
 }
-
+.navbar-toggle{
+	padding: 5px 10px !important;
+}
 .country-menu {
 	right: 0 !important;
 }
@@ -156,7 +158,7 @@ li.nav-item.dropdown li a {
 	position: relative;
 }
 
-.hero-area-thumnails {
+.hero-area-thumbnails {
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -179,7 +181,7 @@ li.nav-item.dropdown li a {
 	margin-bottom: 40px;
 }
 
-.hero-area-thumnails img {
+.hero-area-thumbnails img {
 	width: 100%;
 }
 
@@ -696,7 +698,7 @@ button.tablinks.active .tab-svg {
 	.mb20{
 		margin-bottom: 20px;
 	}
-	.evaluation-item-title span{
+	.evaluation-item-title span,.evaluation-item-value span{
 		color:#04151F;
 		font-size: 24px;
 		font-weight: 600;
@@ -722,7 +724,7 @@ button.tablinks.active .tab-svg {
 	}
 	.evaluation-item-value p{
 		color: #04151F;
-		font-size: 20px;
+		font-size:18px;
 		text-align: right;
 		line-height: 25px;
 		letter-spacing: -0.1px;
@@ -854,6 +856,7 @@ button.tablinks.active .tab-svg {
 	font-size: 24px;
 	color:#04151F;
 	background: #fff;
+	line-height: 30px;
   }
   .more-details-accordion .accordion-button:not(.collapsed) {
 	background-color: transparent;
@@ -870,7 +873,7 @@ button.tablinks.active .tab-svg {
 .app-download-btn ul li a{
 	padding:16px;
 	display: block;
-	min-width: 338px;
+	min-width:280px;
 	margin-bottom: 20px;
 }
 .app-download-logo{
@@ -1432,9 +1435,7 @@ button.tablinks.active .tab-svg {
 	border-radius: 10px;
 	padding: 40px 90px;
 }
- .account-step-section{
-	background: rgba(245, 196, 72, 0.06);
- }
+
  .step-item{
 	padding: 16px 20px;
 	background-color:#fff;
@@ -1471,10 +1472,39 @@ button.tablinks.active .tab-svg {
 .step-content p{
 	color:#04151F;
 }
-.step-item:hover{
+.step-item:hover,.step-item.active{
 	background-color: #F5C448;
 }
-.step-item:hover .step-number{
+.step-item:hover .step-number,.step-item.active .step-number{
 	background-color:#fff;
 	color: #04151F;
+}
+.card-3{
+	background-color:#092139;
+	border-radius: 10px;
+	padding: 20px 14px;
+}
+.card-3 img{
+	height: 64px;
+	width: 64px;
+	border-radius: 50%;
+}
+.card-3 h4{
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 26.4px;
+	text-align: center;
+	color:#fff;
+	margin: 12px 0;
+
+}
+.card-3 p{
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 18px;
+	text-align: center;
+	color:#AAA7B5;
+}
+.app-version-thumbnails img{
+	margin-bottom: -420px;
 }

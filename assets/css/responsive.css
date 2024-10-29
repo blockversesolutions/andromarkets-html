@@ -1,5 +1,5 @@
 @media all and (max-width:1280px) {
-	.hero-area-thumnails {
+	.hero-area-thumbnails {
 		width: 46%;
 	}
 
@@ -17,6 +17,23 @@
 	}
 }
 
+@media all and (max-width:1199px) {
+	.navbar-collapse {
+		background: #8f8f8f;
+		padding: 15px;
+		border-radius: 10px;
+	}
+	.megamenu::after {
+		display: none;
+	}
+	.large-view {
+		display: none;
+	}
+	.mobile-view {
+		display: block;
+	}
+
+}
 @media all and (min-width: 992px) {
 	.navbar .has-megamenu {
 		position: static !important;
@@ -84,19 +101,14 @@
 		border-radius: 15px;
 	}
 
-	.mobile-view {
-		display: block;
-	}
-
-	.large-view {
-		display: none;
-	}
+	
+	
 
 	.navbar-nav {
 		gap: 0px;
 	}
 
-	.hero-area-thumnails {
+	.hero-area-thumbnails {
 		width: 42%;
 	}
 
@@ -109,17 +121,10 @@
 	.country-menu.dropdown-menu[data-bs-popper] {
 		min-width: 290px;
 	}
-
 	.col-megamenu {
 		margin: 0;
 		border: none;
 	}
-
-	/* .megamenu {
-		height: 280px;
-		overflow-y: scroll;
-	} */
-
 	.navbar.fixed-top .navbar-collapse,
 	.navbar.sticky-top .navbar-collapse {
 		overflow-y: auto;
@@ -178,11 +183,7 @@
 	.images-size-50{
 		width: 50% !important;
 	}
-	.navbar-collapse {
-		background: #8f8f8f;
-		padding: 15px;
-		border-radius: 10px;
-	}
+	
 	.negative-balance-about-cont{
 		text-align: center;
 	}
@@ -213,6 +214,28 @@
 		overflow-y: scroll;
   		height: 600px;
 	}
+	.common-page-thumbnails{
+		text-align: center;
+	}
+	.common-page-thumbnails img{
+		max-width: 450px;
+	}
+	.mr-22,.lg-mr-22{
+		margin-right: 0;
+	}
+	.app-version-thumbnails img {
+		max-width: 350px;
+		margin: 0;
+		width: 100%;
+		object-fit: cover;
+	}
+	.app-version-thumbnails{
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.app-version-section{
+		padding-bottom: 90px;
+	}
 }
 
 @media all and (max-width:767px) {
@@ -229,7 +252,7 @@
 	.megamenu {
 		padding: 25px 10px;
 	}
-    .hero-area-thumnails {
+    .hero-area-thumbnails {
         width: 28%;
     }
 	.footer-description {
@@ -263,6 +286,52 @@
 		display: flex;
 		justify-content: space-between;
 	}
+	.common-heading-mw-70 p {
+		max-width: 100%;
+	}
+	.withdrawals-common-heading{
+		text-align: center;
+	}
+	 .md-mt-50{
+		margin-top: 50px;
+	 }
+	 .potential-section .evaluation-item-value p{
+		text-align: left;
+	 }
+	 .potential-thumbnail{
+		margin-top: 40px;
+	 }
+	 .accordion-button::after {
+		height: 40px;
+		width: 40px;
+	}
+	.more-details-accordion button{
+		font-size: 20px;
+	}
+	.accordion {
+		margin-top:40px;
+	}
+	.mt120{
+		margin-top: 80px;
+	}
+	.app-version-content-body{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.app-qr-code{
+		max-width:250px;
+		margin-bottom: 20px;
+	}
+	.app-version-area{
+		text-align: center;
+	}
+	.appversionContent .common-heading-area h3 {
+		font-size: 32px;
+	}
+	.social-menu ul li a {
+		height: 45px;
+		width: 45px;
+	}
 }
 @media all and (max-width:575px) {
 	.footer-widgets-area {
@@ -289,6 +358,28 @@
 	}
 	.navbar-brand{
 		margin-right: 0;
+	}
+	.app-version-btn ul li,.payment-option-heading .primary-btn {
+		padding: 6px 15px;
+		font-size: 15px;
+	}
+	.step-content h4 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.step-number {
+		min-width: 53px;
+		font-size: 16px;
+		margin-right: 12px;
+	}
+	.step-item{
+		padding: 16px;
+	}
+	.app-download-text h4 {
+		font-size: 18px;
+	}
+	.app-download-logo img{
+		width: 40px;
 	}
 }
 @media all and (max-width:480px) {

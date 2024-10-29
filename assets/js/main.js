@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   typeText();
 });
- 
+//  app version
 function appversion(evt, appversion) {
   var i, appvarsionContent, applinks;
   appversionContent = document.getElementsByClassName("appversionContent");
@@ -55,5 +55,41 @@ function appversion(evt, appversion) {
   document.getElementById(appversion).style.display = "block";
   evt.currentTarget.className += " active";
   }
-  // Get the element with id="defaultOpen" and click on it
   document.getElementById("apprunning").click();
+
+  // payment option
+  function payment_option(evt, appversion) {
+    var i, payment_option, paymentlinks;
+    payment_option = document.getElementsByClassName("payment-option-list");
+    for (i = 0; i < payment_option.length; i++) {
+      payment_option[i].style.display = "none";
+    }
+    paymentlinks = document.getElementsByClassName("paymentlinks");
+    for (i = 0; i < paymentlinks.length; i++) {
+      paymentlinks[i].className = paymentlinks[i].className.replace(" active", "");
+    }
+    document.getElementById(appversion).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+  document.getElementById("payment-option").click();
+
+ 
+
+
+   //  app version
+   function account_step_function(evt, account_step_function_id) {
+    var i;
+    // item content select korer jonnon
+    var appversionContent = document.getElementsByClassName("account-step-thumbnails");
+    for (i = 0; i < appversionContent.length; i++) {
+       appversionContent[i].style.display = "none";
+    }
+    // button select korer jonno
+    var applinks = document.getElementsByClassName("account-step");
+    for (i = 0; i < applinks.length; i++) {
+       applinks[i].className = applinks[i].className.replace(" active", "");
+    }
+    document.getElementById(account_step_function_id).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+    document.getElementById("account-step-active").click();
