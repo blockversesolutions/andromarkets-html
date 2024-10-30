@@ -35,6 +35,11 @@
 	.market-about-thumbnail {
 		width: 30%;
 	}
+	.nav-rounded {
+		background: transparent;
+		border-radius: 0;
+		padding: 0;
+	}
 	 
 
 }
@@ -113,11 +118,7 @@
 		width: 42%;
 	}
 
-	.nav-rounded {
-		background: transparent;
-		border-radius: 0;
-		padding: 0;
-	}
+	
 
 	.country-menu.dropdown-menu[data-bs-popper] {
 		min-width: 290px;
@@ -367,6 +368,31 @@
 		margin-top: 0;
 		margin-bottom: 40px;
 	}
+	.shadow-p30 {
+		padding: 10px; 
+	}
+	.opening-selected ul li{
+		width:100%;
+	}
+	.opening-form-items{
+		flex-wrap: wrap;
+	}
+	.opening-form-item{
+		width: 100%;
+	}
+	.opening-selected ul li a {
+		font-size: 22px;
+	}
+	.opening-form-item input, .opening-form-item select {
+		font-size: 16px;
+		padding: 10px 10px;
+	}
+	.opening-form-item label {
+		font-size: 18px;
+	}
+	.opening-form-items,.opening-selected ul{
+		gap: 15px;
+	}
 }
 @media all and (max-width:575px) {
 	.footer-widgets-area {
@@ -415,6 +441,20 @@
 	}
 	.app-download-logo img{
 		width: 40px;
+	}
+	.clients-trading-table table tr td {
+		padding: 10px;
+	}
+	.clients-trading-table table tr td {
+		font-size: 15px;
+	}
+	.common-heading-area h3 {
+		font-size: 26px;
+		line-height: 34px;
+	}
+	.evaluation-item-title span, .evaluation-item-value span {
+		font-size: 16px;
+		line-height: 26px;
 	}
 	
 }

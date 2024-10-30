@@ -15,6 +15,7 @@
 	padding: 5px 18px;
 	/* backdrop-filter: blur(42px); */
 	/* background: rgba(255, 255, 255, 0.10); */
+	background: rgba(255, 255, 255, 0.4);
 }
 .navbar-nav {
 	gap: 15px;
@@ -1161,7 +1162,7 @@ button.tablinks.active .tab-svg {
 	letter-spacing: -0.1px;
 }
 .opening-selected ul li{
-	width: 50%;
+	width:48%;
 }
 .opening-selected ul li a:hover{
 	background-color: #f5c448;
