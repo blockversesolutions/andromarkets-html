@@ -28,9 +28,9 @@
 
 .country-menu.dropdown-menu[data-bs-popper] {
 	left: inherit;
-	padding:30px;
+	padding:20px;
 	width: 350px !important;
-	/* margin-top: 20px; */
+	padding-right: 50px;
 }
 /* Hide the scrollbar until hovered */
 .simplebar-scrollbar::before {
@@ -46,7 +46,7 @@
 	position: absolute;
 }
 .country-menu li {
-	margin-bottom:20px;
+	margin-bottom:12px;
 }
 
 .country-menu li a {
@@ -699,7 +699,7 @@ button.tablinks.active .tab-svg {
 	}
 	.evaluation-item-title span,.evaluation-item-value span{
 		color:#04151F;
-		font-size: 24px;
+		font-size: 22px;
 		font-weight: 600;
 		line-height: 32px;
 		letter-spacing: -0.12px;
@@ -731,7 +731,7 @@ button.tablinks.active .tab-svg {
 	.evaluation-item-title img{
 		padding: 14px;
 		border-radius: 4px;
-		margin-right: 20px;
+		margin-right:16px;
 		background: rgba(245, 196, 72, 0.20);
 	}
 	.master-trading-progressbar span{
@@ -1069,11 +1069,14 @@ button.tablinks.active .tab-svg {
 	opacity: 0.7;
 	color:#fff;
 }
+.potential-left-area .evaluation-item-value p{
+	text-align: left;
+}
 /* End footer css */
 /* Start leverage page css */
 .common-page-heading-section {
 	padding-top: 110px !important;
-	padding-bottom: 70px;
+	padding-bottom:100px;
 	background-position: center center !important;
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
@@ -1485,20 +1488,20 @@ button.tablinks.active .tab-svg {
 	background-color:#092139;
 	border-radius: 10px;
 	padding: 20px 14px;
+	height: 100%;
 }
 .card-3 img{
 	height: 64px;
 	width: 64px;
 	border-radius: 50%;
 }
-.card-3 h4{
-	font-size: 24px;
+.card-3 h4 {
+	font-size: 22px;
 	font-weight: 500;
-	line-height: 26.4px;
+	line-height: 30.4px;
 	text-align: center;
-	color:#fff;
+	color: #fff;
 	margin: 12px 0;
-
 }
 .card-3 p{
 	font-size: 12px;

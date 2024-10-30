@@ -235,6 +235,7 @@
 }
 
 @media all and (max-width:767px) {
+	
 	.hero-video-area .hero-area-content {
 		padding-bottom: 60px;
 		padding-top: 80px;
@@ -258,7 +259,7 @@
 		justify-content: center;
 	}
 	.common-heading-area h3 {
-		font-size: 32px;
+		font-size: 30px;
 		text-align: center;
 	}
 	.common-heading-area p {
@@ -357,9 +358,14 @@
 	}
 	.evaluation-item-title span, .evaluation-item-value span {
 		font-size: 18px;
+		line-height: 26px;
 	}
 	.plan-card-option ul li {
 		font-size: 18px;
+	}
+	.mt-0-mb-40{
+		margin-top: 0;
+		margin-bottom: 40px;
 	}
 }
 @media all and (max-width:575px) {
@@ -420,5 +426,13 @@
 	.payment-option-heading{
 		flex-wrap: wrap;
  		 gap: 10px;
+	}
+	.btn-group ul{
+		
+		flex-wrap: wrap;
+	}
+	.btn-group ul li{
+		width: 100%;
+		justify-content: center;
 	}
 }
