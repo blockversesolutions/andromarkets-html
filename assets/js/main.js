@@ -1,4 +1,11 @@
 jQuery(document).ready(function ($) {
+  $('#data-show-table').DataTable({
+    responsive: true,
+    searching:false,
+    ordering:false,
+    info:false,
+    paging:false,
+  });
   
   // menu bg add
   $(window).on("scroll", function () {

@@ -1111,15 +1111,15 @@ button.tablinks.active .tab-svg {
 	box-shadow: 0px 16.904px 25.356px 0px rgba(196, 205, 218, 0.25);
 }
 .clients-trading-table{}
-.clients-trading-table > table{
+.clients-trading-table > table,.mobile-view-table{
 	border-radius: 10px;
 	background: #FFF;
 	box-shadow: 0px 16.904px 25.356px 0px rgba(196, 205, 218, 0.25);
 }
 .clients-trading-table table { border-collapse: separate; border-spacing: 0; }
-.clients-trading-table table tr td {
+.clients-trading-table table tr td,.clients-trading-table table tr th {
     border-bottom: solid 1px rgba(4, 21, 31, 0.10);
-    padding:20px;
+    padding:16px;
 }
 .bg-tr td{
 	border: none !important;
@@ -1154,9 +1154,12 @@ button.tablinks.active .tab-svg {
 	font-weight: 500;
 	line-height: 22px;
 }
-.clients-trading-table table tr td{
+.mobile-view-table thead tr th,.mobile-view-table tbody tr td{
+	text-align: center;
+}
+.clients-trading-table table tr td,.clients-trading-table table tr th{
 	color: rgba(4, 21, 31, 0.80);
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 500;
 	line-height: 22px;
 	letter-spacing: -0.1px;
@@ -1206,13 +1209,13 @@ button.tablinks.active .tab-svg {
   .opening-form-items{
 	gap: 30px;
   }
-  .opening-form-item label{
-	color:#030303;
+  .opening-form-item label {
+	color: #030303;
 	display: block;
-	font-size: 20px;
+	font-size: 18px;
 	padding-bottom: 6px;
 	line-height: 22px;
-	}
+}
 	.opening-form-item{
 		width: 33%;
 	}
@@ -1230,19 +1233,19 @@ button.tablinks.active .tab-svg {
 	.opening-form-item span i{
 		position: absolute;
 		right: 16px;
-  		bottom: 22px;
+  		bottom:14px;
 		color:#04151F;
 		pointer-events: none;
 		font-size: 20px;
 	}
-    .opening-form-item input,.opening-form-item select{
+	.opening-form-item input, .opening-form-item select {
 		border-radius: 5px;
 		border: 1.5px solid rgba(4, 21, 31, 0.10);
 		background: #FFF;
 		width: 100%;
-		padding: 15px 20px;
+		padding: 10px 20px;
 		color: rgba(4, 21, 31, 0.40);
-		font-size: 24px;
+		font-size: 18px;
 	}
 	.terms-checkbox input{
 		margin-top: 8px;
@@ -1544,4 +1547,49 @@ button.tablinks.active .tab-svg {
 	transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   /* end text animation */
-   
+
+  .user-card{
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 10px;
+	box-shadow: 0px 16.9px 25.36px 0px #C4CDDA40;
+	border-radius: 10px;
+	transition: 0.5s;
+	background-color:#fff;
+	cursor: pointer;
+  }
+  .user-card:hover{
+	background: #F5C448;
+  }
+  .user-card-text p{
+	margin-bottom: 2px;
+  }
+  .user-card-text ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  .user-card-logo img{
+	height: 64px;
+	width: 64px;
+	border-radius: 4px;
+  }
+  .user-card-text ul li{
+	font-size: 18px;
+	font-weight:600;
+	color: #04151F;
+  }
+  .user-card-text ul li span{
+	font-weight: 400;
+	font-size: 16px;
+  }
+  .user-card-text ul li span i{
+	font-size:5px;
+	margin-right: 5px;
+  }
+  .line-1{
+	height: 1px;
+	width: 100%;
+	background-color: #04151F1A;
+  }

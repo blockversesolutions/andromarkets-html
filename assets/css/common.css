@@ -68,6 +68,18 @@ p {
 	border: 1px solid transparent;
 	border-radius: 10px;
 }
+.secondary-btn{
+	font-size: 18px;
+	letter-spacing: -0.005em;
+	padding: 10px 22px;
+	display: inline-block;
+	color: #fff !important;
+	background: #2C88C9;
+	transition: 0.5s;
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+ 
 .primary-btn-bg-transparent {
 	font-size: 18px;
 	letter-spacing: -0.005em;
@@ -80,7 +92,7 @@ p {
 	border-color: #fff;
 	color: #fff;
 }
-.primary-btn:hover,.primary-btn-bg-transparent:hover{
+.primary-btn:hover,.primary-btn-bg-transparent:hover,.secondary-btn:hover{
 	background: #fff;
 	color: #23262f !important;
 	box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
@@ -145,3 +157,12 @@ margin-right: 22px;
  .mt-20{
 	margin-top: 20px;
  }
+ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control::before, table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before {
+	border-left: 10px solid #f5c448;
+}
+.pt-30{
+	padding-top: 30px;
+}
+.mt-20{
+	margin-top: 20px;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markets Terminal Chat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script> <!-- Feather icons for the send button -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f1f5f9;
+    }
+
+    .chat-box {
+      width: 400px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .chat-header {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+      justify-content: space-between;
+    }
+
+    .chat-header h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .chat-header .avatars {
+      display: flex;
+      gap: -10px;
+    }
+
+    .chat-header .avatars img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: 2px solid white;
+      object-fit: cover;
+    }
+
+    .chat-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      overflow-y: auto;
+      max-height: 300px;
+    }
+
+    .message {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .message.sent {
+      justify-content: flex-end;
+    }
+
+    .message .content {
+      max-width: 70%;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .message.sent .content {
+      background-color: #fbbf24;
+      color: white;
+    }
+
+    .message.received .content {
+      background-color: #f3f4f6;
+      color: #374151;
+    }
+
+    .chat-footer {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      border-top: 1px solid #e5e7eb;
+      gap: 10px;
+    }
+
+    .chat-footer input {
+      flex: 1;
+      padding: 10px 15px;
+      border-radius: 25px;
+      border: 1px solid #e5e7eb;
+      outline: none;
+    }
+
+    .chat-footer button {
+      background-color: #fbbf24;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .chat-footer button:hover {
+      background-color: #f59e0b;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-box">
+    <!-- Chat Header -->
+    <div class="chat-header">
+      <h2>Markets Terminal</h2>
+      <div class="avatars">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user 1">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="user 2">
+        <img src="https://randomuser.me/api/portraits/men/74.jpg" alt="user 3">
+      </div>
+    </div>
+
+    <!-- Chat Body -->
+    <div class="chat-body" id="chatBody">
+      <div class="message received">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user">
+        <div class="content">We typically reply in a few minutes. How can we help you?</div>
+      </div>
+      <div class="message sent">
+        <div class="content">I need some help. Can you help me?</div>
+      </div>
+      <div class="message received">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="user">
+        <div class="content">Sure! How can I assist you today?</div>
+      </div>
+    </div>
+
+    <!-- Chat Footer -->
+    <div class="chat-footer">
+      <input type="text" placeholder="Type here..." id="chatInput">
+      <button id="sendButton">
+        <i data-feather="send"></i>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Initialize Feather icons
+    feather.replace();
+
+    const chatBody = document.getElementById('chatBody');
+    const chatInput = document.getElementById('chatInput');
+    const sendButton = document.getElementById('sendButton');
+
+    // Function to add a new message
+    function addMessage(content, type = 'sent') {
+      const messageDiv = document.createElement('div');
+      messageDiv.classList.add('message', type);
+
+      const contentDiv = document.createElement('div');
+      contentDiv.classList.add('content');
+      contentDiv.textContent = content;
+
+      messageDiv.appendChild(contentDiv);
+      chatBody.appendChild(messageDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    // Event Listener for the Send Button
+    sendButton.addEventListener('click', () => {
+      const message = chatInput.value.trim();
+      if (message) {
+        addMessage(message);
+        chatInput.value = '';
+      }
+    });
+
+    // Allow sending messages with Enter key
+    chatInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        sendButton.click();
+      }
+    });
+  </script>
+</body>
+</html>
