@@ -393,6 +393,9 @@
 	.opening-form-items,.opening-selected ul{
 		gap: 15px;
 	}
+	.opening-form-item span i {
+		bottom: 12px;
+	}
 }
 @media all and (max-width:575px) {
 	.footer-widgets-area {
