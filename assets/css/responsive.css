@@ -396,6 +396,19 @@
 	.opening-form-item span i {
 		bottom: 12px;
 	}
+	.audcad-buy-sell-box ul li {
+		font-size: 35px;
+	}
+	.audcad-buy-sell-box ul li span {
+		font-size: 20px;
+	}
+	.chart-btn-group{
+		margin-bottom: 40px;
+	}
+	.chart-btn-group button {
+		padding: 4px 8px;
+		font-size: 15px;
+	}
 }
 @media all and (max-width:575px) {
 	.footer-widgets-area {
@@ -458,6 +471,11 @@
 	.evaluation-item-title span, .evaluation-item-value span {
 		font-size: 16px;
 		line-height: 26px;
+	}
+	.instrument-title h6 {
+		font-size: 18px;
+		line-height: 28px;
+		margin-bottom:0px;
 	}
 	
 }

@@ -1594,3 +1594,111 @@ button.tablinks.active .tab-svg {
 	width: 100%;
 	background-color: #04151F1A;
   }
+  .audcad-buy-sell-box{
+	background: #F5C44833;
+	box-shadow: 0px 2px 25.36px 0px #C4CDDA40;
+	padding: 30px;
+	height: 100%;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  }
+  .audcad-buy-sell-box ul li span{
+	color:#E80000;
+	font-size: 28px;
+  }
+  .audcad-buy-sell-box ul li{
+	color: #04151F;
+	font-size: 50px;
+	letter-spacing: -0.5%;
+	font-weight: 500;
+  }
+  .audcad-conditions-box{
+	background: #2C88C933;
+	box-shadow: 0px 2px 25.36px 0px #C4CDDA40;
+	padding: 30px;
+	border-radius: 10px;
+  }
+  .audcad-conditions-box h4{
+
+  }
+  .condition-data-item{
+	border-bottom: 1.5px solid #04151F1A;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+  }
+  .condition-data-item span{
+	color: #04151F;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+  }
+  .condition-data-item:last-child{
+	border: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+  }
+  /* start chart css */
+  .chart-container {
+	background-color: white;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0px 2px 25.36px 0px #C4CDDA40;
+
+  }
+  .chart-btn-group {
+	display: flex;
+	justify-content: flex-start;
+	border-radius: 10px;
+	box-shadow: 0px 16.9px 25.36px 0px #C4CDDA40;
+	border: 1.5px solid #04151F33
+  }
+
+  .chart-btn-group button {
+	padding: 8px 16px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	background-color: transparent;
+	transition: background-color 0.2s;
+  }
+
+  .chart-btn-group button.active {
+	background-color: #2C88C9;
+	color: white;
+	border-radius:8px;
+  }
+  .chart-container h4{
+	font-size: 30px;
+	font-weight: 600;
+	color:#04151F;
+  }
+  /* end chart css */
+  .instruments-content{
+	gap: 15px;
+  }
+  .instruments-icon img{
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+  }
+  .instrument-title span{
+	font-size: 16px;
+	line-height: 30px;
+
+  }
+  .instrument-title h6{
+	color: #04151F;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 32px;
+	margin-bottom: 2px;
+	letter-spacing: -0.005em;
+  }
+  .instruments-card{
+	box-shadow: 0px 16.9px 25.36px 0px #C4CDDA40;
+	border-radius: 10px;
+	padding: 10px;
+  }
