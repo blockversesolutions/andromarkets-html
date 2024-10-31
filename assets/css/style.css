@@ -1318,14 +1318,14 @@ button.tablinks.active .tab-svg {
 .contact-info-icon {
 	height: 70px;
 	min-width: 70px;
-	background-color: #fff;
+	background-color:#F5C448;
 	text-align: center;
 	border-radius: 50%;
 }
 .contact-info-icon i {
 	font-size: 30px;
 	line-height: 70px;
-	color: #f5c448;
+	color: #fff;
 }
 .contact-info-content {
 	margin-left: 20px;
@@ -1336,7 +1336,7 @@ button.tablinks.active .tab-svg {
 	margin-bottom: 5px;
 }
 .contact-info-content p,.contact-info-content a {
-	color: #FFF;
+	color: #04151F;
 	font-size: 1em;
 }
 .contact-form {
@@ -1709,4 +1709,9 @@ button.tablinks.active .tab-svg {
   }
   .instruments-card:hover{
 	transform: translateY(-10px);
+  }
+  .contact-form .form-group input, .contact-form .form-group textarea{
+	padding: 10px 12px;
+	border: none;
+	outline: none;
   }
