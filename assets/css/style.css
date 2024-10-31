@@ -390,6 +390,9 @@ li.nav-item.dropdown li a {
 .card-view-body .card-view-body-item:nth-child(odd){
 	background-color: #2C88C9;
 }
+.card-view-body .card-view-body-item:nth-child(3){
+	background-color: #359846;
+}
 .card-view-footer ul li {
 	color: #AAA7B5;
 	font-size: 12px;
@@ -423,9 +426,7 @@ li.nav-item.dropdown li a {
 	font-weight: 600;
 	letter-spacing: -0.2px;
 }
-.common-heading-area h2{
-
-}
+ 
 .customer-satisfaction-text a{
 	margin-top: 40px;
 }
