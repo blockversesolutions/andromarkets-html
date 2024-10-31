@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tradding Web App</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+      <link rel="stylesheet" href="assets/css/common.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+   </head>
+   <body>
+      <header class="header-transparent">
+         <nav class="navbar navbar-expand-xl">
+            <div class="container position-relative">
+               <a class="navbar-brand" href="index.html">
+               <img src="assets/images/logo.png" alt="logo"/>
+               </a>
+               <div class="header-right">
+                  <ul class="d-flex align-items-center">
+                     <li class="nav-item dropdown mobile-view country-menu-parent  ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <img src="assets/images/icon/country.png" alt="icon">
+                        <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu country-menu" data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                           <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                           <li >
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/france.png" alt="icon">
+                              <span>France</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item active" href="#">
+                              <img src="assets/images/icon/us.png" alt="icon">
+                              <span>English (us)</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/espen.png" alt="icon">
+                              <span>Espen</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/bangladesh.png" alt="icon">
+                              <span>Bangla</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/italy.png" alt="icon">
+                              <span>Italy</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/portugal.png" alt="icon">
+                              <span>Portugal</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                     </li>
+                  </ul>
+               </div>
+               <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav nav-rounded" id="outside-click">
+                     <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trading   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                           <div class="container">
+                              <div class="row g-3">
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu m-0">
+                                       <h6>Your Finance</h6>
+                                       <ul>
+                                          <li><a href="#">Deposit & withdrawals</a></li>
+                                          <li><a href="#">Payment Option</a></li>
+                                          <li><a href="#">Negative balance</a></li>
+                                          <li><a href="#">Founds Security</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu">
+                                       <h6>Trading Condition</h6>
+                                       <ul>
+                                          <li><a href="#">Account types</a></li>
+                                          <li><a href="#">Islamic account</a></li>
+                                          <li><a href="#">Demo account</a></li>
+                                          <li><a href="#">Spreads & conditions</a></li>
+                                          <li><a href="#">Trading advantage</a></li>
+                                          <li><a href="#">Why choose us</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!-- end col-3 -->
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h6>Assets</h6>
+                                       <ul>
+                                          <li><a href="#">Live quotes</a></li>
+                                          <li><a href="#">Stocks</a></li>
+                                          <li><a href="#">Indices</a></li>
+                                          <li><a href="#">Currency pairs</a></li>
+                                          <li><a href="#">Commodities</a></li>
+                                          <li><a href="#">Derivatives: stocks and</a></li>
+                                          <li><a href="#">indices</a></li>
+                                          <li><a href="#">Shares</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h4>Our best spared and condition!</h4>
+                                       <a href="#" class="primary-btn">Explore Now</a>
+                                       <img src="assets/images/thumbnails/1.png" alt="icon">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Analytics & education   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item"><a href="#" class="nav-link">Help Center</a></li>
+                  </ul>
+                  <ul class="navbar-nav ms-auto">
+                     <div class="header-right">
+                        <ul class="d-flex align-items-center">
+                           <li class="d-flex"><a href="#" class="primary-btn">Register</a
+                              ></li>
+                           <li class="d-flex"><a href="#" class="primary-btn-bg-transparent">Login</a
+                              ></li>
+                           <li class="nav-item dropdown country-menu-parent large-view">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                              <img src="assets/images/icon/country.png" alt="icon">
+                              <i class="fa-solid fa-angle-down"></i>
+                              </a>
+                              <ul class="dropdown-menu country-menu"  data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                                 <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                                 <li >
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/france.png" alt="icon">
+                                    <span>France</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item active" href="#">
+                                    <img src="assets/images/icon/us.png" alt="icon">
+                                    <span>English (us)</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/espen.png" alt="icon">
+                                    <span>Espen</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/bangladesh.png" alt="icon">
+                                    <span>Bangla</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/italy.png" alt="icon">
+                                    <span>Italy</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/portugal.png" alt="icon">
+                                    <span>Portugal</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+       <section class="common-page-heading-section" style="background-image:url('assets/images/bg/darrell.png');">
+         <div class="container">
+            <div class="row text-center">
+               <div class="offset-md-2 col-md-8">
+                  <div class="common-heading-area withdrawals-common-heading mt-40">
+                     <h2>XAGUSD: Following The Trendline
+                      </h2>
+                     <p class="text-white">Learn about spreads, leverage, and fees to make informed trading decisions with transparency and confidence.</p>
+                     <a href="#" class="primary-btn mt-40">Join the market</a>
+                  </div>
+               </div>
+                
+            </div>
+            
+         </div>
+      </section>
+       <section class="trading-info-section mt-100">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="common-heading-area">
+                     <h3>Forex and Forex Exotic </h3>
+                     <img src="assets/images/thumbnails/trading2.png" alt="img" class="w-100 rounded mb-70">
+                     <p>In the Daily timeframe, XAGUSD breaches above the 30.30 resistance, coinciding with the golden Fibonacci pocket and facing the trendline. The %R and Stochastic oscillators are in an overbought zone, potentially indicating a bearish pressure for the XAGUSD:</p>
+                     <ol class="trading-info-list mt-30">
+                        <li><p>If the price breaks above the trendline, it will open the way to the 32.50 resistance;</p></li>
+                        <li><p>However, a breaching below 30.30 and the golden Fibonacci pocket may trigger a decline to 28.80 support.</p></li>
+                     </ol>
+                     <a href="#" class="primary-btn mt-40">Try trading now</a>
+                     <p  class="mt-40">Trading foreign currencies on margin involves significant risks and may not be suitable for everyone, as high leverage can increase both potential gains and losses. Before entering the foreign exchange market, it is essential to evaluate your investment goals, personal experience, and risk tolerance.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </section>
+       <section class="share-section mt-100">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="common-heading-area">
+                     <h3>Share with friends</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="row gy-4">
+               <div class="col-lg-4 col-md-6">
+                  <div class="instruments-card">
+                     <a href="#">
+                        <div class="instruments-content d-flex align-items-center">
+                           <div class="instruments-icon shear-icon">
+                              <img src="assets/images/icon/logos_facebook.png" alt="icon">
+                           </div>
+                           <div class="instrument-title">
+                              <h6>Facebook</h6>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="instruments-card">
+                     <a href="#">
+                        <div class="instruments-content d-flex align-items-center">
+                           <div class="instruments-icon shear-icon">
+                              <img src="assets/images/icon/skill-icons_twitter.png" alt="icon">
+                           </div>
+                           <div class="instrument-title">
+                              <h6>Twitter</h6>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="instruments-card">
+                     <a href="#">
+                        <div class="instruments-content d-flex align-items-center">
+                           <div class="instruments-icon shear-icon">
+                              <img src="assets/images/icon/skill-icons_instagram.png" alt="icon">
+                           </div>
+                           <div class="instrument-title">
+                              <h6>Instagram</h6>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               
+                
+            </div>
+         </div>
+      </section>
+      <section class="instant-opening-section mt-100">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="shadow-p30 opening-selected">
+                     <div class="common-heading-area">
+                        <h3>Instant Opening</h3>
+                     </div>
+                     <ul class="d-flex align-items-center flex-wrap justify-content-between">
+                        <li><a href="#" class="d-flex align-items-center">
+                           <img src="assets/images/icon/devicon_google.svg" alt="icon">
+                           Continue with google
+                        </a></li>
+                        <li><a href="#" class="d-flex align-items-center">
+                           <img src="assets/images/icon/logos_facebook.svg" alt="icon">
+                           Continue with facebook
+                        </a></li>
+                     </ul>
+                     <span class="or-divider d-flex align-items-center justify-center">Or</span>
+                     <div class="opening-form-area">
+                        <form action="">
+                           <div class="opening-form-items d-flex">
+                              <!-- item -->
+                              <div class="opening-form-item position-relative">
+                                 <label for="Currency">Account Currency</label>
+                                 <select name="" id="">
+                                    <option value="USD">USD</option>
+                                    <option value="BDT">BDT</option>
+                                    <option value="USD">USD</option>
+                                    <option value="BDT">BDT</option>
+                                    <option value="USD">USD</option>
+                                    <option value="BDT">BDT</option>
+                                 </select>
+                                 <span><i class="fa-solid fa-angle-down"></i></span>
+                              </div>
+                              <!-- item -->
+                              <div class="opening-form-item">
+                                 <label for="Name">Full Name</label>
+                                 <input id="Name" type="text" placeholder="Enter your name">
+                              </div>
+                              <!-- item -->
+                              <div class="opening-form-item">
+                                 <label for="Name">Email</label>
+                                 <input id="Email" type="email" placeholder="Enter your email">
+                              </div>
+                           </div>
+                           <div class="terms-checkbox d-flex align-items-start mt30">
+                              <input id="terms" type="checkbox">
+                              <span class="checkmark"></span>
+                              <label for="terms"> I accept&nbsp;Terms and Conditions&nbsp;condition's and&nbsp;Privacy policy&nbsp;and accept all risks inherent with trading operations on the world financial markets.</label>
+                           </div>
+                            
+                              <button type="submit" class="primary-btn w-100 mt40">Open account</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+       <section class="more-faq-section mt-100">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="more-faq-heading mr22">
+                     <div class="common-heading-area">
+                         <h3>Looking for More Details?</h3>
+                         <p>We're here to help with all the details you need. Contact us for comprehensive answers and support.</p>
+                     </div>
+                     <img src="assets/images/thumbnails/faq.png" alt="faq" class="mt30 w-100">
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="accordion more-details-accordion" id="accordionExample">
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           How do I open a trading account?
+                           </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <p>Register on our site, provide necessary documents, and verify your identity to activate your account.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           What types of assets can I trade?
+                           </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           What is the minimum deposit required?
+                           </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                          How do I withdraw funds?
+                           </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+       <!-- Start app version -->
+       <section class="app-version-section mt120 pt-90">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="app-version-thumbnails position-relative lg-mr-22">
+                     <img src="assets/images/thumbnails/mobile-app.png" alt="img" class="position-absolutfe w-100">
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="app-version-area">
+                     <div class="app-version-btn">
+                        <ul class="d-flex align-items-center">
+                           <li class="applinks" onclick="appversion(event, 'mobileapp')" id="apprunning">Mobile app</li>
+                           <li class="applinks" onclick="appversion(event, 'meta4')">MetaTrader 5</li>
+                           <li class="applinks" onclick="appversion(event, 'meta5')">MetaTrader 4</li>
+                        </ul>
+                     </div>
+                     <div class="app-version-content-area">
+                        <div class="app-version-content appversionContent" id="mobileapp">
+                           <div class="common-heading-area">
+                            <h3>Empower yourself with our tools </h3>
+                            <p>Transform your trading experience with our mobile app. <br> Deposit, withdraw, and trade on the go.</p>
+                           </div>
+                           <div class="app-version-content-body d-flex align-items-center">
+                              <div class="app-qr-code app-btn-blur">
+                                 <img src="assets/images/icon/bi_qr-code.png" alt="qr-code" class="w-100">
+                              </div>
+                              <div class="app-download-btn">
+                                 <ul>
+                                    <li><a href="#" class="app-btn-blur d-flex align-items-center">
+                                       <div class="app-download-logo">
+                                          <img src="assets/images/icon/playstore.png" alt="icon">
+                                       </div>
+                                       <div class="app-download-text">
+                                          <h6>GET IT ON</h6>
+                                          <h4>Google Play</h4>
+                                       </div>
+                                    </a></li>
+                                    <li><a href="#" class="app-btn-blur d-flex align-items-center">
+                                       <div class="app-download-logo">
+                                          <img src="assets/images/icon/apple.png" alt="icon">
+                                       </div>
+                                       <div class="app-download-text">
+                                          <h6>GET IT ON</h6>
+                                          <h4>App Store</h4>
+                                       </div>
+                                    </a></li>
+                                    <li><a href="#" class="app-btn-blur d-flex align-items-center m-0">
+                                       <div class="app-download-logo">
+                                          <img src="assets/images/icon/apk.png" alt="icon">
+                                       </div>
+                                       <div class="app-download-text">
+                                          <h6>Download </h6>
+                                          <h4>APK</h4>
+                                       </div>
+                                    </a></li>
+                                    
+                                 </ul>
+                              </div>
+                           </div>
+                           <a href="#" class="primary-btn">Start Trading</a>
+                        </div>
+                        <div class="app-version-content appversionContent" id="meta5">
+                           <div class="common-heading-area">
+                            <h3>Empower yourself with our tools</h3>
+                            <p>Transform your trading experience with our mobile app. <br> Deposit, withdraw, and trade on the go.</p>
+                           </div>
+                          
+                        </div>
+                        <div class="app-version-content appversionContent" id="meta4">
+                           <div class="common-heading-area">
+                             
+                            <p>Transform your trading experience with our mobile app. <br> Deposit, withdraw, and trade on the go.</p>
+                           </div>
+                          
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+        </section>
+         <!-- Start legal info -->
+         <section class="site-legal-info mt-100">
+            <div class="container">
+               <div class="row">
+               <div class="col-md-12">
+                  <div class="post-info">
+                     <p>Legal Information: Just Global Markets Ltd., registration number 8427198-1, address: Office 10, Floor 2, Vairam Building, Providence Industrial Estate, Providence, Mahe, Seychelles, a company regulated by the Seychelles Financial Services Authority (FSA) under a Securities Dealer License number SD088.</p>
+                     <p>Just Global Markets (MU) Limited, registration number 194590 GBC, address: The Cyberati Lounge, C/o Credentia International Management Ltd, Ground Floor, The Catalyst, Silicon Avenue, 40 Cybercity, 72201 Ebène, Republic of Mauritius, an Investment Dealer (Full Service Dealer, Excluding Underwriting) regulated by the Financial Services Commission (FSC) in Mauritius under a License number GB22200881.</p>
+                     <p>GMFT Services Ltd, registration number HE 424491, address: Syrakouson 9, Office 106, 3077, Limassol, Cyprus, is the EU merchant company, which provides certain content and operates the business including in terms of processing payment transactions.</p>
+                     <p>Risk Warning: CFDs are complex instruments and come with a high risk of losing funds rapidly due to leverage.</p>
+                     <p>The vast majority of retail investors face losses when trading CFDs. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your deposit. To ensure that you fully understand the risks associated with margin trading, pay attention to our Risk Disclosure.</p>
+                     <p>Restricted Jurisdictions: JustMarkets does not offer and does not provide services to residents and citizens of certain jurisdictions, including Australia, Canada, the EU and EEA, Japan, the United Kingdom, the United States of America, and countries sanctioned by the EU.</p>
+                     <p>¹At JustMarkets, most of withdrawals are processed instantly (under 1 minute). Once your funds leave our custody, it’s up to your chosen payment provider to process the funds and credit your account.</p>
+                      
+                  </div>
+               </div>
+            </div>
+            </div>
+         </section>
+        <!-- End legal info -->
+        <!-- Start Footer area -->
+         <footer class="footer-area mt120">
+           <div class="container">
+             <div class="row ptb70">
+               <div class="col-md-12 footer-inner d-flex">
+                   <div class="footer-description"> 
+                     <img src="assets/images/logo.png" alt="logo">
+                     <p>A human resources agency serves as a vital partner for businesses seeking to optimize their workforce management.</p>
+                     <h5>Follow Us</h5>
+                     <div class="social-menu">
+                        <ul class="d-flex align-items-center">
+                           <li><a href="#"><i class="fa fab fa-facebook"></i></a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-twitter"></i>
+                           </a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-instagram"></i>
+                           </a></li>
+                           <li><a href="#"><i class="fa fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                 <div class="footer-widgets-area">
+                   <div class="footer-widgets">
+                     <h4>Trading</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Markets</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Education</h4>
+                     <ul>
+                        <li><a href="#">Quick start</a></li>
+                        <li><a href="#">Online webinars</a></li>
+                        <li><a href="#">Forex articles</a></li>
+                        <li><a href="#">Forex glossary</a></li>
+                        <li><a href="#">Educational video</a></li>
+                        <li><a href="#">List of world currencies</a></li>
+                     </ul>
+                  </div>
+                 </div>
+               </div>
+            </div>
+           </div>
+           <div class="copyright-text">
+            <p>Copyright &copy; 2024 by <a href="index.html">market terminal</a></p>
+           </div>
+         </footer>
+        <!-- End Footer area -->
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+       <!-- audcad price chart js -->
+       <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      <script src="assets/js/audcad-price-chart.js"></script>
+      <script src="assets/js/main.js"></script>
+       
+   </body>
+</html>

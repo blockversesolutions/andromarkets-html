@@ -1183,10 +1183,6 @@ button.tablinks.active .tab-svg {
 .opening-selected ul li a img{
 	margin-right: 16px;
 }
-.opening-selected ul{
-	gap: 30px;
-}
-
 .or-divider{
 	color: rgba(4, 21, 31, 0.60);
 	font-size: 24px;
@@ -1701,4 +1697,15 @@ button.tablinks.active .tab-svg {
 	box-shadow: 0px 16.9px 25.36px 0px #C4CDDA40;
 	border-radius: 10px;
 	padding: 10px;
+	cursor: pointer;
+	transition: 0.5s;
+  }
+  .trading-info-list{
+	list-style: square;
+  }
+  .shear-icon img{
+	border-radius: 0;
+  }
+  .instruments-card:hover{
+	transform: translateY(-10px);
   }

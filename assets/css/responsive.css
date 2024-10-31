@@ -233,6 +233,10 @@
 		padding-top: 130px;
 		padding-bottom: 110px;
 	}
+	.opening-selected ul li a {
+		font-size: 20px;
+		padding: 14px 16px;
+	}
 }
 
 @media all and (max-width:767px) {
@@ -380,9 +384,7 @@
 	.opening-form-item{
 		width: 100%;
 	}
-	.opening-selected ul li a {
-		font-size: 22px;
-	}
+	
 	.opening-form-item input, .opening-form-item select {
 		font-size: 16px;
 		padding: 10px 10px;
@@ -408,6 +410,20 @@
 	.chart-btn-group button {
 		padding: 4px 8px;
 		font-size: 15px;
+	}
+	.trading-info-section{
+		text-align: center;
+	}
+	.instruments-icon img {
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+	}
+	.or-divider {
+		color: rgba(4, 21, 31, 0.60);
+		font-size: 16px;
+		line-height: 26px;
+		margin: 25px 0;
 	}
 }
 @media all and (max-width:575px) {
@@ -473,10 +489,15 @@
 		line-height: 26px;
 	}
 	.instrument-title h6 {
-		font-size: 18px;
-		line-height: 28px;
-		margin-bottom:0px;
+		font-size: 16px;
+		line-height: 17px;
+		margin-bottom: 0px;
 	}
+	.instrument-title span {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	
 	
 }
 @media all and (max-width:480px) {
