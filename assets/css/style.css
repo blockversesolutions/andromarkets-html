@@ -360,8 +360,8 @@ li.nav-item.dropdown li a {
 	line-height: 14px;
 }
 .card-view-body {
-	margin-top: 30px;
-	margin-bottom:30px;
+	margin-top:20px;
+	margin-bottom:20px;
 	gap: 12px;
 }
 .card-view-body-item p span {
@@ -653,8 +653,9 @@ button.tablinks.active .tab-svg {
   .tab-body,.tabcontent table,table{
 	width: 100%;
 	}
-	.tabcontent table tr td,.tabcontent table tr th{
-		padding-bottom: 30px;
+	.tabcontent table tr td, .tabcontent table tr th {
+		padding-bottom: 14px;
+		padding-top: 14px;
 	}
 	.tabcontent table tr:last-child td{
 		padding-bottom: 32px;
@@ -795,6 +796,9 @@ button.tablinks.active .tab-svg {
 	background: #FFF;
 	margin-bottom: 40px;
 	box-shadow: 0px 16.904px 25.356px 0px rgba(196, 205, 218, 0.25);
+}
+.app-version-btn{
+	display: inline-block;
 }
 .mr22{
 	margin-right: 22px;
