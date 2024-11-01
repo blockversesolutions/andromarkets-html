@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tradding Web App</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+         <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+      <link rel="stylesheet" href="assets/css/common.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+   </head>
+   <body>
+      <header class="header-transparent">
+         <nav class="navbar navbar-expand-xl">
+            <div class="container position-relative">
+               <a class="navbar-brand" href="index.html">
+               <img src="assets/images/logo.png" alt="logo"/>
+               </a>
+               <div class="header-right">
+                  <ul class="d-flex align-items-center">
+                     <li class="nav-item dropdown mobile-view country-menu-parent  ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <img src="assets/images/icon/country.png" alt="icon">
+                        <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu country-menu" data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                           <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                           <li >
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/france.png" alt="icon">
+                              <span>France</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item active" href="#">
+                              <img src="assets/images/icon/us.png" alt="icon">
+                              <span>English (us)</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/espen.png" alt="icon">
+                              <span>Espen</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/bangladesh.png" alt="icon">
+                              <span>Bangla</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/italy.png" alt="icon">
+                              <span>Italy</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/portugal.png" alt="icon">
+                              <span>Portugal</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                     </li>
+                  </ul>
+               </div>
+               <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav nav-rounded" id="outside-click">
+                     <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trading   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                           <div class="container">
+                              <div class="row g-3">
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu m-0">
+                                       <h6>Your Finance</h6>
+                                       <ul>
+                                          <li><a href="#">Deposit & withdrawals</a></li>
+                                          <li><a href="#">Payment Option</a></li>
+                                          <li><a href="#">Negative balance</a></li>
+                                          <li><a href="#">Founds Security</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu">
+                                       <h6>Trading Condition</h6>
+                                       <ul>
+                                          <li><a href="#">Account types</a></li>
+                                          <li><a href="#">Islamic account</a></li>
+                                          <li><a href="#">Demo account</a></li>
+                                          <li><a href="#">Spreads & conditions</a></li>
+                                          <li><a href="#">Trading advantage</a></li>
+                                          <li><a href="#">Why choose us</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!-- end col-3 -->
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h6>Assets</h6>
+                                       <ul>
+                                          <li><a href="#">Live quotes</a></li>
+                                          <li><a href="#">Stocks</a></li>
+                                          <li><a href="#">Indices</a></li>
+                                          <li><a href="#">Currency pairs</a></li>
+                                          <li><a href="#">Commodities</a></li>
+                                          <li><a href="#">Derivatives: stocks and</a></li>
+                                          <li><a href="#">indices</a></li>
+                                          <li><a href="#">Shares</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h4>Our best spared and condition!</h4>
+                                       <a href="#" class="primary-btn">Explore Now</a>
+                                       <img src="assets/images/thumbnails/1.png" alt="icon">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Analytics & education   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item"><a href="#" class="nav-link">Help Center</a></li>
+                  </ul>
+                  <ul class="navbar-nav ms-auto">
+                     <div class="header-right">
+                        <ul class="d-flex align-items-center">
+                           <li class="d-flex"><a href="#" class="primary-btn">Register</a
+                              ></li>
+                           <li class="d-flex"><a href="#" class="primary-btn-bg-transparent">Login</a
+                              ></li>
+                           <li class="nav-item dropdown country-menu-parent large-view">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                              <img src="assets/images/icon/country.png" alt="icon">
+                              <i class="fa-solid fa-angle-down"></i>
+                              </a>
+                              <ul class="dropdown-menu country-menu"  data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                                 <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                                 <li >
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/france.png" alt="icon">
+                                    <span>France</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item active" href="#">
+                                    <img src="assets/images/icon/us.png" alt="icon">
+                                    <span>English (us)</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/espen.png" alt="icon">
+                                    <span>Espen</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/bangladesh.png" alt="icon">
+                                    <span>Bangla</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/italy.png" alt="icon">
+                                    <span>Italy</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/portugal.png" alt="icon">
+                                    <span>Portugal</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+       <section class="common-page-heading-section" style="background-image:url('assets/images/bg/islamic-ac.png');">
+         <div class="container">
+            <div class="row text-center">
+               <div class="offset-md-2 col-md-8">
+                  <div class="common-heading-area withdrawals-common-heading mt-40">
+                     <h2>Trade Forex with full halal compliance.
+                      </h2>
+                     <p class="text-white">Discover Islamic Forex accounts designed for halal trading, ensuring compliance with Sharia principles while maximizing your investment opportunities and financial growth. </p>
+                     <a href="#" class="primary-btn mt-40">Start halal trading</a>
+                  </div>
+               </div>
+                
+            </div>
+            
+         </div>
+      </section>
+      <section class="potential-section mt-100">
+         <div class="container">
+            <div class="row align-items-center">
+              
+               <div class="col-lg-7 order-1 order-lg-2">
+                  <div class="potential-left-area lg-mr-22">
+                     <div class="common-heading-area mb-30">
+                        <h3>Why is Forex Trading Halal with MT?</h3>
+                        <p>Most Muslim traders require special trading conditions to align their experience with the religious demands of Islam. In response to these demands, we have designed our trading platform to be 100% halal in relation to the three key aspects of Sharia-compliant trading: no riba, no maysir, and no gharar.</p>
+                     </div>
+                      <div class="row gy-4">
+                         
+                        <div class="col-lg-12">
+                           <div class="evaluation-item d-flex">
+                              <div class="evaluation-item-title">
+                                 <img src="assets/images/icon/world.png" alt="img">
+                              </div>
+                              <div class="evaluation-item-value">
+                                 <span>No riba (interest)</span>
+                                 <p>All our accounts are completely swap-free: you do not pay or receive any interest. Moreover, you do not pay any fees or commissions, only actual market-driven spreads starting from 0.6 pips.</p>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-12">
+                           <div class="evaluation-item d-flex">
+                              <div class="evaluation-item-title">
+                                 <img src="assets/images/icon/account.png" alt="img">
+                              </div>
+                              <div class="evaluation-item-value">
+                                 <span>No maysir (gambling)</span>
+                                 <p>We do not offer any games of chance: you trade real assets on a real market. With some effort, you can learn to better predict its behaviour and improve your skills for better financial outcomes. On our part, we offer a free educational database to help you grow.</p>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-12">
+                           <div class="evaluation-item d-flex">
+                              <div class="evaluation-item-title">
+                                 <img src="assets/images/icon/awards.png" alt="img">
+                              </div>
+                              <div class="evaluation-item-value">
+                                 <span>No gharar (excessive risk)</span>
+                                 <p>While trading is inherently risky, we help you avoid excessive risk. To shield you from market volatility, we offer negative balance protection so you won't be able to get into debt. Moreover, we allow you to set any leverage rate from 1:1000 to 1:1 to control your risk exposure.</p>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+               </div>
+               <div class="col-lg-5 order-2 order-lg-1">
+                  <div class="potential-thumbnail lg-mr-22">
+                     <img src="assets/images/thumbnails/trading-islamic.png" alt="img" class="w-100 rounded">
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+        </section>
+       <!-- Start ac type info -->
+        <section class="account-type-info-section mt-100">
+         <div class="container">
+            <div class="row align-items-center gy-4">
+               <div class="col-md-7">
+                  <div class="common-heading-area">
+                     <h3>The Industry's Best Islamic Forex Trading Accounts</h3>
+                     <p>All our trading accounts are designed to be 100% halal by default. Choose the one you like and start trading right away.</p>
+                  </div>
+               </div>
+               <div class="col-md-5 text-center text-md-end">
+                  <a href="#" class="primary-btn">Start halal trading</a>
+               </div>
+            </div>
+            <div class="row g-3 mt-70">
+               <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Meta Trader 5</h3>
+                        <!-- <div class="view-data-header-right">
+                           <img src="assets/images/icon/qris.png" alt="icon">
+                        </div> -->
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Spread from</p>
+                           <p><b>0.6 pips</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Tra. commission</p>
+                           <p><b>$0</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Min deposit</p>
+                           <p><b>$25</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>MT Trading</h3>
+                        <!-- <div class="view-data-header-right">
+                           <img src="assets/images/icon/bca.png" alt="icon">
+                        </div> -->
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Spread from</p>
+                           <p><b>0.6 pips</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Tra. commission</p>
+                           <p><b>$0</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Min deposit</p>
+                           <p><b>$25</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Space is a unique live feed with free trading ideas and lessons designed by Octa experts to help you earn and grow—available from day one for all OctaTrader users</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-lg-4">
+                  <div class="card-view-data">
+                     <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                        <h3>Meta Trader 4</h3>
+                        <!-- <div class="view-data-header-right">
+                           <img src="assets/images/icon/mandiri.png" alt="icon">
+                        </div> -->
+                     </div>
+                     <div class="card-view-body d-flex">
+                        <div class="card-view-body-item text-center">
+                           <p>Spread from</p>
+                           <p><b>0.6 pips</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Tra. commission</p>
+                           <p><b>$0</b></p>
+                        </div>
+                        <div class="card-view-body-item text-center">
+                           <p>Min deposit</p>
+                           <p><b>$25</b></p>
+                        </div>
+                     </div>
+                     <div class="card-view-footer">
+                        <ul class="d-flex align-items-center justify-content-between">
+                           <li>Deposit easily using QRIS for fast, secure, and convenient transactions.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+                
+            </div>
+         </div>
+        </section>
+       <!-- End ac type info -->
+       <section class="potential-section mt-100 bg-color-f5 ptb-90">
+         <div class="container">
+            <div class="row align-items-center">
+               
+               <div class="col-md-7 order-1 order-md-2">
+                  <div class="potential-left-area">
+                     <div class="common-heading-area mb-30">
+                        <h3>Widely Acclaimed for our Islamic Trading Tools</h3>
+                        <p>We introduced our first 100% Sharia-compliant trading accounts for Muslim traders back in 2015 and have since received several prestigious industry awards for our halal trading features.</p>
+                     </div>
+                      <div class="row gy-4">
+                         
+                        <div class="col-lg-12">
+                           <div class="evaluation-item d-flex align-items-center">
+                              <div class="evaluation-item-title d-flex align-items-center">
+                                 <img src="assets/images/icon/broker.png" alt="img">
+                              </div>
+                              <div class="evaluation-item-value">
+                                 <span>Best No Swap Fees Broker 2024</span>
+                                 <p>FX EMPIRE</p>
+                                
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-12">
+                           <div class="evaluation-item d-flex align-items-center">
+                              <div class="evaluation-item-title d-flex align-items-center">
+                                 <img src="assets/images/icon/account.png" alt="img">
+                              </div>
+                              <div class="evaluation-item-value">
+                                 <span>Best Islamic FX Account 2020</span>
+                                 <p>WORLD FINANCE</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-12">
+                           <div class="evaluation-item d-flex align-items-center">
+                              <div class="evaluation-item-title d-flex align-items-center">
+                                 <img src="assets/images/icon/chart.png" alt="img">
+                              </div>
+                              <div class="evaluation-item-value">
+                                 <span>Best Islamic Account Forex Broker 2015</span>
+                                 <p>FOREXTRADERS.COM</p>
+                              </div>
+                           </div>
+                        </div>
+                        
+                      </div>
+                      
+                  </div>
+               </div>
+               <div class="col-md-5 order-2 order-md-1">
+                  <div class="potential-thumbnail lg-mr-22">
+                     <img src="assets/images/thumbnails/islamic-trading.png" alt="img" class="w-100 rounded">
+                  </div>
+               </div>
+            </div>
+         </div>
+        </section>
+        <section class="trading-success-section mt-100">
+         <div class="container">
+            <div class="row align-items-center gy-4">
+               <div class="col-md-7">
+                  <div class="common-heading-area">
+                     <h3>Strategies for Trading Success</h3>
+                     <p>Unlock proven strategies and expert insights to sharpen your trading skills and boost performance in any market.</p>
+                  </div>
+               </div>
+               <div class="col-md-5 text-center text-md-end">
+                  <a href="#" class="primary-btn">See all awards <span class="rotation ml-5"><i class="fa-solid fa-arrow-right"></i></span></a>
+               </div>
+            </div>
+            <div class="line-1 mt-30"></div>
+            <div class="row gy-4 pt-30">
+               <div class="col-lg-4 col-md-6">
+                  <div class="user-card">
+                     <div class="user-card-logo">
+                        <img src="assets/images/icon/trading-platform1.png" alt="icon" class="rounded-0">
+                     </div>
+                     <div class="user-card-text">
+                        <ul>
+                           <li>Best Trading Platform..</li>
+                        </ul>
+                       <p>Brands and Business Magazine</p>
+                       
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="user-card">
+                     <div class="user-card-logo">
+                        <img src="assets/images/icon/trading-platform2.png" alt="icon" class="rounded-0">
+                     </div>
+                     <div class="user-card-text">
+                        <ul>
+                           <li>Best Trading Experienc..</li>
+                        </ul>
+                       <p>FXDailyInfo.com</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="user-card">
+                     <div class="user-card-logo">
+                        <img src="assets/images/icon/trading-platform3.png" alt="icon" class="rounded-0">
+                     </div>
+                     <div class="user-card-text">
+                        <ul>
+                           <li>Best Forex Customer S..</li>
+                        </ul>
+                       <p>FXDailyInfo.com</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="user-card">
+                     <div class="user-card-logo">
+                        <img src="assets/images/icon/trading-platform4.png" alt="icon" class="rounded-0">
+                     </div>
+                     <div class="user-card-text">
+                        <ul>
+                           <li>Best Trading App India</li>
+                        </ul>
+                       <p>FX Empire</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="user-card">
+                     <div class="user-card-logo">
+                        <img src="assets/images/icon/trading-platform5.png" alt="icon" class="rounded-0">
+                     </div>
+                     <div class="user-card-text">
+                        <ul>
+                           <li>Most Reliable Broker As..</li>
+                        </ul>
+                       <p>Global Forex award</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="user-card">
+                     <div class="user-card-logo">
+                        <img src="assets/images/icon/trading-platform6.png" alt="icon" class="rounded-0">
+                     </div>
+                     <div class="user-card-text">
+                        <ul>
+                           <li>Best Forex Broker Indon..</li>
+                        </ul>
+                       <p>FX Empire</p>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+        </section>
+       
+      <section class="more-faq-section mt-100">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="more-faq-heading mr22">
+                     <div class="common-heading-area">
+                         <h3>Looking for More Details?</h3>
+                         <p>We're here to help with all the details you need. Contact us for comprehensive answers and support.</p>
+                     </div>
+                     <img src="assets/images/thumbnails/faq.png" alt="faq" class="mt30 w-100">
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="accordion more-details-accordion" id="accordionExample">
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           How do I open a trading account?
+                           </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <p>Register on our site, provide necessary documents, and verify your identity to activate your account.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           What types of assets can I trade?
+                           </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           What is the minimum deposit required?
+                           </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                          How do I withdraw funds?
+                           </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+       <!-- Start app version -->
+       <section class="app-version-section mt120 pt-90">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="app-version-thumbnails position-relative lg-mr-22">
+                     <img src="assets/images/thumbnails/mobile-app.png" alt="img" class="position-absolutfe w-100">
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="app-version-area">
+                     <div class="app-version-btn">
+                        <ul class="d-flex align-items-center">
+                           <li class="applinks" onclick="appversion(event, 'mobileapp')" id="apprunning">Mobile app</li>
+                           <li class="applinks" onclick="appversion(event, 'meta4')">MetaTrader 5</li>
+                           <li class="applinks" onclick="appversion(event, 'meta5')">MetaTrader 4</li>
+                        </ul>
+                     </div>
+                     <div class="app-version-content-area">
+                        <div class="app-version-content appversionContent" id="mobileapp">
+                           <div class="common-heading-area">
+                            <h3>Empower yourself with our tools </h3>
+                            <p>Transform your trading experience with our mobile app. <br> Deposit, withdraw, and trade on the go.</p>
+                           </div>
+                           <div class="app-version-content-body d-flex align-items-center">
+                              <div class="app-qr-code app-btn-blur">
+                                 <img src="assets/images/icon/bi_qr-code.png" alt="qr-code" class="w-100">
+                              </div>
+                              <div class="app-download-btn">
+                                 <ul>
+                                    <li><a href="#" class="app-btn-blur d-flex align-items-center">
+                                       <div class="app-download-logo">
+                                          <img src="assets/images/icon/playstore.png" alt="icon">
+                                       </div>
+                                       <div class="app-download-text">
+                                          <h6>GET IT ON</h6>
+                                          <h4>Google Play</h4>
+                                       </div>
+                                    </a></li>
+                                    <li><a href="#" class="app-btn-blur d-flex align-items-center">
+                                       <div class="app-download-logo">
+                                          <img src="assets/images/icon/apple.png" alt="icon">
+                                       </div>
+                                       <div class="app-download-text">
+                                          <h6>GET IT ON</h6>
+                                          <h4>App Store</h4>
+                                       </div>
+                                    </a></li>
+                                    <li><a href="#" class="app-btn-blur d-flex align-items-center m-0">
+                                       <div class="app-download-logo">
+                                          <img src="assets/images/icon/apk.png" alt="icon">
+                                       </div>
+                                       <div class="app-download-text">
+                                          <h6>Download </h6>
+                                          <h4>APK</h4>
+                                       </div>
+                                    </a></li>
+                                    
+                                 </ul>
+                              </div>
+                           </div>
+                           <a href="#" class="primary-btn">Start Trading</a>
+                        </div>
+                        <div class="app-version-content appversionContent" id="meta5">
+                           <div class="common-heading-area">
+                            <h3>Empower yourself with our tools</h3>
+                            <p>Transform your trading experience with our mobile app. <br> Deposit, withdraw, and trade on the go.</p>
+                           </div>
+                          
+                        </div>
+                        <div class="app-version-content appversionContent" id="meta4">
+                           <div class="common-heading-area">
+                             
+                            <p>Transform your trading experience with our mobile app. <br> Deposit, withdraw, and trade on the go.</p>
+                           </div>
+                          
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+        </section>
+         <!-- Start legal info -->
+         <section class="site-legal-info mt-100">
+            <div class="container">
+               <div class="row">
+               <div class="col-md-12">
+                  <div class="post-info">
+                     <p>Legal Information: Just Global Markets Ltd., registration number 8427198-1, address: Office 10, Floor 2, Vairam Building, Providence Industrial Estate, Providence, Mahe, Seychelles, a company regulated by the Seychelles Financial Services Authority (FSA) under a Securities Dealer License number SD088.</p>
+                     <p>Just Global Markets (MU) Limited, registration number 194590 GBC, address: The Cyberati Lounge, C/o Credentia International Management Ltd, Ground Floor, The Catalyst, Silicon Avenue, 40 Cybercity, 72201 Ebène, Republic of Mauritius, an Investment Dealer (Full Service Dealer, Excluding Underwriting) regulated by the Financial Services Commission (FSC) in Mauritius under a License number GB22200881.</p>
+                     <p>GMFT Services Ltd, registration number HE 424491, address: Syrakouson 9, Office 106, 3077, Limassol, Cyprus, is the EU merchant company, which provides certain content and operates the business including in terms of processing payment transactions.</p>
+                     <p>Risk Warning: CFDs are complex instruments and come with a high risk of losing funds rapidly due to leverage.</p>
+                     <p>The vast majority of retail investors face losses when trading CFDs. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your deposit. To ensure that you fully understand the risks associated with margin trading, pay attention to our Risk Disclosure.</p>
+                     <p>Restricted Jurisdictions: JustMarkets does not offer and does not provide services to residents and citizens of certain jurisdictions, including Australia, Canada, the EU and EEA, Japan, the United Kingdom, the United States of America, and countries sanctioned by the EU.</p>
+                     <p>¹At JustMarkets, most of withdrawals are processed instantly (under 1 minute). Once your funds leave our custody, it’s up to your chosen payment provider to process the funds and credit your account.</p>
+                      
+                  </div>
+               </div>
+            </div>
+            </div>
+         </section>
+        <!-- End legal info -->
+        <!-- Start Footer area -->
+         <footer class="footer-area mt120">
+           <div class="container">
+             <div class="row ptb70">
+               <div class="col-md-12 footer-inner d-flex">
+                   <div class="footer-description"> 
+                     <img src="assets/images/logo.png" alt="logo">
+                     <p>A human resources agency serves as a vital partner for businesses seeking to optimize their workforce management.</p>
+                     <h5>Follow Us</h5>
+                     <div class="social-menu">
+                        <ul class="d-flex align-items-center">
+                           <li><a href="#"><i class="fa fab fa-facebook"></i></a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-twitter"></i>
+                           </a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-instagram"></i>
+                           </a></li>
+                           <li><a href="#"><i class="fa fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                 <div class="footer-widgets-area">
+                   <div class="footer-widgets">
+                     <h4>Trading</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Markets</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Education</h4>
+                     <ul>
+                        <li><a href="#">Quick start</a></li>
+                        <li><a href="#">Online webinars</a></li>
+                        <li><a href="#">Forex articles</a></li>
+                        <li><a href="#">Forex glossary</a></li>
+                        <li><a href="#">Educational video</a></li>
+                        <li><a href="#">List of world currencies</a></li>
+                     </ul>
+                  </div>
+                 </div>
+               </div>
+            </div>
+           </div>
+           <div class="copyright-text">
+            <p>Copyright &copy; 2024 by <a href="index.html">market terminal</a></p>
+           </div>
+         </footer>
+        <!-- End Footer area -->
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+       <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script>
+        
+       </script>
+   </body>
+</html>

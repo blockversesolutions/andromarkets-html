@@ -721,7 +721,11 @@ button.tablinks.active .tab-svg {
 		background: #FFF;
 		height: 100%;
 		padding-right: 30px;
+		cursor: pointer;
 		box-shadow: 0px 16.904px 25.356px 0px rgba(196, 205, 218, 0.25);
+	}
+	.evaluation-item:hover .evaluation-item-title img{
+		background-color: #092139;
 	}
 	.evaluation-item:last-child{
 		margin-bottom: 0;
@@ -730,12 +734,13 @@ button.tablinks.active .tab-svg {
 		color: #04151F;
 		font-size:18px;
 		text-align: right;
-		line-height: 25px;
+		line-height:30px;
 		letter-spacing: -0.1px;
 	}
 	.evaluation-item-title img{
 		padding: 14px;
 		border-radius: 4px;
+		transition: 0.5;
 		margin-right:16px;
 		background: rgba(245, 196, 72, 0.20);
 	}
