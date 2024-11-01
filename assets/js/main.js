@@ -34,21 +34,21 @@ document.addEventListener("click", function (event) {
     navbarText.classList.remove("show");
   }
 });
-// text changes
-// document.addEventListener("DOMContentLoaded", function() {
-//   const textToType = "Market Terminal";
-//   const typedTextElement = document.getElementById("typed-text");
-//   let index = 0;
+  // Function to check screen size and toggle the class
+  function handleResize() {
+    const element = document.querySelector('.mobile-view-table');
+    if (window.innerWidth <= 991) {
+      element.classList.add('nowrap');  
+    } else {
+      element.classList.remove('nowrap');   
+    }
+  }
 
-//   function typeText() {
-//       if (index < textToType.length) {
-//           typedTextElement.textContent += textToType.charAt(index);
-//           index++;
-//           setTimeout(typeText, 100);  
-//       }
-//   }
-//   typeText();
-// });
+  // Run the function once on page load
+  handleResize();
+
+  // Add event listener for window resize
+  window.addEventListener('resize', handleResize);
 //  app version
 function appversion(evt, appversion) {
   var i, appvarsionContent, applinks;
