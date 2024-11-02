@@ -355,7 +355,7 @@
                      </div>
                   </div>
                   <div class="col-lg-6">
-                     <div class="secures-found-left">
+                     <div class="secures-found-left mobile-order-change">
                         <img src="assets/images/thumbnails/trade-4.png" alt="img" class="w-100 mb-30 rounded">
                         <div class="common-heading-area">
                            <h3>Enjoy real market scenarios</h3>
@@ -367,6 +367,343 @@
                </div>
             </div>
           </section>
+          <section class="trading-platform-section mt-100">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <div class="common-heading-area text-center">
+                        <h3>Choose your trading platform</h3>
+                        <p>Select from a variety of advanced trading platforms tailored to your preferences, ensuring a seamless and efficient trading experience.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="app-version-btn w-100 mt-70">
+                        <ul class="d-flex align-items-center">
+                           <li class="choose-trading-btn w-100 text-center" onclick="choose_trading_platform(event, 'mt_trader')" id="default_active_mt_trader">MT Trader</li>
+                           <li class="choose-trading-btn w-100 text-center" onclick="choose_trading_platform(event, 'meta_trader_5')">Meta Trader 5</li>
+                           <li class="choose-trading-btn w-100 text-center" onclick="choose_trading_platform(event, 'meta_trader_4')">Meta Trader 4</li>
+                        </ul>
+                     </div>
+                     <div class="choose-trading-platform-area">
+                        <div class="choose-trading-platform" id="mt_trader">
+                           <div class="app-version-btn-2 mb-60">
+                              <ul class="d-flex align-items-center">
+                                 <li class="choose-inner-trading-btn text-center" onclick="choose_trading_inner_platform(event, 'mt-inner-web')" id="default_active_mt_inner_trader">Web Trader</li>
+                                 <li class="choose-inner-trading-btn text-center" onclick="choose_trading_inner_platform(event, 'mt-inner-android')">Android</li>
+                                 <li class="choose-inner-trading-btn text-center" onclick="choose_trading_inner_platform(event, 'mt-inner-iOS')">iOS</li>
+                              </ul>
+                           </div>
+                           <!--start mt inner content body -->
+                           <div class="mt-inner-content choose-inner-trading-platform" id="mt-inner-web">
+                              <div class="row gy-5">
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left lg-mr-22 text-md-start text-center">
+                                       <div class="common-heading-area">
+                                          <h3>Learn at your speed</h3>
+                                          <p>Master Forex trading at your own pace with our demo account. Develop your strategies, enhance your skills, and build confidence without rushing. It’s an ideal way to practice and prepare for live trading without financial risk.</p>
+                                       </div>
+                                       <a href="#" class="primary-btn mt-30">Log inff</a>
+                                       <img src="assets/images/thumbnails/trading10.png" alt="img" class="w-100 mt-30 rounded">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left mobile-order-change">
+                                       <img src="assets/images/thumbnails/trade-4.png" alt="img" class="w-100 mb-30 rounded">
+                                       <div class="common-heading-area">
+                                          <h3>Enjoy real market scenarios</h3>
+                                          <p>Experience the closest thing to live trading with our demo account. Enjoy real market conditions, refine your strategies, and test your skills risk-free. Gain the confidence and expertise needed to succeed when transitioning to live trading.</p>
+                                          <a href="#" class="primary-btn mt-30">How to start</a>
+                                       </div>
+                                       
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="mt-inner-trading choose-inner-trading-platform" id="mt-inner-android">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader Android</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="w-50 m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/playstore.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>GET IT ON</h6>
+                                                      <h4>Google Play</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="mt-inner-wetradingb choose-inner-trading-platform" id="mt-inner-iOS">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader ISO</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="w-50 m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/apk.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>Download</h6>
+                                                      <h4>APK</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile2.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                          <!--end mt inner content body -->
+                        </div>
+                        <div class="choose-trading-platform" id="meta_trader_5">
+                           <div class="app-version-btn-2 mb-60">
+                              <ul class="d-flex align-items-center">
+                                 <li class="choose-inner-trading-5-btn text-center" onclick="choose_trading_5_inner_platform(event, 'mt5-inner-web')" id="default_active_mt5_inner_trader">Web Trader</li>
+                                 <li class="choose-inner-trading-5-btn text-center" onclick="choose_trading_5_inner_platform(event, 'mt5-inner-android')">Android</li>
+                                 <li class="choose-inner-trading-5-btn text-center" onclick="choose_trading_5_inner_platform(event, 'mt5-inner-iOS')">iOS</li>
+                              </ul>
+                           </div>
+                            <!--start mt5 inner content body -->
+                            <div class="choose-inner-trading-5-platform" id="mt5-inner-web">
+                              <div class="row gy-5">
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left lg-mr-22 text-md-start text-center">
+                                       <div class="common-heading-area">
+                                          <h3>Learn at your speed</h3>
+                                          <p>Master Forex trading at your own pace with our demo account. Develop your strategies, enhance your skills, and build confidence without rushing. It’s an ideal way to practice and prepare for live trading without financial risk.</p>
+                                       </div>
+                                       <a href="#" class="primary-btn mt-30">Log in</a>
+                                       <img src="assets/images/thumbnails/trading10.png" alt="img" class="w-100 mt-30 rounded">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left mobile-order-change">
+                                       <img src="assets/images/thumbnails/trade-4.png" alt="img" class="w-100 mb-30 rounded">
+                                       <div class="common-heading-area">
+                                          <h3>Enjoy real market scenarios</h3>
+                                          <p>Experience the closest thing to live trading with our demo account. Enjoy real market conditions, refine your strategies, and test your skills risk-free. Gain the confidence and expertise needed to succeed when transitioning to live trading.</p>
+                                          <a href="#" class="primary-btn mt-30">How to start</a>
+                                       </div>
+                                       
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="choose-inner-trading-5-platform" id="mt5-inner-android">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader Android</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="w-50 m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/playstore.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>GET IT ON</h6>
+                                                      <h4>Google Play</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="choose-inner-trading-5-platform" id="mt5-inner-iOS">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader ISO</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="w-50 m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/apk.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>Download</h6>
+                                                      <h4>APK</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile2.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                          <!--end mt5 inner content body -->
+                        </div>
+                        <div class="choose-trading-platform" id="meta_trader_4">
+                           <div class="app-version-btn-2 mb-60">
+                              <ul class="d-flex align-items-center">
+                                 <li class="choose-inner-trading-4-btn text-center" onclick="choose_trading_4_inner_platform(event, 'mt4-inner-web')" id="default_active_mt4_inner_trader">Web Trader</li>
+                                 <li class="choose-inner-trading-4-btn text-center" onclick="choose_trading_4_inner_platform(event, 'mt4-inner-android')">Android</li>
+                                 <li class="choose-inner-trading-4-btn text-center" onclick="choose_trading_4_inner_platform(event, 'mt4-inner-iOS')">iOS</li>
+                              </ul>
+                           </div>
+                            <!--start mt5 inner content body -->
+                            <div class="choose-inner-trading-4-platform" id="mt4-inner-web">
+                              <div class="row gy-5">
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left lg-mr-22 text-md-start text-center">
+                                       <div class="common-heading-area">
+                                          <h3>Learn at your speed</h3>
+                                          <p>Master Forex trading at your own pace with our demo account. Develop your strategies, enhance your skills, and build confidence without rushing. It’s an ideal way to practice and prepare for live trading without financial risk.</p>
+                                       </div>
+                                       <a href="#" class="primary-btn mt-30">Log in</a>
+                                       <img src="assets/images/thumbnails/trading10.png" alt="img" class="w-100 mt-30 rounded">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left mobile-order-change">
+                                       <img src="assets/images/thumbnails/trade-4.png" alt="img" class="w-100 mb-30 rounded">
+                                       <div class="common-heading-area">
+                                          <h3>Enjoy real market scenarios</h3>
+                                          <p>Experience the closest thing to live trading with our demo account. Enjoy real market conditions, refine your strategies, and test your skills risk-free. Gain the confidence and expertise needed to succeed when transitioning to live trading.</p>
+                                          <a href="#" class="primary-btn mt-30">How to start</a>
+                                       </div>
+                                       
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="choose-inner-trading-4-platform" id="mt4-inner-android">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader Android</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="w-50 m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/playstore.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>GET IT ON</h6>
+                                                      <h4>Google Play</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="choose-inner-trading-4-platform" id="mt4-inner-iOS">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader ISO</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="w-50 m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/apk.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>Download</h6>
+                                                      <h4>APK</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile2.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                          <!--end mt5 inner content body -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
           <section class="potential-section mt-100 bg-color-f5 ptb-90">
             <div class="container">
                <div class="row align-items-center">
@@ -660,6 +997,7 @@
             <p>Copyright &copy; 2024 by <a href="index.html">market terminal</a></p>
            </div>
          </footer>
+        
         <!-- End Footer area -->
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -682,6 +1020,78 @@
          evt.currentTarget.className += " active";
          }
          document.getElementById("apprunning").click();
+
+         //  trading platform
+         function choose_trading_platform(evt, choose_trading_platform_connect) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-trading-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-trading-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_platform_connect).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt_trader").click();
+
+
+         // trading inner select tab
+         function choose_trading_inner_platform(evt, choose_trading_inner_platform_connect) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-inner-trading-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-inner-trading-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_inner_platform_connect).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt_inner_trader").click();
+         // trading 5 inner select tab
+         function choose_trading_5_inner_platform(evt, choose_trading_inner_platform_connect_5) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-inner-trading-5-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-inner-trading-5-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_inner_platform_connect_5).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt5_inner_trader").click();
+         // trading 4 inner select tab
+         function choose_trading_4_inner_platform(evt, choose_trading_inner_platform_connect_4) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-inner-trading-4-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-inner-trading-4-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_inner_platform_connect_4).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt4_inner_trader").click();
+         
        </script>
    </body>
 </html>

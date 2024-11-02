@@ -19,27 +19,7 @@
        <section class="app-version-section mt120 pt-90">
          <div class="container">
             <div class="row">
-               <div class="col-lg-6">
-                  <div class="app-version-area">
-                     <div class="app-version-btn">
-                        <ul class="d-flex align-items-center">
-                           <li class="btn11" onclick="f_function(event, 'mobileapp')" id="default_active_ar_jonno">Mobile app</li>
-                           <li class="btn11" onclick="f_function(event, 'meta4')">MetaTrader 5</li>
-                        </ul>
-                     </div>
-                     <div class="app-version-content-area">
-                        <div class="app-version-content appversionContent" id="mobileapp">
-                           <div class="common-heading-area">
-                            <h3>Empower yourself with our tools </h3>
-                            <p>Transform your trading experience with our mobile app. <br> Deposit, withdraw, and trade on the go.</p>
-                           </div>
-                        </div>
-                        <div class="app-version-content appversionContent" id="meta4">
-                            <p>Transform your trading experience with our mobile app. <br> Deposit, withdraw, and trade on the go.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                
                <div class="col-lg-6">
                   <div class="app-version-area">
                      <div class="app-version-btn">
@@ -66,30 +46,7 @@
         </section>
      
       <script>
-         //  app version
-         function f_function(evt, appversion1) {
-         var i;
-         // item content select korer jonnon
-         var appversionContent = document.getElementsByClassName("appversionContent");
-         for (i = 0; i < appversionContent.length; i++) {
-            appversionContent[i].style.display = "none";
-         }
-         // button select korer jonno
-         var applinks = document.getElementsByClassName("btn11");
-         for (i = 0; i < applinks.length; i++) {
-            applinks[i].className = applinks[i].className.replace(" active", "");
-         }
-         document.getElementById(appversion1).style.display = "block";
-         evt.currentTarget.className += " active";
-         }
-         document.getElementById("default_active_ar_jonno").click();
-
-
-
-
-
-
-
+ 
 
          //  app version
          function test_function(evt, actuve_connect) {

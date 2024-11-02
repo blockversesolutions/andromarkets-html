@@ -234,6 +234,15 @@
 		font-size: 20px;
 		padding: 14px 16px;
 	}
+	.mobile-order-change img{
+		order: 1;
+		margin-top: 40px;
+		margin-bottom: 0;
+	}
+	.mobile-order-change{
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 @media all and (max-width:767px) {

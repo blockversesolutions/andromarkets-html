@@ -188,3 +188,27 @@ margin-right: 22px;
 .mt-12{
 	margin-top: 12px;
 }
+.mb-40{
+	margin-bottom: 40px;
+}
+.mb-60{
+	margin-bottom: 60px;
+}
+.app-version-btn-2{}
+.app-version-btn-2 ul{
+	 
+}
+.app-version-btn-2 ul li{
+	font-size: 20px;
+	width: 33%;
+	line-height: 22px;
+	cursor: pointer;
+	letter-spacing: -0.005em;
+	color:#04151F99;
+	padding-bottom: 10px;
+	border-bottom: 1.5px solid #04151F1A
+}
+.app-version-btn-2 ul li.active{
+	color:#04151F;
+	border-color: #04151F;
+}
