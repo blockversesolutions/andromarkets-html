@@ -31,7 +31,10 @@
 	left: inherit;
 	padding:20px;
 	width: 350px !important;
-	padding-right: 50px;
+	padding-right:30px;
+}
+.simplebar-track.simplebar-vertical {
+	right: 12px;
 }
 /* Hide the scrollbar until hovered */
 .simplebar-scrollbar::before {

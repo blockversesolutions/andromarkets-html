@@ -235,7 +235,7 @@
          <div class="container">
             <div class="row align-items-center">
                <div class="col-lg-7">
-                  <div class="common-heading-area withdrawals-common-heading common-heading-mw-70">
+                  <div class="common-heading-area withdrawals-common-heading">
                      <h2>Deposits and <span class="span-color">Withdrawals</span>
                       </h2>
                      <p class="text-white">Enjoy fast, secure deposits and withdrawals with multiple payment options for a smooth trading experience.</p>
@@ -276,8 +276,8 @@
       <section class="payment-option-section mt-100">
          <div class="container">
             <div class="row">
-              <div class="col-md-12">
-                <div class="common-heading-area text-center common-heading-mw-70">
+              <div class="offset-md-2 col-md-8">
+                <div class="common-heading-area text-center">
                   <h3>Over <span class="span-color">200</span> Payment Options</h3>
                   <p class="m-auto">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                </div>
@@ -1091,20 +1091,20 @@
             }
          document.getElementById("payment-option").click();
           // account step
-         function account_step_function(evt, account_step_function_id) {
-         var i;
-         var appversionContent = document.getElementsByClassName("account-step-thumbnails");
-         for (i = 0; i < appversionContent.length; i++) {
-            appversionContent[i].style.display = "none";
-         }
-         var applinks = document.getElementsByClassName("account-step");
-         for (i = 0; i < applinks.length; i++) {
-            applinks[i].className = applinks[i].className.replace(" active", "");
-         }
-         document.getElementById(account_step_function_id).style.display = "block";
-         evt.currentTarget.className += " active";
-         }
-         document.getElementById("account-step-active").click();
-            </script>
+      function account_step_function(evt, account_step_function_id) {
+      var i;
+      var appversionContent = document.getElementsByClassName("account-step-thumbnails");
+      for (i = 0; i < appversionContent.length; i++) {
+         appversionContent[i].style.display = "none";
+      }
+      var applinks = document.getElementsByClassName("account-step");
+      for (i = 0; i < applinks.length; i++) {
+         applinks[i].className = applinks[i].className.replace(" active", "");
+      }
+      document.getElementById(account_step_function_id).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+      document.getElementById("account-step-active").click();
+         </script>
    </body>
 </html>

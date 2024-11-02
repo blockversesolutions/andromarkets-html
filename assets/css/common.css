@@ -113,9 +113,6 @@ p {
 .mt-50{
     margin-top: 50px;
 }
-.common-heading-mw-70 p{
-    max-width:70%;
-}
 .mr-22{
     margin-right: 22px;
 }
@@ -193,10 +190,6 @@ margin-right: 22px;
 }
 .mb-60{
 	margin-bottom: 60px;
-}
-.app-version-btn-2{}
-.app-version-btn-2 ul{
-	 
 }
 .app-version-btn-2 ul li{
 	font-size: 20px;

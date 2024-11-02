@@ -249,6 +249,12 @@
 	.app-version-content-body{
 		justify-content: center;
 	}
+	.withdrawals-common-heading{
+		text-align: center;
+	}
+	.md-mt-50{
+		margin-top: 50px;
+	 }
 }
 
 @media all and (max-width:767px) {
@@ -300,15 +306,7 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	.common-heading-mw-70 p {
-		max-width: 100%;
-	}
-	.withdrawals-common-heading{
-		text-align: center;
-	}
-	 .md-mt-50{
-		margin-top: 50px;
-	 }
+	 
 	 .potential-section .evaluation-item-value p{
 		text-align: left;
 	 }
