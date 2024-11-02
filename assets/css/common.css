@@ -104,6 +104,9 @@ p {
 .text-white{
     color:#fff
 }
+.menu-bg{
+	background: linear-gradient(-90deg, #233946 0%, #04151F 50.39%);
+}
 .mt-10{
 	margin-top: 10px;
 }

@@ -1,20 +1,24 @@
 jQuery(document).ready(function ($) {
-  $('#data-show-table').DataTable({
-    responsive: true,
-    searching:false,
-    ordering:false,
-    info:false,
-    paging:false,
-  });
+   
+  if ($('#data-show-table').length) {  
+    $('#data-show-table').DataTable({
+        responsive: true,
+        searching: false,
+        ordering: false,
+        info: false,
+        paging: false,
+    });
+}
   
   // menu bg add
   $(window).on("scroll", function () {
-    if ($(window).scrollTop() >50) {
-      $("header").addClass("menu-bg");
+    console.log("Scroll position:", $(window).scrollTop()); // Check the scroll value
+    if ($(window).scrollTop() > 50) {
+        $(".header-transparent").addClass("menu-bg");
     } else {
-      $("header").removeClass("menu-bg");
+        $(".header-transparent").removeClass("menu-bg");
     }
-  });
+});
   // $(".close-mark").click(function(){
   //   $(".country-menu").hide();
   // });
@@ -37,12 +41,14 @@ document.addEventListener("click", function (event) {
   // Function to check screen size and toggle the class
   function handleResize() {
     const element = document.querySelector('.mobile-view-table');
-    if (window.innerWidth <= 991) {
-      element.classList.add('nowrap');  
-    } else {
-      element.classList.remove('nowrap');   
+    if (element) { // Check if element exists
+        if (window.innerWidth <= 991) {
+            element.classList.add('nowrap');  
+        } else {
+            element.classList.remove('nowrap');   
+        }
     }
-  }
+}
 
   // Run the function once on page load
   handleResize();

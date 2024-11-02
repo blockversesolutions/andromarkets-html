@@ -1103,7 +1103,7 @@ button.tablinks.active .tab-svg {
 }
 .header-transparent{
 	background-color: transparent;
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 999;
