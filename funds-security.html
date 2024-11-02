@@ -556,6 +556,23 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
       <script src="assets/js/main.js"></script>
+      <script>
+         //  app version
+         function appversion(evt, appversion) {
+        var i, appvarsionContent, applinks;
+        appversionContent = document.getElementsByClassName("appversionContent");
+        for (i = 0; i < appversionContent.length; i++) {
+           appversionContent[i].style.display = "none";
+        }
+        applinks = document.getElementsByClassName("applinks");
+        for (i = 0; i < applinks.length; i++) {
+           applinks[i].className = applinks[i].className.replace(" active", "");
+        }
+        document.getElementById(appversion).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+        document.getElementById("apprunning").click();
+     </script>
        
    </body>
 </html>

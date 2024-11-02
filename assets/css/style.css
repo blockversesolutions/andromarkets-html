@@ -421,7 +421,7 @@ li.nav-item.dropdown li a {
 	padding-bottom: 120px;
 }
 .common-heading-area h3{
-	font-size:38px;
+	font-size:36px;
 	line-height:52px;
 	margin-bottom:16px;
 	font-weight: 600;
@@ -1755,4 +1755,21 @@ button.tablinks.active .tab-svg {
 	height: 100%;
 	width:1.5px;
 	background-color: #FFFFFF1A;
+  }
+  .demo-account-features-area h6{
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+	color:#04151F;
+  }
+  .demo-account-features-area ul{
+	list-style-type: disc;
+	margin-left: 25px;
+  }
+  .account-compare{
+	border: 1px solid #00000012;
+ 	 border-radius: 20px;
+  }
+  .account-compare .common-heading-area{
+	padding: 30px;
   }

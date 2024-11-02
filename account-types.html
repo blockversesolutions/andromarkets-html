@@ -1006,7 +1006,21 @@
        <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
       <script src="assets/js/main.js"></script>
       <script>
-        
-       </script>
+         //  app version
+         function appversion(evt, appversion) {
+        var i, appvarsionContent, applinks;
+        appversionContent = document.getElementsByClassName("appversionContent");
+        for (i = 0; i < appversionContent.length; i++) {
+           appversionContent[i].style.display = "none";
+        }
+        applinks = document.getElementsByClassName("applinks");
+        for (i = 0; i < applinks.length; i++) {
+           applinks[i].className = applinks[i].className.replace(" active", "");
+        }
+        document.getElementById(appversion).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+        document.getElementById("apprunning").click();
+     </script>
    </body>
 </html>
