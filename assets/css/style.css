@@ -15,7 +15,7 @@
 	padding: 5px 18px;
 	/* backdrop-filter: blur(42px); */
 	/* background: rgba(255, 255, 255, 0.10); */
-	background: rgba(255, 255, 255, 0.4);
+	background: rgba(151, 151, 151, 0.6);
 }
 .navbar-nav {
 	gap: 15px;
@@ -797,7 +797,7 @@ button.tablinks.active .tab-svg {
 .appvarsionContent{
 	display: none;
 }
-.app-version-btn ul{
+.app-version-btn ul,.education-info-controls{
 	border-radius: 10px;
 	display: inline-block;
 	/* border: 1.5px solid transparent; */
@@ -815,7 +815,11 @@ button.tablinks.active .tab-svg {
 .app-version-btn ul li.active{
 	background-color:#2C88C9;
 	border-radius: 10px;
-	/* border:1.5px solid rgba(4, 21, 31, 0.20); */
+	color:#fff;
+}
+.education-info-controls ul li.active a{
+	background-color:#2C88C9;
+	border-radius: 10px;
 	color:#fff;
 }
 .app-version-btn ul li{
@@ -824,6 +828,14 @@ button.tablinks.active .tab-svg {
 	color:#04151F;
 	font-size: 18px;
 	font-weight: 500;
+}
+.education-info-controls ul li a{
+	cursor: pointer;
+	padding:10px 16px;
+	color:#04151F;
+	font-size: 16px;
+	font-weight: 500;
+	display: inline-block;
 }
 .app-version-content-body{
 	margin: 40px 0;
@@ -1776,3 +1788,27 @@ button.tablinks.active .tab-svg {
   .account-compare .common-heading-area{
 	padding: 30px;
   }
+ .education-info-box .common-heading-area a{
+	display: inline-block;
+	font-size: 18px;
+	color: #04151F;
+ }
+ .deposit-trading-table h4{
+	text-align: left;
+	font-size:28px;
+	font-weight: 500;
+	line-height:45px;
+	color: #04151F;
+	letter-spacing: -0.005em;
+ }
+ /* .deposit-trading-table tr{
+	background-color:#F5C44833;
+ } */
+ .deposit-trading-table table tr:nth-child(even) td{
+	background-color:#fff !important;
+	font-weight:500;
+ }
+ .deposit-trading-table tr td{
+	padding:10px;
+	font-weight:600;
+ }

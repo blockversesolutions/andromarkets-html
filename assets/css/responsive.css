@@ -67,6 +67,16 @@
 }
 
 @media all and (max-width:991px) {
+	.deposit-trading-table h4 {
+		font-size: 22px;
+		line-height: 38px;
+	}
+	.education-info-controls ul{
+		justify-content: center;
+	}
+	.education-info-controls{
+		padding-top: 10px;
+	}
 	.contact-info-icon i {
 		font-size: 22px;
 		line-height: 55px;
@@ -528,6 +538,9 @@
 	.instrument-title span {
 		font-size: 14px;
 		line-height: 20px;
+	}
+	.searching-box input {
+		min-width: 328px;
 	}
 	 
 	

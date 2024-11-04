@@ -208,3 +208,31 @@ margin-right: 22px;
 	color:#04151F;
 	border-color: #04151F;
 }
+.input-shadow{
+	backdrop-filter: blur(4px);
+	border: 1.5px solid #FFFFFF1A;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #FFFFFF66;
+	background: rgba(255, 255, 255, 0.1);
+	letter-spacing: -0.005em;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+.searching-box input::placeholder{
+	opacity: 1;
+	color: #FFFFFF66;
+}
+.searching-box input:focus{
+	border: 1.5px solid #FFFFFF1A;
+}
+.g-20{
+	gap: 20px;
+}
+.searching-box input{
+	min-width:370px;
+}
+.pb-30{
+	padding-bottom: 30px;
+}

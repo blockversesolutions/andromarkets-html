@@ -12,7 +12,7 @@ jQuery(document).ready(function ($) {
   
   // menu bg add
   $(window).on("scroll", function () {
-    console.log("Scroll position:", $(window).scrollTop()); // Check the scroll value
+     
     if ($(window).scrollTop() > 50) {
         $(".header-transparent").addClass("menu-bg");
     } else {
