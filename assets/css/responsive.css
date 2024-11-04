@@ -552,7 +552,9 @@
 		width:100%;
 	}
 	 
-	
+	.video-box iframe {
+		height: 360px;
+	}
 	
 }
 @media all and (max-width:480px) {
@@ -571,5 +573,8 @@
 	.btn-group ul li{
 		width: 100%;
 		justify-content: center;
+	}
+	.video-box iframe {
+		height: 300px;
 	}
 }

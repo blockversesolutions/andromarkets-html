@@ -93,6 +93,29 @@ p {
 	border-color: #fff;
 	color: #fff;
 }
+.tab-btn{
+	box-shadow: 0px 16.9px 25.36px 0px #C4CDDA40;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19.8px;
+	padding: 14px 22px;
+	outline: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border-radius: 10px;
+	color: #04151F;
+	letter-spacing: -0.005em;
+	background-color:#fff;
+}
+.tab-btn:hover,.tab-btn.active{
+	background: #2C88C9;
+	color:#fff;
+}
+.tab-btn i{
+	font-size: 20px;
+}
 .primary-btn:hover,.primary-btn-bg-transparent:hover,.secondary-btn:hover{
 	background: #fff;
 	color: #23262f !important;
@@ -242,4 +265,7 @@ margin-right: 22px;
 
 .mb-20{
 	margin-bottom: 20px;
+}
+.video-controlls-previous{
+	opacity:0.4;
 }

@@ -1832,3 +1832,8 @@ button.tablinks.active .tab-svg {
  .banks-list li{
 	width:25%;
  }
+ .video-box iframe{
+	width: 100%;
+	height: 631px;
+	border-radius: 10px;
+ }
