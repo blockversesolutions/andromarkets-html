@@ -1646,9 +1646,6 @@ button.tablinks.active .tab-svg {
 	padding: 30px;
 	border-radius: 10px;
   }
-  .audcad-conditions-box h4{
-
-  }
   .condition-data-item{
 	border-bottom: 1.5px solid #04151F1A;
 	padding-bottom: 8px;
@@ -1811,4 +1808,27 @@ button.tablinks.active .tab-svg {
  .deposit-trading-table tr td{
 	padding:10px;
 	font-weight:600;
+ }
+ .education-tab-info-controls .app-version-btn ul li{
+		padding: 10px 18px;
+		color: #04151F;
+		font-size: 16px;
+		box-shadow: 0px 16.9px 25.36px 0px #C4CDDA40;
+	border-radius: 10px;
+	width: 32%;
+	text-align: center;
+ }
+ .education-tab-info-controls .app-version-btn ul li.active{
+	color:#fff;
+ }
+ .education-tab-info-controls .app-version-btn ul{
+	gap: 15px;
+  box-shadow: 0px 16.904px 25.356px 0px transparent;
+ }
+
+ .banks-list li a{
+	width: 100%;
+ }
+ .banks-list li{
+	width:25%;
  }

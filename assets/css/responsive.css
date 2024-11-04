@@ -455,7 +455,13 @@
 	.potential-left-area,.common-heading-area{
 		text-align: center;
 	}
-
+	.common-heading-area ul p{
+		text-align: left;
+	}
+	.education-tab-info-controls .app-version-btn ul li {
+		padding: 10px 14px;
+		width: 48%;
+	}
 }
 @media all and (max-width:575px) {
 	.primary-btn{
@@ -541,6 +547,9 @@
 	}
 	.searching-box input {
 		min-width: 328px;
+	}
+	.education-tab-info-controls .app-version-btn ul li {
+		width:100%;
 	}
 	 
 	
