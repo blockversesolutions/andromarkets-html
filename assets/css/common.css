@@ -208,6 +208,9 @@ margin-right: 22px;
 .mt-20{
 	margin-top: 20px;
 } 
+.g-8{
+	gap: 8px;
+}
 .mt-12{
 	margin-top: 12px;
 }
@@ -272,4 +275,45 @@ margin-right: 22px;
 .faq-tab-area .tab-btn{
 	justify-content: center;
 	height: 100%;
+}
+.card-4{
+	padding: 30px 15px;
+	border-radius: 10px;
+	text-align: center;
+	background: #F5C448;
+	box-shadow: 0px 16.9px 25.36px 0px #C4CDDA40;
+}
+.card-4 h6{
+	font-size:26px;
+	color:#04151F;
+	line-height: 33px;
+}
+.card-4 h4{
+	font-size:36px;
+	font-weight: 600;
+	line-height: 44px;
+	color: #04151F;
+	margin-top:4px;
+}
+.card-4-btn-list li{
+	padding:16px 32px ;
+	display: inline-block;
+	border-radius: 10px;
+	background-color:#fff;
+	font-size:30px;
+	font-weight: 600;
+}
+.color-04{
+	color: #04151F;
+}
+.rank-up-down i {
+	font-size: 12px;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+.rank-up-down span{
+	font-size: 14px;
+}
+.g-5{
+	gap: 5px;
 }

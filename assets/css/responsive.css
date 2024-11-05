@@ -44,6 +44,9 @@
 
 }
 @media all and (min-width: 992px) {
+	.Contest-info-controls ul li{
+		width: 100% !important;
+	}
 	.navbar .has-megamenu {
 		position: static !important;
 	}
@@ -466,6 +469,18 @@
 		padding: 10px 14px;
 		width: 48%;
 	}
+	.card-4 h4 {
+		font-size: 28px;
+	}
+	.card-4 h6 {
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.card-4-btn-list li {
+		font-size: 22px;
+		padding: 10px 12px;
+	}
+ 
 }
 @media all and (max-width:575px) {
 	.primary-btn{
@@ -580,5 +595,15 @@
 	}
 	.video-box iframe {
 		height: 300px;
+	}
+	table.dataTable > tbody > tr.child span.dtr-title {
+		display: block;
+	}
+	.contest-achieve ul li img {
+		height: 18px;
+		width: 18px;
+	}
+	.contest-achieve ul{
+		justify-content: center;
 	}
 }

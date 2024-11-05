@@ -1847,3 +1847,48 @@ button.tablinks.active .tab-svg {
 	cursor: pointer;
 	justify-content: center;
  }
+ .champion-registered-btn span{
+	letter-spacing: normal;
+ }
+ /* .join-step-label{
+	max-width: 130px;
+	max-height: 130px;
+	min-height: 130px;
+	min-width: 130px;
+	border-radius: 100%;
+	background-color:#F5C448;
+ }
+ .join-step-info p{
+	padding:15px 15px;
+ }
+ .join-step-info{
+	border: 5px solid #F5C448;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0px 16.9px 25.36px 0px #C4CDDA40;
+
+ }
+.join-step-label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.join-step-label h6 {
+	font-size:26px;
+	font-weight: 600;
+	line-height: 32px;
+	
+	letter-spacing: -0.005em;
+
+ } */
+ .contestant img{
+	border-radius: 50%;
+	max-height: 40px;
+	max-width: 40px;
+	min-width:40px;
+	min-height: 40px;
+ }
+ .contest-achieve ul li img{
+	height: 24px;
+	width: 24px;
+ }
