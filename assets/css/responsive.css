@@ -76,6 +76,7 @@
 	}
 	.education-info-controls{
 		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.contact-info-icon i {
 		font-size: 22px;
@@ -265,6 +266,9 @@
 	.md-mt-50{
 		margin-top: 50px;
 	 }
+	 .filter-btn-area ul li {
+		width: 50px;
+	}
 }
 
 @media all and (max-width:767px) {

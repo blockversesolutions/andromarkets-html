@@ -109,7 +109,7 @@ p {
 	letter-spacing: -0.005em;
 	background-color:#fff;
 }
-.tab-btn:hover,.tab-btn.active{
+.tab-btn:hover,.tab-btn.active,.mixitup-control-active{
 	background: #2C88C9;
 	color:#fff;
 }
@@ -268,4 +268,8 @@ margin-right: 22px;
 }
 .video-controlls-previous{
 	opacity:0.4;
+}
+.faq-tab-area .tab-btn{
+	justify-content: center;
+	height: 100%;
 }
