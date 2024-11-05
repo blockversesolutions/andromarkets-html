@@ -12,13 +12,13 @@
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
          />
+         <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
       <link rel="stylesheet" href="assets/css/common.css" />
       <link rel="stylesheet" href="assets/css/style.css" />
       <link rel="stylesheet" href="assets/css/responsive.css" />
    </head>
    <body>
-    
       <header class="header-transparent">
          <nav class="navbar navbar-expand-xl">
             <div class="container position-relative">
@@ -232,7 +232,7 @@
             </div>
          </nav>
       </header>
-      <!-- Start common page header -->
+        <!-- Start common page header -->
       <section class="common-page-heading-section" style="background-image:url('assets/images/bg/how-to-start.png');">
          <div class="container">
             <div class="row text-center">
@@ -257,177 +257,227 @@
          </div>
       </section>
       <!-- End common page header -->
-       <!-- Start education info -->
-        <section class="education-info-section mt-100">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="education-info-controls w-100">
-                        <ul class="d-flex align-items-center flex-wrap g-2">
-                           <li><a href="trding-tutorials-articles.html">Trading tutorials: articles</a></li>
-                           <li><a href="platform-tutorials-articles.html">Platform tutorials: articles</a></li>
-                           <li><a href="forex-basics-videos.html">Forex basics: videos</a></li>
-                           <li class="active"><a href="platform-tutorials-videos.html">Platform tutorials: videos</a></li>
-                           <li><a href="education-glossary.html">Glossary</a></li>
-                           <li><a href="education-faq.html">FAQ</a></li>
-                           <li><a href="education-manuals.html">Manuals</a></li>
-                        </ul>
+     <!-- Start education info -->
+     <section class="education-info-section mt-100">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="education-info-controls w-100">
+                     <ul class="d-flex align-items-center flex-wrap g-2">
+                        <li><a href="trding-tutorials-articles.html">Trading tutorials: articles</a></li>
+                        <li><a href="platform-tutorials-articles.html">Platform tutorials: articles</a></li>
+                        <li><a href="forex-basics-videos.html">Forex basics: videos</a></li>
+                        <li><a href="platform-tutorials-videos.html">Platform tutorials: videos</a></li>
+                        <li><a href="education-glossary.html">Glossary</a></li>
+                        <li><a href="education-faq.html">FAQ</a></li>
+                        <li  class="active"><a href="education-manuals.html">Manuals</a></li>
+                     </ul>
+               </div>
+               <div class="line-1 mb-30"></div>
+               <div class="education-tab-info-controls faq-tab-area mt-30">
+                  <div class="row gy-4">
+                     <div class="col-6">
+                        <button class="tab-btn w-100  manual_trading_btn" onclick="manual_function(event, 'manual_function_item_1')" id="manual_function_open"> MetaTrader 4</button>
+                     </div>
+                     <div class="col-6">
+                        <button class="tab-btn w-100  manual_trading_btn" onclick="manual_function(event, 'manual_function_item_2')">MetaTrader 5</button>
+                     </div>
+                      
                   </div>
-                  
-                  <div class="line-1 mb-30"></div>
-                  <div class="shadow-p30">
-                     <div class="row align-items-center gy-4">
-                        <div class="col-md-7">
-                           <div class="common-heading-area">
-                              <h3>How to start with Metatrader</h3>
-                              <p>To start with MetaTrader, download and install the platform, create or log in to your account, familiarize yourself with the interface, and begin trading by analyzing markets, placing orders, and managing trades efficiently.</p>
+               </div>
+               <div class="education-tab-content-body">
+                   <!-- content item -->
+                   <div class="education-tab-content-item mt-50" id="manual_function_item_1">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="clients-trading-table">
+                                 <table id="data-show-table" class="mobile-view-table">
+                                    <thead>
+                                      <tr>
+                                        <th class="bg-td1 bg-td-color text-start"><b>MetaTrader 4</b></th>
+                                        <th class="bg-td-color text-start"><b></b></th>
+                                        <th class="bg-td-color text-start"><b></b></th>
+                                        <th class="bg-td-color text-start"><b> </b></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td class="text-start"><b>Signals</b></td>
+                                          <td class="text-start">MQL5 Community Settings <br>Signal Providers</td>
+                                          <td class="text-start">Signal Settings</td>
+                                          <td class="text-start">Signal Subscribers</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>Charts</b> 
+                                          </td>
+                                          <td class="text-start">Chart Opening <br>Chart Opening</td>
+                                          <td class="text-start">Line Studies</td>
+                                          <td class="text-start">Toolbar</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>Indicators</b> 
+                                          </td>
+                                          <td class="text-start">Custom Indicator Removal</td>
+                                          <td class="text-start">Custom Indicator Launch</td>
+                                          <td class="text-start">-</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>Trading</b> 
+                                          </td>
+                                          <td class="text-start">Order Types
+                                             <br>
+                                             Trade Positions
+                                             <br>
+                                             Market Watch
+                                          </td>
+                                          <td class="text-start">Account History <br>Trading on Chart (Chart Trading) </td>
+                                          <td class="text-start">Trailing Stop <br> Trade tab</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>Interface</b> 
+                                          </td>
+                                          <td class="text-start">Standard toolbar
+                                             <br>
+                                             Registering Server
+                                             
+                                          </td>
+                                          <td class="text-start">Journal</td>
+                                          <td class="text-start">Navigator</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>EAS</b> 
+                                          </td>
+                                          <td class="text-start">Tester parameters
+                                             <br>
+                                             Code Base Toolbox
+                                          </td>
+                                          <td class="text-start">Experts Tab <br>Expert Advisors Launch </td>
+                                          <td class="text-start">Expert Advisors Shutdown <br> Expert Advisors Setup</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>Autochartist</b> 
+                                          </td>
+                                          <td class="text-start">Autochartist installation manual</td>
+                                          <td class="text-start">-</p></td>
+                                          <td class="text-start">-</td>
+                                       </tr>
+                                       
+                                    </tbody>
+                                     
+                                  </table>
+                                  
+                              </div>
                            </div>
-                        </div>
-                        <div class="col-md-5 text-center text-md-end">
-                           <a href="#" class="primary-btn">Start Trading</a>
                         </div>
                      </div>
-                    
                   </div>
-                  
-                  <div class="education-tab-content-body">
-                     <!-- video item -->
-                        <div class="education-info-box shadow-p30 mt-30">
-                           <div class="common-heading-area">
-                              <h3>How to Trade on MetaTrader 5 Android App</h3>
-                              <div class="video-box">
-                                 <iframe src="https://www.youtube.com/embed/DAjsuqK0Umg?si=dVu3vyNk9KdDjG7H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <div class="education-tab-content-item mt-70" id="manual_function_item_2">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="clients-trading-table">
+                                 <table id="data-show-table" class="mobile-view-table">
+                                    <thead>
+                                      <tr>
+                                        <th class="bg-td1 bg-td-color text-start"><b>MetaTrader 5</b></th>
+                                        <th class="bg-td-color text-start"><b></b></th>
+                                        <th class="bg-td-color text-start"><b></b></th>
+                                        <th class="bg-td-color text-start"><b> </b></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td class="text-start"><b>Signals</b></td>
+                                          <td class="text-start">MQL5 Community Settings <br>Signal Providers</td>
+                                          <td class="text-start">Signal Settings</td>
+                                          <td class="text-start">Signal Subscribers</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>Charts</b> 
+                                          </td>
+                                          <td class="text-start">Chart Opening <br>Chart Opening</td>
+                                          <td class="text-start">Line Studies</td>
+                                          <td class="text-start">Toolbar</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>Indicators</b> 
+                                          </td>
+                                          <td class="text-start">Custom Indicator Removal</td>
+                                          <td class="text-start">Custom Indicator Launch</td>
+                                          <td class="text-start">-</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>Trading</b> 
+                                          </td>
+                                          <td class="text-start">Order Types
+                                             <br>
+                                             Trade Positions
+                                             <br>
+                                             Market Watch
+                                          </td>
+                                          <td class="text-start">Account History <br>Trading on Chart (Chart Trading) </td>
+                                          <td class="text-start">Trailing Stop <br> Trade tab</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>Interface</b> 
+                                          </td>
+                                          <td class="text-start">Standard toolbar
+                                             <br>
+                                             Registering Server
+                                             
+                                          </td>
+                                          <td class="text-start">Journal</td>
+                                          <td class="text-start">Navigator</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>EAS</b> 
+                                          </td>
+                                          <td class="text-start">Tester parameters
+                                             <br>
+                                             Code Base Toolbox
+                                          </td>
+                                          <td class="text-start">Experts Tab <br>Expert Advisors Launch </td>
+                                          <td class="text-start">Expert Advisors Shutdown <br> Expert Advisors Setup</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-start">
+                                              <b>Autochartist</b> 
+                                          </td>
+                                          <td class="text-start">Autochartist installation manual</td>
+                                          <td class="text-start">-</p></td>
+                                          <td class="text-start">-</td>
+                                       </tr>
+                                       
+                                    </tbody>
+                                     
+                                  </table>
+                                  
                               </div>
                            </div>
                         </div>
-                         <!-- video item -->
-                         <div class="education-info-box shadow-p30 mt-30">
-                           <div class="common-heading-area">
-                              <h3>MetaTrader 4/5 Desktop App First Step</h3>
-                              <div class="video-box">
-                                 <iframe src="https://www.youtube.com/embed/DAjsuqK0Umg?si=dVu3vyNk9KdDjG7H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                              </div>
-                           </div>
-                        </div>
-                         <!-- video item -->
-                         <div class="education-info-box shadow-p30 mt-30">
-                           <div class="common-heading-area">
-                              <h3>MetaTrader 4 Android/OS App First Steps</h3>
-                              <div class="video-box">
-                                 <iframe src="https://www.youtube.com/embed/DAjsuqK0Umg?si=dVu3vyNk9KdDjG7H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                              </div>
-                           </div>
-                        </div>
-                         <!-- video item -->
-                         <div class="education-info-box shadow-p30 mt-30">
-                           <div class="common-heading-area">
-                              <h3>Personal Area</h3>
-                              <div class="video-box">
-                                 <iframe src="https://www.youtube.com/embed/DAjsuqK0Umg?si=dVu3vyNk9KdDjG7H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                              </div>
-                           </div>
-                        </div>
-                         
+                     </div>
                   </div>
                </div>
-                
             </div>
+             
          </div>
-        </section>
-       <!-- End education info -->
-        <!--start advantage section -->
-        <section class="advantage-section mt-100">
-         <div class="container">
-            <div class="row align-items-center gy-4">
-               <div class="col-md-7">
-                  <div class="common-heading-area">
-                     <h3>Metatrader downloads</h3>
-                     <p>To start with MetaTrader, download and install the platform, create or log in to your account, familiarize yourself with the interface, and begin trading by analyzing markets, placing orders, and managing trades efficiently.</p>
-                  </div>
-               </div>
-               <div class="col-md-5 text-center text-md-end">
-                  <a href="#" class="primary-btn">Start trading</a>
-               </div>
-            </div>
-            <div class="row gy-4 pt70">
-               <div class="col-lg-6 col-md-6">
-                  <div class="app-download-btn balance-protection-card m-0">
-                     <h4 class="text-white mb-4">MetaTrader 4</h4>
-                     <ul>
-                        <li><a href="#" class="app-btn-blur d-flex align-items-center">
-                           <div class="app-download-logo">
-                              <img src="assets/images/icon/playstore.png" alt="icon">
-                           </div>
-                           <div class="app-download-text">
-                              <h6>GET IT ON</h6>
-                              <h4>Google Play</h4>
-                           </div>
-                            
-                        </a></li>
-                        <li><a href="#" class="app-btn-blur d-flex align-items-center">
-                           <div class="app-download-logo">
-                              <img src="assets/images/icon/apple.png" alt="icon">
-                           </div>
-                           <div class="app-download-text">
-                              <h6>GET IT ON</h6>
-                              <h4>App Store</h4>
-                           </div>
-                        </a></li>
-                        <li><a href="#" class="app-btn-blur d-flex align-items-center m-0">
-                           <div class="app-download-logo">
-                              <img src="assets/images/icon/apk.png" alt="icon">
-                           </div>
-                           <div class="app-download-text">
-                              <h6>Download </h6>
-                              <h4>APK</h4>
-                           </div>
-                        </a></li>
-                        
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-lg-6 col-md-6">
-                  <div class="app-download-btn balance-protection-card m-0">
-                     <h4 class="text-white mb-4">MetaTrader 5</h4>
-                     <ul>
-                        <li><a href="#" class="app-btn-blur d-flex align-items-center">
-                           <div class="app-download-logo">
-                              <img src="assets/images/icon/playstore.png" alt="icon">
-                           </div>
-                           <div class="app-download-text">
-                              <h6>GET IT ON</h6>
-                              <h4>Google Play</h4>
-                           </div>
-                        </a></li>
-                        <li><a href="#" class="app-btn-blur d-flex align-items-center">
-                           <div class="app-download-logo">
-                              <img src="assets/images/icon/apple.png" alt="icon">
-                           </div>
-                           <div class="app-download-text">
-                              <h6>GET IT ON</h6>
-                              <h4>App Store</h4>
-                           </div>
-                        </a></li>
-                        <li><a href="#" class="app-btn-blur d-flex align-items-center m-0">
-                           <div class="app-download-logo">
-                              <img src="assets/images/icon/apk.png" alt="icon">
-                           </div>
-                           <div class="app-download-text">
-                              <h6>Download </h6>
-                              <h4>APK</h4>
-                           </div>
-                        </a></li>
-                        
-                     </ul>
-                  </div>
-               </div>
-               
-            </div>
-         </div>
-        </section>
-        <!--end advantage section -->
+      </div>
+     </section>
+    <!-- End education info -->
       
-        <!-- Start legal info -->
+         <!-- Start legal info -->
          <section class="site-legal-info mt-100">
             <div class="container">
                <div class="row">
@@ -446,11 +496,9 @@
             </div>
             </div>
          </section>
-         
         <!-- End legal info -->
-        
         <!-- Start Footer area -->
-          <footer class="footer-area mt120">
+         <footer class="footer-area mt120">
            <div class="container">
              <div class="row ptb70">
                <div class="col-md-12 footer-inner d-flex">
@@ -518,7 +566,24 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+       <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
       <script src="assets/js/main.js"></script>
-       
+      <script>
+         function manual_function(evt, manual_function_inner) {
+         var i, tabcontent, tablinks;
+         tabcontent = document.getElementsByClassName("education-tab-content-item");
+         for (i = 0; i < tabcontent.length; i++){
+            tabcontent[i].style.display = "none";
+         }
+         tablinks = document.getElementsByClassName("manual_trading_btn");
+         for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+         }
+         document.getElementById(manual_function_inner).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         // Get the element with id="defaultOpen" and click on it
+         document.getElementById("manual_function_open").click();
+     </script>
    </body>
-</html>
+</html> 
