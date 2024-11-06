@@ -430,7 +430,11 @@ li.nav-item.dropdown li a {
 	font-weight: 600;
 	letter-spacing: -0.2px;
 }
- 
+ .common-heading-area h5{
+	font-size: 22px;
+	color: #04151F;
+	line-height: 30px;
+ }
 .customer-satisfaction-text a{
 	margin-top: 40px;
 }
@@ -1187,9 +1191,9 @@ button.tablinks.active .tab-svg {
 }
 .clients-trading-table table tr td,.clients-trading-table table tr th{
 	color: rgba(4, 21, 31, 0.80);
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
-	line-height: 22px;
+	line-height: 20px;
 	letter-spacing: -0.1px;
 }
 .opening-selected ul li{
@@ -1903,7 +1907,7 @@ button.tablinks.active .tab-svg {
 	border-top:10px solid transparent;
 	border-bottom:10px solid transparent;
  }
- .contestant img{
+ .contestant > img{
 	border-radius: 50%;
 	max-height: 40px;
 	max-width: 40px;
@@ -1965,4 +1969,16 @@ button.tablinks.active .tab-svg {
 	background-color: #2C88C9;
 	color:#fff;
  }
- 
+ .contestant-info-address .contestant-country img{
+	width: 22px;
+ }
+ .contestant-info-address .contestant-country{
+	
+ }
+ .contestant-info-address .contestant-country p{
+	font-size: 12px;
+ }
+ .contestant-info p{
+	font-size: 16px;
+  	line-height: 20px;
+ }

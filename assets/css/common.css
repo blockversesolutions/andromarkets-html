@@ -289,7 +289,7 @@ margin-right: 22px;
 	line-height: 33px;
 }
 .card-4 h4{
-	font-size:36px;
+	font-size:34px;
 	font-weight: 600;
 	line-height: 44px;
 	color: #04151F;
@@ -316,4 +316,15 @@ margin-right: 22px;
 }
 .g-5{
 	gap: 5px;
+}
+.table-searching-box input{
+	border-color:#04151F1A;
+	color: #04151F66;
+}
+.searching-box input:focus{
+	border-color:#F5C448;
+}
+.table-searching-box input::placeholder {
+	opacity: 1;
+	color: #04151F66;
 }
