@@ -40,6 +40,9 @@
 		border-radius: 0;
 		padding: 0;
 	}
+	.contest-guid-item {
+		width: 58.5%;
+	}
 	 
 
 }
@@ -480,7 +483,59 @@
 		font-size: 22px;
 		padding: 10px 12px;
 	}
- 
+	.contest-guid-item {
+		width: 100%;
+		gap: 15px;
+	}
+	.contest-guid-title{
+		order: -2;
+	}
+	.contest-guid .contest-guid-item:nth-child(even){
+		width:100%;
+		float: inherit;
+		left: -22px;
+	 }
+	 .contest-guid .contest-guid-item:nth-child(odd) .contest-guid-info:after{
+		left:-22px;
+		right: inherit;
+		border-right:10px solid #F5C448;
+		border-left:10px solid transparent;
+	 }
+	 .contest-guid .contest-guid-item:nth-child(even) .contest-guid-info:after{
+		left: -22px;
+	 }
+	 .contest-guid-info p{
+		line-height: 22px;
+	 }
+	 .contest-guid-title {
+		max-width: 60px;
+		max-height: 60px;
+		min-height: 60px;
+		min-width: 60px;
+	}
+	.contest-guid-title h6 {
+		font-size: 15px;
+	}
+	.contest-guid-info {
+		border: 2px solid #F5C448;
+	}
+	.table-pagination .tab-btn {
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 15.8px;
+		padding: 6px 10px;
+		gap: 5px;
+		border-radius: 5px;
+		letter-spacing: normal;
+	}
+	.table-pagination .tab-btn i {
+		font-size: 12px;
+	}
+	.pagination-inner li button {
+		font-size: 12px;
+		min-width: 25px;
+		padding: 5px;
+	}
 }
 @media all and (max-width:575px) {
 	.primary-btn{
