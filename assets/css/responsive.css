@@ -633,7 +633,19 @@
 		height: 40px;
 		width: 42px;
 	}
-	
+	.custom-modal {
+		padding: 20px;
+	}
+	.auto-login ul li button.btn-1 {
+		min-width: auto;
+	}
+	.btn-1 {
+		padding: 8px 12px;
+		font-size: 15px;
+		display: flex;
+		align-items: center;
+		gap:5px;
+	}
 }
 @media all and (max-width:480px) {
 	.country-menu.dropdown-menu[data-bs-popper] {
@@ -664,5 +676,8 @@
 	}
 	.contest-achieve ul{
 		justify-content: center;
+	}
+	.page-modal-width {
+		width: 98%;
 	}
 }

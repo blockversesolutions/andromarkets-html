@@ -2003,3 +2003,15 @@ button.tablinks.active .tab-svg {
 	letter-spacing: -0.005em;
 	color: #04151F66;
  }
+ .auto-login ul li button.btn-1{
+	min-width:180px;
+	 
+ }
+ .page-modal-width .or-divider{
+	margin: 0;
+	font-size: 18px;
+ }
+ .modal-content input:focus{
+	border: 1px solid #FED233;
+	box-shadow: 0 0 0 .25rem transparent;
+ }
