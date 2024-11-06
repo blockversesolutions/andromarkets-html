@@ -629,6 +629,10 @@
 	.video-box iframe {
 		height: 360px;
 	}
+	.user-card-cover .user-card-logo img {
+		height: 40px;
+		width: 42px;
+	}
 	
 }
 @media all and (max-width:480px) {

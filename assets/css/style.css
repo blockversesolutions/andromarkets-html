@@ -1196,6 +1196,9 @@ button.tablinks.active .tab-svg {
 	line-height: 20px;
 	letter-spacing: -0.1px;
 }
+.clients-trading-table table tr th{
+	font-size: 18px;
+}
 .opening-selected ul li{
 	width:48%;
 }
@@ -1972,13 +1975,31 @@ button.tablinks.active .tab-svg {
  .contestant-info-address .contestant-country img{
 	width: 22px;
  }
- .contestant-info-address .contestant-country{
-	
- }
  .contestant-info-address .contestant-country p{
 	font-size: 12px;
  }
  .contestant-info p{
 	font-size: 16px;
   	line-height: 20px;
+ }
+ .round-feed-static-icon,.round-feed-up-icon{
+	position: absolute;
+	right:10px;
+	top:10px;
+ 
+ }
+ .round-feed-static-icon img,.round-feed-up-icon{
+	width: 24px;
+	background-color: #fff;
+	height: 24px;
+ }
+ .user-card-cover .user-card-text p{
+	font-size: 14px;
+	color: #04151FCC;
+ }
+ .user-card-cover span{
+	font-size: 16px;
+	line-height: 19.8px;
+	letter-spacing: -0.005em;
+	color: #04151F66;
  }
