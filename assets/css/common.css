@@ -193,8 +193,14 @@ margin-right: 22px;
 .color-35{
 	color:#359846;
 }
+.bg-35{
+	background-color: #359846 !important;
+}
 .color-e8{
-	color:#E80000;
+	color:#E80000 !important;
+}
+.bg-e8{
+	background-color:#E80000 !important;
 }
 .g-30{
 	gap: 30px;

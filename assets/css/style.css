@@ -397,6 +397,12 @@ li.nav-item.dropdown li a {
 .card-view-body .card-view-body-item:nth-child(3){
 	background-color: #359846;
 }
+.bg-2c{
+	background-color: #2C88C9 !important;
+}
+.bg-f5{
+	background-color: #F5C448 !important;
+}
 .card-view-footer ul li {
 	color: #AAA7B5;
 	font-size: 12px;
@@ -2014,4 +2020,40 @@ button.tablinks.active .tab-svg {
  .modal-content input:focus{
 	border: 1px solid #FED233;
 	box-shadow: 0 0 0 .25rem transparent;
+ }
+ .contest-user-info h4{
+	font-size: 36px;
+	line-height: 40px;
+	color:#fff;
+	font-weight: 600;
+ }
+ .round-card-list .evaluation-item-value p, .round-card-list .evaluation-item-value span{
+	color:#fff;
+ }
+ .round-card-list .evaluation-item{
+	background: #FFFFFF1A;
+	box-shadow: inherit;
+
+ }
+ .trades-view-list ul li{
+	padding: 10px 25px;
+	border-bottom: 1.5px solid #04151F1A
+ }
+ .trades-view-list{
+	box-shadow: 0px 16.9px 25.36px 0px #C4CDDA40;
+
+	border-radius: 10px;
+ }
+ .trades-view-list ul li h6{
+	font-size: 24px;
+	font-weight: 700;
+	color: black;
+ }
+ .trades-view-list ul li:first-child{
+	background: #F5C44833;
+	border-radius:10px 10px 0px 0;
+ }
+ .trades-view-list ul li:last-child{
+	border: none;
+	border-radius:0px 0px 10px 10px;
  }

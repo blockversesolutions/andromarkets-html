@@ -646,6 +646,12 @@
 		align-items: center;
 		gap:5px;
 	}
+	.trades-view-list ul li {
+		padding: 10px 16px;
+	}
+	.trades-view-list ul li h6 {
+		font-size: 18px;
+	}
 }
 @media all and (max-width:480px) {
 	.country-menu.dropdown-menu[data-bs-popper] {
@@ -680,4 +686,5 @@
 	.page-modal-width {
 		width: 98%;
 	}
+	
 }

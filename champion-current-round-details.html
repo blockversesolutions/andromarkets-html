@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tradding Web App</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+         <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+      <link rel="stylesheet" href="assets/css/common.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+   </head>
+   <body>
+      <header class="header-transparent">
+         <nav class="navbar navbar-expand-xl">
+            <div class="container position-relative">
+               <a class="navbar-brand" href="index.html">
+               <img src="assets/images/logo.png" alt="logo"/>
+               </a>
+               <div class="header-right">
+                  <ul class="d-flex align-items-center">
+                     <li class="nav-item dropdown mobile-view country-menu-parent  ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <img src="assets/images/icon/country.png" alt="icon">
+                        <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu country-menu" data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                           <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                           <li >
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/france.png" alt="icon">
+                              <span>France</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item active" href="#">
+                              <img src="assets/images/icon/us.png" alt="icon">
+                              <span>English (us)</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/espen.png" alt="icon">
+                              <span>Espen</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/bangladesh.png" alt="icon">
+                              <span>Bangla</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/italy.png" alt="icon">
+                              <span>Italy</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/portugal.png" alt="icon">
+                              <span>Portugal</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                     </li>
+                  </ul>
+               </div>
+               <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav nav-rounded" id="outside-click">
+                     <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trading   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                           <div class="container">
+                              <div class="row g-3">
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu m-0">
+                                       <h6>Your Finance</h6>
+                                       <ul>
+                                          <li><a href="#">Deposit & withdrawals</a></li>
+                                          <li><a href="#">Payment Option</a></li>
+                                          <li><a href="#">Negative balance</a></li>
+                                          <li><a href="#">Founds Security</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu">
+                                       <h6>Trading Condition</h6>
+                                       <ul>
+                                          <li><a href="#">Account types</a></li>
+                                          <li><a href="#">Islamic account</a></li>
+                                          <li><a href="#">Demo account</a></li>
+                                          <li><a href="#">Spreads & conditions</a></li>
+                                          <li><a href="#">Trading advantage</a></li>
+                                          <li><a href="#">Why choose us</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!-- end col-3 -->
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h6>Assets</h6>
+                                       <ul>
+                                          <li><a href="#">Live quotes</a></li>
+                                          <li><a href="#">Stocks</a></li>
+                                          <li><a href="#">Indices</a></li>
+                                          <li><a href="#">Currency pairs</a></li>
+                                          <li><a href="#">Commodities</a></li>
+                                          <li><a href="#">Derivatives: stocks and</a></li>
+                                          <li><a href="#">indices</a></li>
+                                          <li><a href="#">Shares</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h4>Our best spared and condition!</h4>
+                                       <a href="#" class="primary-btn">Explore Now</a>
+                                       <img src="assets/images/thumbnails/1.png" alt="icon">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Analytics & education   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item"><a href="#" class="nav-link">Help Center</a></li>
+                  </ul>
+                  <ul class="navbar-nav ms-auto">
+                     <div class="header-right">
+                        <ul class="d-flex align-items-center">
+                           <li class="d-flex"><a href="#" class="primary-btn">Register</a
+                              ></li>
+                           <li class="d-flex"><a href="#" class="primary-btn-bg-transparent">Login</a
+                              ></li>
+                           <li class="nav-item dropdown country-menu-parent large-view">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                              <img src="assets/images/icon/country.png" alt="icon">
+                              <i class="fa-solid fa-angle-down"></i>
+                              </a>
+                              <ul class="dropdown-menu country-menu"  data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                                 <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                                 <li >
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/france.png" alt="icon">
+                                    <span>France</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item active" href="#">
+                                    <img src="assets/images/icon/us.png" alt="icon">
+                                    <span>English (us)</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/espen.png" alt="icon">
+                                    <span>Espen</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/bangladesh.png" alt="icon">
+                                    <span>Bangla</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/italy.png" alt="icon">
+                                    <span>Italy</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/portugal.png" alt="icon">
+                                    <span>Portugal</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section class="common-page-heading-section gradient-bg">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-7">
+                  <div class="common-heading-area withdrawals-common-heading">
+                     <h2>Round   <span class="span-color">157 </span> Statistics
+                      </h2>
+                     <p class="text-white"><b>Champion</b> demo contest</p>
+                     <div class="round-card-list mt-30">
+                        <div class="row gy-4">
+                           <div class="col-sm-6">
+                              <div class="evaluation-item d-flex align-items-center">
+                                 <div class="evaluation-item-title d-flex align-items-center">
+                                    <img src="assets/images/icon/trade.png" alt="img">
+                                 </div>
+                                 <div class="evaluation-item-value">
+                                    <p class="text-start">Title Here</p>
+                                    <span>905.8</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <div class="evaluation-item d-flex align-items-center">
+                                 <div class="evaluation-item-title d-flex align-items-center">
+                                    <img src="assets/images/icon/networ1.png" alt="img">
+                                 </div>
+                                 <div class="evaluation-item-value">
+                                    <p class="text-start">Title Here</p>
+                                    <span>39</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <div class="evaluation-item d-flex align-items-center">
+                                 <div class="evaluation-item-title d-flex align-items-center">
+                                    <img src="assets/images/icon/awards.png" alt="img">
+                                 </div>
+                                 <div class="evaluation-item-value">
+                                    <p class="text-start">Rank</p>
+                                    <span>2044</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <div class="evaluation-item d-flex align-items-center">
+                                 <div class="evaluation-item-title d-flex align-items-center">
+                                    <img src="assets/images/icon/chart.png" alt="img">
+                                 </div>
+                                 <div class="evaluation-item-value">
+                                    <p class="text-start">Gain</p>
+                                    <span class="color-e8">-58.34%</span>
+                                 </div>
+                              </div>
+                           </div>
+                         </div>
+                     </div>
+                     <div class="btn-group mt-40">
+                        <ul class="d-flex align-items-center">
+                           <li class="d-flex"><a href="#" class="primary-btn"><i class="fas fa-plus"></i> Add to comparison</a></li>
+                           <li class="d-flex"><a href="#" class="primary-btn-bg-transparent">Back to the contest</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="offset-lg-1 col-lg-4">
+                  <div class="common-page-thumbnails md-mt-50">
+                     <img src="assets/images/thumbnails/user-details.png" alt="img" class="w-100">
+                     <div class="contest-user-info mt-20">
+                        <h4>Jane Cooper</h4>
+                           <div class="contestant-country d-flex align-items-center g-8 mt-10 justify-content-center justify-content-lg-start">
+                              <img src="assets/images/flag/germany.png" alt="country">
+                              <p class="text-white">Germany</p>
+                           </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+             
+         </div>
+      </section>
+        <section class="demo-contest-info-body mt-70">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="education-info-controls w-100 Contest-info-controls">
+                     <ul class="d-flex align-items-center flex-wrap flex-md-nowrap  g-2 justify-content-md-between">
+                        <li class="d-block w-auto w-lg-100 text-center">
+                           <a href="champion-demo-contest-info.html" class="d-md-block text-center">Info</a>
+                       </li>
+                        <li class="d-block w-auto w-lg-100 text-center"><a href="champion-demo-contest-faq.html" class="d-md-block text-center">FAQ</a></li>
+                        <li class="active d-block w-auto w-lg-100 text-center"><a href="champion-demo-contest-current-round.html" class="d-md-block text-center">Current round</a></li>
+                        <li class="d-block w-auto w-lg-100 text-center"><a href="champion-demo-contest-archive.html" class="d-md-block text-center">Archive</a></li>
+                        <li class="d-block w-auto w-lg-100 text-center"><a href="champion-demo-contest-rules.html" class="d-md-blocktext-center">Rules</a></li>
+                     </ul>
+                  </div>
+                  <div class="line-1 mb-30"></div>
+               </div>
+            </div>
+            <div class="row gy-4 faq-tab-area mb-70">
+               <div class="col-sm-6">
+                  <button class="tab-btn w-100  faq-tab-btn" onclick="demo_contest_faq(event, 'demo_contest_faq_item_1')" id="demo_contest_faq_open">Summary</button>
+               </div>
+               <div class="col-sm-6">
+                  <button class="tab-btn w-100  faq-tab-btn" onclick="demo_contest_faq(event, 'demo_contest_faq_item_2')">Trading history</button>
+               </div>
+                
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <!-- item -->
+                  <div class="contest-faq-item education-tab-content-item" id="demo_contest_faq_item_1">
+                     <div class="row gy-4">
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card-view-data">
+                              <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                                 <h3>0.99</h3>
+                                 <div class="view-data-header-right">
+                                    <img src="assets/images/icon/chart.png" alt="icon">
+                                 </div>
+                              </div>
+                              <div class="card-view-body d-flex">
+                                 <div class="card-view-body-item bg-35 text-center">
+                                    <p>Profit factor</p>
+                                    <p><b>$51690</b></p>
+                                 </div>
+                                 <div class="card-view-body-item bg-e8 text-center">
+                                    <p>Profit factor</p>
+                                    <p><b>$52189</b></p>
+                                 </div>
+                                  
+                              </div>
+                              <div class="card-view-footer">
+                                 <ul class="d-flex align-items-center justify-content-between">
+                                    <li>Shows the balance between earned and lost capital during trading activities.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card-view-data">
+                              <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                                 <h3>1.29</h3>
+                                 <div class="view-data-header-right">
+                                    <img src="assets/images/icon/chart.png" alt="icon">
+                                 </div>
+                              </div>
+                              <div class="card-view-body d-flex">
+                                 <div class="card-view-body-item bg-35 text-center">
+                                    <p>Profit</p>
+                                    <p><b>18</b></p>
+                                 </div>
+                                 <div class="card-view-body-item bg-e8 text-center">
+                                    <p>Loss</p>
+                                    <p><b>56</b></p>
+                                 </div>
+                                  
+                              </div>
+                              <div class="card-view-footer">
+                                 <ul class="d-flex align-items-center justify-content-between">
+                                    <li>Displays the total number of profitable trades versus the losing ones.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card-view-data">
+                              <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                                 <h3>1.29</h3>
+                                 <div class="view-data-header-right">
+                                    <img src="assets/images/icon/chart.png" alt="icon">
+                                 </div>
+                              </div>
+                              <div class="card-view-body d-flex">
+                                 <div class="card-view-body-item bg-35 text-center">
+                                    <p>Buy</p>
+                                    <p><b>18</b></p>
+                                 </div>
+                                 <div class="card-view-body-item bg-2c text-center">
+                                    <p>Sell</p>
+                                    <p><b>56</b></p>
+                                 </div>
+                                  
+                              </div>
+                              <div class="card-view-footer">
+                                 <ul class="d-flex align-items-center justify-content-between">
+                                    <li>Compares the number of buy orders against sell orders placed overall.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card-view-data">
+                              <div class="card-view-data-header d-flex justify-content-between align-items-center">
+                                 <h3>Currency Pairs</h3>
+                                 <div class="view-data-header-right">
+                                    <img src="assets/images/icon/chart.png" alt="icon">
+                                 </div>
+                              </div>
+                              <div class="card-view-body d-flex">
+                                 <div class="card-view-body-item bg-2c text-center">
+                                    <p>XAUUSD</p>
+                                    <p><b>56</b></p>
+                                 </div>
+                                 <div class="card-view-body-item bg-35 text-center">
+                                    <p>GBPJPY</p>
+                                    <p><b>18</b></p>
+                                 </div>
+                                 <div class="card-view-body-item bg-f5 text-center">
+                                    <p>AUDUSD</p>
+                                    <p><b>1</b></p>
+                                 </div>
+                                 
+                                  
+                              </div>
+                              <div class="card-view-footer">
+                                 <ul class="d-flex align-items-center justify-content-between">
+                                    <li>Highlights the most traded currency pairs and their respective frequencies.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="line-1 mb-30 mt-30"></div>
+                     <div class="row gy-4">
+                        <div class="col-lg-4 col-md-6">
+                           <div class="card-4">
+                              <h6>Today</h6>
+                              <h4 class="color-e8">-8.33%</h4>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="card-4">
+                              <h6>Balance</h6>
+                              <h4>$500.74</h4>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="card-4">
+                              <h6>Equity</h6>
+                              <h4>$416.55</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row mt-70">
+                        <div class="col-md-8 offset-md-2">
+                           <div class="common-heading-area text-center">
+                              <h3>Total trades</h3>
+                              <p>Total trades represent the combined number of all buy and sell transactions completed during a specific trading period.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row gy-4 mt-40">
+                        <div class="col-md-6">
+                           <div class="trades-view-list">
+                              <ul>
+                                 <li><h6 class="text-center">Trades Info</h6></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Total Trades</p> <b>33</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Winning trades</p> <b>18 (56%)</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Losing trades</p> <b>14 (44%)</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Open trades</p> <b>1</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Closed trades</p> <b>32</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Total traded volume</p> <b>276</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Total pips</p> <b>608.4</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Buy/Sell ratio</p> <b>15 (45%) / 18 (55%)</b></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="trades-view-list">
+                              <ul>
+                                 <li><h6 class="text-center">Trades Info</h6></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Average win</p> <b>$2 871.67 (61.0 pips)</b></li>
+ 
+                                 <li class="d-flex align-items-center justify-content-between"><p>Average loss</p> <b>$3 479.29 (-32.7 pips)</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Average trade outcome</p> <b>-$15.13 (18.4 pips)</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Average trade duration</p> <b>2h 42m 04s</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Most profitable trade</p> <b>$9 614.47</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Most losing trade</p> <b>-$10 871.55</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Highest profit (pips)</p> <b>140.8</b></li>
+                                 <li class="d-flex align-items-center justify-content-between"><p>Highest loss (pips)</p> <b>-61.8</b></li>
+                               
+                                 
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- item -->
+                  <div class="contest-faq-item education-tab-content-item" id="demo_contest_faq_item_2">
+                     <div class="education-info-box shadow-p30 mt-30">
+                        <div class="common-heading-area">
+                           <h3>How can I participate?</h3>
+                           <p>You should sign up or log in to your Personal Area on MT, then open the menu on the right, and click open champion demo contest account.</p>
+                           <img src="assets/images/thumbnails/deposit1.png" alt="img" class="w-100 rounded mt-30">
+                        </div>
+                     </div>
+                     <div class="education-info-box shadow-p30 mt-30">
+                        <div class="common-heading-area">
+                           <h3>When does the next round start?</h3>
+                           <p>You can find the start date of the next round at the top of the Champion Demo Contest page.</p>
+                           <img src="assets/images/thumbnails/contest-info.png" alt="img" class="w-100 rounded mt-30">
+                        </div>
+                     </div>
+                     <div class="education-info-box shadow-p30 mt-30">
+                        <div class="common-heading-area">
+                           <h3>My contest account is disabled. Why couldn't I join the contest and start trading?</h3>
+                           <p>You can enter the MT4 trading platform using the contest login and password only AFTER the round has begun! First of all, сheck you’re trying to enter the right trading platform. The Champion Demo Contest is only available on MT4! Then check if the contest round is Active. You can find this information on the main page of your Personal Area.You can see the statuses Not yet started, Active or Finished in the same rows as the MT4 contest accounts. You can log in to the MT4 trading platform and start trading only if the contest account is marked as Active.</p>
+                           <img src="assets/images/thumbnails/contest-dashboard.png" alt="img" class="w-100 rounded mt-30">
+                        </div>
+                     </div>
+                     <div class="education-info-box shadow-p30 mt-30">
+                        <div class="common-heading-area">
+                           <h3>What is a trading platform and which platform I should use for trading?</h3>
+                           <p>You have to download and install the MT4 trading platform or use the browser version. Do not confuse it with MT5. These are different platforms and you will not be able to log in and use them to trade in the competition.</p>
+                           <img src="assets/images/thumbnails/contest-dashboard.png" alt="img" class="w-100 rounded mt-30">
+                        </div>
+                     </div>
+                     <div class="education-info-box shadow-p30 mt-30">
+                        <div class="common-heading-area">
+                           <h3>Where can I find my contest rank?</h3>
+                           <p>You can find your contest rank in the My Accounts list on the main page of your  Personal Area.Note that your current rank will only appear in the contest account row marked as active. By clicking on the rank link, you can see your personal contest page with detailed information (rank, trades, profit or loss, rank changes, achievements, and so on).</p>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+             
+         </div>
+        </section>
+        <section class="trading-success-section mt-100">
+         <div class="container">
+            <div class="row align-items-center gy-4">
+               <div class="col-md-8 offset-md-2">
+                  <div class="common-heading-area text-center">
+                     <h3>Events feed</h3>
+                     <p>Events feed provides real-time updates on significant trading activities, market events, and important notifications relevant to your account.</p>
+                  </div>
+               </div>
+               
+            </div>
+            
+            <div class="row gy-4 pt-30">
+               <div class="col-lg-6 col-md-6">
+                  <div class="user-card-cover">
+                     <span>3 days ago</span>
+                     <div class="user-card align-items-start position-relative">
+                        <div class="round-feed-static-icon">
+                           <img src="assets/images/icon/chart.png" alt="icon">
+                        </div>
+                        <div class="user-card-logo">
+                           <img src="assets/images/user/1.png" alt="icon">
+                        </div>
+                        <div class="user-card-text">
+                          
+                          <ul>
+                           <li>Jane Cooper</li>
+                           <!-- <li><span class="d-flex align-items-center"><i class="fas fa-circle"></i> 1 day ago</span></li> -->
+                          </ul>
+                          <p>got the&nbsp;Profitmaker achievement&nbsp;for performing 10 profitable trades in a row</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-lg-6 col-md-6">
+                  <div class="user-card-cover">
+                     <span>4 days ago</span>
+                     <div class="user-card align-items-start position-relative">
+                        <div class="round-feed-static-icon">
+                           <img src="assets/images/icon/chart.png" alt="icon">
+                        </div>
+                        <div class="user-card-logo">
+                           <img src="assets/images/user/5.png" alt="icon">
+                        </div>
+                        <div class="user-card-text">
+                          
+                          <ul>
+                           <li>Jane Cooper</li>
+                           <!-- <li><span class="d-flex align-items-center"><i class="fas fa-circle"></i> 1 day ago</span></li> -->
+                          </ul>
+                          <p>got the&nbsp;Profitmaker achievement&nbsp;for performing 10 profitable trades in a row</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6">
+                  <div class="user-card-cover">
+                     <span>5 days ago</span>
+                     <div class="user-card align-items-start position-relative">
+                        <div class="round-feed-up-icon">
+                           <img src="assets/images/icon/value_up.png" alt="icon">
+                        </div>
+                        <div class="user-card-logo">
+                           <img src="assets/images/user/2.png" alt="icon">
+                        </div>
+                        <div class="user-card-text">
+                          
+                          <ul>
+                           <li>Esther Howard</li>
+                           <!-- <li><span class="d-flex align-items-center"><i class="fas fa-circle"></i> 1 day ago</span></li> -->
+                          </ul>
+                          <p>got the&nbsp;Profitmaker achievement&nbsp;for performing 10 profitable trades in a row</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6">
+                  <div class="user-card-cover">
+                     <span>5 days ago</span>
+                     <div class="user-card align-items-start position-relative">
+                        <div class="round-feed-static-icon">
+                           <img src="assets/images/icon/chart.png" alt="icon">
+                        </div>
+                        <div class="user-card-logo">
+                           <img src="assets/images/user/3.png" alt="icon">
+                        </div>
+                        <div class="user-card-text">
+                          
+                          <ul>
+                           <li>Jane Cooper</li>
+                           <!-- <li><span class="d-flex align-items-center"><i class="fas fa-circle"></i> 1 day ago</span></li> -->
+                          </ul>
+                          <p>got the&nbsp;Profitmaker achievement&nbsp;for performing 10 profitable trades in a row</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+        </section>
+       
+         <!-- Start legal info -->
+         <section class="site-legal-info mt-100">
+            <div class="container">
+               <div class="row">
+               <div class="col-md-12">
+                  <div class="post-info">
+                     <p>Legal Information: Just Global Markets Ltd., registration number 8427198-1, address: Office 10, Floor 2, Vairam Building, Providence Industrial Estate, Providence, Mahe, Seychelles, a company regulated by the Seychelles Financial Services Authority (FSA) under a Securities Dealer License number SD088.</p>
+                     <p>Just Global Markets (MU) Limited, registration number 194590 GBC, address: The Cyberati Lounge, C/o Credentia International Management Ltd, Ground Floor, The Catalyst, Silicon Avenue, 40 Cybercity, 72201 Ebène, Republic of Mauritius, an Investment Dealer (Full Service Dealer, Excluding Underwriting) regulated by the Financial Services Commission (FSC) in Mauritius under a License number GB22200881.</p>
+                     <p>GMFT Services Ltd, registration number HE 424491, address: Syrakouson 9, Office 106, 3077, Limassol, Cyprus, is the EU merchant company, which provides certain content and operates the business including in terms of processing payment transactions.</p>
+                     <p>Risk Warning: CFDs are complex instruments and come with a high risk of losing funds rapidly due to leverage.</p>
+                     <p>The vast majority of retail investors face losses when trading CFDs. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your deposit. To ensure that you fully understand the risks associated with margin trading, pay attention to our Risk Disclosure.</p>
+                     <p>Restricted Jurisdictions: JustMarkets does not offer and does not provide services to residents and citizens of certain jurisdictions, including Australia, Canada, the EU and EEA, Japan, the United Kingdom, the United States of America, and countries sanctioned by the EU.</p>
+                     <p>¹At JustMarkets, most of withdrawals are processed instantly (under 1 minute). Once your funds leave our custody, it’s up to your chosen payment provider to process the funds and credit your account.</p>
+                      
+                  </div>
+               </div>
+            </div>
+            </div>
+         </section>
+        <!-- End legal info -->
+        <!-- Start Footer area -->
+         <footer class="footer-area mt120">
+           <div class="container">
+             <div class="row ptb70">
+               <div class="col-md-12 footer-inner d-flex">
+                   <div class="footer-description"> 
+                     <img src="assets/images/logo.png" alt="logo">
+                     <p>A human resources agency serves as a vital partner for businesses seeking to optimize their workforce management.</p>
+                     <h5>Follow Us</h5>
+                     <div class="social-menu">
+                        <ul class="d-flex align-items-center">
+                           <li><a href="#"><i class="fa fab fa-facebook"></i></a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-twitter"></i>
+                           </a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-instagram"></i>
+                           </a></li>
+                           <li><a href="#"><i class="fa fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                 <div class="footer-widgets-area">
+                   <div class="footer-widgets">
+                     <h4>Trading</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Markets</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Education</h4>
+                     <ul>
+                        <li><a href="#">Quick start</a></li>
+                        <li><a href="#">Online webinars</a></li>
+                        <li><a href="#">Forex articles</a></li>
+                        <li><a href="#">Forex glossary</a></li>
+                        <li><a href="#">Educational video</a></li>
+                        <li><a href="#">List of world currencies</a></li>
+                     </ul>
+                  </div>
+                 </div>
+               </div>
+            </div>
+           </div>
+           <div class="copyright-text">
+            <p>Copyright &copy; 2024 by <a href="index.html">market terminal</a></p>
+           </div>
+         </footer>
+        
+        <!-- End Footer area -->
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+       <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script>
+         function demo_contest_faq(evt, demo_contest_faq_inner) {
+         var i, tabcontent, tablinks;
+         tabcontent = document.getElementsByClassName("education-tab-content-item");
+         for (i = 0; i < tabcontent.length; i++){
+            tabcontent[i].style.display = "none";
+         }
+         tablinks = document.getElementsByClassName("faq-tab-btn");
+         for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+         }
+         document.getElementById(demo_contest_faq_inner).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         // Get the element with id="defaultOpen" and click on it
+         document.getElementById("demo_contest_faq_open").click();
+
+         
+      </script>
+   </body>
+</html>
