@@ -1,14 +1,14 @@
 jQuery(document).ready(function ($) {
    
-  if ($('#data-show-table').length) {  
-    $('#data-show-table').DataTable({
+  if ($('.data-show-table').length) {  
+    $('.data-show-table').DataTable({
         responsive: true,
         searching: false,
         ordering: false,
         info: false,
         paging: false,
     });
-}
+  }
   
   // menu bg add
   $(window).on("scroll", function () {
