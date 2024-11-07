@@ -2057,3 +2057,21 @@ button.tablinks.active .tab-svg {
 	border: none;
 	border-radius:0px 0px 10px 10px;
  }
+ .contest-rules-item h5{
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 26.4px;
+	color:#04151F;
+	letter-spacing: -0.005em;
+	margin-bottom: 20px;
+ }
+ .contest-rules-item-list{
+	list-style-type: disc;
+	padding-left:25px;
+ }
+ .contest-rules-item ul li{
+	margin-bottom: 5px;
+ }
+ .contest-rules-item .card-4-btn-list li{
+	background-color: #F5C448;
+ }

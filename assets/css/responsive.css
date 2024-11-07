@@ -596,8 +596,7 @@
 		width: 40px;
 	}
 	.clients-trading-table table tr td {
-		padding: 10px 0;
-		padding-left: 5px;
+		padding: 10px 5px;
 	}
 	.clients-trading-table table tr td {
 		font-size: 13px;

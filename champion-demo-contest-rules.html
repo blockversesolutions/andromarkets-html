@@ -12,13 +12,13 @@
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
          />
+         <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
       <link rel="stylesheet" href="assets/css/common.css" />
       <link rel="stylesheet" href="assets/css/style.css" />
       <link rel="stylesheet" href="assets/css/responsive.css" />
    </head>
    <body>
-    
       <header class="header-transparent">
          <nav class="navbar navbar-expand-xl">
             <div class="container position-relative">
@@ -232,170 +232,136 @@
             </div>
          </nav>
       </header>
-      <!-- Start common page header -->
-      <section class="common-page-heading-section" style="background-image:url('assets/images/bg/blog.png');">
+      <section class="common-page-heading-section gradient-bg">
          <div class="container">
-            <div class="row text-center">
-               <div class="offset-md-2 col-md-8">
-                  <div class="common-heading-area withdrawals-common-heading mt-40">
-                     <h2>Company Update News
+            <div class="row align-items-center">
+               <div class="col-lg-7">
+                  <div class="common-heading-area withdrawals-common-heading">
+                     <h2> <span class="span-color">Champion </span> MT4 Demo Contest
                       </h2>
-                     <p class="text-white">Explore insightful articles, expert tips, and essential resources to boost your trading skills and stay ahead in the markets.</p>
-                     <a href="#" class="primary-btn mt-40">Start trading</a>
+                     <p class="text-white">Compete in the Champion MT4 Demo Contest to showcase your trading skills and win real cash prizes risk-free.</p>
+                     <div class="champion-registered-btn d-flex align-items-center flex-wrap mt-40 g-15 justify-content-center justify-content-lg-start">
+                        <a href="#" class="primary-btn">Join next round!</a> 
+                        <span class="text-white"><b>3452 traders</b> have already registered</span>
+                     </div>
+                     <div class="next-round-date d-flex align-items-center justify-content-center justify-content-lg-start flex-wrap g-15 text-white mt-30">
+                        <p class="text-white">Next round starts :</p>
+                        <h3 class="m-0">21 Oct 2024</h3>
+                     </div>
                   </div>
                </div>
-                
+               <div class="col-lg-5">
+                  <div class="common-page-thumbnails md-mt-50">
+                     <img src="assets/images/thumbnails/trade-5.png" alt="img" class="w-100">
+                  </div>
+               </div>
             </div>
-            
+             
          </div>
       </section>
-      <!-- End common page header -->
-       <!-- Start Blog area -->
-       <section class="news-analytics-main-area mt-100">
+        <section class="demo-contest-info-body mt-70">
          <div class="container">
-             
-            <div class="row mt-5 gy-4">
-               <div class="col-md-6">
-                  <div class="blog-post-card">
-                     <div class="card">
-                     <img src="assets/images/blog/blog1.png" class="card-img-top w-100" alt="blog-image">
-                     <div class="card-body">
-                        <h5 class="card-title">Discover strategies for successful trading</h5>
-                        <p class="card-text">Learn essential trading strategies to make informed decisions, improve profitability, and minimize risks in diverse market conditions.</p> 
-                        
-                        <a href="blog-details.html">Learn More</a>
-                     </div>
-                     </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="education-info-controls w-100 Contest-info-controls">
+                     <ul class="d-flex align-items-center flex-wrap flex-md-nowrap  g-2 justify-content-md-between">
+                        <li class="d-block w-auto w-lg-100 text-center">
+                           <a href="champion-demo-contest-info.html" class="d-md-block text-center">Info</a>
+                       </li>
+                        <li class="d-block w-auto w-lg-100 text-center"><a href="champion-demo-contest-faq.html" class="d-md-block text-center">FAQ</a></li>
+                        <li class="d-block w-auto w-lg-100 text-center"><a href="champion-demo-contest-current-round.html" class="d-md-block text-center">Current round</a></li>
+                        <li class="d-block w-auto w-lg-100 text-center"><a href="champion-demo-contest-archive.html" class="d-md-block text-center">Archive</a></li>
+                        <li class="active d-block w-auto w-lg-100 text-center"><a href="champion-demo-contest-rules.html" class="d-md-blocktext-center">Rules</a></li>
+                     </ul>
                   </div>
+                  <div class="line-1 mb-30"></div>
                </div>
-                <div class="col-md-6">
-                  <div class="blog-post-card">
-                     <div class="card">
-                     <img src="assets/images/blog/blog3.png" class="card-img-top w-100" alt="blog-image">
-                     <div class="card-body">
-                        <h5 class="card-title">Boost profits with effective tools</h5>
-                        <p class="card-text">Utilize advanced trading tools designed to enhance analysis, execution, and performance, helping you achieve better trading results.
-                        </p>
-                        <a href="blog-details.html">Learn More</a>
-                     </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="blog-post-card">
-                     <div class="card">
-                     <img src="assets/images/blog/blog4.png" class="card-img-top w-100" alt="blog-image">
-                     <div class="card-body">
-                        <h5 class="card-title">Learn basics of forex trading</h5>
-                        <p class="card-text"> Understand the fundamentals of forex trading, including currency pairs, market dynamics, and techniques to start trading confidently.
-                        </p>
-                        <a href="blog-details.html">Learn More</a>
-                     </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="blog-post-card">
-                     <div class="card">
-                     <img src="assets/images/blog/blog5.png" class="card-img-top w-100" alt="blog-image">
-                     <div class="card-body">
-                        <h5 class="card-title">Insights on global market trends</h5>
-                        <p class="card-text"> Stay informed with the latest trends, market analysis, and economic indicators that influence global financial markets & trading opportunities.
-                        </p>
-                        <a href="blog-details.html">Learn More</a>
-                     </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="blog-post-card">
-                     <div class="card">
-                     <img src="assets/images/blog/blog6.png" class="card-img-top w-100" alt="blog-image">
-                     <div class="card-body">
-                        <h5 class="card-title">Simplify investing with Market Terminal</h5>
-                        <p class="card-text"> Market Terminal streamlines your trading with user-friendly platforms, competitive conditions, & powerful tools for effective investing.
-                        </p>
-                        <a href="blog-details.html">Learn More</a>
-                     </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="blog-post-card">
-                     <div class="card">
-                     <img src="assets/images/blog/blog7.png" class="card-img-top w-100" alt="blog-image">
-                     <div class="card-body">
-                        <h5 class="card-title">Explore new trading opportunities daily</h5>
-                        <p class="card-text"> Discover fresh trading prospects every day, with access to various markets, assets, and strategies to expand your portfolio.
-                        </p>
-                        <a href="blog-details.html">Learn More</a>
-                     </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="blog-post-card">
-                     <div class="card">
-                     <img src="assets/images/blog/blog8.png" class="card-img-top w-100" alt="blog-image">
-                     <div class="card-body">
-                        <h5 class="card-title">Enhance trading skills through education</h5>
-                        <p class="card-text"> Continuous learning is key to trading success. Access educational resources, guides, and webinars to improve your trading abilities.
-                        </p>
-                        <a href="blog-details.html">Learn More</a>
-                     </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="blog-post-card">
-                     <div class="card">
-                     <img src="assets/images/blog/blog9.png" class="card-img-top w-100" alt="blog-image">
-                     <div class="card-body">
-                        <h5 class="card-title">Manage risks with smart strategies</h5>
-                        <p class="card-text"> Implement risk management strategies to safeguard investments, minimize losses, and ensure a balanced and secure trading approach
-                        </p>
-                        <a href="blog-details.html">Learn More</a>
-                     </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="blog-post-card">
-                     <div class="card">
-                     <img src="assets/images/blog/blog10.png" class="card-img-top w-100" alt="blog-image">
-                     <div class="card-body">
-                        <h5 class="card-title">Stay updated on financial news</h5>
-                        <p class="card-text"> Keep track of crucial financial events, announcements, and economic data to make informed and timely trading decisions.
-                        </p>
-                        <a href="blog-details.html">Learn More</a>
-                     </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="blog-post-card">
-                     <div class="card">
-                     <img src="assets/images/blog/blog11.png" class="card-img-top w-100" alt="blog-image">
-                     <div class="card-body">
-                        <h5 class="card-title">Master trading techniques for success</h5>
-                        <p class="card-text"> Learn advanced trading techniques that enhance accuracy, execution, and profitability, setting you up for long-term success.
-                        </p>
-                        <a href="blog-details.html">Learn More</a>
-                     </div>
-                     </div>
-                  </div>
-               </div>
-               
             </div>
-            <div class="view-more text-center mt-40">
-               <button class="secondary-btn">View More</button>
              
-            </div>
          </div>
         </section>
-       <!-- End Blog area -->
-      
-        <!-- Start legal info -->
+        <!-- Start contest rules -->
+         <section class="contest-rules-section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="shadow-p30">
+                        <!-- item -->
+                        <div class="contest-rules-item mb-40">
+                           <h5>Contest Info:</h5>
+                           <ul class="contest-rules-item-list">
+                              <li><p>The contest name is MarketsTerminalFX Champion (hereinafter—‘Contest’).</p></li>
+                              <li><p>The Contest is organized and run by Octa Markets Incorporated (hereinafter—‘Company’).</p></li>
+                              <li><p>The Contest duration is one month from the start date to the finish date.</p></li>
+                              <li><p>Registration for the Contest is announced prior to its start. During the registration period, anyone can register for the Contest.</p></li>
+                               
+                           </ul>
+                        </div>
+                        <!-- item -->
+                        <div class="contest-rules-item mb-40">
+                           <h5>Contest prizes:</h5>
+                           <ul class="card-4-btn-list d-flex align-items-center justify-content-between flex-wrap g-15 mt-20 mb-30">
+                              <li class="d-flex"><p>1st Prize</p>$50000</li>
+                              <li class="d-flex"><p>2nd Prize</p>$500</li>
+                              <li class="d-flex"><p>3rd Prize</p>$50</li>
+                              <li class="d-flex"><p>4th Prize</p>$500</li>
+                              <li class="d-flex"><p>5th Prize</p>$50</li>
+                           </ul>
+                           <ul class="contest-rules-item-list">
+                              <li><p>Only persons of legal age are able to take part in the Contest.</p></li>
+                              <li><p>Each participant must register a new demo account for each Contest round.</p></li>
+                              <li><p>Each participant agrees to provide real data during the registration. Providing fake data may result in disqualification from the Contest.</p></li>
+                              <li><p>Any kind of IP match will be subject to disqualification.</p></li>
+                              <li><p>Any type of arbitrage trading or any other abuse with pricing and/or quotes will be subject to disqualification from the Contest.</p></li>
+                              <li><p>The Company reserves the right to reject or disqualify any participant without explanation. Reasons for disqualification may include opening big volume opposite orders with the same currency pairs in different trading accounts at approximately the same time, as well as the usage of failures in the quote flow for getting guaranteed profit, or any other kinds of cheating.</p></li>
+                               
+                           </ul>
+                        </div>
+                        <!-- item -->
+                        <div class="contest-rules-item mb-40">
+                           <h5>Each Contest account has the same trading conditions, that is:</h5>
+                           <div class="row gy-4 mb-30">
+                              <div class="col-md-6">
+                                 <button class="tab-btn w-100 justify-content-center justify-content-lg-start">$Account type—as in the MTFX MT4 account</button>
+                              </div>
+                              <div class="col-md-6">
+                                 <button class="tab-btn w-100 justify-content-center justify-content-lg-start">Trading tools—as in the MTFX MT4 account</button>
+                              </div>
+                              <div class="col-md-6">
+                                 <button class="tab-btn w-100 justify-content-center justify-content-lg-start">Initial deposit — 1,000 USD</button>
+                              </div>
+                              <div class="col-md-6">
+                                 <button class="tab-btn w-100 justify-content-center justify-content-lg-start">Leverage: 1:500</button>
+                              </div>
+                              <div class="col-md-6">
+                                 <button class="tab-btn w-100 justify-content-center justify-content-lg-start">Minimum volume — 0.01 lot; maximum volume is not limited.</button>
+                              </div>
+                               
+                           </div>
+                           <ul class="contest-rules-item-list">
+                              <li><p>Traders are able to open and close cryptocurrencies orders on the weekend.</p></li>
+                              <li><p>All trading techniques or EAs are allowed.</p></li>
+                              <li><p>All the current contest stats are available on the OctaFX website.</p></li>
+                              <li><p>All open orders will be automatically closed at the current market rate on the contest finish date.</p></li>
+                              <li><p>The participant with the highest balance wins the contest.</p></li>
+                              <li><p>Winners agree to the publication of their names on social media.</p></li>
+                              <li><p>The winner must answer the questions of the interview in full, which are to be published on the OctaFX site.</p></li>
+                              <li><p>A prize must be claimed during a month after the end of the round. Otherwise, OctaFX has a right to deny giving out a prize.</p></li>
+                              <li><p>Each contestant agrees that some of his/her registration data (including but not limited to country of residence) will be published </p></li>
+                              <li><p>The prize is paid into the client's Wallet and can be withdrawn. </p></li>
+                              <li><p>If two or more contest winners have equal balances at the end of the contest, they will share the prize equally.</p></li>
+                              <li><p>The Company reserves the right to declare any prize already given invalid and subject to cancellation upon direct or indirect evidence of attempted fraudulent operations with the prize funds.</p></li>
+                               
+                               
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+        <!-- End contest rules -->
+         <!-- Start legal info -->
          <section class="site-legal-info mt-100">
             <div class="container">
                <div class="row">
@@ -414,11 +380,9 @@
             </div>
             </div>
          </section>
-         
         <!-- End legal info -->
-        
         <!-- Start Footer area -->
-          <footer class="footer-area mt120">
+         <footer class="footer-area mt120">
            <div class="container">
              <div class="row ptb70">
                <div class="col-md-12 footer-inner d-flex">
@@ -481,31 +445,14 @@
             <p>Copyright &copy; 2024 by <a href="index.html">market terminal</a></p>
            </div>
          </footer>
+        
         <!-- End Footer area -->
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+       <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
       <script src="assets/js/main.js"></script>
-      <script>
-         function evaluation(evt, coinmonitoring) {
-         var i, tabcontent, tablinks;
-         tabcontent = document.getElementsByClassName("tabcontent");
-         for (i = 0; i < tabcontent.length; i++){
-            tabcontent[i].style.display = "none";
-         }
-         tablinks = document.getElementsByClassName("tablinks");
-         for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-         }
-         document.getElementById(coinmonitoring).style.display = "block";
-         evt.currentTarget.className += " active";
-         }
-         // Get the element with id="defaultOpen" and click on it
-         document.getElementById("defaultOpen").click();
-
-         
-      </script>
        
    </body>
 </html>
