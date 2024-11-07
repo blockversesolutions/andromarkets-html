@@ -333,17 +333,17 @@
             </div>
             <div class="row gy-4 faq-tab-area mb-70">
                <div class="col-sm-6">
-                  <button class="tab-btn w-100  faq-tab-btn" onclick="demo_contest_faq(event, 'demo_contest_faq_item_1')" id="demo_contest_faq_open">Summary</button>
+                  <button class="tab-btn w-100  contest_details_btn" onclick="contest_details(event, 'contest_details_item_1')" id="contest_details_open">Summary</button>
                </div>
                <div class="col-sm-6">
-                  <button class="tab-btn w-100  faq-tab-btn" onclick="demo_contest_faq(event, 'demo_contest_faq_item_2')">Trading history</button>
+                  <button class="tab-btn w-100  contest_details_btn" onclick="contest_details(event, 'contest_details_item_2')">Trading history</button>
                </div>
                 
             </div>
             <div class="row">
                <div class="col-md-12">
                   <!-- item -->
-                  <div class="contest-faq-item education-tab-content-item" id="demo_contest_faq_item_1">
+                  <div class="contest-faq-item education-tab-content-item" id="contest_details_item_1">
                      <div class="row gy-4">
                         <div class="col-lg-3 col-md-6">
                            <div class="card-view-data">
@@ -521,41 +521,302 @@
                      </div>
                   </div>
                   <!-- item -->
-                  <div class="contest-faq-item education-tab-content-item" id="demo_contest_faq_item_2">
-                     <div class="education-info-box shadow-p30 mt-30">
-                        <div class="common-heading-area">
-                           <h3>How can I participate?</h3>
-                           <p>You should sign up or log in to your Personal Area on MT, then open the menu on the right, and click open champion demo contest account.</p>
-                           <img src="assets/images/thumbnails/deposit1.png" alt="img" class="w-100 rounded mt-30">
+                  <div class="contest-faq-item education-tab-content-item" id="contest_details_item_2">
+                     <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                           <div class="common-heading-area text-center">
+                              <h3 class="mb-0">Total trades</h3>
+                              <p>Total trades represent the combined number of all buy and sell transactions completed during a specific trading period.</p>
+                           </div>
                         </div>
-                     </div>
-                     <div class="education-info-box shadow-p30 mt-30">
-                        <div class="common-heading-area">
-                           <h3>When does the next round start?</h3>
-                           <p>You can find the start date of the next round at the top of the Champion Demo Contest page.</p>
-                           <img src="assets/images/thumbnails/contest-info.png" alt="img" class="w-100 rounded mt-30">
+                        <div class="col-lg-12">
+                           <div class="clients-trading-table mt-30">
+                              <table id="data-show-table" class="mobile-view-table">
+                                 <thead>
+                                   <tr>
+                                     <th class="bg-td1 bg-td-color text-start"><b>Rank</b></th>
+                                     <th class="bg-td-color text-start"><b>Contestant</b></th>
+                                     <th class="bg-td-color text-start"><b>Trades</b></th>
+                                     <th class="bg-td-color text-start"><b>Pips</b></th>
+                                     <th class="bg-td-color text-start"><b>Equity</b></th>
+                                     <th class="bg-td2 bg-td-color text-start"><b>Gain</b></th>
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td class="text-start">
+                                          01  
+                                       </td>
+                                       <td class="text-start">
+                                          <div class="contestant d-flex align-items-center g-5">
+                                             <img src="assets/images/user/3.png" alt="user">
+                                             <div class="contestant-info-address">
+                                                <div class="contestant-info d-flex align-items-center g-8">
+                                                   <p>Cameron Williamson</p>
+                                                   <div class="rank-up-down color-35 d-flex">
+                                                      <i class="fas fa-sort-up"></i><span>1</span>
+                                                   </div>
+                                                </div>
+                                                <div class="contestant-country d-flex align-items-center g-8">
+                                                   <img src="assets/images/flag/germany.png" alt="country">
+                                                   <p>Germany</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-start">
+                                          183
+                                       </td>
+                                       <td class="text-start">
+                                          11 566.70
+                                       </td>
+                                       <td class="text-start">
+                                          $55 214.44
+                                       </td>
+                                       <td class="text-start"><span class="color-35">+4,601.92%</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="text-start  g-5">
+                                          02  
+                                       </td>
+                                       <td class="text-start">
+                                          <div class="contestant d-flex align-items-center g-5">
+                                             <img src="assets/images/user/1.png" alt="user">
+                                             <div class="contestant-info-address">
+                                                <div class="contestant-info d-flex align-items-center g-8">
+                                                   <p>Cameron Williamson</p>
+                                                   <div class="rank-up-down color-e8 d-flex">
+                                                      <i class="fas fa-sort-up"></i><span>1</span>
+                                                   </div>
+                                                </div>
+                                                <div class="contestant-country d-flex align-items-center g-8">
+                                                   <img src="assets/images/flag/ireland.png" alt="country">
+                                                   <p>Ireland</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-start">
+                                          298
+                                       </td>
+                                       
+                                       <td class="text-start">
+                                          11 566.70
+                                       </td>
+                                       <td class="text-start">
+                                          $55 214.44
+                                       </td>
+                                       <td class="text-start"><span class="color-35">+4,601.92%</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="text-start  g-5">
+                                          03  
+                                       </td>
+                                       <td class="text-start">
+                                          <div class="contestant d-flex align-items-center g-5">
+                                             <img src="assets/images/user/4.png" alt="user">
+                                             <div class="contestant-info-address">
+                                                <div class="contestant-info d-flex align-items-center g-8">
+                                                   <p>Leslie Alexander</p>
+                                                   <div class="rank-up-down color-e8 d-flex">
+                                                      <i class="fas fa-sort-up"></i><span>1</span>
+                                                   </div>
+                                                </div>
+                                                <div class="contestant-country d-flex align-items-center g-8">
+                                                   <img src="assets/images/flag/austria.png" alt="country">
+                                                   <p>Austria</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-start">
+                                          298
+                                       </td>
+                                       
+                                       <td class="text-start">
+                                          11 566.70
+                                       </td>
+                                       <td class="text-start">
+                                          $55 214.44
+                                       </td>
+                                       <td class="text-start"><span class="color-35">+4,601.92%</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="text-start  g-5">
+                                          04  
+                                       </td>
+                                       <td class="text-start">
+                                          <div class="contestant d-flex align-items-center g-5">
+                                             <img src="assets/images/user/5.png" alt="user">
+                                             <div class="contestant-info-address">
+                                                <div class="contestant-info d-flex align-items-center g-8">
+                                                   <p>Leslie Alexander</p>
+                                                    
+                                                </div>
+                                                <div class="contestant-country d-flex align-items-center g-8">
+                                                   <img src="assets/images/flag/austria.png" alt="country">
+                                                   <p>Austria</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-start">
+                                          298
+                                       </td>
+                                       
+                                       <td class="text-start">
+                                          11 566.70
+                                       </td>
+                                       <td class="text-start">
+                                          $55 214.44
+                                       </td>
+                                       <td class="text-start"><span class="color-35">+4,601.92%</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="text-start  g-5">
+                                          05  
+                                       </td>
+                                       <td class="text-start">
+                                          <div class="contestant d-flex align-items-center g-5">
+                                             <img src="assets/images/user/5.png" alt="user">
+                                             <div class="contestant-info-address">
+                                                <div class="contestant-info d-flex align-items-center g-8">
+                                                   <p>Leslie Alexander</p>
+                                                    
+                                                </div>
+                                                <div class="contestant-country d-flex align-items-center g-8">
+                                                   <img src="assets/images/flag/austria.png" alt="country">
+                                                   <p>Austria</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-start">
+                                          298
+                                       </td>
+                                       
+                                       <td class="text-start">
+                                          11 566.70
+                                       </td>
+                                       <td class="text-start">
+                                          $55 214.44
+                                       </td>
+                                       <td class="text-start"><span class="color-35">+4,601.92%</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="text-start  g-5">
+                                          06  
+                                       </td>
+                                       <td class="text-start">
+                                          <div class="contestant d-flex align-items-center g-5">
+                                             <img src="assets/images/user/5.png" alt="user">
+                                             <div class="contestant-info-address">
+                                                <div class="contestant-info d-flex align-items-center g-8">
+                                                   <p>Leslie Alexander</p>
+                                                    
+                                                </div>
+                                                <div class="contestant-country d-flex align-items-center g-8">
+                                                   <img src="assets/images/flag/austria.png" alt="country">
+                                                   <p>Austria</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-start">
+                                          298
+                                       </td>
+                                       
+                                       <td class="text-start">
+                                          11 566.70
+                                       </td>
+                                       <td class="text-start">
+                                          $55 214.44
+                                       </td>
+                                       <td class="text-start"><span class="color-35">+4,601.92%</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="text-start  g-5">
+                                          07  
+                                       </td>
+                                       <td class="text-start">
+                                          <div class="contestant d-flex align-items-center g-5">
+                                             <img src="assets/images/user/5.png" alt="user">
+                                             <div class="contestant-info-address">
+                                                <div class="contestant-info d-flex align-items-center g-8">
+                                                   <p>Leslie Alexander</p>
+                                                    
+                                                </div>
+                                                <div class="contestant-country d-flex align-items-center g-8">
+                                                   <img src="assets/images/flag/austria.png" alt="country">
+                                                   <p>Austria</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-start">
+                                          298
+                                       </td>
+                                       
+                                       <td class="text-start">
+                                          11 566.70
+                                       </td>
+                                       <td class="text-start">
+                                          $55 214.44
+                                       </td>
+                                       <td class="text-start"><span class="color-35">+4,601.92%</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="text-start  g-5">
+                                          08  
+                                       </td>
+                                       <td class="text-start">
+                                          <div class="contestant d-flex align-items-center g-5">
+                                             <img src="assets/images/user/5.png" alt="user">
+                                             <div class="contestant-info-address">
+                                                <div class="contestant-info d-flex align-items-center g-8">
+                                                   <p>Leslie Alexander</p>
+                                                    
+                                                </div>
+                                                <div class="contestant-country d-flex align-items-center g-8">
+                                                   <img src="assets/images/flag/austria.png" alt="country">
+                                                   <p>Austria</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-start">
+                                          298
+                                       </td>
+                                       
+                                       <td class="text-start">
+                                          11 566.70
+                                       </td>
+                                       <td class="text-start">
+                                          $55 214.44
+                                       </td>
+                                       <td class="text-start"><span class="color-35">+4,601.92%</span></td>
+                                    </tr>
+                                    
+                                    
+                                 </tbody>
+                               </table>
+                               <ul class="d-flex align-items-center justify-content-between mt-30 table-pagination">
+                                 <li class="d-inline"><button class="tab-btn active video-controlls-previous"><i class="fas fa-arrow-left"></i> Previous</button></li>
+                                 <li>
+                                    <ul class="d-flex align-items-center pagination-inner g-5">
+                                       <li><button class="active">1</button></li>
+                                       <li><button>2</button></li>
+                                       <li><button>3</button></li>
+                                       <li><button>4</button></li>
+                                       <li><button>....</button></li>
+                                       <li><button>25</button></li>
+                                    </ul>
+                                 </li>
+                                 <li class="d-inline"><button class="tab-btn active">Next  <i class="fas fa-arrow-right"></i></button></li>
+                              </ul>
+                           </div>
                         </div>
-                     </div>
-                     <div class="education-info-box shadow-p30 mt-30">
-                        <div class="common-heading-area">
-                           <h3>My contest account is disabled. Why couldn't I join the contest and start trading?</h3>
-                           <p>You can enter the MT4 trading platform using the contest login and password only AFTER the round has begun! First of all, сheck you’re trying to enter the right trading platform. The Champion Demo Contest is only available on MT4! Then check if the contest round is Active. You can find this information on the main page of your Personal Area.You can see the statuses Not yet started, Active or Finished in the same rows as the MT4 contest accounts. You can log in to the MT4 trading platform and start trading only if the contest account is marked as Active.</p>
-                           <img src="assets/images/thumbnails/contest-dashboard.png" alt="img" class="w-100 rounded mt-30">
-                        </div>
-                     </div>
-                     <div class="education-info-box shadow-p30 mt-30">
-                        <div class="common-heading-area">
-                           <h3>What is a trading platform and which platform I should use for trading?</h3>
-                           <p>You have to download and install the MT4 trading platform or use the browser version. Do not confuse it with MT5. These are different platforms and you will not be able to log in and use them to trade in the competition.</p>
-                           <img src="assets/images/thumbnails/contest-dashboard.png" alt="img" class="w-100 rounded mt-30">
-                        </div>
-                     </div>
-                     <div class="education-info-box shadow-p30 mt-30">
-                        <div class="common-heading-area">
-                           <h3>Where can I find my contest rank?</h3>
-                           <p>You can find your contest rank in the My Accounts list on the main page of your  Personal Area.Note that your current rank will only appear in the contest account row marked as active. By clicking on the rank link, you can see your personal contest page with detailed information (rank, trades, profit or loss, rank changes, achievements, and so on).</p>
-                           
-                        </div>
+                         
                      </div>
                   </div>
                   
@@ -760,21 +1021,21 @@
        <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
       <script src="assets/js/main.js"></script>
       <script>
-         function demo_contest_faq(evt, demo_contest_faq_inner) {
+         function contest_details(evt, contest_details_inner) {
          var i, tabcontent, tablinks;
          tabcontent = document.getElementsByClassName("education-tab-content-item");
          for (i = 0; i < tabcontent.length; i++){
             tabcontent[i].style.display = "none";
          }
-         tablinks = document.getElementsByClassName("faq-tab-btn");
+         tablinks = document.getElementsByClassName("contest_details_btn");
          for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
          }
-         document.getElementById(demo_contest_faq_inner).style.display = "block";
+         document.getElementById(contest_details_inner).style.display = "block";
          evt.currentTarget.className += " active";
          }
          // Get the element with id="defaultOpen" and click on it
-         document.getElementById("demo_contest_faq_open").click();
+         document.getElementById("contest_details_open").click();
 
          
       </script>
