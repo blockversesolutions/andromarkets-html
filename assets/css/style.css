@@ -2075,3 +2075,58 @@ button.tablinks.active .tab-svg {
  .contest-rules-item .card-4-btn-list li{
 	background-color: #F5C448;
  }
+ .event-card{
+	background: #2C88C9;
+	padding:30px;
+	border-radius: 20px;
+ }
+ /* counter */
+ .countdown-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.countdown-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 10px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 60px;
+	width: 100%;
+	border: 2.5px solid #FFFFFF1A
+}
+
+.countdown-box span {
+    display: block;
+}
+
+.digit-show{
+	font-size: 40px;
+	font-weight: 600;
+	color: white;
+}
+
+.label-text {
+    font-size: 18px;
+}
+.colon {
+    font-size: 24px;
+    font-weight: bold;
+}
+.timezone-tab-btn h5{
+	font-size:28px;
+	font-weight: 600;
+	line-height: 35.2px;
+	letter-spacing: -0.005em;
+}
+.megamenu::before{
+	content: "";
+	position: absolute;
+	top:-19px;
+	left: 0;
+	height: 20px;
+	width: 100%;
+	background-color: transparent;
+}
