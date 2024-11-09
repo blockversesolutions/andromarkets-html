@@ -540,6 +540,18 @@
 		min-width: 25px;
 		padding: 5px;
 	}
+	.event-card {
+		padding: 15px;
+	}
+	.digit-show {
+		font-size: 25px;
+	}
+	.label-text {
+		font-size: 14px;
+	}
+	.countdown-box {
+		min-width: 50px;
+	}
 }
 @media all and (max-width:575px) {
 	.primary-btn{
