@@ -110,7 +110,7 @@
                                           <li><a href="#">Account types</a></li>
                                           <li><a href="#">Islamic account</a></li>
                                           <li><a href="#">Demo account</a></li>
-                                          <li><a href="#">Spreads & conditions</a></li>
+                                          <li><a href="#">timezone & conditions</a></li>
                                           <li><a href="#">Trading advantage</a></li>
                                           <li><a href="#">Why choose us</a></li>
                                        </ul>
@@ -290,7 +290,7 @@
         </section>
         <section class="event-card-section">
          <div class="container">
-            <div class="row">
+            <div class="row gy-4">
                <div class="col-md-6">
                   <div class="event-card">
                      <div class="common-heading-area">
@@ -377,7 +377,7 @@
              </div>
          </div>
        </section>
-       <!-- Start spreads data -->
+       <!-- Start timezone data -->
        <section class="trading-hour-section mt-100">
          <div class="container">
             <div class="row align-items-center gy-4">
@@ -399,8 +399,8 @@
                         <div class="col-md-6 text-end">
                            <div class="app-version-btn">
                               <ul class="d-flex align-items-center m-0">
-                                 <li class="spreads_btn" onclick="spreads(event, 'spreads_trader')" id="apprunning">UTC</li>
-                                 <li class="spreads_btn" onclick="spreads(event, 'spreads_trader_meta_4')">EEST</li>
+                                 <li class="time-zone-btn" onclick="timezone(event, 'timezone_trader_utc')" id="time-zone-btn-open">UTC</li>
+                                 <li class="time-zone-btn" onclick="timezone(event, 'timezone_trader_eest')">EEST</li>
                               </ul>
                            </div>
                         </div>
@@ -411,92 +411,704 @@
                </div>
                <div class="col-md-12">
                   <!-- item -->
-                  <div class="spreadsContent" id="spreads_trader">
-                     <div class="clients-trading-table">
+                  <div class="timezoneContent" id="timezone_trader_utc">
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Forex</b></h4>
                         <table class="data-show-table mobile-view-table">
                            <thead>
                              <tr>
-                               <th class="bg-td1 bg-td-color text-start"><b>Symbol</b></th>
-                               <th class="bg-td-color text-start"><b>Description</b></th>
-                               <th class="bg-td-color text-start"><b>Bid</b></th>
-                               <th class="bg-td-color text-start"><b>Ask</b></th>
-                               <th class="bg-td-color text-start"><b>Spread (Pips)</b></th>
-                               <th class="bg-td2 bg-td-color text-start"><b>Pip price (USD)</b></th>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
                              </tr>
                            </thead>
                            <tbody>
                               <tr>
-                                 <td class="text-start">XAUUSD</td>
-                                 <td class="text-start">Gold on Spot</td>
-                                 <td class="text-start"><span class="color-35">2648.16</span></td>
-                                 <td class="text-start"><span class="color-35">2648.43</span></td>
-                                 <td class="text-start">2.7</td>
-                                 <td class="text-start">10.00</td>
+                                 <td class="text-start"><p>Major and minor pairs</p></td>
+                                 <td class="text-start">
+                                   <p> 09:05 p.m. – 09:00 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
                               </tr>
                               <tr>
-                                 <td class="text-start">BTCUSD</td>
-                                 <td class="text-start">Bitcoin vs. US Dollar</td>
-                                 <td class="text-start"><span class="color-e8">63925</span></td>
-                                 <td class="text-start"><span class="color-35">63945</span></td>
-                                 <td class="text-start">2.0</td>
-                                 <td class="text-start">10.00</td>
-                              </tr>
-                              <tr>
-                                 <td class="text-start">EURUSD</td>
-                                 <td class="text-start">Euro vs. US Dollar</td>
-                                 <td class="text-start"><span class="color-35">63925</span></td>
-                                 <td class="text-start"><span class="color-35">63945</span></td>
-                                 <td class="text-start">2.0</td>
-                                 <td class="text-start">10.00</td>
-                              </tr>
-                              <tr>
-                                 <td class="text-start">GBPUSD</td>
-                                 <td class="text-start">British Pound vs. US Dollar</td>
-                                 <td class="text-start"><span class="color-e8">63925</span></td>
-                                 <td class="text-start"><span class="color-e8">63945</span></td>
-                                 <td class="text-start">2.0</td>
-                                 <td class="text-start">10.00</td>
-                              </tr>
-                              <tr>
-                                 <td class="text-start">GBPJPY</td>
-                                 <td class="text-start">British Pound vs. Japanese Yen</td>
-                                 <td class="text-start"><span class="color-35">63925</span></td>
-                                 <td class="text-start"><span class="color-35">63945</span></td>
-                                 <td class="text-start">2.0</td>
-                                 <td class="text-start">10.00</td>
-                              </tr>
-                              
-                              <tr>
-                                 <td class="text-start">USDJPY</td>
-                                 <td class="text-start">US Dollar vs. Japanese Yen</td>
-                                 <td class="text-start"><span class="color-35">63925</span></td>
-                                 <td class="text-start"><span class="color-35">63945</span></td>
-                                 <td class="text-start">2.0</td>
-                                 <td class="text-start">10.00</td>
-                              </tr>
-                              <tr>
-                                 <td class="text-start">ETHUSD</td>
-                                 <td class="text-start">Ethereum vs. US Dollar</td>
-                                 <td class="text-start"><span class="color-35">63925</span></td>
-                                 <td class="text-start"><span class="color-35">63945</span></td>
-                                 <td class="text-start">2.0</td>
-                                 <td class="text-start">10.00</td>
+                                 <td class="text-start"><p>ZAR pairs</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
                               </tr>
                            </tbody>
                            
                          </table>
-                         <div class="text-center mt-40">
-                           <a href="view-all-spreads.html" class="primary-btn">View all spreads <span class="rotation ml-5"><i class="fa-solid fa-arrow-right"></i></span></a>
-                         </div>
+                         
+                     </div>
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Indices</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>NAS100</p></td>
+                                 <td class="text-start">
+                                   <p> 10:00 p.m. – 08:15 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>SPX500</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>US30</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>AUS200</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>FRA40</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>EUSTX50</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>JPN225</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(5-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>UK100</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>UK100</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>UK100</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(15.5-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                           </tbody>
+                           
+                         </table>
+                         
+                     </div>
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Commodities</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>XBRUSD</p></td>
+                                 <td class="text-start">
+                                   <p> 09:05 p.m. – 09:00 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>XTIUSD</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>XNGUSD</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                           </tbody>
+                           
+                         </table>
+                         
+                     </div>
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Crypto</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>All instruments</p></td>
+                                 <td class="text-start">
+                                   <p> 09:05 p.m. – 09:00 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                              </tr>
+                         </table>
+                     </div>
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Metals</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>All instruments</p></td>
+                                 <td class="text-start">
+                                   <p> 09:05 p.m. – 09:00 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
+                              </tr>
+                             
+                           </tbody>
+                           
+                         </table>
+                         
+                     </div>
+                      
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>MT ECN</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>low</p></td>
+                                 <td class="text-start">
+                                   <p> 09:05 p.m. – 09:00 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
+                              </tr>
+                             
+                           </tbody>
+                           
+                         </table>
+                         
+                     </div>
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Stocks</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>the U.S., Hong Kong</p></td>
+                                 <td class="text-start">
+                                   <p> 10:00 p.m. – 08:15 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>SPX500</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>Australia</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>France </p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>Japan</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>Singapore</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              
+                           </tbody>
+                           
+                         </table>
+                         
                      </div>
                   </div>
-                   
+                    <!-- item -->
+                  <div class="timezoneContent" id="timezone_trader_eest">
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Forex</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>Major and minor pairs</p></td>
+                                 <td class="text-start">
+                                   <p> 09:05 p.m. – 09:00 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>ZAR pairs</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                           </tbody>
+                           
+                         </table>
+                         
+                     </div>
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Indices</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>NAS100</p></td>
+                                 <td class="text-start">
+                                   <p> 10:00 p.m. – 08:15 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>SPX500</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>US30</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>AUS200</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>FRA40</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>EUSTX50</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>JPN225</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(5-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>UK100</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>UK100</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>UK100</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(15.5-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                           </tbody>
+                           
+                         </table>
+                         
+                     </div>
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Commodities</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>XBRUSD</p></td>
+                                 <td class="text-start">
+                                   <p> 09:05 p.m. – 09:00 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>XTIUSD</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>XNGUSD</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                           </tbody>
+                           
+                         </table>
+                         
+                     </div>
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Crypto</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>All instruments</p></td>
+                                 <td class="text-start">
+                                   <p> 09:05 p.m. – 09:00 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                              </tr>
+                         </table>
+                     </div>
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Metals</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>All instruments</p></td>
+                                 <td class="text-start">
+                                   <p> 09:05 p.m. – 09:00 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
+                              </tr>
+                             
+                           </tbody>
+                           
+                         </table>
+                         
+                     </div>
+                      
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>MT ECN</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>low</p></td>
+                                 <td class="text-start">
+                                   <p> 09:05 p.m. – 09:00 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
+                              </tr>
+                             
+                           </tbody>
+                           
+                         </table>
+                         
+                     </div>
+                     <div class="clients-trading-table mb-20">
+                        <h4 class="mb-0 mb-md-4"><b>Stocks</b></h4>
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                               <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                               <th class="bg-td-color text-start"><b>Saturday</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start"><p>the U.S., Hong Kong</p></td>
+                                 <td class="text-start">
+                                   <p> 10:00 p.m. – 08:15 p.m.</p>
+                                    (5-minute recess)
+                                 </td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                               
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>SPX500</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>Australia</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>France </p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>Japan</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start"><p>Singapore</p></td>
+                                 <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                 <td class="text-start">No trading</td>
+                                 <td class="text-start">No trading</td>
+                              </tr>
+                              
+                           </tbody>
+                           
+                         </table>
+                         
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
        </section>
         
-       
+       <section class="trading-tools-info mt-70">
+         <div class="container">
+            <div class="row align-items-center gy-4">
+               <div class="col-md-7">
+                  <div class="common-heading-area">
+                     <h3>Trading news</h3>
+                     <p>Stay updated with the latest market trends and events through real-time trading news to make informed decisions.</p>
+                  </div>
+               </div>
+               <div class="col-md-5 text-center text-md-end">
+                  <a href="#" class="primary-btn">View all trading news   <span class="rotation ml-5"><i class="fa-solid fa-arrow-right"></i></span></a>
+               </div>
+            </div>
+            <div class="row gy-4 mt-50">
+               <div class="col-md-6 col-lg-3">
+                  <div class="card-3 text-start">
+                     <p>11 minutes ago</p>
+                     <h4>Italy Unemployment below forecasts (6.7%) in August: Actual (6.2%)</h4>
+                     <p>Italy Unemployment below forecasts (6.7%) in August: Actual (6.2%)</p>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3">
+                  <div class="card-3 text-start">
+                     <p>15 minutes ago</p>
+                     <h4>AUD/JPY advances to near 99.50 due to hawkish RBA stance on policy outlook</h4>
+                     <p>AUD/JPY retraces its recent losses registered in the previous day, trading around 99.40 during Wednesday’s European session.</p>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3">
+                  <div class="card-3 text-start">
+                     <p>11 minutes ago</p>
+                     <h4>France Budget Balance fell from previous €-156.9B to €-171.9B in August</h4>
+                     <p>France Budget Balance fell from previous €-156.9B to €-171.9B in August</p>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3">
+                  <div class="card-3 text-start">
+                     <p>42 minutes ago</p>
+                     <h4>ADP report expected to show US private employment rose by 120,000 in September</h4>
+                     <p>The Automatic Data Processing (ADP) Research Institute will release its monthly report on private-sector job creation for September on Wednesday.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </section>
+       <section class="faq-section mt-100">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="common-heading-area">
+                     <h3>FAQ</h3>
+                  </div>
+                  <div class="accordion more-details-accordion" id="accordionExample">
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Can I trade Forex by myself?
+                           </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <p>Yes, you can. You’ll need to learn how to trade Forex first, but if you’re an adult—there’s nothing stopping you from making Forex your second or even a primary source of income. Keep in mind that you’ll need to verify you’re over 18 years of age to withdraw funds.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              How do I sign up?
+                           </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              I already have a profile in Octa. How can I create a new account?
+                           </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                              What type of account should I choose?
+                           </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </section>
          <!-- Start legal info -->
          <section class="site-legal-info mt-100">
             <div class="container">
@@ -590,13 +1202,13 @@
        <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
       <script src="assets/js/main.js"></script>
       <script>
-         function demo_contest_faq(evt, demo_contest_faq_inner) {
+         function timezone(evt, demo_contest_faq_inner) {
          var i, tabcontent, tablinks;
-         tabcontent = document.getElementsByClassName("education-tab-content-item");
+         tabcontent = document.getElementsByClassName("timezoneContent");
          for (i = 0; i < tabcontent.length; i++){
             tabcontent[i].style.display = "none";
          }
-         tablinks = document.getElementsByClassName("faq-tab-btn");
+         tablinks = document.getElementsByClassName("time-zone-btn");
          for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
          }
@@ -604,7 +1216,7 @@
          evt.currentTarget.className += " active";
          }
          // Get the element with id="defaultOpen" and click on it
-         document.getElementById("demo_contest_faq_open").click();
+         document.getElementById("time-zone-btn-open").click();
       </script>
       <script>
         // Initialize all countdowns based on the target time specified in the `data-target-time` attribute

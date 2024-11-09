@@ -275,6 +275,10 @@
 	 .filter-btn-area ul li {
 		width: 50px;
 	}
+	.common-heading-area h3{
+		font-size: 32px;
+		line-height: 40px;
+	}
 }
 
 @media all and (max-width:767px) {

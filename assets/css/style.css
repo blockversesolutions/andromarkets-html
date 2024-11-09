@@ -154,7 +154,7 @@ li.nav-item.dropdown li a {
 	padding-right: 0;
 }
 .navbar-nav li > a:active,.navbar-nav li > a:focus{
-	color:#fff !important;
+	color:#F5C448 !important;
 }
 /* end header */
 .hero-main-area {
@@ -1544,7 +1544,6 @@ button.tablinks.active .tab-svg {
 	font-size: 22px;
 	font-weight: 500;
 	line-height: 30.4px;
-	text-align: center;
 	color: #fff;
 	margin: 12px 0;
 }
@@ -1552,7 +1551,6 @@ button.tablinks.active .tab-svg {
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 18px;
-	text-align: center;
 	color:#AAA7B5;
 }
 .app-version-thumbnails img{
@@ -2079,6 +2077,7 @@ button.tablinks.active .tab-svg {
 	background: #2C88C9;
 	padding:30px;
 	border-radius: 20px;
+	height: 100%;
  }
  /* counter */
  .countdown-container {
@@ -2129,4 +2128,7 @@ button.tablinks.active .tab-svg {
 	height: 20px;
 	width: 100%;
 	background-color: transparent;
+}
+.mobile-view-table p{
+	display: inline-block;
 }
