@@ -2132,3 +2132,55 @@ button.tablinks.active .tab-svg {
 .mobile-view-table p{
 	display: inline-block;
 }
+.commodity-list {
+	list-style-type: disc;
+	margin-left: 30px;
+}
+.commodity-list li{
+	margin-bottom: 10px;
+}
+/* road map */
+.road-map-item{
+	padding: 15px;
+	background-color: gray;
+	border-radius: 10px;
+	position: relative;
+}
+.road-map-item::after {
+	content: "";
+	position: absolute;
+	right: -51px;
+	height: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 67px;
+	background-color: red;
+	z-index: -2;
+}
+.col-5:nth-child(odd) .road-map-item:after {
+	 right: inherit;
+	 left: -51px;
+  }
+.map-circle{
+	background-color: #040C17;
+	border: 2px solid red;
+	width: 180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	border-radius: 10px;
+	right: 0;
+	margin: auto;
+}
+.inner-cicle{
+	height:150px;
+	width:150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: gray;
+}
