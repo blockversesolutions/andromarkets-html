@@ -298,11 +298,31 @@ li.nav-item.dropdown li a {
 	position: relative;
 }
 
-.megamenu::after {
+.megamenu-1::after {
 	content: "";
 	position: absolute;
-	top: -39px;
+	top: -35px;
 	left: 19%;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid #fff;
+}
+.megamenu-2::after {
+	content: "";
+	position: absolute;
+	top: -35px;
+	left:30%;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid #fff;
+}
+.megamenu-3::after {
+	content: "";
+	position: absolute;
+	top: -35px;
+	left:45%;
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 	border-top: 20px solid transparent;
