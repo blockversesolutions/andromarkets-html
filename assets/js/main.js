@@ -11,14 +11,22 @@ jQuery(document).ready(function ($) {
   }
   
   // menu bg add
-  $(window).on("scroll", function () {
-     
+  function checkScroll() {
     if ($(window).scrollTop() > 50) {
         $(".header-transparent").addClass("menu-bg");
     } else {
         $(".header-transparent").removeClass("menu-bg");
     }
-});
+  }
+  // Run on page load
+  $(document).ready(function () {
+    checkScroll();
+  });
+
+  // Run on scroll
+  $(window).on("scroll", function () {
+    checkScroll();
+  });
   // $(".close-mark").click(function(){
   //   $(".country-menu").hide();
   // });
