@@ -2207,3 +2207,95 @@ button.tablinks.active .tab-svg {
 .color-03{
 	color: #030303;
 }
+ 
+  
+  /* Center Section Styles */
+  .counter-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+  }
+  
+  /* Counter Styles */
+  .quantity {
+	display: flex;
+	border: 1.5px solid #04151F1A;
+	border-radius:5px;
+	overflow: hidden;
+	justify-content: space-between;
+  }
+  
+  .input-box {
+	text-align: center;
+	border: none !important;
+	font-size: 16px;
+	outline: none;
+	color: #04151F !important; 
+	font-size: 20px;
+  }
+  .quantity span{
+	height:50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size:28px;
+	color: #F5C448;
+	cursor: pointer;
+	width: 50px;
+	background: #F5C44833;
+  }
+  
+  /* Hide the number input spin buttons */
+  .input-box::-webkit-inner-spin-button,
+  .input-box::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+  }
+  
+  .input-box[type="number"] {
+	-moz-appearance: textfield;
+  }
+  
+/* counter calculation  End */
+.color-03{
+	color:#03030366 !important;
+}
+.calculate-result h6{
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 26.4px;
+	color: #04151F;
+}
+.calculate-btn{
+	color: #E80000 !important;
+}
+.calculate-btn.active{
+	color:#fff !important;
+	background: #359846 !important;
+}
+
+.post-author ul li img{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin-right:10px;
+}
+.post-author ul li a{
+	color:#04151F;
+	transition: 0.5s;
+}
+.post-author ul li a:hover{
+	text-decoration: underline;
+}
+.post-author ul li{
+	padding:5px 10px;
+}
+.common-heading-area h5{
+	font-size:24px;
+	font-weight: 500;
+	color: #04151F;
+	line-height:35px;
+	margin-bottom:12px;
+
+}

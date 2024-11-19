@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tradding Web App</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+         <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+      <link rel="stylesheet" href="assets/css/common.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+   </head>
+   <body>
+      <header class="header-transparent">
+         <nav class="navbar navbar-expand-xl">
+            <div class="container position-relative">
+               <a class="navbar-brand" href="index.html">
+               <img src="assets/images/logo.png" alt="logo"/>
+               </a>
+               <div class="header-right">
+                  <ul class="d-flex align-items-center">
+                     <li class="nav-item dropdown mobile-view country-menu-parent  ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <img src="assets/images/icon/country.png" alt="icon">
+                        <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu country-menu" data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                           <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                           <li >
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/france.png" alt="icon">
+                              <span>France</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item active" href="#">
+                              <img src="assets/images/icon/us.png" alt="icon">
+                              <span>English (us)</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/espen.png" alt="icon">
+                              <span>Espen</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/bangladesh.png" alt="icon">
+                              <span>Bangla</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/italy.png" alt="icon">
+                              <span>Italy</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/portugal.png" alt="icon">
+                              <span>Portugal</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label-text="Toggle navigation">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                     </li>
+                  </ul>
+               </div>
+               <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav nav-rounded" id="outside-click">
+                     <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trading   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                           <div class="container">
+                              <div class="row g-3">
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu m-0">
+                                       <h6>Your Finance</h6>
+                                       <ul>
+                                          <li><a href="#">Deposit & withdrawals</a></li>
+                                          <li><a href="#">Payment Option</a></li>
+                                          <li><a href="#">Negative balance</a></li>
+                                          <li><a href="#">Founds Security</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu">
+                                       <h6>Trading Condition</h6>
+                                       <ul>
+                                          <li><a href="#">Account types</a></li>
+                                          <li><a href="#">Islamic account</a></li>
+                                          <li><a href="#">Demo account</a></li>
+                                          <li><a href="#">timezone & conditions</a></li>
+                                          <li><a href="#">Trading advantage</a></li>
+                                          <li><a href="#">Why choose us</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!-- end col-3 -->
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h6>Assets</h6>
+                                       <ul>
+                                          <li><a href="#">Live quotes</a></li>
+                                          <li><a href="#">Stocks</a></li>
+                                          <li><a href="#">Indices</a></li>
+                                          <li><a href="#">Currency pairs</a></li>
+                                          <li><a href="#">Commodities</a></li>
+                                          <li><a href="#">Derivatives: stocks and</a></li>
+                                          <li><a href="#">indices</a></li>
+                                          <li><a href="#">Shares</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h4>Our best spared and condition!</h4>
+                                       <a href="#" class="primary-btn">Explore Now</a>
+                                       <img src="assets/images/thumbnails/1.png" alt="icon">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Analytics & education   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item"><a href="#" class="nav-link">Help Center</a></li>
+                  </ul>
+                  <ul class="navbar-nav ms-auto">
+                     <div class="header-right">
+                        <ul class="d-flex align-items-center">
+                           <li class="d-flex"><a href="#" class="primary-btn">Register</a
+                              ></li>
+                           <li class="d-flex"><a href="#" class="primary-btn-bg-transparent">Login</a
+                              ></li>
+                           <li class="nav-item dropdown country-menu-parent large-view">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                              <img src="assets/images/icon/country.png" alt="icon">
+                              <i class="fa-solid fa-angle-down"></i>
+                              </a>
+                              <ul class="dropdown-menu country-menu"  data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                                 <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                                 <li >
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/france.png" alt="icon">
+                                    <span>France</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item active" href="#">
+                                    <img src="assets/images/icon/us.png" alt="icon">
+                                    <span>English (us)</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/espen.png" alt="icon">
+                                    <span>Espen</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/bangladesh.png" alt="icon">
+                                    <span>Bangla</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/italy.png" alt="icon">
+                                    <span>Italy</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/portugal.png" alt="icon">
+                                    <span>Portugal</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- Start common page header -->
+      <section class="common-page-heading-section" style="background-image:url('assets/images/bg/profit.png');">
+         <div class="container">
+            <div class="row text-center">
+               <div class="offset-md-2 col-md-8">
+                  <div class="common-heading-area withdrawals-common-heading mt-40">
+                     <h2>Profit Calculator
+                      </h2>
+                     <p class="text-white">Calculate potential profits or losses on your trades by using the profit calculator based on your input parameters.</p>
+                     <a href="login.html" class="primary-btn mt-40">Start trading</a>
+                  </div>
+               </div>
+                
+            </div>
+            
+         </div>
+      </section>
+      <!-- End common page header -->
+        <section class="trading-tools-section mt-70 mb-70">
+         <div class="container">
+            <div class="row gy-4">
+               
+               <div class="col-lg-3 col-md-4 col-sm-6">
+                  <a href="trading-tools.html" class="tab-btn w-100 justify-content-center ">Trading Tools</a>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6">
+                  <a href="economic-calendar.html" class="tab-btn w-100 justify-content-center">Economic calendar</a>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6">
+                  <a href="profit-calculator.html" class="tab-btn w-100 justify-content-center active">Profit calculator</a>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6">
+                  <a href="trading-news.html" class="tab-btn w-100 justify-content-center">Trading news</a>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6">
+                  <a href="trading-calculator.html" class="tab-btn w-100 justify-content-center">Trading calculator</a>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6">
+                  <a href="pipcalculator.html" class="tab-btn w-100 justify-content-center">Pip calculator</a>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6">
+                  <a href="live-quotes.html" class="tab-btn w-100 justify-content-center">Live Quotes</a>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6">
+                  <a href="monitoring.html" class="tab-btn w-100 justify-content-center">Monitoring</a>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6">
+                  <a href="interest-rates.html" class="tab-btn w-100 justify-content-center">Interest rates</a>
+               </div>
+               <div class="col-lg-3 col-md-4 col-sm-6">
+                  <a href="trading-holidays.html" class="tab-btn w-100 justify-content-center">Trading holidays</a>
+               </div>
+               
+            </div>
+         </div>
+        </section>
+        <!-- Start profit calculator -->
+         <section class="profit-calculator-section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 shadow-p30">
+                     <div class="app-version-btn w-100  ">
+                        <ul class="d-flex align-items-center">
+                           <li class="choose-trading-btn w-100 text-center" onclick="choose_trading_platform(event, 'mt_trader')" id="default_active_mt_trader">MT Trader</li>
+                           <li class="choose-trading-btn w-100 text-center" onclick="choose_trading_platform(event, 'meta_trader_5')">Meta Trader 5</li>
+                           <li class="choose-trading-btn w-100 text-center" onclick="choose_trading_platform(event, 'meta_trader_4')">Meta Trader 4</li>
+                        </ul>
+                     </div>
+                     <div class="choose-trading-platform-area">
+                        <div class="choose-trading-platform" id="mt_trader">
+                           <div class="d-flex justify-content-lg-end justify-content-center">
+                              <div class="app-version-btn">
+                                 <ul class="d-flex align-items-center m-0">
+                                    <li class="choose-inner-trading-btn text-center calculate-btn" onclick="choose_trading_inner_platform(event, 'mt-inner-buy')" id="default_active_mt_inner_trader">Buy</li>
+                                    <li class="choose-inner-trading-btn text-center calculate-btn" onclick="choose_trading_inner_platform(event, 'mt-inner-sell')">Sell</li>
+                                    
+                                 </ul>
+                              </div>
+                           </div>
+                           <!--start mt inner content body -->
+                           <div class="mt-inner-content choose-inner-trading-platform" id="mt-inner-buy">
+                              <form action="">
+                                 <div class="row gy-4">
+                                    <div class="col-lg-6">
+                                       <div class="calculate-area shadow-p30">
+                                          <div class="row gy-4">
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="Symbol" class="color-03">Symbol</label>
+                                                   <select name="" id="Symbol">
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Open-price" class="color-03">Open price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Open-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="currency" class="color-03">Account currency</label>
+                                                   <select name="" id="currency">
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Close-price" class="color-03">Close price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Close-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                              
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Period-days" class="color-03">Period in days</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Period-days" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Volume" class="color-03">Volume, lots</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Volume" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                       <div class="shadow-p30 calculate-result h-100">
+                                          <h6>Calculation results</h6>
+                                          <div class="line-1 mt-20 mb-20"></div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Gross profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <div class="line-1 mt-20"></div>
+                                          <ul class="d-flex align-items-center justify-content-between mt-20">
+                                             <li><p><b>Trading fees</b></p></li>
+                                             <li><p>-$0.00</p></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="calculate-btn text-center mt-40">
+                                    <button type="submit" class="primary-btn">Calculate</button>
+                                 </div>
+                              </form>
+                          </div>
+                           <div class="mt-inner-trading choose-inner-trading-platform" id="mt-inner-sell">
+                              <form action="">
+                                 <div class="row gy-4">
+                                    <div class="col-lg-6">
+                                       <div class="calculate-area shadow-p30">
+                                          <div class="row gy-4">
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="Symbol" class="color-03">Symbol</label>
+                                                   <select name="" id="Symbol">
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Open-price" class="color-03">Open price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Open-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="currency" class="color-03">Account currency</label>
+                                                   <select name="" id="currency">
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Close-price" class="color-03">Close price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Close-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                              
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Period-days" class="color-03">Period in days</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Period-days" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Volume" class="color-03">Volume, lots</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Volume" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                       <div class="shadow-p30 calculate-result h-100">
+                                          <h6>Calculation results</h6>
+                                          <div class="line-1 mt-20 mb-20"></div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Gross profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <div class="line-1 mt-20"></div>
+                                          <ul class="d-flex align-items-center justify-content-between mt-20">
+                                             <li><p><b>Trading fees</b></p></li>
+                                             <li><p>-$0.00</p></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="calculate-btn text-center mt-40">
+                                    <button type="submit" class="primary-btn">Calculate</button>
+                                 </div>
+                              </form>
+                          </div>
+                           
+                          <!--end mt inner content body -->
+                        </div>
+                        <div class="choose-trading-platform" id="meta_trader_5">
+                            
+                           <div class="d-flex justify-content-lg-end justify-content-center">
+                              <div class="app-version-btn">
+                                 <ul class="d-flex align-items-center m-0">
+                                    <li class="choose-inner-trading-5-btn text-center calculate-btn" onclick="choose_trading_5_inner_platform(event, 'mt5-inner-buy')" id="default_active_mt5_inner_trader">Buy</li>
+                                    <li class="choose-inner-trading-5-btn text-center calculate-btn" onclick="choose_trading_5_inner_platform(event, 'mt5-inner-sell')">Sell</li>
+                                    
+                                 </ul>
+                              </div>
+                           </div>
+                           
+                            <!--start mt5 inner content body -->
+                            <div class="choose-inner-trading-5-platform" id="mt5-inner-buy">
+                              <form action="">
+                                 <div class="row gy-4">
+                                    <div class="col-lg-6">
+                                       <div class="calculate-area shadow-p30">
+                                          <div class="row gy-4">
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="Symbol" class="color-03">Symbol</label>
+                                                   <select name="" id="Symbol">
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Open-price" class="color-03">Open price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Open-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="currency" class="color-03">Account currency</label>
+                                                   <select name="" id="currency">
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Close-price" class="color-03">Close price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Close-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                              
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Period-days" class="color-03">Period in days</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Period-days" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Volume" class="color-03">Volume, lots</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Volume" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                       <div class="shadow-p30 calculate-result h-100">
+                                          <h6>Calculation results</h6>
+                                          <div class="line-1 mt-20 mb-20"></div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Gross profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <div class="line-1 mt-20"></div>
+                                          <ul class="d-flex align-items-center justify-content-between mt-20">
+                                             <li><p><b>Trading fees</b></p></li>
+                                             <li><p>-$0.00</p></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="calculate-btn text-center mt-40">
+                                    <button type="submit" class="primary-btn">Calculate</button>
+                                 </div>
+                              </form>
+                          </div>
+                           <div class="choose-inner-trading-5-platform" id="mt5-inner-sell">
+                              <form action="">
+                                 <div class="row gy-4">
+                                    <div class="col-lg-6">
+                                       <div class="calculate-area shadow-p30">
+                                          <div class="row gy-4">
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="Symbol" class="color-03">Symbol</label>
+                                                   <select name="" id="Symbol">
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Open-price" class="color-03">Open price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Open-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="currency" class="color-03">Account currency</label>
+                                                   <select name="" id="currency">
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Close-price" class="color-03">Close price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Close-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                              
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Period-days" class="color-03">Period in days</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Period-days" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Volume" class="color-03">Volume, lots</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Volume" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                       <div class="shadow-p30 calculate-result h-100">
+                                          <h6>Calculation results</h6>
+                                          <div class="line-1 mt-20 mb-20"></div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Gross profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <div class="line-1 mt-20"></div>
+                                          <ul class="d-flex align-items-center justify-content-between mt-20">
+                                             <li><p><b>Trading fees</b></p></li>
+                                             <li><p>-$0.00</p></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="calculate-btn text-center mt-40">
+                                    <button type="submit" class="primary-btn">Calculate</button>
+                                 </div>
+                              </form>
+                          </div>
+                          
+                          <!--end mt5 inner content body -->
+                        </div>
+                        <div class="choose-trading-platform" id="meta_trader_4">
+                           <div class="d-flex justify-content-lg-end justify-content-center">
+                              <div class="app-version-btn">
+                                 <ul class="d-flex align-items-center m-0">
+                                    <li class="choose-inner-trading-4-btn text-center calculate-btn" onclick="choose_trading_4_inner_platform(event, 'mt4-inner-buy')" id="default_active_mt4_inner_trader">Buy</li>
+                                    <li class="choose-inner-trading-4-btn text-center calculate-btn" onclick="choose_trading_4_inner_platform(event, 'mt4-inner-sell')">Sell</li>
+                                    
+                                 </ul>
+                              </div>
+                           </div>
+                            
+                            <!--start mt5 inner content body -->
+                            <div class="choose-inner-trading-4-platform" id="mt4-inner-buy">
+                              <form action="">
+                                 <div class="row gy-4">
+                                    <div class="col-lg-6">
+                                       <div class="calculate-area shadow-p30">
+                                          <div class="row gy-4">
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="Symbol" class="color-03">Symbol</label>
+                                                   <select name="" id="Symbol">
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Open-price" class="color-03">Open price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Open-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="currency" class="color-03">Account currency</label>
+                                                   <select name="" id="currency">
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Close-price" class="color-03">Close price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Close-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                              
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Period-days" class="color-03">Period in days</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Period-days" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Volume" class="color-03">Volume, lots</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Volume" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                       <div class="shadow-p30 calculate-result h-100">
+                                          <h6>Calculation results</h6>
+                                          <div class="line-1 mt-20 mb-20"></div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Gross profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <div class="line-1 mt-20"></div>
+                                          <ul class="d-flex align-items-center justify-content-between mt-20">
+                                             <li><p><b>Trading fees</b></p></li>
+                                             <li><p>-$0.00</p></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="calculate-btn text-center mt-40">
+                                    <button type="submit" class="primary-btn">Calculate</button>
+                                 </div>
+                              </form>
+                          </div>
+                           <div class="choose-inner-trading-4-platform" id="mt4-inner-sell">
+                              <form action="">
+                                 <div class="row gy-4">
+                                    <div class="col-lg-6">
+                                       <div class="calculate-area shadow-p30">
+                                          <div class="row gy-4">
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="Symbol" class="color-03">Symbol</label>
+                                                   <select name="" id="Symbol">
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      <option value="">EURUSD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Open-price" class="color-03">Open price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Open-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item position-relative w-100">
+                                                   <label for="currency" class="color-03">Account currency</label>
+                                                   <select name="" id="currency">
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      <option value="">USD</option>
+                                                      
+                                                   </select>
+                                                   <span><i class="fa-solid fa-angle-down"></i></span>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Close-price" class="color-03">Close price</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Close-price" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                              
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Period-days" class="color-03">Period in days</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Period-days" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="opening-form-item w-100">
+                                                   <label for="Volume" class="color-03">Volume, lots</label>
+                                                   <div class="quantity">
+                                                      <span class="minus" aria-label="Decrease">&minus;</span>
+                                                      <input type="number" id="Volume" class="input-box w-auto" value="1.10312" min="0" max="10">
+                                                      <span class="plus" aria-label="Increase">&plus;</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                       <div class="shadow-p30 calculate-result h-100">
+                                          <h6>Calculation results</h6>
+                                          <div class="line-1 mt-20 mb-20"></div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <!-- item -->
+                                          <div class="calculate-result-item d-flex align-items-center justify-content-between">
+                                             <div class="calculate-result-title">
+                                                <p>Gross profit</p>
+                                             </div>
+                                             <div class="result-line"></div>
+                                             <div class="calculate-result-value">
+                                                <span class="color-35">$6.36</span>
+                                             </div>
+                                          </div>
+                                          <div class="line-1 mt-20"></div>
+                                          <ul class="d-flex align-items-center justify-content-between mt-20">
+                                             <li><p><b>Trading fees</b></p></li>
+                                             <li><p>-$0.00</p></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="calculate-btn text-center mt-40">
+                                    <button type="submit" class="primary-btn">Calculate</button>
+                                 </div>
+                              </form>
+                          </div>
+                          
+                          <!--end mt5 inner content body -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+        <!-- End profit calculator -->
+         <section class="profit-calculation-info-section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 shadow-p30 mt-30">
+                     <div class="common-heading-area">
+                        <ul class="d-flex flex-column g-5">
+                           <li><p>The Octa Forex profit calculator is a risk management tool to improve your trading of currency pairs and other assets. Calculate potential profits and losses of your orders and trade financial markets more confidently.</p></li>
+                           <li><p>Ready to put your calculations to the test? Practice risk-free with simulated funds or start trading with real money.</p></li>
+                        </ul>
+                        <ul class="d-flex align-items-center g-20 mt-40 flex-wrap justify-content-center justify-content-md-start">
+                           <li><a href="login.html" class="primary-btn">Trade in a real account</a></li>
+                           <li><a href="demo-account.html" class="secondary-btn">Try on a demo account</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-12 shadow-p30 mt-30">
+                     <div class="common-heading-area">
+                        <h3>Order details for the MT Forex profit calculator</h3>
+                        <ul class="trading-info-list ml-30 d-flex flex-column g-5">
+                           <li><p>Symbol is the trading asset you are planning to Buy or Sell. Pick from currency pairs, stocks, indices, commodities, and digital assets.</p></li>
+                           <li><p>Account currency is the deposit currency of your trading account. You can see it in the Current Funds section on your dashboard or on the main screen in the Octa trading app.</p></li>
+                           <li><p>Period in days is the number of days you plan to keep your order open. We do not charge swap fees for holding orders open overnight on any of our platforms, so this field is for your better understanding.</p></li>
+                           <li><p>Volume, lots is the volume of one order measured in standard lots. One lot is 100,000 units of the base currency. Mini lot equals 0.1 standard lots and constitutes 10,000 units of the base currency. Micro lot equals 0.01 lots and constitutes 1,000 units of the base currency.</p></li>
+                           <li><p>Direction is whether you plan to execute a Buy or Sell order. A Buy order is when you go long because of the rising quotes, and a Sell order is when you go short because of the falling quotes.</p></li>
+                           <li><p>Open price is the price you plan to open your order at.</p></li>
+                           <li><p>Close price is the price you plan to close your order at.</p></li>
+                            
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-12 shadow-p30 mt-30">
+                     <div class="common-heading-area">
+                        <h3>How to determine the Stop Loss and Take Profit levels with the calculator</h3>
+                        <ul class="d-flex flex-column g-5">
+                           <li><p>You can use the calculator to choose the Stop Loss and Take Profit levels for your order. Input the details of your order, determine the open price and start calculating various outcomes by changing the close price level. Choose the levels resulting in profits and losses you are comfortable with.</p></li>
+                           
+                        </ul>
+                     </div>
+                     <div class="common-heading-area mt-12">
+                        <h5>Example: how to choose the Take Profit level</h5>
+                        <ul class="d-flex flex-column g-5 mt-12">
+                           <li><p>For instance, you want to buy 8 lots of GBPUSD. The current price of this pair is 1,27140, and you expect it to rise. You set the matching trading volume and open price and start calculating potential profit for various close price values. For the close price of 1,27165, the expected profit is 200 USD, while the close price of 1,27180 results in 320 USD. Extra 120 USD seem significant, but since you are not sure the price will hit 1,27180, you choose 1,27165 as your Take Profit level to increase the chances of a profitable order. In the same way, you can also use the calculator to determine the Stop Loss level.</p></li>
+                           
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-12 shadow-p30 mt-30">
+                     <div class="common-heading-area">
+                        <h3>What is Stop Loss?</h3>
+                        <ul class="d-flex flex-column g-5">
+                           <li><p>A Stop Loss order allows traders to limit the loss on a position. It automatically closes when the price reaches a certain non-favourable level you can set in advance. Using a Stop Loss order protects your funds from the worst-case scenario. You can use the calculator to manually choose the Stop Loss level for your order.</p></li>
+                           
+                        </ul>
+                     </div>
+                     
+                  </div>
+                  <div class="col-md-12 shadow-p30 mt-30">
+                     <div class="common-heading-area">
+                        <h3>What is Take Profit?</h3>
+                        <ul class="d-flex flex-column g-5">
+                           <li><p>A Take Profit order allows traders to ensure the profit on a position. It automatically closes when the price reaches a certain favourable level you can set in advance. Using a Take Profit order allows you to take the expected profit before the price moves in the opposite direction. You can use the calculator to choose the Take Profit level for your order manually.</p></li>
+                           
+                        </ul>
+                     </div>
+                     
+                  </div>
+                  <div class="col-md-12 shadow-p30 mt-30">
+                     <div class="common-heading-area">
+                        <h3>How to calculate pip value</h3>
+                        <p>A pip is the smallest unit of price change in Forex. Its amount varies for different trading instruments:</p>
+                        <ul class="d-flex flex-column g-5 trading-info-list ml-30 mt-3">
+                           <li><p> for 5-digit currency pairs—the 4th decimal (0.0001)</p></li>
+                           <li><p> for 3-digit currency pairs and XAGUSD—the 2nd decimal (0.01)</p></li>
+                           <li><p> for XAUUSD, XBRUSD, XTIUSD—the 1st decimal (0.1)</p></li>
+                           <li><p>for indices (exсept JPN225)—the 1st decimal (0.1) </p></li>
+                           <li><p>for JPN225—the 4th decimal (0.0001). </p></li>
+                           
+                        </ul>
+                        <h5 class="mt-20">Example: how to use pip value</h5>
+                        <p class="mt-2">Let us say you want to buy a standard lot of EURUSD, and the price is currently at the 1.0762 level. The calculated pip value of this trade is 10 USD. That means that if the price falls to 1.0761 (one pip down), you will lose 10 USD. And if it grows to 1.0772 (10 pips up), you will make 100 USD.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Start legal info -->
+         <section class="site-legal-info mt-100">
+            <div class="container">
+               <div class="row">
+               <div class="col-md-12">
+                  <div class="post-info">
+                     <p>Legal Information: Just Global Markets Ltd., registration number 8427198-1, address: Office 10, Floor 2, Vairam Building, Providence Industrial Estate, Providence, Mahe, Seychelles, a company regulated by the Seychelles Financial Services Authority (FSA) under a Securities Dealer License number SD088.</p>
+                     <p>Just Global Markets (MU) Limited, registration number 194590 GBC, address: The Cyberati Lounge, C/o Credentia International Management Ltd, Ground Floor, The Catalyst, Silicon Avenue, 40 Cybercity, 72201 Ebène, Republic of Mauritius, an Investment Dealer (Full Service Dealer, Excluding Underwriting) regulated by the Financial Services Commission (FSC) in Mauritius under a License number GB22200881.</p>
+                     <p>GMFT Services Ltd, registration number HE 424491, address: Syrakouson 9, Office 106, 3077, Limassol, Cyprus, is the EU merchant company, which provides certain content and operates the business including in terms of processing payment transactions.</p>
+                     <p>Risk Warning: CFDs are complex instruments and come with a high risk of losing funds rapidly due to leverage.</p>
+                     <p>The vast majority of retail investors face losses when trading CFDs. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your deposit. To ensure that you fully understand the risks associated with margin trading, pay attention to our Risk Disclosure.</p>
+                     <p>Restricted Jurisdictions: JustMarkets does not offer and does not provide services to residents and citizens of certain jurisdictions, including Australia, Canada, the EU and EEA, Japan, the United Kingdom, the United States of America, and countries sanctioned by the EU.</p>
+                     <p>¹At JustMarkets, most of withdrawals are processed instantly (under 1 minute). Once your funds leave our custody, it’s up to your chosen payment provider to process the funds and credit your account.</p>
+                      
+                  </div>
+               </div>
+            </div>
+            </div>
+         </section>
+        <!-- End legal info -->
+        <!-- Start Footer area -->
+         <footer class="footer-area mt120">
+           <div class="container">
+             <div class="row ptb70">
+               <div class="col-md-12 footer-inner d-flex">
+                   <div class="footer-description"> 
+                     <img src="assets/images/logo.png" alt="logo">
+                     <p>A human resources agency serves as a vital partner for businesses seeking to optimize their workforce management.</p>
+                     <h5>Follow Us</h5>
+                     <div class="social-menu">
+                        <ul class="d-flex align-items-center">
+                           <li><a href="#"><i class="fa fab fa-facebook"></i></a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-twitter"></i>
+                           </a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-instagram"></i>
+                           </a></li>
+                           <li><a href="#"><i class="fa fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                 <div class="footer-widgets-area">
+                   <div class="footer-widgets">
+                     <h4>Trading</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Markets</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Education</h4>
+                     <ul>
+                        <li><a href="#">Quick start</a></li>
+                        <li><a href="#">Online webinars</a></li>
+                        <li><a href="#">Forex articles</a></li>
+                        <li><a href="#">Forex glossary</a></li>
+                        <li><a href="#">Educational video</a></li>
+                        <li><a href="#">List of world currencies</a></li>
+                     </ul>
+                  </div>
+                 </div>
+               </div>
+            </div>
+           </div>
+           <div class="copyright-text">
+            <p>Copyright &copy; 2024 by <a href="index.html">markets terminal</a></p>
+           </div>
+         </footer>
+        
+        <!-- End Footer area -->
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+       <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script>
+        //  trading platform
+        function choose_trading_platform(evt, choose_trading_platform_connect) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-trading-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-trading-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_platform_connect).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt_trader").click();
+
+
+         // trading inner select tab
+         function choose_trading_inner_platform(evt, choose_trading_inner_platform_connect) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-inner-trading-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-inner-trading-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_inner_platform_connect).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt_inner_trader").click();
+         // trading 5 inner select tab
+         function choose_trading_5_inner_platform(evt, choose_trading_inner_platform_connect_5) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-inner-trading-5-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-inner-trading-5-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_inner_platform_connect_5).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt5_inner_trader").click();
+         // trading 4 inner select tab
+         function choose_trading_4_inner_platform(evt, choose_trading_inner_platform_connect_4) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-inner-trading-4-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-inner-trading-4-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_inner_platform_connect_4).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt4_inner_trader").click();
+
+       </script>
+   </body>
+</html>
