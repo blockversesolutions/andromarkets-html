@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tradding Web App</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+         <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+      <link rel="stylesheet" href="assets/css/common.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+   </head>
+   <body>
+      <header class="header-transparent">
+         <nav class="navbar navbar-expand-xl">
+            <div class="container position-relative">
+               <a class="navbar-brand" href="index.html">
+               <img src="assets/images/logo.png" alt="logo"/>
+               </a>
+               <div class="header-right">
+                  <ul class="d-flex align-items-center">
+                     <li class="nav-item dropdown mobile-view country-menu-parent  ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <img src="assets/images/icon/country.png" alt="icon">
+                        <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu country-menu" data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                           <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                           <li >
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/france.png" alt="icon">
+                              <span>France</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item active" href="#">
+                              <img src="assets/images/icon/us.png" alt="icon">
+                              <span>English (us)</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/espen.png" alt="icon">
+                              <span>Espen</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/bangladesh.png" alt="icon">
+                              <span>Bangla</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/italy.png" alt="icon">
+                              <span>Italy</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <img src="assets/images/icon/portugal.png" alt="icon">
+                              <span>Portugal</span>
+                              <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                     </li>
+                  </ul>
+               </div>
+               <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav nav-rounded" id="outside-click">
+                     <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trading   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                           <div class="container">
+                              <div class="row g-3">
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu m-0">
+                                       <h6>Your Finance</h6>
+                                       <ul>
+                                          <li><a href="#">Deposit & withdrawals</a></li>
+                                          <li><a href="#">Payment Option</a></li>
+                                          <li><a href="#">Negative balance</a></li>
+                                          <li><a href="#">Founds Security</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu">
+                                       <h6>Trading Condition</h6>
+                                       <ul>
+                                          <li><a href="#">Account types</a></li>
+                                          <li><a href="#">Islamic account</a></li>
+                                          <li><a href="#">Demo account</a></li>
+                                          <li><a href="#">Spreads & conditions</a></li>
+                                          <li><a href="#">Trading advantage</a></li>
+                                          <li><a href="#">Why choose us</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <!-- end col-3 -->
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h6>Assets</h6>
+                                       <ul>
+                                          <li><a href="#">Live quotes</a></li>
+                                          <li><a href="#">Stocks</a></li>
+                                          <li><a href="#">Indices</a></li>
+                                          <li><a href="#">Currency pairs</a></li>
+                                          <li><a href="#">Commodities</a></li>
+                                          <li><a href="#">Derivatives: stocks and</a></li>
+                                          <li><a href="#">indices</a></li>
+                                          <li><a href="#">Shares</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="col-megamenu border-0">
+                                       <h4>Our best spared and condition!</h4>
+                                       <a href="#" class="primary-btn">Explore Now</a>
+                                       <img src="assets/images/thumbnails/1.png" alt="icon">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Analytics & education   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company   <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu" role="menu">
+                           <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 1</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item"><a href="#" class="nav-link">Help Center</a></li>
+                  </ul>
+                  <ul class="navbar-nav ms-auto">
+                     <div class="header-right">
+                        <ul class="d-flex align-items-center">
+                           <li class="d-flex"><a href="#" class="primary-btn">Register</a
+                              ></li>
+                           <li class="d-flex"><a href="#" class="primary-btn-bg-transparent">Login</a
+                              ></li>
+                           <li class="nav-item dropdown country-menu-parent large-view">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                              <img src="assets/images/icon/country.png" alt="icon">
+                              <i class="fa-solid fa-angle-down"></i>
+                              </a>
+                              <ul class="dropdown-menu country-menu"  data-simplebar style="max-height: 360px;" data-bs-popper="static" id="scrollbar">
+                                 <span class="close-mark"><i class="fa-solid fa-xmark"></i></span>
+                                 <li >
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/france.png" alt="icon">
+                                    <span>France</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item active" href="#">
+                                    <img src="assets/images/icon/us.png" alt="icon">
+                                    <span>English (us)</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/espen.png" alt="icon">
+                                    <span>Espen</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/bangladesh.png" alt="icon">
+                                    <span>Bangla</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/italy.png" alt="icon">
+                                    <span>Italy</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="assets/images/icon/portugal.png" alt="icon">
+                                    <span>Portugal</span>
+                                    <span class="float-end icon-check"><i class="fa-solid fa-circle-check fs-6"></i></span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section class="common-page-heading-section gradient-bg">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-7">
+                  <div class="common-heading-area withdrawals-common-heading">
+                     <h2>Trade indices at minimal spreads
+                      </h2>
+                     <p class="text-white">Enjoy trading indices with competitive, low spreads, ensuring cost-effective trading and better profit potential across major global markets.</p>
+                     <a href="login.html" class="primary-btn mt-40">Start trading</a>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="common-page-thumbnails md-mt-50">
+                     <img src="assets/images/thumbnails/indices.png" alt="img" class="w-100">
+                  </div>
+               </div>
+            </div>
+             
+         </div>
+      </section>
+     <!-- Start why choose indices -->
+      <section class="why-choose-indices-section mt-100">
+         <div class="container">
+            <div class="row align-items-center gy-4">
+               <div class="col-md-7">
+                  <div class="common-heading-area">
+                     <h3>Why choose Market Terminal for indices?</h3>
+                     <p>Market Terminal offers low spreads, fast execution, and diverse indices, providing traders with efficient and reliable trading conditions.</p>
+                  </div>
+               </div>
+               <div class="col-md-5 text-center text-md-end">
+                  <a href="login.html" class="primary-btn">Open account</a>
+               </div>
+            </div>
+            <div class="row gy-4 mt-50">
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="balance-protection-card text-center">
+                     <div class="balance-card-icon">
+                        <img src="assets/images/icon/investment-global.png" alt="icon">
+                     </div>
+                     <h4>Invest in global stocks indices</h4>
+                     <p>Trade CFDs on major indices to cover entire national stock markets, not individual companies.</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="balance-protection-card text-center">
+                     <div class="balance-card-icon">
+                        <img src="assets/images/icon/trade.png" alt="icon">
+                     </div>
+                     <h4>Go long or short</h4>
+                     <p>Benefit from any price movements: profit from both upward and downward market trends.</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="balance-protection-card text-center">
+                     <div class="balance-card-icon">
+                        <img src="assets/images/icon/leverage.png" alt="icon">
+                     </div>
+                     <h4>Make the most of leverage</h4>
+                     <p>Use leverage of up to 1:400 to trade much larger volumes: start trading even with a tiny deposit.</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="balance-protection-card text-center">
+                     <div class="balance-card-icon">
+                        <img src="assets/images/icon/like.png" alt="icon">
+                     </div>
+                     <h4>Low and stable spreads</h4>
+                     <p>Minimise your costs with low spreads that remain stable even when the volatility index is high.</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="balance-protection-card text-center">
+                     <div class="balance-card-icon">
+                        <img src="assets/images/icon/no-dollar.png" alt="icon">
+                     </div>
+                     <h4>No swaps and no commissions</h4>
+                     <p>Trade indices free of charge: pay no commissions, no fees, and no swap charges.</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="balance-protection-card text-center">
+                     <div class="balance-card-icon">
+                        <img src="assets/images/icon/star.png" alt="icon">
+                     </div>
+                     <h4>Status Program</h4>
+                     <p>Unlock even tighter spreads, quicker transfers, personal guidance, and many more benefits.</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="balance-protection-card text-center">
+                     <div class="balance-card-icon">
+                        <img src="assets/images/icon/percentance.png" alt="icon">
+                     </div>
+                     <h4>50% deposit bonus</h4>
+                     <p>Receive a 50% bonus on each deposit and withdraw it after trading a certain amount of lots.</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="balance-protection-card text-center">
+                     <div class="balance-card-icon">
+                        <img src="assets/images/icon/Expert.png" alt="icon">
+                     </div>
+                     <h4>Expert Advisors and trading ideas</h4>
+                     <p>Seek help from automatic trading systems and explore market insights to get trading signals.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+     <!-- End why choose indices -->
+      <!-- Start spreads data -->
+       <section class="spreads-data-section mt-100">
+         <div class="container">
+            <div class="row align-items-center gy-4">
+               <div class="col-md-8 offset-md-2">
+                  <div class="common-heading-area text-center">
+                     <h3>Live indices quotes spreads</h3>
+                     <p>Access real-time quotes and competitive spreads for major indices, ensuring transparent and efficient trading on Market Terminal.</p>
+                  </div>
+               </div>
+               
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="app-version-btn mt-70">
+                     <ul class="d-flex align-items-center">
+                        <li class="spreads_btn" onclick="spreads(event, 'spreads_trader')" id="apprunning">MTTrader</li>
+                        <li class="spreads_btn" onclick="spreads(event, 'spreads_trader_meta_4')">MetaTrader 4</li>
+                        <li class="spreads_btn" onclick="spreads(event, 'spreads_trader_meta_5')">MetaTrader 5</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <!-- item -->
+                  <div class="spreadsContent" id="spreads_trader">
+                     <div class="clients-trading-table">
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>Symbol</b></th>
+                               
+                               <th class="bg-td-color text-start"><b>Bid</b></th>
+                               <th class="bg-td-color text-start"><b>Ask</b></th>
+                               <th class="bg-td-color text-start"><b>Spread (Pips)</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Pip price (USD)</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start">XAUUSD</td>
+                                  
+                                 <td class="text-start"><span class="color-35">2648.16</span></td>
+                                 <td class="text-start"><span class="color-35">2648.43</span></td>
+                                 <td class="text-start">2.7</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">BTCUSD</td>
+                                  
+                                 <td class="text-start"><span class="color-e8">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">EURUSD</td>
+                                  
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">GBPUSD</td>
+                                 
+                                 <td class="text-start"><span class="color-e8">63925</span></td>
+                                 <td class="text-start"><span class="color-e8">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">GBPJPY</td>
+                                 
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              
+                              <tr>
+                                 <td class="text-start">USDJPY</td>
+                                 
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">ETHUSD</td>
+                                  
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                           </tbody>
+                           
+                         </table>
+                         <div class="text-center mt-40">
+                           <a href="login.html" class="primary-btn">Trade indices <span class="rotation ml-5"><i class="fa-solid fa-arrow-right"></i></span></a>
+                         </div>
+                     </div>
+                  </div>
+                  <!-- item -->
+                  <div class="spreadsContent" id="spreads_trader_meta_4">
+                     <div class="clients-trading-table">
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>Symbol</b></th>
+                               
+                               <th class="bg-td-color text-start"><b>Bid</b></th>
+                               <th class="bg-td-color text-start"><b>Ask</b></th>
+                               <th class="bg-td-color text-start"><b>Spread (Pips)</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Pip price (USD)</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start">XAUUSD</td>
+                                 
+                                 <td class="text-start"><span class="color-35">2648.16</span></td>
+                                 <td class="text-start"><span class="color-35">2648.43</span></td>
+                                 <td class="text-start">2.7</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">BTCUSD</td>
+                                 
+                                 <td class="text-start"><span class="color-e8">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">EURUSD</td>
+                                 
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">GBPUSD</td>
+                                  
+                                 <td class="text-start"><span class="color-e8">63925</span></td>
+                                 <td class="text-start"><span class="color-e8">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">GBPJPY</td>
+                                
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              
+                              <tr>
+                                 <td class="text-start">USDJPY</td>
+                                 
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">ETHUSD</td>
+                                
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                           </tbody>
+                           
+                         </table>
+                         <div class="text-center mt-40">
+                           <a href="login.html" class="primary-btn">Trade indices <span class="rotation ml-5"><i class="fa-solid fa-arrow-right"></i></span></a>
+                         </div>
+                     </div>
+                  </div>
+                  <!-- item -->
+                  <div class="spreadsContent" id="spreads_trader_meta_5">
+                     <div class="clients-trading-table">
+                        <table class="data-show-table mobile-view-table">
+                           <thead>
+                             <tr>
+                               <th class="bg-td1 bg-td-color text-start"><b>Symbol</b></th>
+                               
+                               <th class="bg-td-color text-start"><b>Bid</b></th>
+                               <th class="bg-td-color text-start"><b>Ask</b></th>
+                               <th class="bg-td-color text-start"><b>Spread (Pips)</b></th>
+                               <th class="bg-td2 bg-td-color text-start"><b>Pip price (USD)</b></th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="text-start">XAUUSD</td>
+                                
+                                 <td class="text-start"><span class="color-35">2648.16</span></td>
+                                 <td class="text-start"><span class="color-35">2648.43</span></td>
+                                 <td class="text-start">2.7</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">BTCUSD</td>
+                                 
+                                 <td class="text-start"><span class="color-e8">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">EURUSD</td>
+                                  
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">GBPUSD</td>
+                                 
+                                 <td class="text-start"><span class="color-e8">63925</span></td>
+                                 <td class="text-start"><span class="color-e8">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">GBPJPY</td>
+                                 
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              
+                              <tr>
+                                 <td class="text-start">USDJPY</td>
+                                  
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                              <tr>
+                                 <td class="text-start">ETHUSD</td>
+                                
+                                 <td class="text-start"><span class="color-35">63925</span></td>
+                                 <td class="text-start"><span class="color-35">63945</span></td>
+                                 <td class="text-start">2.0</td>
+                                 <td class="text-start">10.00</td>
+                              </tr>
+                           </tbody>
+                           
+                         </table>
+                         <div class="text-center mt-40">
+                           <a href="login.html" class="primary-btn">Trade indices <span class="rotation ml-5"><i class="fa-solid fa-arrow-right"></i></span></a>
+                         </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </section>
+      <!-- End spreads data -->
+       
+        <section class="potential-section mt-100">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6">
+                  <div class="potential-left-area lg-mr-22">
+                     <div class="common-heading-area">
+                        <h3>Understanding Index Trading Basics</h3>
+                        <p>An index tracks the performance of asset groups, like major stocks. Through CFDs, you can trade indices without owning actual stocks, predicting market direction. Leverage boosts potential profits and risks, making index trading a strategic choice for many traders.</p>
+                        <p class="mt-10">Index CFDs allow you to use leverage, or borrow funds to open much larger positions. This way, leverage can magnify both potential profits and eventual losses. Indices are relatively intuitive: with them.</p>
+                        
+                     </div>
+                      
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="potential-thumbnail">
+                     <img src="assets/images/thumbnails/thumbnails-20.png" alt="image" class="w-100 rounded">
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+        </section>
+        <section class="potential-section mt-100">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6">
+                  <div class="potential-left-area lg-mr-22 ">
+                     <div class="potential-thumbnail m-0">
+                        <img src="assets/images/thumbnails/thumbnails-21.png" alt="image" class="w-100 rounded mb-30">
+                        
+                     </div>
+                      
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="common-heading-area">
+                     <h3>Index Trading Strategies Explained</h3>
+                     <p>Indices reflect national economies, offering trading opportunities via news analysis. Monitor corporate announcements and economic events to identify trends. Novice traders can benefit from trend trading, using indicators to gauge market direction. Online tools and technical indicators help simplify trading, making it easier to understand and trade major global indices.</p>
+                     
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+        </section>
+        <section class="common-page-heading-section mt-100" style="background-image:url('assets/images/bg/why-choose-2.png');">
+         <div class="container">
+            <div class="row text-center">
+               <div class="offset-md-2 col-md-8">
+                  <div class="common-heading-area withdrawals-common-heading">
+                     <h3 class="text-white">Discover Hub for live trading insights
+                     </h3>
+                     <p class="text-white">Access a dynamic space for live trading ideas, offering insights, strategies, and market updates to enhance your trading decisions.</p>
+                     <a href="login.html" class="primary-btn mt-40">Explore MT space</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </section>
+         <section class="trading-platform-section mt-100">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <div class="common-heading-area text-center">
+                        <h3>Choose your trading platform</h3>
+                        <p>Select from a variety of advanced trading platforms tailored to your preferences, ensuring a seamless and efficient trading experience.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="app-version-btn w-100 mt-70">
+                        <ul class="d-flex align-items-center">
+                           <li class="choose-trading-btn w-100 text-center" onclick="choose_trading_platform(event, 'mt_trader')" id="default_active_mt_trader">MT Trader</li>
+                           <li class="choose-trading-btn w-100 text-center" onclick="choose_trading_platform(event, 'meta_trader_5')">Meta Trader 5</li>
+                           <li class="choose-trading-btn w-100 text-center" onclick="choose_trading_platform(event, 'meta_trader_4')">Meta Trader 4</li>
+                        </ul>
+                     </div>
+                     <div class="choose-trading-platform-area">
+                        <div class="choose-trading-platform" id="mt_trader">
+                           <div class="app-version-btn-2 mb-60">
+                              <ul class="d-flex align-items-center">
+                                 <li class="choose-inner-trading-btn text-center" onclick="choose_trading_inner_platform(event, 'mt-inner-web')" id="default_active_mt_inner_trader">Web Trader</li>
+                                 <li class="choose-inner-trading-btn text-center" onclick="choose_trading_inner_platform(event, 'mt-inner-android')">Android</li>
+                                 <li class="choose-inner-trading-btn text-center" onclick="choose_trading_inner_platform(event, 'mt-inner-iOS')">iOS</li>
+                              </ul>
+                           </div>
+                           <!--start mt inner content body -->
+                           <div class="mt-inner-content choose-inner-trading-platform" id="mt-inner-web">
+                              <div class="row gy-5">
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left lg-mr-22 text-md-start text-center">
+                                       <div class="common-heading-area">
+                                          <h3>Learn at your speed</h3>
+                                          <p>Master Forex trading at your own pace with our demo account. Develop your strategies, enhance your skills, and build confidence without rushing. It’s an ideal way to practice and prepare for live trading without financial risk.</p>
+                                       </div>
+                                       <a href="#" class="primary-btn mt-30">Log in</a>
+                                       <img src="assets/images/thumbnails/trading10.png" alt="img" class="w-100 mt-30 rounded">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left mobile-order-change">
+                                       <img src="assets/images/thumbnails/trade-4.png" alt="img" class="w-100 mb-30 rounded">
+                                       <div class="common-heading-area">
+                                          <h3>Enjoy real market scenarios</h3>
+                                          <p>Experience the closest thing to live trading with our demo account. Enjoy real market conditions, refine your strategies, and test your skills risk-free. Gain the confidence and expertise needed to succeed when transitioning to live trading.</p>
+                                          <a href="#" class="primary-btn mt-30">How to start</a>
+                                       </div>
+                                       
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="mt-inner-trading choose-inner-trading-platform" id="mt-inner-android">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader Android</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center justify-content-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/playstore.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>GET IT ON</h6>
+                                                      <h4>Google Play</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="mt-inner-wetradingb choose-inner-trading-platform" id="mt-inner-iOS">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader ISO</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center justify-content-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/apk.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>Download</h6>
+                                                      <h4>APK</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile2.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                          <!--end mt inner content body -->
+                        </div>
+                        <div class="choose-trading-platform" id="meta_trader_5">
+                           <div class="app-version-btn-2 mb-60">
+                              <ul class="d-flex align-items-center">
+                                 <li class="choose-inner-trading-5-btn text-center" onclick="choose_trading_5_inner_platform(event, 'mt5-inner-web')" id="default_active_mt5_inner_trader">Web Trader</li>
+                                 <li class="choose-inner-trading-5-btn text-center" onclick="choose_trading_5_inner_platform(event, 'mt5-inner-android')">Android</li>
+                                 <li class="choose-inner-trading-5-btn text-center" onclick="choose_trading_5_inner_platform(event, 'mt5-inner-iOS')">iOS</li>
+                              </ul>
+                           </div>
+                            <!--start mt5 inner content body -->
+                            <div class="choose-inner-trading-5-platform" id="mt5-inner-web">
+                              <div class="row gy-5">
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left lg-mr-22 text-md-start text-center">
+                                       <div class="common-heading-area">
+                                          <h3>Learn at your speed</h3>
+                                          <p>Master Forex trading at your own pace with our demo account. Develop your strategies, enhance your skills, and build confidence without rushing. It’s an ideal way to practice and prepare for live trading without financial risk.</p>
+                                       </div>
+                                       <a href="#" class="primary-btn mt-30">Log in</a>
+                                       <img src="assets/images/thumbnails/trading10.png" alt="img" class="w-100 mt-30 rounded">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left mobile-order-change">
+                                       <img src="assets/images/thumbnails/trade-4.png" alt="img" class="w-100 mb-30 rounded">
+                                       <div class="common-heading-area">
+                                          <h3>Enjoy real market scenarios</h3>
+                                          <p>Experience the closest thing to live trading with our demo account. Enjoy real market conditions, refine your strategies, and test your skills risk-free. Gain the confidence and expertise needed to succeed when transitioning to live trading.</p>
+                                          <a href="#" class="primary-btn mt-30">How to start</a>
+                                       </div>
+                                       
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="choose-inner-trading-5-platform" id="mt5-inner-android">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader Android</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center justify-content-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/playstore.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>GET IT ON</h6>
+                                                      <h4>Google Play</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="choose-inner-trading-5-platform" id="mt5-inner-iOS">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader ISO</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center justify-content-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/apk.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>Download</h6>
+                                                      <h4>APK</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile2.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                          <!--end mt5 inner content body -->
+                        </div>
+                        <div class="choose-trading-platform" id="meta_trader_4">
+                           <div class="app-version-btn-2 mb-60">
+                              <ul class="d-flex align-items-center">
+                                 <li class="choose-inner-trading-4-btn text-center" onclick="choose_trading_4_inner_platform(event, 'mt4-inner-web')" id="default_active_mt4_inner_trader">Web Trader</li>
+                                 <li class="choose-inner-trading-4-btn text-center" onclick="choose_trading_4_inner_platform(event, 'mt4-inner-android')">Android</li>
+                                 <li class="choose-inner-trading-4-btn text-center" onclick="choose_trading_4_inner_platform(event, 'mt4-inner-iOS')">iOS</li>
+                              </ul>
+                           </div>
+                            <!--start mt5 inner content body -->
+                            <div class="choose-inner-trading-4-platform" id="mt4-inner-web">
+                              <div class="row gy-5">
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left lg-mr-22 text-md-start text-center">
+                                       <div class="common-heading-area">
+                                          <h3>Learn at your speed</h3>
+                                          <p>Master Forex trading at your own pace with our demo account. Develop your strategies, enhance your skills, and build confidence without rushing. It’s an ideal way to practice and prepare for live trading without financial risk.</p>
+                                       </div>
+                                       <a href="#" class="primary-btn mt-30">Log in</a>
+                                       <img src="assets/images/thumbnails/trading10.png" alt="img" class="w-100 mt-30 rounded">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="secures-found-left mobile-order-change">
+                                       <img src="assets/images/thumbnails/trade-4.png" alt="img" class="w-100 mb-30 rounded">
+                                       <div class="common-heading-area">
+                                          <h3>Enjoy real market scenarios</h3>
+                                          <p>Experience the closest thing to live trading with our demo account. Enjoy real market conditions, refine your strategies, and test your skills risk-free. Gain the confidence and expertise needed to succeed when transitioning to live trading.</p>
+                                          <a href="#" class="primary-btn mt-30">How to start</a>
+                                       </div>
+                                       
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="choose-inner-trading-4-platform" id="mt4-inner-android">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader Android</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center justify-content-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/playstore.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>GET IT ON</h6>
+                                                      <h4>Google Play</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                           <div class="choose-inner-trading-4-platform" id="mt4-inner-iOS">
+                              <div class="row align-items-center">
+                                 <div class="col-md-6">
+                                    <div class="potential-left-area lg-mr-22">
+                                       <div class="common-heading-area mb-30">
+                                          <h3>MT Trader ISO</h3>
+                                          <p>Download the Mt trading app and enjoy all the features of Mt Trader on your Android device. Use technical analysis tools and other useful instruments to manage orders on the go.</p>
+                                       </div>
+                                       <div class="app-download-btn m-0">
+                                          <ul>
+                                             <li class="m-auto m-md-0">
+                                                <a href="#" class="app-btn-blur d-flex align-items-center
+                                                justify-content-center" style="background-color:rgba(0, 0, 0, 0.9);">
+                                                   <div class="app-download-logo">
+                                                      <img src="assets/images/icon/apk.png" alt="icon">
+                                                   </div>
+                                                   <div class="app-download-text">
+                                                      <h6>Download</h6>
+                                                      <h4>APK</h4>
+                                                   </div>
+                                                </a>
+                                             </li>
+                                              
+                                          </ul>
+                                       </div>
+                                        
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="potential-thumbnail text-center p-5 bg-color-f5 rounded">
+                                       <img src="assets/images/thumbnails/mobile2.png" alt="img" class="w-auto rounded">
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                          <!--end mt5 inner content body -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="trading-hour-section mt-100">
+            <div class="container">
+               <div class="row align-items-center gy-4">
+                  <div class="col-md-8 offset-md-2">
+                     <div class="common-heading-area text-center">
+                        <h3>Trading hours</h3>
+                        <p>This schedule shows the actual trading time for every asset offered by Octa. Use it to plan your trading day and choose the best times for opening and closing orders.</p>
+                     </div>
+                  </div>
+                  
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="timezone-tab-btn">
+                        <div class="row align-items-center gy-3 mt-50">
+                           <div class="col-md-6">
+                              <h5 class="text-center text-md-start">Choose the timezone</h5>
+                           </div>
+                           <div class="col-md-6 text-center text-md-end">
+                              <div class="app-version-btn">
+                                 <ul class="d-flex align-items-center m-0">
+                                    <li class="time-zone-btn" onclick="timezone(event, 'timezone_trader_utc')" id="time-zone-btn-open">UTC</li>
+                                    <li class="time-zone-btn" onclick="timezone(event, 'timezone_trader_eest')">EEST</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="line-1 mb-20 mt-30"></div>
+                     </div>
+                     
+                  </div>
+                  <div class="col-md-12">
+                     <!-- item -->
+                     <div class="timezoneContent" id="timezone_trader_utc">
+                         
+                        <div class="clients-trading-table">
+                           <h4 class="mb-0 mb-md-4"><b>Indices</b></h4>
+                           <table class="data-show-table mobile-view-table">
+                              <thead>
+                                <tr>
+                                  <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                                  <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                                  <th class="bg-td-color text-start"><b>Saturday</b></th>
+                                  <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td class="text-start"><p>NAS100</p></td>
+                                    <td class="text-start">
+                                      <p> 10:00 p.m. – 08:15 p.m.</p>
+                                       (5-minute recess)
+                                    </td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                                  
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>SPX500</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>US30</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>AUS200</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>FRA40</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>EUSTX50</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>JPN225</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(5-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>UK100</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>UK100</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>UK100</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(15.5-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                              </tbody>
+                              
+                            </table>
+                            
+                        </div>
+                        
+                        
+                     </div>
+                       <!-- item -->
+                     <div class="timezoneContent" id="timezone_trader_eest">
+                        <div class="clients-trading-table">
+                           <h4 class="mb-0 mb-md-4"><b>Indices</b></h4>
+                           <table class="data-show-table mobile-view-table">
+                              <thead>
+                                <tr>
+                                  <th class="bg-td1 bg-td-color text-start"><b>All hours are in UTC timezone</b></th>
+                                  <th class="bg-td-color text-start"><b>Monday to Friday</b></th>
+                                  <th class="bg-td-color text-start"><b>Saturday</b></th>
+                                  <th class="bg-td2 bg-td-color text-start"><b>Sunday</b></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td class="text-start"><p>NAS100</p></td>
+                                    <td class="text-start">
+                                      <p> 10:00 p.m. – 08:15 p.m.</p>
+                                       (5-minute recess)
+                                    </td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                                  
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>SPX500</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(4-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>US30</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>AUS200</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>FRA40</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>EUSTX50</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>JPN225</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(5-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>UK100</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start"><p>Opens at 09:05 p.m.</p></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>UK100</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(1-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="text-start"><p>UK100</p></td>
+                                    <td class="text-start"><p>01:00 a.m. – 09:00 p.m.</p>(15.5-hour recess)</td>
+                                    <td class="text-start">No trading</td>
+                                    <td class="text-start">No trading</td>
+                                 </tr>
+                              </tbody>
+                              
+                            </table>
+                            
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </section>
+          <section class="faq-section mt-100">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div class="common-heading-area">
+                        <h3>FAQ</h3>
+                     </div>
+                     <div class="accordion more-details-accordion" id="accordionExample">
+                        <div class="accordion-item">
+                           <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 What are indices in trading?
+                              </button>
+                           </h2>
+                           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                 <p>Indices measure the performance of a certain group of assets, most usually stocks. Major indices such as US30 include stocks of the most important companies in the entire national economy. This way, an index indicates how well that economy performs as a whole.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="accordion-item">
+                           <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 What is index trading and how does it work?
+                              </button>
+                           </h2>
+                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="accordion-item">
+                           <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 How to trade indices with profit?
+                              </button>
+                           </h2>
+                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="accordion-item">
+                           <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                 What type of account should I choose?
+                              </button>
+                           </h2>
+                           <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste animi illo eos, omnis deleniti dolor dolore necessitatibus, harum nemo laboriosam corporis. Recusandae, excepturi? Natus repellat non voluptatum accusamus. Suscipit.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </section>
+         <!-- Start legal info -->
+         <section class="site-legal-info mt-100">
+            <div class="container">
+               <div class="row">
+               <div class="col-md-12">
+                  <div class="post-info">
+                     <p>Legal Information: Just Global Markets Ltd., registration number 8427198-1, address: Office 10, Floor 2, Vairam Building, Providence Industrial Estate, Providence, Mahe, Seychelles, a company regulated by the Seychelles Financial Services Authority (FSA) under a Securities Dealer License number SD088.</p>
+                     <p>Just Global Markets (MU) Limited, registration number 194590 GBC, address: The Cyberati Lounge, C/o Credentia International Management Ltd, Ground Floor, The Catalyst, Silicon Avenue, 40 Cybercity, 72201 Ebène, Republic of Mauritius, an Investment Dealer (Full Service Dealer, Excluding Underwriting) regulated by the Financial Services Commission (FSC) in Mauritius under a License number GB22200881.</p>
+                     <p>GMFT Services Ltd, registration number HE 424491, address: Syrakouson 9, Office 106, 3077, Limassol, Cyprus, is the EU merchant company, which provides certain content and operates the business including in terms of processing payment transactions.</p>
+                     <p>Risk Warning: CFDs are complex instruments and come with a high risk of losing funds rapidly due to leverage.</p>
+                     <p>The vast majority of retail investors face losses when trading CFDs. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your deposit. To ensure that you fully understand the risks associated with margin trading, pay attention to our Risk Disclosure.</p>
+                     <p>Restricted Jurisdictions: JustMarkets does not offer and does not provide services to residents and citizens of certain jurisdictions, including Australia, Canada, the EU and EEA, Japan, the United Kingdom, the United States of America, and countries sanctioned by the EU.</p>
+                     <p>¹At JustMarkets, most of withdrawals are processed instantly (under 1 minute). Once your funds leave our custody, it’s up to your chosen payment provider to process the funds and credit your account.</p>
+                      
+                  </div>
+               </div>
+            </div>
+            </div>
+         </section>
+        <!-- End legal info -->
+        <!-- Start Footer area -->
+         <footer class="footer-area mt120">
+           <div class="container">
+             <div class="row ptb70">
+               <div class="col-md-12 footer-inner d-flex">
+                   <div class="footer-description"> 
+                     <img src="assets/images/logo.png" alt="logo">
+                     <p>A human resources agency serves as a vital partner for businesses seeking to optimize their workforce management.</p>
+                     <h5>Follow Us</h5>
+                     <div class="social-menu">
+                        <ul class="d-flex align-items-center">
+                           <li><a href="#"><i class="fa fab fa-facebook"></i></a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-twitter"></i>
+                           </a></li>
+                           <li><a href="#">
+                              <i class="fa fab fa-instagram"></i>
+                           </a></li>
+                           <li><a href="#"><i class="fa fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                 <div class="footer-widgets-area">
+                   <div class="footer-widgets">
+                     <h4>Trading</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Markets</h4>
+                     <ul>
+                        <li><a href="#">Trading account types</a></li>
+                        <li><a href="#">Deposit and withdrawal</a></li>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">Contract specifications</a></li>
+                        <li><a href="#">Margin requirements & Leverage rules</a></li>
+                        <li><a href="#">Trading hours</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-widgets">
+                     <h4>Education</h4>
+                     <ul>
+                        <li><a href="#">Quick start</a></li>
+                        <li><a href="#">Online webinars</a></li>
+                        <li><a href="#">Forex articles</a></li>
+                        <li><a href="#">Forex glossary</a></li>
+                        <li><a href="#">Educational video</a></li>
+                        <li><a href="#">List of world currencies</a></li>
+                     </ul>
+                  </div>
+                 </div>
+               </div>
+            </div>
+           </div>
+           <div class="copyright-text">
+            <p>Copyright &copy; 2024 by <a href="index.html">markets terminal</a></p>
+           </div>
+         </footer>
+        <!-- End Footer area -->
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+       <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script>
+         //  app version
+         function spreads(evt, spreads) {
+        var i, appvarsionContent, spreads_btn;
+        spreadsContent = document.getElementsByClassName("spreadsContent");
+        for (i = 0; i < spreadsContent.length; i++) {
+           spreadsContent[i].style.display = "none";
+        }
+        spreads_btn = document.getElementsByClassName("spreads_btn");
+        for (i = 0; i < spreads_btn.length; i++) {
+           spreads_btn[i].className = spreads_btn[i].className.replace(" active", "");
+        }
+        document.getElementById(spreads).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+        document.getElementById("apprunning").click();
+        //  trading platform
+        function choose_trading_platform(evt, choose_trading_platform_connect) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-trading-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-trading-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_platform_connect).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt_trader").click();
+
+
+         // trading inner select tab
+         function choose_trading_inner_platform(evt, choose_trading_inner_platform_connect) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-inner-trading-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-inner-trading-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_inner_platform_connect).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt_inner_trader").click();
+         // trading 5 inner select tab
+         function choose_trading_5_inner_platform(evt, choose_trading_inner_platform_connect_5) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-inner-trading-5-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-inner-trading-5-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_inner_platform_connect_5).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt5_inner_trader").click();
+         // trading 4 inner select tab
+         function choose_trading_4_inner_platform(evt, choose_trading_inner_platform_connect_4) {
+         var i;
+         // item content select korer jonnon
+         var appversionContent = document.getElementsByClassName("choose-inner-trading-4-platform");
+         for (i = 0; i < appversionContent.length; i++) {
+            appversionContent[i].style.display = "none";
+         }
+         // button select korer jonno
+         var applinks = document.getElementsByClassName("choose-inner-trading-4-btn");
+         for (i = 0; i < applinks.length; i++) {
+            applinks[i].className = applinks[i].className.replace(" active", "");
+         }
+         document.getElementById(choose_trading_inner_platform_connect_4).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         document.getElementById("default_active_mt4_inner_trader").click();
+         
+         // time tab
+         function timezone(evt, demo_contest_faq_inner) {
+         var i, tabcontent, tablinks;
+         tabcontent = document.getElementsByClassName("timezoneContent");
+         for (i = 0; i < tabcontent.length; i++){
+            tabcontent[i].style.display = "none";
+         }
+         tablinks = document.getElementsByClassName("time-zone-btn");
+         for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+         }
+         document.getElementById(demo_contest_faq_inner).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+         // Get the element with id="defaultOpen" and click on it
+         document.getElementById("time-zone-btn-open").click();
+     </script>
+   </body>
+</html> 
