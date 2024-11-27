@@ -32,6 +32,34 @@ jQuery(document).ready(function ($) {
   // });
   
 });
+// select box start
+const select = document.querySelector('.custom-select');
+const selectedOption = select.querySelector('.selected-option');
+const options = select.querySelector('.options');
+const optionItems = select.querySelectorAll('.option');
+
+select.addEventListener('click', () => {
+  select.classList.toggle('open');
+});
+
+optionItems.forEach((item) => {
+  item.addEventListener('click', (event) => {
+    const value = event.target.dataset.value;
+    selectedOption.textContent = event.target.textContent;
+    select.classList.remove('open');
+    optionItems.forEach((el) => el.classList.remove('selected'));
+    event.target.classList.add('selected');
+  });
+});
+
+// Close dropdown on clicking outside
+document.addEventListener('click', (event) => {
+  if (!select.contains(event.target)) {
+    select.classList.remove('open');
+  }
+});
+
+// select box end
 (function () {
   const quantityContainers = document.querySelectorAll(".quantity");
 

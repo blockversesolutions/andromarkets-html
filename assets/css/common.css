@@ -202,6 +202,9 @@ margin-right: 22px;
 .bg-e8{
 	background-color:#E80000 !important;
 }
+.bg-09{
+	background-color:#092139 !important;
+}
 .g-30{
 	gap: 30px;
 }
@@ -411,3 +414,114 @@ margin-right: 22px;
 .color-f5{
 	color:#F5C448;
 }
+.btn-2{
+	background-color: transparent;
+	padding: 8px 18px;
+	border: 1.5px solid #04151FB2;
+	border-radius:10px;
+	font-size: 20px;
+	transition: 0.5s;
+}
+.btn-3{
+	background-color: transparent;
+	padding: 8px 18px;
+	border: 1.5px solid #FFFFFFB2;
+	border-radius:10px;
+	font-size: 20px;
+	transition: 0.5s;
+}
+.btn-2:hover{
+	background-color: #fff; 
+}
+.btn-3:hover{
+	background-color: #04151F;
+}
+
+/* Start select box css */
+/* General styles */
+.custom-select-wrapper {
+	position: relative;
+	max-width:300px;
+	width: 100%;
+  }
+  
+  .custom-select {
+	background-color: #fff;
+	border: 1.5px solid #04151F1A;
+	border-radius:10px;
+	cursor: pointer;
+	position: relative;
+  }
+  .selected-option{
+	color: #04151F;
+	font-weight: 500;
+	font-size: 18px;
+  }
+  .select-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+  }
+  
+  .arrow {
+	border: solid #04151F;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 5px;
+	margin-bottom: 4px;
+	transform: rotate(45deg);
+	transition: transform 0.2s;
+  }
+  
+  .custom-select.open .arrow {
+	transform: rotate(-135deg);
+  }
+  
+  .options {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #E7ECF3;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	max-height: 320px;
+	overflow-y: auto;
+	z-index: 10;
+	margin-top: 10px;
+  }
+  
+  .custom-select.open .options {
+	display: block;
+  }
+  .select-check-icon{
+	float: right;
+	display: none;
+  }
+  .option {
+	padding: 10px 15px;
+	cursor: pointer;
+	margin-bottom: 5px;
+  }
+  
+  .option:hover, .option.selected {
+	background-color: #F4F5F6;
+	border-radius: 55px;
+}
+.option.selected .select-check-icon{
+	display: block;
+}
+  .option .check-icon {
+	margin-left: auto;
+	visibility: hidden;
+  }
+  
+  .option.selected .check-icon {
+	visibility: visible;
+  }
+  
+/* End select box css */

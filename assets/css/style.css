@@ -2299,3 +2299,11 @@ button.tablinks.active .tab-svg {
 	margin-bottom:12px;
 
 }
+.advantage-card{
+	padding: 30px;
+	border-radius:20px;
+}
+.advantage-card h4{
+	font-size:36px;
+	line-height:40px;
+}

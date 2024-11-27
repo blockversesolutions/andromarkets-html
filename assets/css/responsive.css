@@ -73,6 +73,10 @@
 }
 
 @media all and (max-width:991px) {
+	.advantage-card h4 {
+		font-size: 28px;
+		line-height: 40px;
+	}
 	.deposit-trading-table h4 {
 		font-size: 22px;
 		line-height: 38px;
@@ -282,6 +286,13 @@
 }
 
 @media all and (max-width:767px) {
+	.btn-2,.btn-3{
+		font-size: 16px;
+	}
+	.advantage-card h4 {
+		font-size:22px;
+		line-height:30px;
+	}
 	
 	.hero-video-area .hero-area-content {
 		padding-bottom: 60px;
@@ -591,7 +602,7 @@
 	}
 	.app-version-btn ul li,.payment-option-heading .primary-btn {
 		padding: 6px 10px;
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.step-content h4 {
 		font-size: 20px;
@@ -700,6 +711,9 @@
 	}
 	.page-modal-width {
 		width: 98%;
+	}
+	.custom-select-wrapper {
+		max-width: 100%;
 	}
 	
 }
