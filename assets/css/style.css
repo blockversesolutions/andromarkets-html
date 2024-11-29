@@ -1199,12 +1199,19 @@ button.tablinks.active .tab-svg {
 .bg-td-color{
 	background: rgba(245, 196, 72, 0.20);
 }
-.bg-td1{
+/* .bg-td1{
 	border-radius: 10px 0px 0px 0px;
+} */
+.clients-trading-table table tr:first-child td:first-child,.clients-trading-table table tr:first-child th:first-child {
+    border-radius: 10px 0 0 0;
 }
-.bg-td2{
+.clients-trading-table table tr:first-child td:last-child,.clients-trading-table table tr:first-child th:last-child {
 	border-radius: 0px 10px 0px 0px;
 }
+/* 
+.bg-td2{
+	border-radius: 0px 10px 0px 0px;
+} */
 .bg-tr td{
 	border-color:white;
 	color:#04151F;
@@ -2307,3 +2314,57 @@ button.tablinks.active .tab-svg {
 	font-size:36px;
 	line-height:40px;
 }
+
+/* checkbox design start*/
+/* General container styling */
+.custom-checkbox {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+  }
+  
+  /* Hide the default checkbox */
+  .custom-checkbox input[type="checkbox"] {
+	display: none;
+  }
+  
+  /* Style the checkbox icon container */
+  .checkbox-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	background-color:#F5C448; /* Yellow background */
+	border-radius:5px; /* Rounded corners */
+	transition: background-color 0.3s ease;
+  }
+  
+  /* Initially hide the checkmark */
+  .checkbox-icon svg {
+	opacity: 0;
+	transform: scale(0.8);
+	transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  /* Show the checkmark when the checkbox is checked */
+  .custom-checkbox input[type="checkbox"]:checked + .checkbox-icon svg {
+	opacity: 1;
+	transform: scale(1);
+  }
+  
+  /* Add a hover effect for the checkbox */
+  .custom-checkbox:hover .checkbox-icon {
+	background-color: #f4b937; /* Slightly darker yellow */
+  }
+ .custom-checkbox{
+	box-shadow: 0px 16.9px 25.36px 0px #C4CDDA40;
+	border-radius: 10px;
+	padding:14px 22px;
+ }
+  .checkbox-icon{
+	margin-right: 5px;
+  }
+/* checkbox design end*/

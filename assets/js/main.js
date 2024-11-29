@@ -127,10 +127,15 @@ document.addEventListener("click", function (event) {
     navbarText.classList.remove("show");
   }
 });
+
+
+
+
+
   // Function to check screen size and toggle the class
   function handleResize() {
     const element = document.querySelector('.mobile-view-table');
-    if (element) { // Check if element exists
+    if (element) {
         if (window.innerWidth <= 991) {
             element.classList.add('nowrap');  
         } else {
@@ -139,10 +144,7 @@ document.addEventListener("click", function (event) {
     }
 }
 
-  // Run the function once on page load
   handleResize();
-
-  // Add event listener for window resize
   window.addEventListener('resize', handleResize);
 
   

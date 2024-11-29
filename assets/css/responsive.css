@@ -159,7 +159,7 @@
 		display: none;
 	}
     .nav-link{
-        padding: 15px 0;
+        padding: 10px 0;
     }
 	.pt100 {
 		padding-top: 80px;
@@ -286,6 +286,9 @@
 }
 
 @media all and (max-width:767px) {
+	.custom-checkbox {
+		padding: 10px 12px;
+	}
 	.btn-2,.btn-3{
 		font-size: 16px;
 	}
@@ -591,11 +594,17 @@
 	.tabcontent table th, .tabcontent table td {
 		padding: 8px;
 	}
+	.plan-card-option ul {
+		gap: 10px;
+	}
 	.app-version-btn-2 ul li {
 		font-size: 16px;
 	}
+	.tab-body {
+		padding: 15px 15px;
+	}
 	.tabcontent table tr td {
-		font-size: 12px;
+		font-size: 15px;
 	}
 	.navbar-brand{
 		margin-right: 0;
