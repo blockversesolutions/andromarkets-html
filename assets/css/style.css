@@ -2371,3 +2371,12 @@ button.tablinks.active .tab-svg {
 .advanced-filter-option{
 	display: none;
 }
+.country-flag-code img{
+	width: 28px;
+	margin-right: 8px;
+	height: 28px;
+	border-radius: 50%;
+}
+.select-country-code{
+	padding: 6px 20px;
+}
