@@ -2368,3 +2368,6 @@ button.tablinks.active .tab-svg {
 	margin-right: 5px;
   }
 /* checkbox design end*/
+.advanced-filter-option{
+	display: none;
+}

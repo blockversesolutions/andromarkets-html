@@ -283,9 +283,15 @@
 		font-size: 32px;
 		line-height: 40px;
 	}
+	.filter-btn{
+		margin-bottom: 20px;
+	}
 }
 
 @media all and (max-width:767px) {
+	.login-bg{
+		padding-top:60px;
+	}
 	.custom-checkbox {
 		padding: 10px 12px;
 	}

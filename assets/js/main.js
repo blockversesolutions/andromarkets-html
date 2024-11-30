@@ -27,9 +27,9 @@ jQuery(document).ready(function ($) {
   $(window).on("scroll", function () {
     checkScroll();
   });
-  // $(".close-mark").click(function(){
-  //   $(".country-menu").hide();
-  // });
+  $(".filter-btn").click(function(){
+    $(".advanced-filter-option").slideToggle();
+  });
   
 });
 // select box start
