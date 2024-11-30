@@ -128,10 +128,6 @@ document.addEventListener("click", function (event) {
   }
 });
 
-
-
-
-
   // Function to check screen size and toggle the class
   function handleResize() {
     const element = document.querySelector('.mobile-view-table');
