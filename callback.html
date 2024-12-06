@@ -310,30 +310,13 @@
                            </div> -->
                            <div class="schedule-time">
                               <label for="start-time">Schedule a call</label>
-                              <div class="time-select">
-                                <select id="start-time">
-                                  <option value="00:00">00:00</option>
-                                  <option value="01:00">01:00</option>
-                                  <option value="02:00">02:00</option>
-                                  <option value="03:00">03:00</option>
-                                  <option value="04:00">04:00</option>
-                                  <!-- Add more options as needed -->
-                                  <option value="23:00">23:00</option>
-                                </select>
+                              <div class="time-input">
+                                <input type="time" id="start-time" value="00:00" />
                                 <span>-</span>
-                                <select id="end-time">
-                                  <option value="00:00">00:00</option>
-                                  <option value="01:00">01:30</option>
-                                  <option value="01:00">01:00</option>
-                                  <option value="01:00">02:40</option>
-                                  <option value="01:00">03:00</option>
-                                  <option value="01:00">04:00</option>
-                                  <option value="01:00">04:00</option>
-                                  <!-- Add more options as needed -->
-                                  <option value="23:00">23:00</option>
-                                </select>
+                                <input type="time" id="end-time" value="23:00" />
                               </div>
                             </div>
+                            
                             
                         </div>
                         <div class="form-group col-md-12">
@@ -428,21 +411,19 @@
        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
       <script src="assets/js/main.js"></script>
       <script>
-         document.getElementById("start-time").addEventListener("change", function () {
-  const startTime = this.value;
-  const endTimeSelect = document.getElementById("end-time");
+        const startTimeInput = document.getElementById("start-time");
+         const endTimeInput = document.getElementById("end-time");
 
-  // Disable end times earlier than the selected start time
-  Array.from(endTimeSelect.options).forEach((option) => {
-    option.disabled = option.value <= startTime;
-  });
-});
+         startTimeInput.addEventListener("change", function () {
+         const startTime = startTimeInput.value;
+         endTimeInput.min = startTime; // Ensure end time cannot be earlier than start time
+         });
 
-document.getElementById("end-time").addEventListener("change", function () {
-  const endTime = this.value;
-  console.log(`Start time: ${document.getElementById("start-time").value}`);
-  console.log(`End time: ${endTime}`);
-});
+         endTimeInput.addEventListener("change", function () {
+         const endTime = endTimeInput.value;
+         console.log(`Start time: ${startTimeInput.value}`);
+         console.log(`End time: ${endTime}`);
+         });
 
       </script>
    </body>
