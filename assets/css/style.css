@@ -2378,3 +2378,61 @@ button.tablinks.active .tab-svg {
 .select-country-code{
 	padding: 6px 20px;
 }
+
+.page_404 {
+	padding: 40px 0;
+	background: #fff;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.shap-404-after{
+	position: absolute;
+	left:-120px;
+	top:80px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	transform: rotate(-50deg);
+	width:400px;
+	font-size: 25px;
+	font-weight: 500;
+	background: #F5C448;
+}
+.logo-404 img{
+	width: 80px !important;
+}
+.shape-404 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height:20%;
+	display: flex;
+	align-items: flex-end;
+}
+.border-1{
+	border:4px solid #fff;
+}
+.page_404 img {
+  width: 100%;
+}
+.four_zero_four_bg {
+  background-image: url('../images/thumbnails/marketsterminal.gif');
+  height: 400px;
+  background-position: center;
+}
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+.contant_box_404 {
+  margin-top: -50px;
+  position: relative;
+  z-index: 99;
+}
