@@ -1048,6 +1048,7 @@ button.tablinks.active .tab-svg {
 	margin-bottom: 66px;
 	font-size: 16px;
 	line-height: 26px;
+	margin-top:20px;
 }
 .footer-description h5, .footer-widgets h4 {
 	font-size: 24px;
@@ -2436,3 +2437,35 @@ button.tablinks.active .tab-svg {
   position: relative;
   z-index: 99;
 }
+/* legal info page start */
+.legal-country-icon img{
+	height: 52px;
+	width: 52px;
+	border-radius: 50%;
+}
+.legal-doc-icon{
+	background: #F5C44833;
+	height:40px;
+	width:40px;
+	border-radius: 5px;
+	padding: 8px;
+}
+.legal-doc-icon i{
+	font-size:24px;
+}
+.legal-doc-item p{
+	font-weight: 500;
+}
+.legal-doc-item{
+	transition: 0.5s;
+}
+ .legal-doc-item:hover{
+	background: #F5C448;
+}
+.legal-doc-item:hover .legal-doc-icon i{
+	color:#04151F;
+}
+.legal-doc-item:hover .legal-doc-icon{
+	background-color:#fff;
+}
+/* legal info page end */

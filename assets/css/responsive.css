@@ -691,6 +691,11 @@
 	.trades-view-list ul li h6 {
 		font-size: 18px;
 	}
+	.legal-country-icon img {
+		height: 45px;
+		width: 45px;
+		border-radius: 50%;
+	}
 }
 @media all and (max-width:480px) {
 	.country-menu.dropdown-menu[data-bs-popper] {
