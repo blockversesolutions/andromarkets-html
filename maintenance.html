@@ -19,7 +19,7 @@
       <link rel="stylesheet" href="assets/css/style.css" />
       <link rel="stylesheet" href="assets/css/responsive.css" />
    </head>
-   <body style="background: url('assets/images/bg/maintenance.png');background-size:cover;background-position: center center; background-repeat: no-repeat; height: 100%;">
+   <body style="background:#010C1C;background: url('assets/images/bg/maintenance.png');background-size:cover;background-position: center center; background-repeat: no-repeat; height: 100%;">
        
        <div class="container">
          <div class="row">
@@ -82,7 +82,6 @@
                         </ul>
                      </div>
                   </div>
-                  
                </div>
                <div class="col-lg-6 offset-md-2 offset-lg-0 col-md-8">
                   <div class="maintenance-thumbnails position-relative">
@@ -94,9 +93,7 @@
                </div>
             </div>
          </div>
-         
        </div>
-       
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
@@ -105,32 +102,26 @@
       <script>
          // Set the countdown target date
          const targetDate = new Date("2025-04-01T00:00:00").getTime(); // Change this date
-
          function updateCountdown() {
             const now = new Date().getTime();
             const timeLeft = targetDate - now;
-
             if (timeLeft <= 0) {
                document.querySelectorAll(".time-value").forEach(el => el.textContent = "00");
                clearInterval(countdownInterval);
                return;
             }
-
             const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
             document.querySelectorAll(".time-value")[0].textContent = days.toString().padStart(2, '0');
             document.querySelectorAll(".time-value")[1].textContent = hours.toString().padStart(2, '0');
             document.querySelectorAll(".time-value")[2].textContent = minutes.toString().padStart(2, '0');
             document.querySelectorAll(".time-value")[3].textContent = seconds.toString().padStart(2, '0');
          }
-
          // Update countdown every second
          const countdownInterval = setInterval(updateCountdown, 1000);
          updateCountdown(); // Initial call to set values immediately
-
       </script>
         
    </body>

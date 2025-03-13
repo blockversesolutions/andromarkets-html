@@ -244,6 +244,8 @@ li.nav-item.dropdown li a {
 .nav-link i {
 	margin-left: 5px;
 }
+.nav-link img{
+	width:48px}
 
 .country-menu-parent a i {
 	color: #fff;
@@ -1021,8 +1023,6 @@ button.tablinks.active .tab-svg {
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.04);
 }
 /* End market about  */
-
-
 /* Start footer css */
 .footer-area{
 	background-color: #04151F;
@@ -2489,9 +2489,9 @@ button.tablinks.active .tab-svg {
 }
 .warning-section p{
 	color:#000;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 500;
-	line-height: 28px;
+	line-height: 20px;
 }
 .warning-section p b{
 	color:rgb(252, 55, 55);
@@ -2546,3 +2546,22 @@ button.tablinks.active .tab-svg {
 	bottom:30px; 
 }
 /* maintenance end */
+/* Start account step */
+.account-step:hover .evaluation-item-title img{
+	background:#fff;
+}
+.account-step{
+	padding: 20px;
+}
+.account-step:hover{
+	background: #F5C448;
+}
+.account-step-number{
+	color: #04151F0A;
+	font-weight: 700;
+	font-size: 56px;
+	position: absolute;
+	right:20px;
+	top:10px;
+}
+/* End account step */
