@@ -1,0 +1,40 @@
+  
+  @keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating-positive-360 {
+    animation: rotate360 20s linear infinite;
+}
+  @keyframes rotate-360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.rotating-negative-360 {
+    animation: rotate-360 20s linear infinite;
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+.zooming-zooming-out {
+    animation: zoomInOut 2s ease-in-out infinite;
+}
