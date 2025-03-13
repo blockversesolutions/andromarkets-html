@@ -79,7 +79,6 @@ p {
 	border: 1px solid transparent;
 	border-radius: 10px;
 }
- 
 .primary-btn-bg-transparent {
 	font-size: 18px;
 	letter-spacing: -0.005em;
@@ -280,7 +279,7 @@ margin-right: 22px;
 .mb-20{
 	margin-bottom: 20px;
 }
-.video-controlls-previous{
+.video-controls-previous{
 	opacity:0.4;
 }
 .faq-tab-area .tab-btn{

@@ -1084,6 +1084,7 @@ button.tablinks.active .tab-svg {
 	border-radius: 50%;
 }
 .social-menu ul li a:hover{
+	transform: translateY(-5px);
 	background-color: #f5c448;
 	box-shadow: rgba(233, 199, 9, 0.25) 0px 20px 55px, rgba(228, 155, 19, 0.12) 0px -12px 30px, rgba(202, 206, 5, 0.12) 0px 4px 6px, rgba(229, 233, 11, 0.17) 0px 12px 13px, rgba(230, 178, 8, 0.6) 0px -3px 5px;
 }
