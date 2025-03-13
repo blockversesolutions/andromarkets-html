@@ -161,18 +161,18 @@ li.nav-item.dropdown li a {
 	background-color: #111111;
 	position: relative;
 	background: linear-gradient(-160deg, #2d3235 0%, #000 40.39%);
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top:140px;
+	padding-bottom:90px;
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
-.hero-area-thumbnails {
+/* .hero-area-thumbnails {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-}
+} */
 
 .btn-group ul {
 	gap: 20px;
@@ -188,9 +188,6 @@ li.nav-item.dropdown li a {
 	margin-bottom: 40px;
 }
 
-.hero-area-thumbnails img {
-	width: 100%;
-}
 
 .hero-video-area {
 	padding: 60px 0;
