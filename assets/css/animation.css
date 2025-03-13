@@ -7,7 +7,6 @@
         transform: rotate(360deg);
     }
 }
-
 .rotating-positive-360 {
     animation: rotate360 20s linear infinite;
 }
@@ -19,7 +18,6 @@
         transform: rotate(-360deg);
     }
 }
-
 .rotating-negative-360 {
     animation: rotate-360 20s linear infinite;
 }
@@ -38,3 +36,4 @@
 .zooming-zooming-out {
     animation: zoomInOut 2s ease-in-out infinite;
 }
+

@@ -1088,8 +1088,13 @@ button.tablinks.active .tab-svg {
 	box-shadow: rgba(233, 199, 9, 0.25) 0px 20px 55px, rgba(228, 155, 19, 0.12) 0px -12px 30px, rgba(202, 206, 5, 0.12) 0px 4px 6px, rgba(229, 233, 11, 0.17) 0px 12px 13px, rgba(230, 178, 8, 0.6) 0px -3px 5px;
 }
 .social-menu ul li a i{
-	font-size: 18px;
+	font-size:20px;
+	width: 20px;
 	color:#fff;
+}
+.social-menu ul li a img{
+	margin: 0 !important;
+	width: 38px;
 }
 .footer-widgets ul li a:hover,.copyright-text p a{
 	color: #f5c448;
@@ -2483,6 +2488,16 @@ button.tablinks.active .tab-svg {
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	border-radius:5px 5px 0 0;
 	z-index: 9;
+	opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 .warning-section p{
 	color:#000;
@@ -2502,7 +2517,6 @@ button.tablinks.active .tab-svg {
 	font-size: 16px;
 	text-align: center;
 	color: #FFFFFFCC;
-
 }
 .time-value{
 	font-weight: 500;
@@ -2511,11 +2525,9 @@ button.tablinks.active .tab-svg {
 	color:#fff;
 }
 .countdown-area ul li:nth-child(even) {
- 
 	margin-top: -25px;
 	font-weight: 500;
 	font-size: 44px;
- 
 	color:#fff;
 }
 .countdown-area h5{
@@ -2553,6 +2565,10 @@ button.tablinks.active .tab-svg {
     background-size: cover;
     background-position: center center;
     z-index: -2;
+}
+.payment-method li a img{
+	max-height:28px;
+	width: auto;
 }
 /* maintenance end */
 /* Start account step */
