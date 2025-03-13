@@ -44,6 +44,9 @@
 	 
 }
 @media all and (min-width: 992px) {
+	.maintenance-section:after {	 
+		height: 100vh;
+	}
 	.Contest-info-controls ul li{
 		width: 100% !important;
 	}

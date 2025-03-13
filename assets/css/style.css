@@ -2545,6 +2545,18 @@ button.tablinks.active .tab-svg {
 	width:100px;
 	bottom:30px; 
 }
+.maintenance-section:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:100%;
+    width: 100%;
+    background-image: url('../images/bg/maintenance.png');
+    background-size: cover;
+    background-position: center center;
+    z-index: -2;
+}
 /* maintenance end */
 /* Start account step */
 .account-step:hover .evaluation-item-title img{
