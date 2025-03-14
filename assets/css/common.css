@@ -227,6 +227,9 @@ margin-right: 22px;
 .mb-60{
 	margin-bottom: 60px;
 }
+.footer-area .ptb70{
+	padding-bottom: 40px;
+}
 .app-version-btn-2 ul li{
 	font-size: 20px;
 	width: 33%;
@@ -278,6 +281,9 @@ margin-right: 22px;
 
 .mb-20{
 	margin-bottom: 20px;
+}
+.text-justify {
+    text-align: justify;
 }
 .video-controls-previous{
 	opacity:0.4;

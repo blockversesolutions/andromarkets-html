@@ -1388,15 +1388,17 @@ button.tablinks.active .tab-svg {
 	margin-bottom: 20px;
 }
 .contact-info-icon {
-	height: 70px;
-	min-width: 70px;
-	background-color:#F5C448;
-	text-align: center;
-	border-radius: 50%;
+    height:55px;
+    min-width:55px;
+    background-color: #F5C448;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-info-icon i {
-	font-size: 30px;
-	line-height: 70px;
+	font-size:22px;
 	color: #fff;
 }
 .contact-info-content {
@@ -1410,11 +1412,15 @@ button.tablinks.active .tab-svg {
 .contact-info-content p,.contact-info-content a {
 	color: #04151F;
 	font-size: 1em;
+	line-height: 24px;
 }
-.contact-form {
+.contact-form,.contact-info-box {
 	padding: 30px;
 	background: #f5c448;
 	border-radius: 10px;
+}
+.contact-info-box{
+	background-color:#fff;
 }
 .contact-form .common-heading-area h3{
 	color:#fff;
@@ -1509,8 +1515,8 @@ button.tablinks.active .tab-svg {
 	background: rgba(255, 255, 255, 0.1);
 }
 .account-step-thumnail{
-	box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.2) inset;
-	background: rgba(234, 234, 234, 1);
+	/* box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.2) inset; */
+	background:#FEFCF4;
 	border-radius: 10px;
 	padding: 40px 90px;
 }
