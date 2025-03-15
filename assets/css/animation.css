@@ -32,8 +32,18 @@
         transform: scale(0.8);
     }
 }
-
 .zooming-zooming-out {
-    animation: zoomInOut 2s ease-in-out infinite;
+    animation: zoomInOut 4s ease-in-out infinite;
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.zoom-in {
+    animation: zoomIn 1s ease-in-out;
 }
 

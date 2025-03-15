@@ -1514,13 +1514,15 @@ button.tablinks.active .tab-svg {
 	padding: 16px;
 	background: rgba(255, 255, 255, 0.1);
 }
-.account-step-thumnail{
+.account-step-image{
 	/* box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.2) inset; */
 	background:#FEFCF4;
 	border-radius: 10px;
+	
+}
+.account-step-thumbnails{
 	padding: 40px 90px;
 }
-
  .step-item{
 	padding: 16px 20px;
 	background-color:#fff;
@@ -1532,7 +1534,6 @@ button.tablinks.active .tab-svg {
  .step-number {
 	min-width: 64px;
 	background: #F5C44833;
-	font-family: Poppins;
 	border-radius: 4px;
 	color: #F5C448;
 	transition: 0.5s;
@@ -2338,7 +2339,6 @@ button.tablinks.active .tab-svg {
 	align-items: center;
 	gap: 8px;
 	cursor: pointer;
-	font-family: Arial, sans-serif;
   }
   
   /* Hide the default checkbox */
