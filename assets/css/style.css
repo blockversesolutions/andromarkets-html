@@ -2597,3 +2597,35 @@ button.tablinks.active .tab-svg {
 	top:10px;
 }
 /* End account step */
+
+/* Start confirmation modal */
+.check-mark-icon i{
+	color:#F5C448;
+	margin-top: -60px;
+	font-size:90px;
+	border:10px solid #fff;
+	border-radius: 50%;
+}
+.blur-box {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+.confirmation-popup{
+	max-width:450px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background:#fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	text-align: center;
+	padding: 25px;
+	border-radius: 15px;
+}
+/* End confirmation modal */
