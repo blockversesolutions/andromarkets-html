@@ -2613,6 +2613,7 @@ button.tablinks.active .tab-svg {
     left: 0;
     top: 0;
     backdrop-filter: blur(10px);
+	border-radius: 10px;
 }
 .confirmation-popup{
 	max-width:450px;
