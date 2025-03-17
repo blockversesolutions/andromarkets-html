@@ -108,7 +108,7 @@
 	}
 
 	.country-menu-parent img {
-		width: 30px;
+		width:26px;
 	}
 
 	.navbar-toggler.icon {
@@ -702,7 +702,7 @@
 	.auto-login ul li button.btn-1 {
 		min-width: auto;
 	}
-	.btn-1 {
+	.btn-1 { 
 		padding: 8px 12px;
 		font-size: 15px;
 		display: flex;
@@ -720,11 +720,13 @@
 		width: 45px;
 		border-radius: 50%;
 	}
+	.warning-section {
+		display: none;
+	}
 }
 @media all and (max-width:480px) {
 	.country-menu.dropdown-menu[data-bs-popper] {
-		left: -220px;
-		 
+		left: -220px;	 
 	}
 	.payment-option-heading{
 		flex-wrap: wrap;
@@ -757,5 +759,4 @@
 	.custom-select-wrapper {
 		max-width: 100%;
 	}
-	
 }

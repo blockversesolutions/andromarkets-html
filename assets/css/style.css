@@ -229,7 +229,6 @@ li.nav-item.dropdown li a {
 		transform: translateY(0);
 	}
 }
-
 .close-mark {
 	float: right;
 	color: #04151F;
@@ -237,22 +236,16 @@ li.nav-item.dropdown li a {
 	margin-bottom: 10px;
 	cursor: pointer;
 }
-
-.nav-link i {
-	margin-left: 5px;
+.nav-link img {
+    width:28px;
 }
-.nav-link img{
-	width:48px}
-
 .country-menu-parent a i {
 	color: #fff;
-	font-size: 18px;
+	font-size: 15px;
 }
-
 .dropdown-toggle::after {
 	display: none;
 }
-
 .megamenu,
 .dropdown-menu {
 	padding: 30px;
@@ -264,16 +257,13 @@ li.nav-item.dropdown li a {
 	margin-left: 60px;
 	height: 100%;
 }
-
 .col-megamenu img {
 	width: 100%;
 	margin-top: 25px;
 }
-
 .col-megamenu a.primary-btn {
 	color: #23262F !important;
 }
-
 .col-megamenu h4 {
 	font-size: 20px;
 	font-weight: 600;
@@ -281,22 +271,18 @@ li.nav-item.dropdown li a {
 	letter-spacing: -0.005em;
 	margin-bottom: 13px;
 }
-
 .col-megamenu h6 {
 	font-size: 14px;
 	color: #808080;
 	font-weight: 600;
 	line-height: 17.07px;
 	letter-spacing: 0.1em;
-  text-transform: uppercase;
+  	text-transform: uppercase;
 	margin-bottom: 30px;
 }
-
 .megamenu {
-	/* margin-top: 15px !important; */
 	position: relative;
 }
-
 .megamenu-1::after {
 	content: "";
 	position: absolute;
@@ -327,7 +313,6 @@ li.nav-item.dropdown li a {
 	border-top: 20px solid transparent;
 	border-bottom: 20px solid #fff;
 }
-
 .col-megamenu ul li a,
 .dropdown-menu ul li a {
 	font-size: 16px;
@@ -337,7 +322,6 @@ li.nav-item.dropdown li a {
 	display: block;
 	margin-bottom: 20px;
 }
-
 .col-megamenu ul li:last-child a,
 .dropdown-menu ul li:last-child a {
 	margin-bottom: 0;
@@ -350,15 +334,13 @@ li.nav-item.dropdown li a {
 	background-color: #092139;
 	padding: 15px;
 	height: 100%;
-	border-radius: 10px;
-	 
+	border-radius: 10px; 
 }
 .card-view-data-header h3 {
 	font-size: 18px;
 	line-height: 22px;
 	color: #fff;
 }
-
 .value-up span {
 	color: #6BCA21;
 }
@@ -392,7 +374,6 @@ li.nav-item.dropdown li a {
 	line-height: 29px;
 	padding-left: 5px;
 }
-
 .card-view-body-item p {
 	font-size: 12px;
 	line-height: 14px;
@@ -647,7 +628,6 @@ li.nav-item.dropdown li a {
 	gap: 8px;
 	margin-bottom: 30px;
 }
-
 .tab button {
 	border: none;
 	width: 120px;
@@ -2629,4 +2609,4 @@ button.tablinks.active .tab-svg {
 	padding: 25px;
 	border-radius: 15px;
 }
-/* End confirmation modal */
+/* End confirmation modal */  
