@@ -1,762 +1,770 @@
-@media all and (max-width:1280px) {
-	/* .hero-area-thumbnails {
+@media all and (max-width: 1280px) {
+  /* .hero-area-thumbnails {
 		width:52%;
 	} */
-	/* .hero-area-content {
+  /* .hero-area-content {
 		padding-bottom: 146px;
 	} */
 
-	h2 {
-		font-size: 40px;
-		line-height: 50px;
-	}
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
 
-	.col-megamenu {
-		margin-left: 15px;
-	}
+  .col-megamenu {
+    margin-left: 15px;
+  }
 }
-@media all and (max-width:1199px) {
-	.navbar-collapse {
-		background: #8f8f8f;
-		padding: 15px;
-		border-radius: 10px;
-	}
-	.megamenu::after {
-		display: none;
-	}
-	.large-view {
-		display: none;
-	}
-	.mobile-view {
-		display: block;
-	}
-	.market-about-thumbnail {
-		width: 30%;
-	}
-	.nav-rounded {
-		background: transparent;
-		border-radius: 0;
-		padding: 0;
-	}
-	.contest-guid-item {
-		width: 58.5%;
-	}
-	 
+@media all and (max-width: 1199px) {
+  .navbar-collapse {
+    background: #8f8f8f;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .megamenu::after {
+    display: none;
+  }
+  .large-view {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+  }
+  .market-about-thumbnail {
+    width: 30%;
+  }
+  .nav-rounded {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+  .contest-guid-item {
+    width: 58.5%;
+  }
 }
 @media all and (min-width: 992px) {
-	.maintenance-section:after {	 
-		height: 100vh;
-	}
-	.Contest-info-controls ul li{
-		width: 100% !important;
-	}
-	.navbar .has-megamenu {
-		position: static !important;
-	}
-	.dropdown:hover .dropdown-menu {
-		display: flex;
-	  }
-	  .country-menu.dropdown-menu{
-		width: 350px;
-	  }
-	  .dropdown-menu.show {
-		display: flex;
-	  }
-	.navbar .megamenu {
-		left: 0;
-		right: 0;
-		top:100%;
-		width: 98%;
-		margin-top: 0;
-		margin: auto;
-	}
+  .maintenance-section:after {
+    height: 100vh;
+  }
+  .Contest-info-controls ul li {
+    width: 100% !important;
+  }
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+  .country-menu.dropdown-menu {
+    width: 350px;
+  }
+  .dropdown-menu.show {
+    display: flex;
+  }
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    top: 100%;
+    width: 98%;
+    margin-top: 0;
+    margin: auto;
+  }
 }
 
-@media all and (max-width:991px) {
-	.footer-description img {
-		margin-bottom: 30px;
-	}
-	.advantage-card h4 {
-		font-size: 28px;
-		line-height: 40px;
-	}
-	.deposit-trading-table h4 {
-		font-size: 22px;
-		line-height: 38px;
-	}
-	.education-info-controls ul{
-		justify-content: center;
-	}
-	.education-info-controls{
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	.contact-info-icon i {
-		font-size: 22px;
-		line-height: 55px;
-	}
-	.contact-info-icon {
-		height: 55px;
-		min-width: 55px;
-	}
-	.contact-form{
-		margin-top: 60px;
-	}
-	h2 {
-		font-size: 35px;
-		line-height: 50px;
-	}
+@media all and (max-width: 991px) {
+  .footer-description img {
+    margin-bottom: 30px;
+  }
+  .advantage-card h4 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .deposit-trading-table h4 {
+    font-size: 22px;
+    line-height: 38px;
+  }
+  .education-info-controls ul {
+    justify-content: center;
+  }
+  .education-info-controls {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .contact-info-icon i {
+    font-size: 22px;
+    line-height: 55px;
+  }
+  .contact-info-icon {
+    height: 55px;
+    min-width: 55px;
+  }
+  .contact-form {
+    margin-top: 60px;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
 
-	.country-menu-parent img {
-		width:26px;
-	}
+  .country-menu-parent img {
+    width: 26px;
+  }
 
-	.navbar-toggler.icon {
-		padding: 5px 8px;
-	}
-	.navbar-toggler span i {
-		font-size: 25px;
-	}
-	#outside-click,
-	.header-right {
-		padding:5px 0px;
-	}
+  .navbar-toggler.icon {
+    padding: 5px 8px;
+  }
+  .navbar-toggler span i {
+    font-size: 25px;
+  }
+  #outside-click,
+  .header-right {
+    padding: 5px 0px;
+  }
 
-	.header-right ul li button {
-		margin-left: 0;
-	}
+  .header-right ul li button {
+    margin-left: 0;
+  }
 
-	#navbarText {
-		border-bottom: 5px solid #F5C448;
-		background: #222;
-		border-radius: 15px;
-	}
+  #navbarText {
+    border-bottom: 5px solid #f5c448;
+    background: #222;
+    border-radius: 15px;
+  }
 
-	.navbar-nav {
-		gap: 0px;
-	}
+  .navbar-nav {
+    gap: 0px;
+  }
 
-	/* .hero-area-thumbnails {
+  /* .hero-area-thumbnails {
 		width: 42%;
 	} */
 
-	.country-menu.dropdown-menu[data-bs-popper] {
-		min-width: 290px;
-	}
-	.col-megamenu {
-		margin: 0;
-		border: none;
-	}
-	.navbar.fixed-top .navbar-collapse,
-	.navbar.sticky-top .navbar-collapse {
-		overflow-y: auto;
-		max-height: 90vh;
-		margin-top: 10px;
-	}
-	.megamenu::after {
-		display: none;
-	}
-    .nav-link{
-        padding: 10px 0;
-    }
-	.pt100 {
-		padding-top: 80px;
-	}
-	.ptb100 {
-		padding: 80px 0;
-	}
-	.ptb120 {
-		padding: 80px 0;
-	}
-	 
-	.evaluation-text-box {
-		text-align: center;
-		margin-left: 0;
-		margin-top: 60px;
-	}
-	.evaluation-text-box ul {
-		margin-top: 40px;
-		display: flex;
-		justify-content: space-between;
-		text-align: center;
-		flex-wrap: wrap;
-		margin-bottom: 40px;
-	}
-	.common-page-inner {
-		max-width: 100%;
-		text-align: center;
-	}
-	.common-page-inner .common-heading-area h3 {
-		font-size: 45px;
-	}
-	p{
-		font-size: 18px !important;
-	}
-	.images-size-50{
-		width: 50% !important;
-	}
-	
-	.negative-balance-about-cont{
-		text-align: center;
-	}
-	.negative-balance-about-cont p {
-		margin: auto;
-	}
-	.footer-inner {
-		flex-wrap: wrap;
-	}
-	.footer-description p{
-		max-width: 450px;
-		width: 100%;
-		margin: auto;
-		margin-bottom: 20px;
-	}
-	.footer-description {
-		width: 100%;
-		text-align: center;
-	}
-	.footer-widgets-area{
-		width: 100%;
-		justify-content: space-around;
-	}
-	.footer-description ul{
-		justify-content: center;
-	}
-	.megamenu{
-		overflow-y: scroll;
-  		height: 600px;
-	}
-	.common-page-thumbnails{
-		text-align: center;
-	}
-	.common-page-thumbnails img{
-		max-width: 450px;
-	}
-	.mr-22,.lg-mr-22{
-		margin-right: 0;
-	}
-	.app-version-thumbnails img {
-		max-width: 350px;
-		margin: 0;
-		width: 100%;
-		object-fit: cover;
-	}
-	.app-version-thumbnails{
-		text-align: center;
-		margin-bottom: 40px;
-	}
-	.hero-main-area {
-		padding-top: 130px;
-		 
-	}
-	.opening-selected ul li a {
-		font-size: 20px;
-		padding: 14px 16px;
-	}
-	.mobile-order-change img{
-		order: 1;
-		margin-top: 40px;
-		margin-bottom: 0;
-	}
-	.mobile-order-change{
-		display: flex;
-		flex-direction: column;
-	}
-	.app-version-area {
-		text-align: center;
-	}
-	.app-version-content-body{
-		justify-content: center;
-	}
-	.withdrawals-common-heading{
-		text-align: center;
-	}
-	.md-mt-50{
-		margin-top: 50px;
-	 }
-	 .filter-btn-area ul li {
-		width: 50px;
-	}
-	.common-heading-area h3{
-		font-size: 32px;
-		line-height: 40px;
-	}
-	.filter-btn{
-		margin-bottom: 20px;
-	}
+  .country-menu.dropdown-menu[data-bs-popper] {
+    min-width: 290px;
+  }
+  .col-megamenu {
+    margin: 0;
+    border: none;
+  }
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+  .megamenu::after {
+    display: none;
+  }
+  .nav-link {
+    padding: 10px 0;
+  }
+  .pt100 {
+    padding-top: 80px;
+  }
+  .ptb100 {
+    padding: 80px 0;
+  }
+  .ptb120 {
+    padding: 80px 0;
+  }
+
+  .evaluation-text-box {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 60px;
+  }
+  .evaluation-text-box ul {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .common-page-inner {
+    max-width: 100%;
+    text-align: center;
+  }
+  .common-page-inner .common-heading-area h3 {
+    font-size: 45px;
+  }
+  p {
+    font-size: 18px !important;
+  }
+  .images-size-50 {
+    width: 50% !important;
+  }
+
+  .negative-balance-about-cont {
+    text-align: center;
+  }
+  .negative-balance-about-cont p {
+    margin: auto;
+  }
+  .footer-inner {
+    flex-wrap: wrap;
+  }
+  .footer-description p {
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .footer-description {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-widgets-area {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .footer-description ul {
+    justify-content: center;
+  }
+  .megamenu {
+    overflow-y: scroll;
+    height: 600px;
+  }
+  .common-page-thumbnails {
+    text-align: center;
+  }
+  .common-page-thumbnails img {
+    max-width: 450px;
+  }
+  .mr-22,
+  .lg-mr-22 {
+    margin-right: 0;
+  }
+  .app-version-thumbnails img {
+    max-width: 350px;
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+  .app-version-thumbnails {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .hero-main-area {
+    padding-top: 130px;
+  }
+  .opening-selected ul li a {
+    font-size: 20px;
+    padding: 14px 16px;
+  }
+  .mobile-order-change img {
+    order: 1;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .mobile-order-change {
+    display: flex;
+    flex-direction: column;
+  }
+  .app-version-area {
+    text-align: center;
+  }
+  .app-version-content-body {
+    justify-content: center;
+  }
+  .withdrawals-common-heading {
+    text-align: center;
+  }
+  .md-mt-50 {
+    margin-top: 50px;
+  }
+  .filter-btn-area ul li {
+    width: 50px;
+  }
+  .common-heading-area h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .filter-btn {
+    margin-bottom: 20px;
+  }
 }
 
-@media all and (max-width:767px) {
-	.maintenance-thumbnails-icon-1 {
-		left: 17%;
-		width: 130px;
-		top: 0px;
-	}
-	.maintenance-thumbnails-icon-2 {
-		right: 26%;
-		width: 90px;
-		top: -10px;
-	}
-	.countdown-area .g-20{
-		gap: 10px;
-	}
-	.custom-checkbox {
-		padding: 10px 12px;
-	}
-	.btn-2,.btn-3{
-		font-size: 16px;
-	}
-	.advantage-card h4 {
-		font-size:22px;
-		line-height:30px;
-	}
-	
-	.hero-video-area .hero-area-content {
-		padding-bottom: 60px;
-		padding-top: 80px;
-	}
-	p{
-		font-size: 15px !important;
-	}
-    .col-megamenu{
-        margin-bottom: 20px !important;
-    }
-	.megamenu {
-		padding: 25px 10px;
-	}
-    /* .hero-area-thumbnails {
+@media all and (max-width: 767px) {
+  .maintenance-thumbnails-icon-1 {
+    left: 17%;
+    width: 130px;
+    top: 0px;
+  }
+  .maintenance-thumbnails-icon-2 {
+    right: 26%;
+    width: 90px;
+    top: -10px;
+  }
+  .countdown-area .g-20 {
+    gap: 10px;
+  }
+  .custom-checkbox {
+    padding: 10px 12px;
+  }
+  .btn-2,
+  .btn-3 {
+    font-size: 16px;
+  }
+  .advantage-card h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .hero-video-area .hero-area-content {
+    padding-bottom: 60px;
+    padding-top: 80px;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  .col-megamenu {
+    margin-bottom: 20px !important;
+  }
+  .megamenu {
+    padding: 25px 10px;
+  }
+  /* .hero-area-thumbnails {
         width: 28%;
     } */
-	.footer-description {
-		text-align: center;
-	}
-	.social-menu ul {
-		justify-content: center;
-	}
-	.common-heading-area h3 {
-		font-size: 30px;
-		text-align: center;
-	}
-	.common-heading-area p {
-		font-size: 15px;
-		line-height: 28px;
-		text-align: center;
-	}
-	.blog-all-view{
-		text-align: center;
-		margin-top: 40px;
-	}
-	.hero-area-content {
-		text-align: center;
-	}
-	.evaluation-tab-box{
-		flex-direction: column;
-		gap: 20px;
-	}
-	.tab {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-	}
-	 
-	 .potential-section .evaluation-item-value p{
-		text-align: left;
-	 }
-	 .potential-thumbnail{
-		margin-top: 40px;
-	 }
-	 .accordion-button::after {
-		height: 40px;
-		width: 40px;
-	}
-	.more-details-accordion button{
-		font-size: 20px;
-	}
-	.accordion {
-		margin-top:40px;
-	}
-	.mt120{
-		margin-top: 80px;
-	}
-	.app-version-content-body{
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	.app-qr-code{
-		max-width:250px;
-		margin-bottom: 20px;
-	}
-	.app-version-area{
-		text-align: center;
-	}
-	.appversionContent .common-heading-area h3 {
-		font-size: 32px;
-	}
-	.social-menu ul li a {
-		height: 45px;
-		width: 45px;
-	}
-	.customer-satisfaction-text {
-		text-align: center;
-	}
-	.customer-satisfaction-chart{
-		margin-top: 40px;
-	}
-	.markets-terminal-about {
-		gap:20px;
-		flex-wrap: wrap;
-	}
-	.market-about-thumbnail {
-		width: 100%;
-	}
-	.market-terminal-about {
-		width: 100%;
-	}
-	.market-about-card{
-		max-width: 100%;
-	}
-	.market-about-card.mt130{
-		margin-top: 60px;
+  .footer-description {
+    text-align: center;
+  }
+  .social-menu ul {
+    justify-content: center;
+  }
+  .common-heading-area h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .common-heading-area p {
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .blog-all-view {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .hero-area-content {
+    text-align: center;
+  }
+  .evaluation-tab-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tab {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
-	}
-	.about-card-logo {
-		height: 55px;
-		width: 55px;
-	}
-	.evaluation-item-title span, .evaluation-item-value span {
-		font-size: 18px;
-		line-height: 26px;
-	}
-	.plan-card-option ul li,.plan-card-option ul li i,.master-trading-progressbar span {
-		font-size: 16px;
-	}
-	.master-trading-progressbar .progress {
-		height: 25px;
-		margin-bottom: 10px;
-	}
-	.mt-0-mb-40{
-		margin-top: 0;
-		margin-bottom: 40px;
-	}
-	.shadow-p30 {
-		padding: 10px; 
-	}
-	.opening-selected ul li{
-		width:100%;
-	}
-	.opening-form-items{
-		flex-wrap: wrap;
-	}
-	.opening-form-item{
-		width: 100%;
-	}
-	
-	.opening-form-item input, .opening-form-item select {
-		font-size: 16px;
-		padding: 10px 10px;
-	}
-	.opening-form-item label {
-		font-size: 18px;
-	}
-	.opening-form-items,.opening-selected ul{
-		gap: 15px;
-	}
-	.opening-form-item span i {
-		bottom: 12px;
-	}
-	.audcad-buy-sell-box ul li {
-		font-size: 35px;
-	}
-	.audcad-buy-sell-box ul li span {
-		font-size: 20px;
-	}
-	.chart-btn-group{
-		margin-bottom: 40px;
-	}
-	.chart-btn-group button {
-		padding: 4px 8px;
-		font-size: 15px;
-	}
-	.trading-info-section{
-		text-align: center;
-	}
-	.instruments-icon img {
-		height: 40px;
-		width: 40px;
-		border-radius: 50%;
-	}
-	.or-divider {
-		color: rgba(4, 21, 31, 0.60);
-		font-size: 16px;
-		line-height: 26px;
-		margin: 25px 0;
-	}
-	.mt-100{
-		margin-top: 80px;
-	}
-	.potential-left-area,.common-heading-area{
-		text-align: center;
-	}
-	.common-heading-area ul p{
-		text-align: left;
-	}
-	.education-tab-info-controls .app-version-btn ul li {
-		padding: 10px 14px;
-		width: 48%;
-	}
-	.card-4 h4 {
-		font-size: 28px;
-	}
-	.card-4 h6 {
-		font-size: 20px;
-		line-height: 20px;
-	}
-	.card-4-btn-list li {
-		font-size: 22px;
-		padding: 10px 12px;
-	}
-	.contest-guid-item {
-		width: 100%;
-		gap: 15px;
-	}
-	.contest-guid-title{
-		order: -2;
-	}
-	.contest-guid .contest-guid-item:nth-child(even){
-		width:100%;
-		float: inherit;
-		left: -22px;
-	 }
-	 .contest-guid .contest-guid-item:nth-child(odd) .contest-guid-info:after{
-		left:-22px;
-		right: inherit;
-		border-right:10px solid #F5C448;
-		border-left:10px solid transparent;
-	 }
-	 .contest-guid .contest-guid-item:nth-child(even) .contest-guid-info:after{
-		left: -22px;
-	 }
-	 .contest-guid-info p{
-		line-height: 22px;
-	 }
-	 .contest-guid-title {
-		max-width: 60px;
-		max-height: 60px;
-		min-height: 60px;
-		min-width: 60px;
-	}
-	.contest-guid-title h6 {
-		font-size: 15px;
-	}
-	.contest-guid-info {
-		border: 2px solid #F5C448;
-	}
-	.table-pagination .tab-btn {
-		font-size: 12px;
-		font-weight: 600;
-		line-height: 15.8px;
-		padding: 6px 10px;
-		gap: 5px;
-		border-radius: 5px;
-		letter-spacing: normal;
-	}
-	.table-pagination .tab-btn i {
-		font-size: 12px;
-	}
-	.pagination-inner li button {
-		font-size: 12px;
-		min-width: 25px;
-		padding: 5px;
-	}
-	.event-card {
-		padding: 15px;
-	}
-	.digit-show {
-		font-size: 25px;
-	}
-	.label-text {
-		font-size: 14px;
-	}
-	.countdown-box {
-		min-width: 50px;
-	}
-	.maintenance-thumbnails-icon-3 {
-		bottom:10px;
-	}
-	.maintenance-thumbnails{
-		margin-top: 30px;
-	}
-	.maintenance-thumbnails {
-		padding-bottom:40px;
-	}
+  .potential-section .evaluation-item-value p {
+    text-align: left;
+  }
+  .potential-thumbnail {
+    margin-top: 40px;
+  }
+  .accordion-button::after {
+    height: 40px;
+    width: 40px;
+  }
+  .more-details-accordion button {
+    font-size: 20px;
+  }
+  .accordion {
+    margin-top: 40px;
+  }
+  .mt120 {
+    margin-top: 80px;
+  }
+  .app-version-content-body {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .app-qr-code {
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+  .app-version-area {
+    text-align: center;
+  }
+  .appversionContent .common-heading-area h3 {
+    font-size: 32px;
+  }
+  .social-menu ul li a {
+    height: 45px;
+    width: 45px;
+  }
+  .customer-satisfaction-text {
+    text-align: center;
+  }
+  .customer-satisfaction-chart {
+    margin-top: 40px;
+  }
+  .markets-terminal-about {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .market-about-thumbnail {
+    width: 100%;
+  }
+  .market-terminal-about {
+    width: 100%;
+  }
+  .market-about-card {
+    max-width: 100%;
+  }
+  .market-about-card.mt130 {
+    margin-top: 60px;
+  }
+  .about-card-logo {
+    height: 55px;
+    width: 55px;
+  }
+  .evaluation-item-title span,
+  .evaluation-item-value span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .plan-card-option ul li,
+  .plan-card-option ul li i,
+  .master-trading-progressbar span {
+    font-size: 16px;
+  }
+  .master-trading-progressbar .progress {
+    height: 25px;
+    margin-bottom: 10px;
+  }
+  .mt-0-mb-40 {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .shadow-p30 {
+    padding: 10px;
+  }
+  .opening-selected ul li {
+    width: 100%;
+  }
+  .opening-form-items {
+    flex-wrap: wrap;
+  }
+  .opening-form-item {
+    width: 100%;
+  }
+
+  .opening-form-item input,
+  .opening-form-item select {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  .opening-form-item label {
+    font-size: 18px;
+  }
+  .opening-form-items,
+  .opening-selected ul {
+    gap: 15px;
+  }
+  .opening-form-item span i {
+    bottom: 12px;
+  }
+  .audcad-buy-sell-box ul li {
+    font-size: 35px;
+  }
+  .audcad-buy-sell-box ul li span {
+    font-size: 20px;
+  }
+  .chart-btn-group {
+    margin-bottom: 40px;
+  }
+  .chart-btn-group button {
+    padding: 4px 8px;
+    font-size: 15px;
+  }
+  .trading-info-section {
+    text-align: center;
+  }
+  .instruments-icon img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  .or-divider {
+    color: rgba(4, 21, 31, 0.6);
+    font-size: 16px;
+    line-height: 26px;
+    margin: 25px 0;
+  }
+  .mt-100 {
+    margin-top: 80px;
+  }
+  .potential-left-area,
+  .common-heading-area {
+    text-align: center;
+  }
+  .common-heading-area ul p {
+    text-align: left;
+  }
+  .education-tab-info-controls .app-version-btn ul li {
+    padding: 10px 14px;
+    width: 48%;
+  }
+  .card-4 h4 {
+    font-size: 28px;
+  }
+  .card-4 h6 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .card-4-btn-list li {
+    font-size: 22px;
+    padding: 10px 12px;
+  }
+  .contest-guid-item {
+    width: 100%;
+    gap: 15px;
+  }
+  .contest-guid-title {
+    order: -2;
+  }
+  .contest-guid .contest-guid-item:nth-child(even) {
+    width: 100%;
+    float: inherit;
+    left: -22px;
+  }
+  .contest-guid .contest-guid-item:nth-child(odd) .contest-guid-info:after {
+    left: -22px;
+    right: inherit;
+    border-right: 10px solid #f5c448;
+    border-left: 10px solid transparent;
+  }
+  .contest-guid .contest-guid-item:nth-child(even) .contest-guid-info:after {
+    left: -22px;
+  }
+  .contest-guid-info p {
+    line-height: 22px;
+  }
+  .contest-guid-title {
+    max-width: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    min-width: 60px;
+  }
+  .contest-guid-title h6 {
+    font-size: 15px;
+  }
+  .contest-guid-info {
+    border: 2px solid #f5c448;
+  }
+  .table-pagination .tab-btn {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.8px;
+    padding: 6px 10px;
+    gap: 5px;
+    border-radius: 5px;
+    letter-spacing: normal;
+  }
+  .table-pagination .tab-btn i {
+    font-size: 12px;
+  }
+  .pagination-inner li button {
+    font-size: 12px;
+    min-width: 25px;
+    padding: 5px;
+  }
+  .event-card {
+    padding: 15px;
+  }
+  .digit-show {
+    font-size: 25px;
+  }
+  .label-text {
+    font-size: 14px;
+  }
+  .countdown-box {
+    min-width: 50px;
+  }
+  .maintenance-thumbnails-icon-3 {
+    bottom: 10px;
+  }
+  .maintenance-thumbnails {
+    margin-top: 30px;
+  }
+  .maintenance-thumbnails {
+    padding-bottom: 40px;
+  }
 }
-@media all and (max-width:575px) {
-	.maintenance-thumbnails-icon-1 {
-		left: 8%;
-		width: 130px;
-		top: -30px;
-	}
-	.primary-btn{
-		font-size: 16px;
-	}
-	.plan-footer .primary-btn, .plan-footer .primary-btn-bg-transparent {
-		font-size: 16px;
-		padding: 10px 0;
-	}
-	.footer-widgets-area {
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-	.footer-widgets-area {
-		gap: 30px;
-	}
-	.footer-widgets {
-		width: 45%;
-	}
-	 
-	.tab button {
-		width: 100%;
-		height: 90px;
-		padding: 10px;
-	}
-	.tabcontent table th, .tabcontent table td {
-		padding: 8px;
-	}
-	.plan-card-option ul {
-		gap: 10px;
-	}
-	.app-version-btn-2 ul li {
-		font-size: 16px;
-	}
-	.tab-body {
-		padding: 15px 15px;
-	}
-	.tabcontent table tr td {
-		font-size: 15px;
-	}
-	.navbar-brand{
-		margin-right: 0;
-	}
-	.app-version-btn ul li,.payment-option-heading .primary-btn {
-		padding: 6px 10px;
-		font-size: 14px;
-	}
-	.step-content h4 {
-		font-size: 20px;
-		line-height: 28px;
-	}
-	.step-number {
-		min-width: 53px;
-		font-size: 16px;
-		margin-right: 12px;
-	}
-	.step-item{
-		padding: 16px;
-	}
-	.app-download-text h4 {
-		font-size: 18px;
-	}
-	.app-download-logo img{
-		width: 40px;
-	}
-	.clients-trading-table table tr td {
-		padding: 10px 5px;
-	}
-	.clients-trading-table table tr td {
-		font-size: 13px;
-	}
-	.common-heading-area h3 {
-		font-size: 26px;
-		line-height: 34px;
-	}
-	.evaluation-item-title span, .evaluation-item-value span {
-		font-size: 16px;
-		line-height: 26px;
-	}
-	.instrument-title h6 {
-		font-size: 16px;
-		line-height: 17px;
-		margin-bottom: 0px;
-	}
-	.instrument-title span {
-		font-size: 14px;
-		line-height: 20px;
-	}
-	.searching-box input {
-		min-width: 328px;
-	}
-	.education-tab-info-controls .app-version-btn ul li {
-		width:100%;
-	}
-	 
-	.video-box iframe {
-		height: 360px;
-	}
-	.user-card-cover .user-card-logo img {
-		height: 40px;
-		width: 42px;
-	}
-	.custom-modal {
-		padding: 20px;
-	}
-	.auto-login ul li button.btn-1 {
-		min-width: auto;
-	}
-	.btn-1 { 
-		padding: 8px 12px;
-		font-size: 15px;
-		display: flex;
-		align-items: center;
-		gap:5px;
-	}
-	.trades-view-list ul li {
-		padding: 10px 16px;
-	}
-	.trades-view-list ul li h6 {
-		font-size: 18px;
-	}
-	.legal-country-icon img {
-		height: 45px;
-		width: 45px;
-		border-radius: 50%;
-	}
-	.warning-section {
-		display: none;
-	}
+@media all and (max-width: 575px) {
+  .maintenance-thumbnails-icon-1 {
+    left: 8%;
+    width: 130px;
+    top: -30px;
+  }
+  .primary-btn {
+    font-size: 16px;
+  }
+  .plan-footer .primary-btn,
+  .plan-footer .primary-btn-bg-transparent {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .footer-widgets-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-widgets-area {
+    gap: 30px;
+  }
+  .footer-widgets {
+    width: 45%;
+  }
+
+  .tab button {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+  }
+  .tabcontent table th,
+  .tabcontent table td {
+    padding: 8px;
+  }
+  .plan-card-option ul {
+    gap: 10px;
+  }
+  .app-version-btn-2 ul li {
+    font-size: 16px;
+  }
+  .tab-body {
+    padding: 15px 15px;
+  }
+  .tabcontent table tr td {
+    font-size: 15px;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .app-version-btn ul li,
+  .payment-option-heading .primary-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  .step-content h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .step-number {
+    min-width: 53px;
+    font-size: 16px;
+    margin-right: 12px;
+  }
+  .step-item {
+    padding: 16px;
+  }
+  .app-download-text h4 {
+    font-size: 18px;
+  }
+  .app-download-logo img {
+    width: 40px;
+  }
+  .clients-trading-table table tr td {
+    padding: 10px 5px;
+  }
+  .clients-trading-table table tr td {
+    font-size: 13px;
+  }
+  .common-heading-area h3 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .evaluation-item-title span,
+  .evaluation-item-value span {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .instrument-title h6 {
+    font-size: 16px;
+    line-height: 17px;
+    margin-bottom: 0px;
+  }
+  .instrument-title span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .searching-box input {
+    min-width: 328px;
+  }
+  .education-tab-info-controls .app-version-btn ul li {
+    width: 100%;
+  }
+
+  .video-box iframe {
+    height: 360px;
+  }
+  .user-card-cover .user-card-logo img {
+    height: 40px;
+    width: 42px;
+  }
+  .custom-modal {
+    padding: 20px;
+  }
+  .auto-login ul li button.btn-1 {
+    min-width: auto;
+  }
+  .btn-1 {
+    padding: 8px 12px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .trades-view-list ul li {
+    padding: 10px 16px;
+  }
+  .trades-view-list ul li h6 {
+    font-size: 18px;
+  }
+  .legal-country-icon img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+  }
+  .warning-section {
+    display: none;
+  }
 }
-@media all and (max-width:480px) {
-	.country-menu.dropdown-menu[data-bs-popper] {
-		left: -220px;	 
-	}
-	.payment-option-heading{
-		flex-wrap: wrap;
- 		 gap: 10px;
-	}
-	.btn-group ul{
-		
-		flex-wrap: wrap;
-	}
-	.btn-group ul li{
-		width: 100%;
-		justify-content: center;
-	}
-	.video-box iframe {
-		height: 300px;
-	}
-	table.dataTable > tbody > tr.child span.dtr-title {
-		display: block;
-	}
-	.contest-achieve ul li img {
-		height: 18px;
-		width: 18px;
-	}
-	.contest-achieve ul{
-		justify-content: center;
-	}
-	.page-modal-width {
-		width: 98%;
-	}
-	.custom-select-wrapper {
-		max-width: 100%;
-	}
+@media all and (max-width: 480px) {
+  .country-menu.dropdown-menu[data-bs-popper] {
+    left: -220px;
+  }
+  .payment-option-heading {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .btn-group ul {
+    flex-wrap: wrap;
+  }
+  .btn-group ul li {
+    width: 100%;
+    justify-content: center;
+  }
+  .video-box iframe {
+    height: 300px;
+  }
+  table.dataTable > tbody > tr.child span.dtr-title {
+    display: block;
+  }
+  .contest-achieve ul li img {
+    height: 18px;
+    width: 18px;
+  }
+  .contest-achieve ul {
+    justify-content: center;
+  }
+  .page-modal-width {
+    width: 98%;
+  }
+  .custom-select-wrapper {
+    max-width: 100%;
+  }
 }
