@@ -2516,21 +2516,61 @@ table {
   transition: opacity 1s ease-in-out;
   animation: fadeIn 1s ease-in-out 1s forwards;
 }
+
 @keyframes fadeIn {
   to {
     opacity: 1;
     visibility: visible;
   }
 }
-.warning-section p {
+
+.warning-mobile-view {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10px;
+  top: -20px;
+  height: 40px;
+  cursor: pointer;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #f5c448;
+  box-shadow: rgba(70, 74, 78, 0.5) 2px 8px 24px;
+}
+
+.warning-mobile-view i {
+  font-size: 20px;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.warning-content p {
   color: #000;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+  text-align: justify;
+  transition: max-height 0.3s ease-in-out;
 }
+
 .warning-section p b {
   color: rgb(252, 55, 55);
 }
+
+.warning-text {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ 
+  max-width: 100%;
+}
+
+.show-full-text .warning-text {
+  white-space: normal;
+  overflow: visible;
+}
+
 /* Risk warning end*/
 /* maintenance start */
 .header-logo img {
@@ -2646,3 +2686,4 @@ table {
   border-radius: 15px;
 }
 /* End confirmation modal */
+ 

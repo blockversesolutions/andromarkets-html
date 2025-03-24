@@ -594,6 +594,9 @@
   .maintenance-thumbnails {
     padding-bottom: 40px;
   }
+  .warning-content {
+    padding-top: 15px;
+}
 }
 @media all and (max-width: 575px) {
   .maintenance-thumbnails-icon-1 {
@@ -729,9 +732,8 @@
     width: 45px;
     border-radius: 50%;
   }
-  .warning-section {
-    display: none;
-  }
+  
+ 
 }
 @media all and (max-width: 480px) {
   .country-menu.dropdown-menu[data-bs-popper] {

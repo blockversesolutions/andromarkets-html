@@ -1784,7 +1784,10 @@
                           </a>
                         </li>
                         <li>
-                          <a href="#" class="app-btn-blur d-flex align-items-center m-0">
+                          <a
+                            href="#"
+                            class="app-btn-blur d-flex align-items-center m-0"
+                          >
                             <div class="app-download-logo">
                               <img
                                 src="assets/images/icon/apk.png"
@@ -2041,20 +2044,27 @@
       </div>
     </footer>
     <!-- End Footer area -->
-    <div class="warning-section">
-      <p>
-        <b class="color-red"><u>Risk Warning:</u></b>
-        sit amet consectetur adipisicing elit. Consectetur eligendi maiores
-        omnis. Cumque voluptates cum dolore ad impedit, placeat tempora aut
-        voluptatum! Ad quod tempora exercitationem suscipit id aspernatur
-        doloribus.
-      </p>
+    <div class="warning-section position-relative">
+      <div class="warning-content">
+        <p class="warning-text">
+          <b class="color-red"><u>Risk Warning:</u></b>
+          sit amet consectetur adipisicing elit. Consectetur eligendi maiores
+          omnis. Cumque voluptates cum dolore ad impedit, placeat tempora aut
+          voluptatum! Ad quod tempora exercitationem suscipit id aspernatur
+          doloribus.
+        </p>
+      </div>
+      <span class="warning-mobile-view"
+        ><i class="fa-solid fa-angle-up"></i
+      ></span>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="assets/js/main.js"></script>
+
     <script>
       function evaluation(evt, coinmonitoring) {
         var i, tabcontent, tablinks;
@@ -2180,6 +2190,30 @@
       setInterval(autoChangeStep, intervalTime);
       // Trigger the first step manually to start the cycle
       document.getElementById("account-step-active").click();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const warningText = document.querySelector(".warning-text"),
+          warningBtn = document.querySelector(".warning-mobile-view"),
+          warningIcon = warningBtn.querySelector("i"),
+          fullText = warningText.innerHTML.trim(),
+          shortText = fullText.split(" ").slice(0, 18).join(" ") + "...";
+
+        const updateView = () => {
+          const isMobile = window.innerWidth < 767;
+          warningText.innerHTML = isMobile ? shortText : fullText;
+          warningBtn.style.display = isMobile ? "flex" : "none";
+        };
+
+        warningBtn.addEventListener("click", () => {
+          const isExpanded = warningText.innerHTML === fullText;
+          warningText.innerHTML = isExpanded ? shortText : fullText;
+          warningIcon.style.transform = `rotate(${isExpanded ? 0 : 180}deg)`;
+        });
+
+        window.addEventListener("resize", updateView);
+        updateView();
+      });
     </script>
   </body>
 </html>
