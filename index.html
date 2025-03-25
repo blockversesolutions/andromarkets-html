@@ -489,12 +489,13 @@
               <div class="common-heading-area text-center text-lg-start">
                 <span>WEB PLATFORM</span>
                 <h3>Customer Satisfaction, Our Primary Goal</h3>
-                <p class="mb-10">
+                <p class="mb-10 text-justify">
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  ut labore et dolore magna aliqua.  sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliq Ut enim ad minim veniam,
                   quis nostrud exercitation
                 </p>
-                <p>
+                <p class="text-justify">
                   adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                   dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                   exercitation
@@ -1460,8 +1461,11 @@
           <div class="col-lg-4 col-md-6">
             <div class="plan-card">
               <div class="plan-card-header">
-                <span>Free</span>
-                <h5>$00.00</h5>
+                <h6>Copy Trading Account - Master Trader</h6>
+                <div class="line-1 mt-2"></div>
+                <p>Best For : Traders who prefer passive investing by copying successful traders.</p>
+                <!-- <span>Free</span>
+                <h5>$00.00</h5> -->
               </div>
               <div class="plan-card-option">
                 <ul>
@@ -1495,7 +1499,8 @@
                 </ul>
               </div>
               <div class="plan-footer">
-                <a href="#" class="primary-btn">Get Started</a>
+                <p><b><i class="fa-solid fa-lightbulb "></i> Purpose:</b> Offer a halal investment option for clients who prefer automated trading.</p>
+                <a href="#" class="primary-btn mt-3">Get Started</a>
               </div>
             </div>
           </div>
@@ -1970,9 +1975,8 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-12 mt-4">
-            <p class="text-white text-justify">
+            <p class="disclaimer">
               Disclaimer: Risk Statement: Investing in derivatives can result in
               losses exceeding your original investment. Anyone wishing to
               invest in any of the products mentioned on Andro Markets Ltd.
@@ -2044,8 +2048,9 @@
       </div>
     </footer>
     <!-- End Footer area -->
+      
     <div class="warning-section position-relative">
-      <div class="warning-content">
+      <div class="warning-content gap-x-4">
         <p class="warning-text">
           <b class="color-red"><u>Risk Warning:</u></b>
           sit amet consectetur adipisicing elit. Consectetur eligendi maiores
@@ -2058,7 +2063,6 @@
         ><i class="fa-solid fa-angle-up"></i
       ></span>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
@@ -2102,12 +2106,10 @@
       var words = document.getElementsByClassName("word");
       var wordArray = [];
       var currentWord = 0;
-
       words[currentWord].style.opacity = 1;
       for (var i = 0; i < words.length; i++) {
         splitLetters(words[i]);
       }
-
       function changeWord() {
         var cw = wordArray[currentWord];
         var nw =
@@ -2117,22 +2119,18 @@
         for (var i = 0; i < cw.length; i++) {
           animateLetterOut(cw, i);
         }
-
         for (var i = 0; i < nw.length; i++) {
           nw[i].className = "letter behind";
           nw[0].parentElement.style.opacity = 1;
           animateLetterIn(nw, i);
         }
-
         currentWord = currentWord == wordArray.length - 1 ? 0 : currentWord + 1;
       }
-
       function animateLetterOut(cw, i) {
         setTimeout(function () {
           cw[i].className = "letter out";
         }, i * 80);
       }
-
       function animateLetterIn(nw, i) {
         setTimeout(function () {
           nw[i].className = "letter in";
@@ -2157,7 +2155,7 @@
     </script>
     <!-- account step -->
     <script>
-      let currentStep = 1;
+      let currentStep = 1; 
       const totalSteps = 4;
       const intervalTime = 3500;
       function account_step_function(evt, account_step_function_id) {
