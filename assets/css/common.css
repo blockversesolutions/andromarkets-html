@@ -496,11 +496,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before {
   transform: rotate(45deg);
   transition: transform 0.2s;
 }
-
 .custom-select.open .arrow {
   transform: rotate(-135deg);
 }
-
 .options {
   display: none;
   position: absolute;

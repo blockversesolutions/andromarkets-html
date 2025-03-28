@@ -183,7 +183,7 @@ li.nav-item.dropdown li a {
 .hero-area-content p {
   color: #fff;
   margin-top:80px;
-  margin-bottom: 40px;
+  margin-bottom:55px;
   text-align:justify;
 }
 
@@ -494,7 +494,7 @@ li.nav-item.dropdown li a {
 .plan-card-header h6 {
   position: relative;
   font-size: 27px;
-  font-weight: 500;
+  font-weight:600;
   line-height: 36px;
   color: #04151f;
 }
@@ -1165,6 +1165,9 @@ table {
   font-size: 16px;
   opacity: 0.7;
   color: #fff;
+}
+.copyright-text .common-heading-area h5{
+  font-size: 16px;
 }
 .potential-left-area .evaluation-item-value p {
   text-align: left;
@@ -2716,9 +2719,9 @@ table {
 .disclaimer {
   text-align: justify;
   color: #fff;
-  line-height: 18px;
+  line-height: 14px;
   opacity: 0.5;
-  word-spacing: -1px;
-  font-size: 12px;
+  word-spacing: -1.5px;
+  font-size: 12px !important;
 }
 /* End confirmation modal */
