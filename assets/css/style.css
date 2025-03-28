@@ -182,8 +182,9 @@ li.nav-item.dropdown li a {
 }
 .hero-area-content p {
   color: #fff;
-  margin-top: 75px;
+  margin-top:80px;
   margin-bottom: 40px;
+  text-align:justify;
 }
 
 .hero-video-area {
@@ -1185,7 +1186,7 @@ table {
   background-color: transparent;
   position: fixed;
   width: 100%;
-  top: 0;
+  top:10px;
   z-index: 999;
 }
 .common-page-inner .common-heading-area p {
@@ -2540,7 +2541,7 @@ table {
   position: sticky !important;
   bottom: 0;
   background-color: #f5c448;
-  padding: 10px 15px;
+  padding:8px 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 5px 5px 0 0;
   z-index: 9;
@@ -2579,7 +2580,8 @@ table {
   color: #000;
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
+  line-height:18px;
+  opacity: 0.8;
   text-align: justify;
   transition: max-height 0.3s ease-in-out;
 }
@@ -2713,9 +2715,10 @@ table {
 }
 .disclaimer {
   text-align: justify;
-  color: #ffffff;
+  color: #fff;
+  line-height: 18px;
   opacity: 0.5;
-  font-size: 14px;
-  line-height: 24px;
+  word-spacing: -1px;
+  font-size: 12px;
 }
 /* End confirmation modal */

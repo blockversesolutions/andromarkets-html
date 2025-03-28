@@ -732,8 +732,6 @@
     width: 45px;
     border-radius: 50%;
   }
-  
- 
 }
 @media all and (max-width: 480px) {
   .country-menu.dropdown-menu[data-bs-popper] {
