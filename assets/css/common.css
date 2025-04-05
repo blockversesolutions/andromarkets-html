@@ -370,7 +370,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before {
   margin: 0 auto;
   border-radius: 15px;
 }
-
 .form-group label {
   font-size: 16px;
   font-weight: 400;
@@ -566,12 +565,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before {
   border-radius: 4px;
   outline: none;
 }
-
 .time-input input[type="time"]:focus {
   border: 1px solid #fed233;
   box-shadow: 0 0 0 0.25rem transparent;
 }
-
 .time-input span {
   margin: 0 12px;
   font-size: 22px;

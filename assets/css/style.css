@@ -510,11 +510,23 @@ li.nav-item.dropdown li a {
   bottom: -12px;
   background-color:#F5C448;
 }
+.popular-plan{
+  text-align: right;
+  margin-top: -26px;
+  margin-bottom: 10px;
+}
 .plan-card-header span {
   background-color: #fff;
-  border-radius: 18px;
-  padding: 6px 38px;
+  border-radius:0px 15px 0px 15px;
+  padding: 6px 15px;
   color: #04151f;
+  border:1px solid #F5C448;
+  font-weight: 600;
+}
+.plan-card-header span i{
+  font-size:14px;
+  color:green;
+  margin-right:2px;
 }
 .plan-card-header h5 {
   color: #04151f;
