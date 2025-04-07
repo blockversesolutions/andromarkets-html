@@ -6,7 +6,7 @@
 		padding-bottom: 146px;
 	} */
 
-  h2 {
+  .hero-area-content h1 {
     font-size: 40px;
     line-height: 50px;
   }
@@ -101,11 +101,11 @@
   .contact-form {
     margin-top: 60px;
   }
-  h2 {
+  .hero-area-content h1 {
     font-size: 35px;
     line-height: 50px;
   }
-
+  
   .country-menu-parent img {
     width: 26px;
   }
@@ -185,7 +185,7 @@
     max-width: 100%;
     text-align: center;
   }
-  .common-page-inner .common-heading-area h3 {
+  .common-page-inner .common-heading-area h2 {
     font-size: 45px;
   }
   p {
@@ -276,7 +276,7 @@
   .filter-btn-area ul li {
     width: 50px;
   }
-  .common-heading-area h3 {
+  .common-heading-area h1 {
     font-size: 32px;
     line-height: 40px;
   }
@@ -286,6 +286,30 @@
 }
 
 @media all and (max-width: 767px) {
+  h1{
+    font-size:34px;
+    line-height: 45px;
+  }
+  h2{
+    font-size:30px;
+    line-height:38px;
+  }
+  h3{
+    font-size:28px;
+    line-height:36px;
+  }
+  h4{
+    font-size:26px;
+    line-height:34px;
+  }
+  h5{
+    font-size:24px;
+    line-height: 30px;
+  }
+  h6{
+    font-size: 20px;
+    line-height:30px;
+  }
   .maintenance-thumbnails-icon-1 {
     left: 17%;
     width: 130px;
@@ -333,7 +357,7 @@
   .social-menu ul {
     justify-content: center;
   }
-  .common-heading-area h3 {
+  .common-heading-area h1 {
     font-size: 30px;
     text-align: center;
   }
@@ -389,7 +413,7 @@
   .app-version-area {
     text-align: center;
   }
-  .appversionContent .common-heading-area h3 {
+  .appversionContent .common-heading-area h2 {
     font-size: 32px;
   }
   .social-menu ul li a {
@@ -597,8 +621,31 @@
   .warning-content {
     padding-top: 15px;
 }
+.blog-details-section .common-heading-area,.blog-details-section .common-heading-area p{
+  text-align: left;
+}
 }
 @media all and (max-width: 575px) {
+  h1{
+    font-size:32px;
+    line-height: 45px;
+  }
+  h2{
+    font-size:28px;
+    line-height:36px;
+  }
+  h3{
+    font-size:26px;
+    line-height:36px;
+  }
+  h4{
+    font-size:24px;
+    line-height:34px;
+  }
+  h5{
+    font-size:22px;
+    line-height: 30px;
+  }
   .maintenance-thumbnails-icon-1 {
     left: 8%;
     width: 130px;
@@ -676,7 +723,7 @@
   .clients-trading-table table tr td {
     font-size: 13px;
   }
-  .common-heading-area h3 {
+  .common-heading-area h1 {
     font-size: 26px;
     line-height: 34px;
   }
@@ -735,8 +782,28 @@
   .disclaimer {
     font-size: 10px !important;
   }
+
 }
 @media all and (max-width: 480px) {
+  h1{
+    font-size:30px;
+    line-height:40px;
+  }
+  h2{
+    font-size:26px;
+    line-height:34px;
+  }
+  h3{
+    font-size:24px;
+    line-height:34px;
+  }
+  h4{
+    font-size:22px;
+    line-height:32px;
+  }
+  h5{
+    font-size:20px;
+  }
   .country-menu.dropdown-menu[data-bs-popper] {
     left: -220px;
   }

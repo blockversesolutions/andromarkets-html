@@ -1,9 +1,6 @@
 :root{
   --primary:#dfcc;
 }
-
-
-
 body {
   margin: 0;
   font-size: 16px;
@@ -18,8 +15,8 @@ ul {
   padding: 0;
 }
 h1,
+h1,
 h2,
-h3,
 h4,
 h5,
 h6,
@@ -27,7 +24,52 @@ p {
   margin: 0;
   padding: 0;
 }
-
+/* table tr td,table tr th{
+  border: 1px solid #ddd;
+  padding:5px 12px;
+} */
+h1 {
+  font-size:40px;
+  line-height:48px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+h2 {
+  font-size:32px;
+  line-height: 42px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+h3 {
+  font-size:28px;
+  line-height: 39px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+h4 {
+  font-size: 24px;
+  line-height:34px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+h5 {
+  font-size: 20px;
+  line-height:30px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+h6 {
+  font-size:18px;
+  line-height:28px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
 input,
 textarea,
 input:focus,
@@ -43,15 +85,23 @@ a:hover {
 .container {
   max-width: 1255px;
 }
-h2 {
+.hero-area-content h1{
   font-size: 50px;
   line-height: 64px;
   color: #fff;
   font-weight: 600;
   margin-bottom: 16px;
 }
-h2 span {
+ 
+.hero-area-content h1 span {
   color: #f5c448;
+}
+.common-page-heading-section h1{
+  font-size: 50px;
+  line-height: 64px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 .accordion-button:focus,
 .navbar-toggler:focus {
