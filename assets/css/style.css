@@ -311,6 +311,16 @@ li.nav-item.dropdown li a {
   border-top: 20px solid transparent;
   border-bottom: 20px solid #fff;
 }
+.megamenu-4::after {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 55%;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+}
 .col-megamenu ul li a,
 .dropdown-menu ul li a {
   font-size: 16px;
