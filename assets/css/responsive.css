@@ -342,6 +342,9 @@
   p {
     font-size: 15px !important;
   }
+  .warning-content p{
+    font-size: 10px !important;
+  }
   .col-megamenu {
     margin-bottom: 20px !important;
   }
@@ -782,9 +785,24 @@
   .disclaimer {
     font-size: 10px !important;
   }
+    .shape-404-after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    transform: rotate(0deg);
+}
+  .four_zero_four_bg h1 {
+    font-size: 40px;
+    padding-top: 60px;
+  }
+  .shape-404{
+    display: none !important;
+  }
 
 }
 @media all and (max-width: 480px) {
+
   h1{
     font-size:30px;
     line-height:40px;
