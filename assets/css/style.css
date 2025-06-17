@@ -738,8 +738,13 @@ li.nav-item.dropdown li a {
   line-height: 32px;
   color: #04151f;
 }
-
-.blog-post-card .card-body a {
+.card-title{
+  transition: 0.5s;
+}
+.card-body:hover .card-title{
+  color:#f5c448;
+}
+.card-btn{
   font-size: 16px;
   line-height: 25.63px;
   transition: 0.5s;
@@ -752,7 +757,7 @@ li.nav-item.dropdown li a {
   margin-top: 20px;
 }
 
-.blog-post-card .card-body a:hover {
+.card-btn:hover {
   color: #fff;
 }
 
@@ -2222,7 +2227,6 @@ table {
   color: #fff;
   line-height: 24px;
 }
-
 .card-instrument-body ul li {
   width: 100%;
   font-size: 14px;
@@ -2249,7 +2253,6 @@ table {
   font-size: 14px;
   padding-right: 5px;
 }
-
 /*.card-instrument-body ul::after {*/
 /*    content: "";*/
 /*    position: absolute;*/
@@ -2258,24 +2261,20 @@ table {
 /*    width: 1.5px;*/
 /*    background-color: #ffffff1a;*/
 /*}*/
-
 .demo-account-features-area h6 {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
   color: #04151f;
 }
-
 /*.demo-account-features-area ul {*/
 /*    list-style-type: disc;*/
 /*    margin-left: 25px;*/
 /*}*/
-
 .account-compare {
   border: 1px solid #00000012;
   border-radius: 20px;
 }
-
 .account-compare .common-heading-area {
   padding: 30px;
 }
@@ -3391,3 +3390,6 @@ table {
 /*        background-position: -200% 0;*/
 /*    }*/
 /*}*/
+.table-design tr:nth-child(even){
+  background-color: #e4bc581f !important;
+}
