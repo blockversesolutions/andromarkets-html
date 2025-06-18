@@ -1722,6 +1722,7 @@ table {
   color: #fff !important;
 }
 
+
 /* End leverage page css */
 /* .divider {
 	background: black;
@@ -3393,3 +3394,10 @@ table {
 .table-design tr:nth-child(even){
   background-color: #e4bc581f !important;
 }
+ .header-right .primary-btn-bg-transparent:hover{
+  color:#000;
+ }
+ .header-right .primary-btn:focus{
+  background: #000;
+  border-color:#fff;
+ }
