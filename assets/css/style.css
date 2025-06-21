@@ -530,20 +530,20 @@ li.nav-item.dropdown li a {
 .span-color {
   color: #f5c448 !important;
 }
-.after-effect{
+.after-effect {
   position: relative;
   overflow: hidden;
 }
-.after-effect:after{
-  content:"";
+.after-effect:after {
+  content: "";
   position: absolute;
-  right:-40px;
+  right: -40px;
   bottom: -40px;
-  height:110px;
-  width:110px;
+  height: 110px;
+  width: 110px;
   border-radius: 50%;
   opacity: 0.5;
-  background-color:#f5c448;
+  background-color: #f5c448;
 }
 .common-heading-area p {
   font-size: 18px;
@@ -738,13 +738,13 @@ li.nav-item.dropdown li a {
   line-height: 32px;
   color: #04151f;
 }
-.card-title{
+.card-title {
   transition: 0.5s;
 }
-.card-body:hover .card-title{
-  color:#f5c448;
+.card-body:hover .card-title {
+  color: #f5c448;
 }
-.card-btn{
+.card-btn {
   font-size: 16px;
   line-height: 25.63px;
   transition: 0.5s;
@@ -794,6 +794,41 @@ li.nav-item.dropdown li a {
 
 .leverage-info-section p {
   opacity: 0.7 !important;
+}
+.bg-pink-gradient {
+  background: linear-gradient(
+    97.46deg,
+    rgba(245, 196, 72, 0.06) 0%,
+    rgba(255, 255, 255, 0.952) 49.48%,
+    rgba(219, 173, 56, 0.466) 100%
+  );
+}
+.bonus-thumbnails img {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 0.4s ease;
+}
+
+.bonus-thumbnails img.bounce-in {
+  animation: bounceFromTop 0.8s ease-out forwards;
+}
+
+@keyframes bounceFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  60% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .ptb100 {
@@ -1095,8 +1130,9 @@ table {
 
 .accordion-button::after {
   background: #fdf3da;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' fill='rgba(245, 196, 72, 1)' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h2a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h2v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
-  background-size: 36px 36px; /* Adjust icon size */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' fill='%23F5C448' viewBox='0 0 16 16'%3E%3Cpath d='M8 1a1 1 0 0 1 1 1v5h5a1 1 0 0 1 0 2H9v5a1 1 0 0 1-2 0V9H2a1 1 0 0 1 0-2h5V2a1 1 0 0 1 1-1z'/%3E%3C/svg%3E");
+
+  background-size: 18px 36px; /* Adjust icon size */
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.5s;
@@ -1107,6 +1143,7 @@ table {
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' fill='rgba(245, 196, 72, 1)' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+  background-size: 36px 36px;
 }
 
 .accordion-button::after {
@@ -1722,7 +1759,6 @@ table {
   color: #fff !important;
 }
 
-
 /* End leverage page css */
 /* .divider {
 	background: black;
@@ -2237,20 +2273,20 @@ table {
   color: #aaa7b5;
 }
 .after-effect .card-instrument-body ul li {
-    width: 100%;
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 4px;
-    line-height: 18px;
-    border-bottom: 1px dotted #302e2e;
-    padding: 8px;
-    color: #aaa7b5;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  line-height: 18px;
+  border-bottom: 1px dotted #302e2e;
+  padding: 8px;
+  color: #aaa7b5;
 }
-.after-effect .card-instrument-body ul li{
-  color:#fff;
+.after-effect .card-instrument-body ul li {
+  color: #fff;
 }
-.after-effect .card-instrument-body ul li i{
-  color: #F5C448;
+.after-effect .card-instrument-body ul li i {
+  color: #f5c448;
   font-size: 14px;
   padding-right: 5px;
 }
@@ -3391,13 +3427,41 @@ table {
 /*        background-position: -200% 0;*/
 /*    }*/
 /*}*/
-.table-design tr:nth-child(even){
+.table-design tr:nth-child(even) {
   background-color: #e4bc581f !important;
 }
- .header-right .primary-btn-bg-transparent:hover{
-  color:#000;
- }
- .header-right .primary-btn:focus{
+.header-right .primary-btn-bg-transparent:hover {
+  color: #000;
+}
+.header-right .primary-btn:focus {
   background: #000;
-  border-color:#fff;
- }
+  border-color: #fff;
+}
+.bonus-card {
+  transition: 0.5s;
+ 
+   
+}
+ 
+ 
+.bonus-card:hover,
+.bonus-card:hover .evaluation-item {
+  background: #f5c448;
+  box-shadow: 0px 16.9px 25.36px 0px #c4cdda40;
+  border-radius: 20px;
+}
+.bonus-card:hover .evaluation-item .evaluation-item-title img {
+  background-color: white;
+}
+.step-number {
+  position: absolute;
+  color: #04151f13;
+  font-size: 56px;
+  font-weight: 700;
+  top: 25px;
+  background-color: transparent;
+  right: 25px;
+}
+.bonus-card:hover .step-number {
+  color: #fff;
+}

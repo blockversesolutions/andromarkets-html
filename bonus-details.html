@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tradding Web App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <header class="header-transparent">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container position-relative">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.png" alt="logo" />
+          </a>
+          <div class="header-right">
+            <ul class="d-flex align-items-center">
+              <li class="nav-item dropdown mobile-view country-menu-parent">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="true"
+                >
+                  <img src="assets/images/icon/country.png" alt="icon" />
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul
+                  class="dropdown-menu country-menu"
+                  data-simplebar
+                  style="max-height: 360px"
+                  data-bs-popper="static"
+                  id="scrollbar"
+                >
+                  <span class="close-mark"
+                    ><i class="fa-solid fa-xmark"></i
+                  ></span>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/icon/france.png" alt="icon" />
+                      <span>France</span>
+                      <span class="float-end icon-check"
+                        ><i class="fa-solid fa-circle-check fs-6"></i
+                      ></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" href="#">
+                      <img src="assets/images/icon/us.png" alt="icon" />
+                      <span>English (us)</span>
+                      <span class="float-end icon-check"
+                        ><i class="fa-solid fa-circle-check fs-6"></i
+                      ></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/icon/espen.png" alt="icon" />
+                      <span>Espen</span>
+                      <span class="float-end icon-check"
+                        ><i class="fa-solid fa-circle-check fs-6"></i
+                      ></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/icon/bangladesh.png" alt="icon" />
+                      <span>Bangla</span>
+                      <span class="float-end icon-check"
+                        ><i class="fa-solid fa-circle-check fs-6"></i
+                      ></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/icon/italy.png" alt="icon" />
+                      <span>Italy</span>
+                      <span class="float-end icon-check"
+                        ><i class="fa-solid fa-circle-check fs-6"></i
+                      ></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="assets/images/icon/portugal.png" alt="icon" />
+                      <span>Portugal</span>
+                      <span class="float-end icon-check"
+                        ><i class="fa-solid fa-circle-check fs-6"></i
+                      ></span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#main_nav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav nav-rounded" id="outside-click">
+              <li class="nav-item dropdown has-megamenu">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Trading <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div class="dropdown-menu megamenu" role="menu">
+                  <div class="container">
+                    <div class="row g-3">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="col-megamenu m-0">
+                          <h6>Your Finance</h6>
+                          <ul>
+                            <li><a href="#">Deposit & withdrawals</a></li>
+                            <li><a href="#">Payment Option</a></li>
+                            <li><a href="#">Negative balance</a></li>
+                            <li><a href="#">Founds Security</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="col-megamenu">
+                          <h6>Trading Condition</h6>
+                          <ul>
+                            <li><a href="#">Account types</a></li>
+                            <li><a href="#">Islamic account</a></li>
+                            <li><a href="#">Demo account</a></li>
+                            <li><a href="#">Spreads & conditions</a></li>
+                            <li><a href="#">Trading advantage</a></li>
+                            <li><a href="#">Why choose us</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- end col-3 -->
+                      <div class="col-lg-3 col-md-6">
+                        <div class="col-megamenu border-0">
+                          <h6>Assets</h6>
+                          <ul>
+                            <li><a href="#">Live quotes</a></li>
+                            <li><a href="#">Stocks</a></li>
+                            <li><a href="#">Indices</a></li>
+                            <li><a href="#">Currency pairs</a></li>
+                            <li><a href="#">Commodities</a></li>
+                            <li><a href="#">Derivatives: stocks and</a></li>
+                            <li><a href="#">indices</a></li>
+                            <li><a href="#">Shares</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="col-megamenu border-0">
+                          <h4>Our best spared and condition!</h4>
+                          <a href="#" class="primary-btn">Explore Now</a>
+                          <img
+                            src="assets/images/thumbnails/1.png"
+                            alt="icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Analytics & education <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div class="dropdown-menu" role="menu">
+                  <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Company <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div class="dropdown-menu" role="menu">
+                  <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Help Center</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <div class="header-right">
+                <ul class="d-flex align-items-center">
+                  <li class="d-flex">
+                    <a href="#" class="primary-btn">Register</a>
+                  </li>
+                  <li class="d-flex">
+                    <a href="#" class="primary-btn-bg-transparent">Login</a>
+                  </li>
+                  <li class="nav-item dropdown country-menu-parent large-view">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="true"
+                    >
+                      <img src="assets/images/icon/country.png" alt="icon" />
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul
+                      class="dropdown-menu country-menu"
+                      data-simplebar
+                      style="max-height: 360px"
+                      data-bs-popper="static"
+                      id="scrollbar"
+                    >
+                      <span class="close-mark"
+                        ><i class="fa-solid fa-xmark"></i
+                      ></span>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src="assets/images/icon/france.png" alt="icon" />
+                          <span>France</span>
+                          <span class="float-end icon-check"
+                            ><i class="fa-solid fa-circle-check fs-6"></i
+                          ></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item active" href="#">
+                          <img src="assets/images/icon/us.png" alt="icon" />
+                          <span>English (us)</span>
+                          <span class="float-end icon-check"
+                            ><i class="fa-solid fa-circle-check fs-6"></i
+                          ></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src="assets/images/icon/espen.png" alt="icon" />
+                          <span>Espen</span>
+                          <span class="float-end icon-check"
+                            ><i class="fa-solid fa-circle-check fs-6"></i
+                          ></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            src="assets/images/icon/bangladesh.png"
+                            alt="icon"
+                          />
+                          <span>Bangla</span>
+                          <span class="float-end icon-check"
+                            ><i class="fa-solid fa-circle-check fs-6"></i
+                          ></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src="assets/images/icon/italy.png" alt="icon" />
+                          <span>Italy</span>
+                          <span class="float-end icon-check"
+                            ><i class="fa-solid fa-circle-check fs-6"></i
+                          ></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            src="assets/images/icon/portugal.png"
+                            alt="icon"
+                          />
+                          <span>Portugal</span>
+                          <span class="float-end icon-check"
+                            ><i class="fa-solid fa-circle-check fs-6"></i
+                          ></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="common-page-heading-section gradient-bg">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="common-heading-area withdrawals-common-heading">
+              <h1><span class="span-color">200% </span> Deposit Bonus</h1>
+              <p class="text-white">
+                Multiply your trading capital and increase your profit
+                potential. Get up to 200% added to every deposit — instantly!
+              </p>
+            </div>
+            <div class="btn-group mt-40">
+              <ul class="d-flex align-items-center">
+                <li class="d-flex">
+                  <a href="sign-up.html" class="primary-btn">Claim Your Bonus</a>
+                </li>
+                <li class="d-flex">
+                  <a href="terms-conditions" class="primary-btn-bg-transparent"
+                    >Terms & Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="common-page-thumbnails md-mt-50">
+              <img
+                src="assets/images/thumbnails/bonus-2.png"
+                alt="img"
+                class="w-100 rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start potential area -->
+    <section class="why-choose-bonus mt-100">
+      <div class="container">
+        <div class="row align-items-center gy-4 gx-5">
+          <div class="col-md-5">
+            <div class="why-choose-bonus-thumbnail">
+              <img
+                src="assets/images/thumbnails/bonus-3.png"
+                alt="img"
+                class="w-100 rounded"
+              />
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="potential-left-area lg-mr-22">
+              <div class="common-heading-area mb-30">
+                <h2>Why Choose Our Bonus?</h2>
+                <p>
+                  Trading potential with exclusive bonuses, maximizing profits &
+                  enhancing your market experience. Choose our bonuses for
+                  unmatched benefits!
+                </p>
+              </div>
+              <div class="row gy-4">
+                <div class="col-lg-12">
+                  <div class="evaluation-item d-flex align-items-center">
+                    <div
+                      class="evaluation-item-title d-flex align-items-center"
+                    >
+                      <img src="assets/images/icon/activation.png" alt="img" />
+                    </div>
+                    <div class="evaluation-item-value">
+                      <span>Instant Activation</span>
+                      <p>
+                        Your bonus is added immediately after deposit — no
+                        waiting!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="evaluation-item d-flex align-items-center">
+                    <div
+                      class="evaluation-item-title d-flex align-items-center"
+                    >
+                      <img src="assets/images/icon/funds.png" alt="img" />
+                    </div>
+                    <div class="evaluation-item-value">
+                      <span>Unlimited Bonus Size</span>
+                      <p>Get extra funds regardless of deposit amount.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="evaluation-item d-flex align-items-center">
+                    <div
+                      class="evaluation-item-title d-flex align-items-center"
+                    >
+                      <img src="assets/images/icon/boost.png" alt="img" />
+                    </div>
+                    <div class="evaluation-item-value">
+                      <span>Boost Your Margin</span>
+                      <p>Trade larger volumes with up to 200% extra capital.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="get-bonus-step mt-100 bg-pink ptb-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="common-heading-area text-center">
+              <h2>How to Get Your Bonus?</h2>
+              <p>
+                Quickly unlock your bonus by signing up, depositing funds, and
+                starting to trade with increased capital and more profit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-4 mt-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="bonus-card h-100 position-relative">
+              <div class="evaluation-item p-4">
+                <div class="evaluation-item-title d-flex align-items-center">
+                  <img src="assets/images/icon/user-plus.png" alt="img" />
+                </div>
+                <div class="evaluation-item-value mt-4">
+                  <span>Sign Up</span>
+                  <p class="text-start mt-2">
+                    Create your account in minutes by entering basic details and
+                    verifying your identity to access all trading features
+                    easily.
+                  </p>
+                </div>
+              </div>
+              <div class="step-number">01</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="bonus-card h-100 position-relative">
+              <div class="evaluation-item p-4">
+                <div class="evaluation-item-title d-flex align-items-center">
+                  <img src="assets/images/icon/money.png" alt="img" />
+                </div>
+                <div class="evaluation-item-value mt-4">
+                  <span>Make a Deposit</span>
+                  <p class="text-start mt-2">
+                    Add funds quickly using secure, trusted payment methods and
+                    choose your preferred bonus to boost your trading capital.
+                  </p>
+                </div>
+              </div>
+              <div class="step-number">02</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="bonus-card h-100 position-relative">
+              <div class="evaluation-item p-4">
+                <div class="evaluation-item-title d-flex align-items-center">
+                  <img src="assets/images/icon/trade.png" alt="img" />
+                </div>
+                <div class="evaluation-item-value mt-4">
+                  <span>Start Trading with Bonus</span>
+                  <p class="text-start mt-2">
+                    Add funds quickly using secure, trusted payment methods &
+                    choose your preferred bonus to boost your trading capital.
+                  </p>
+                </div>
+              </div>
+              <div class="step-number">03</div>
+            </div>
+          </div>
+          <div class="col-lg-12 text-center">
+             <a href="sign-up.html" class="primary-btn mt-4">Deposit Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="more-faq-section mt-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="more-faq-heading mr22">
+              <div class="common-heading-area">
+                <h2>200% Bonus, FAQ</h2>
+                <p>
+                  We're here to help with all the details you need. Contact us
+                  for comprehensive answers and support.
+                </p>
+              </div>
+              <img
+                src="assets/images/thumbnails/faq.png"
+                alt="faq"
+                class="mt30 w-100"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="accordion more-details-accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h1 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Who can receive this bonus?
+                  </button>
+                </h1>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Any verified client who deposits into their account. Any
+                      verified client who deposits into their account.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h1 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What happens if I withdraw?
+                  </button>
+                </h1>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Veniam, iste animi illo eos, omnis deleniti dolor dolore
+                      necessitatibus, harum nemo laboriosam corporis.
+                      Recusandae, excepturi? Natus repellat non voluptatum
+                      accusamus. Suscipit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h1 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Is the bonus withdrawable?
+                  </button>
+                </h1>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Veniam, iste animi illo eos, omnis deleniti dolor dolore
+                      necessitatibus, harum nemo laboriosam corporis.
+                      Recusandae, excepturi? Natus repellat non voluptatum
+                      accusamus. Suscipit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h1 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsefour"
+                    aria-expanded="false"
+                    aria-controls="collapsefour"
+                  >
+                    Is there a time limit?
+                  </button>
+                </h1>
+                <div
+                  id="collapsefour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Veniam, iste animi illo eos, omnis deleniti dolor dolore
+                      necessitatibus, harum nemo laboriosam corporis.
+                      Recusandae, excepturi? Natus repellat non voluptatum
+                      accusamus. Suscipit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start Bonus section -->
+    <section class="bonus-section ptb100 bg-pink mt-100">
+      <div class="container">
+        <div class="row gy-4 gx-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="customer-satisfaction-text">
+              <div class="common-heading-area text-center text-lg-start">
+                <h2>
+                  Claim up to
+                  <span class="span-color">200% Deposit Bonus</span> on Your
+                  Trading Funds
+                </h2>
+                <p class="mb-10 text-justify">
+                  Supercharge your trading journey with a
+                  <b>200% deposit bonus</b>! Instantly boost your account
+                  balance and gain the flexibility to take larger positions,
+                  manage risk more effectively, and enhance your profit
+                  potential — all with the added power of bonus capital.
+                </p>
+              </div>
+
+              <div class="text-center text-lg-start">
+                <a href="bonus-details.html" class="primary-btn"
+                  >Get the Bonus</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="bonus-thumbnails-2">
+              <img
+                class="w-100 opacity-1"
+                src="assets/images/thumbnails/bonus.png"
+                alt="img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Bonus section -->
+    <!-- Start legal info -->
+    <section class="site-legal-info mt-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="post-info">
+              <p>
+                Legal Information: Just Global Markets Ltd., registration number
+                8427198-1, address: Office 10, Floor 2, Vairam Building,
+                Providence Industrial Estate, Providence, Mahe, Seychelles, a
+                company regulated by the Seychelles Financial Services Authority
+                (FSA) under a Securities Dealer License number SD088.
+              </p>
+              <p>
+                Just Global Markets (MU) Limited, registration number 194590
+                GBC, address: The Cyberati Lounge, C/o Credentia International
+                Management Ltd, Ground Floor, The Catalyst, Silicon Avenue, 40
+                Cybercity, 72201 Ebène, Republic of Mauritius, an Investment
+                Dealer (Full Service Dealer, Excluding Underwriting) regulated
+                by the Financial Services Commission (FSC) in Mauritius under a
+                License number GB22200881.
+              </p>
+              <p>
+                GMFT Services Ltd, registration number HE 424491, address:
+                Syrakouson 9, Office 106, 3077, Limassol, Cyprus, is the EU
+                merchant company, which provides certain content and operates
+                the business including in terms of processing payment
+                transactions.
+              </p>
+              <p>
+                Risk Warning: CFDs are complex instruments and come with a high
+                risk of losing funds rapidly due to leverage.
+              </p>
+              <p>
+                The vast majority of retail investors face losses when trading
+                CFDs. You should consider whether you understand how CFDs work
+                and whether you can afford to take the high risk of losing your
+                deposit. To ensure that you fully understand the risks
+                associated with margin trading, pay attention to our Risk
+                Disclosure.
+              </p>
+              <p>
+                Restricted Jurisdictions: JustMarkets does not offer and does
+                not provide services to residents and citizens of certain
+                jurisdictions, including Australia, Canada, the EU and EEA,
+                Japan, the United Kingdom, the United States of America, and
+                countries sanctioned by the EU.
+              </p>
+              <p>
+                ¹At JustMarkets, most of withdrawals are processed instantly
+                (under 1 minute). Once your funds leave our custody, it’s up to
+                your chosen payment provider to process the funds and credit
+                your account.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End legal info -->
+    <!-- Start Footer area -->
+    <footer class="footer-area mt120">
+      <div class="container">
+        <div class="row ptb70">
+          <div class="col-md-12 footer-inner d-flex">
+            <div class="footer-description">
+              <img src="assets/images/logo.png" alt="logo" />
+              <p>
+                A human resources agency serves as a vital partner for
+                businesses seeking to optimize their workforce management.
+              </p>
+              <h5>Follow Us</h5>
+              <div class="social-menu">
+                <ul class="d-flex align-items-center">
+                  <li>
+                    <a href="#"><i class="fa fab fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fab fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-widgets-area">
+              <div class="footer-widgets">
+                <h4>Trading</h4>
+                <ul>
+                  <li><a href="#">Trading account types</a></li>
+                  <li><a href="#">Deposit and withdrawal</a></li>
+                  <li><a href="#">VPS hosting</a></li>
+                  <li><a href="#">Contract specifications</a></li>
+                  <li><a href="#">Margin requirements & Leverage rules</a></li>
+                  <li><a href="#">Trading hours</a></li>
+                </ul>
+              </div>
+              <div class="footer-widgets">
+                <h4>Markets</h4>
+                <ul>
+                  <li><a href="#">Trading account types</a></li>
+                  <li><a href="#">Deposit and withdrawal</a></li>
+                  <li><a href="#">VPS hosting</a></li>
+                  <li><a href="#">Contract specifications</a></li>
+                  <li><a href="#">Margin requirements & Leverage rules</a></li>
+                  <li><a href="#">Trading hours</a></li>
+                </ul>
+              </div>
+              <div class="footer-widgets">
+                <h4>Education</h4>
+                <ul>
+                  <li><a href="#">Quick start</a></li>
+                  <li><a href="#">Online webinars</a></li>
+                  <li><a href="#">Forex articles</a></li>
+                  <li><a href="#">Forex glossary</a></li>
+                  <li><a href="#">Educational video</a></li>
+                  <li><a href="#">List of world currencies</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-text">
+        <p>Copyright &copy; 2024 by <a href="index.html">Andro Markets</a></p>
+      </div>
+    </footer>
+    <!-- End Footer area -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // payment option
+      function payment_option(evt, appversion) {
+        var i, payment_option, paymentlinks;
+        payment_option = document.getElementsByClassName("payment-option-list");
+        for (i = 0; i < payment_option.length; i++) {
+          payment_option[i].style.display = "none";
+        }
+        paymentlinks = document.getElementsByClassName("paymentlinks");
+        for (i = 0; i < paymentlinks.length; i++) {
+          paymentlinks[i].className = paymentlinks[i].className.replace(
+            " active",
+            ""
+          );
+        }
+        document.getElementById(appversion).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("payment-option").click();
+    </script>
+  </body>
+</html>
