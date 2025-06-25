@@ -2784,7 +2784,6 @@ table {
   overflow: hidden;
   justify-content: space-between;
 }
-
 .input-box {
   text-align: center;
   border: none !important;
@@ -2793,7 +2792,6 @@ table {
   color: #04151f !important;
   font-size: 20px;
 }
-
 .quantity span {
   height: 50px;
   display: flex;
@@ -2805,7 +2803,6 @@ table {
   width: 50px;
   background: #f5c44833;
 }
-
 /* Hide the number input spin buttons */
 .input-box::-webkit-inner-spin-button,
 .input-box::-webkit-outer-spin-button {
@@ -2828,32 +2825,26 @@ table {
   line-height: 26.4px;
   color: #04151f;
 }
-
 .calculate-btn {
   color: #e80000 !important;
 }
-
 .calculate-btn.active {
   color: #fff !important;
   background: #359846 !important;
 }
-
 .post-author ul li img {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   margin-right: 10px;
 }
-
 .post-author ul li a {
   color: #04151f;
   transition: 0.5s;
 }
-
 .post-author ul li a:hover {
   text-decoration: underline;
 }
-
 .post-author ul li {
   padding: 5px 10px;
 }
@@ -2934,18 +2925,15 @@ table {
 .advanced-filter-option {
   display: none;
 }
-
 .country-flag-code img {
   width: 28px;
   margin-right: 8px;
   height: 28px;
   border-radius: 50%;
 }
-
 .select-country-code {
   padding: 6px 20px;
 }
-
 .page_404 {
   padding: 40px 0;
   background: #fff;
@@ -2988,7 +2976,6 @@ table {
 .border-1 {
   border: 4px solid #fff;
 }
-
 .page_404 img {
   width: 100%;
 }
@@ -3031,7 +3018,6 @@ table {
 .legal-doc-icon i {
   font-size: 24px;
 }
-
 .legal-doc-item p {
   font-weight: 500;
 }
@@ -3074,7 +3060,6 @@ table {
     visibility: visible;
   }
 }
-
 .warning-mobile-view {
   position: absolute;
   display: flex;
@@ -3116,7 +3101,6 @@ table {
   text-overflow: ellipsis;
   max-width: 100%;
 }
-
 .show-full-text .warning-text {
   white-space: normal;
   overflow: visible;
@@ -3127,46 +3111,39 @@ table {
 .header-logo img {
   width: 177px;
 }
-
 .time-label {
   font-size: 16px;
   text-align: center;
   color: #ffffffcc;
 }
-
 .time-value {
   font-weight: 500;
   font-size: 44px;
   text-align: center;
   color: #fff;
 }
-
 .countdown-area ul li:nth-child(even) {
   margin-top: -25px;
   font-weight: 500;
   font-size: 44px;
   color: #fff;
 }
-
 .countdown-area h5 {
   font-size: 22px;
   font-weight: 700;
 }
-
 .maintenance-thumbnails-icon-1 {
   position: absolute;
   left: 20%;
   width: 160px;
   top: -10px;
 }
-
 .maintenance-thumbnails-icon-2 {
   position: absolute;
   right: 33%;
   width: 120px;
   top: -10px;
 }
-
 .maintenance-thumbnails-icon-3 {
   position: absolute;
   left: 0;
@@ -3188,7 +3165,6 @@ table {
   background-position: center center;
   z-index: -2;
 }
-
 .payment-method li a img {
   max-height: 28px;
   width: auto;
@@ -3216,7 +3192,6 @@ table {
   right: 20px;
   top: 10px;
 }
-
 /* End account step */
 
 /* Start confirmation modal */
@@ -3345,11 +3320,9 @@ table {
 .plan-card-header h6 {
   margin-top: 30px;
 }
-
 .plan-card-header {
   padding-top: 20px;
 }
-
 /* end ribbon */
 /*skeleton css*/
 .market-about-thumbnail.image-skeleton {
@@ -3434,16 +3407,19 @@ table {
   color: #000;
 }
 .header-right .primary-btn:focus {
-  background: #000;
-  border-color: #fff;
+  background-color: #f5c448;
+   color:#000 !important;
+}
+.header-right .primary-btn-bg-transparent:focus{
+  color:#fff !important;
+}
+.header-right .primary-btn-bg-transparent:hover{
+  color:#000 !important;
 }
 .bonus-card {
   transition: 0.5s;
- 
-   
 }
- 
- 
+
 .bonus-card:hover,
 .bonus-card:hover .evaluation-item {
   background: #f5c448;
@@ -3453,7 +3429,7 @@ table {
 .bonus-card:hover .evaluation-item .evaluation-item-title img {
   background-color: white;
 }
-.step-number {
+.get-step-number {
   position: absolute;
   color: #04151f13;
   font-size: 56px;
@@ -3462,6 +3438,6 @@ table {
   background-color: transparent;
   right: 25px;
 }
-.bonus-card:hover .step-number {
+.bonus-card:hover .get-step-number {
   color: #fff;
 }

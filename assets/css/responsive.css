@@ -284,7 +284,6 @@
     margin-bottom: 20px;
   }
 }
-
 @media all and (max-width: 767px) {
   h1{
     font-size:34px;
@@ -385,7 +384,6 @@
     display: flex;
     justify-content: space-between;
   }
-
   .potential-section .evaluation-item-value p {
     text-align: left;
   }

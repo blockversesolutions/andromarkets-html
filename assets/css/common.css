@@ -599,14 +599,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before {
 }
 
 /* End select box css */
-
 .schedule-time label {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   color: #030303;
 }
-
 .time-input {
   display: flex;
   align-items: center;
@@ -627,16 +625,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before {
   margin: 0 12px;
   font-size: 22px;
 }
-
-
-/* test */
 .market-about-thumbnail.image-skeleton {
   width: 450px;
   height: 607px;
 }
-
- 
-
 .image-skeleton img {
   width: 100%;
   height: auto;
@@ -645,16 +637,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-
 .image-skeleton.loaded {
   background: none;
   animation: none;
 }
-
 .image-skeleton.loaded img {
   opacity: 1;
 }
-
 .image-skeleton {
   position: relative;
   width: 100%;
@@ -663,7 +652,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before {
   background: #f0f0f0; /* Light gray background */
   overflow: hidden;
 }
-
 .image-skeleton::before {
   content: '';
   position: absolute;
@@ -674,7 +662,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before {
   background: linear-gradient(90deg, rgba(225, 225, 214, 0.1) 0%,  rgba(241, 184, 45, 0.5) 50%, rgba(255, 255, 255, 1) 100%);
   animation: shimmer 1.5s infinite ease-in-out;
 }
-
 @keyframes shimmer {
   0% {
     left: -100%;
