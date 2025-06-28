@@ -1,21 +1,20 @@
 jQuery(document).ready(function ($) {
-   
-  if ($('.data-show-table').length) {  
-    $('.data-show-table').DataTable({
-        responsive: true,
-        searching: false,
-        ordering: false,
-        info: false,
-        paging: false,
+  if ($(".data-show-table").length) {
+    $(".data-show-table").DataTable({
+      responsive: true,
+      searching: false,
+      ordering: false,
+      info: false,
+      paging: false,
     });
   }
-  
+
   // menu bg add
   function checkScroll() {
     if ($(window).scrollTop() > 50) {
-        $(".header-transparent").addClass("menu-bg");
+      $(".header-transparent").addClass("menu-bg");
     } else {
-        $(".header-transparent").removeClass("menu-bg");
+      $(".header-transparent").removeClass("menu-bg");
     }
   }
   // Run on page load
@@ -27,35 +26,34 @@ jQuery(document).ready(function ($) {
   $(window).on("scroll", function () {
     checkScroll();
   });
-  $(".filter-btn").click(function(){
+  $(".filter-btn").click(function () {
     $(".advanced-filter-option").slideToggle();
   });
-  
 });
 // select box start
-const select = document.querySelector('.custom-select');
-const selectedOption = select.querySelector('.selected-option');
-const options = select.querySelector('.options');
-const optionItems = select.querySelectorAll('.option');
+const select = document.querySelector(".custom-select");
+const selectedOption = select.querySelector(".selected-option");
+const options = select.querySelector(".options");
+const optionItems = select.querySelectorAll(".option");
 
-select.addEventListener('click', () => {
-  select.classList.toggle('open');
+select.addEventListener("click", () => {
+  select.classList.toggle("open");
 });
 
 optionItems.forEach((item) => {
-  item.addEventListener('click', (event) => {
+  item.addEventListener("click", (event) => {
     const value = event.target.dataset.value;
     selectedOption.textContent = event.target.textContent;
-    select.classList.remove('open');
-    optionItems.forEach((el) => el.classList.remove('selected'));
-    event.target.classList.add('selected');
+    select.classList.remove("open");
+    optionItems.forEach((el) => el.classList.remove("selected"));
+    event.target.classList.add("selected");
   });
 });
 
 // Close dropdown on clicking outside
-document.addEventListener('click', (event) => {
+document.addEventListener("click", (event) => {
   if (!select.contains(event.target)) {
-    select.classList.remove('open');
+    select.classList.remove("open");
   }
 });
 
@@ -114,11 +112,10 @@ document.addEventListener('click', (event) => {
 })();
 
 // scroll bar js
-document.addEventListener('DOMContentLoaded', function () {
-  new SimpleBar(document.getElementById('scrollbar'));
+document.addEventListener("DOMContentLoaded", function () {
+  new SimpleBar(document.getElementById("scrollbar"));
 });
- 
- 
+
 document.addEventListener("click", function (event) {
   const div = document.getElementById("outside-click");
   const navbarText = document.getElementById("main_nav");
@@ -128,19 +125,17 @@ document.addEventListener("click", function (event) {
   }
 });
 
-  // Function to check screen size and toggle the class
-  function handleResize() {
-    const element = document.querySelector('.mobile-view-table');
-    if (element) {
-        if (window.innerWidth <= 991) {
-            element.classList.add('nowrap');  
-        } else {
-            element.classList.remove('nowrap');   
-        }
+// Function to check screen size and toggle the class
+function handleResize() {
+  const element = document.querySelector(".mobile-view-table");
+  if (element) {
+    if (window.innerWidth <= 991) {
+      element.classList.add("nowrap");
+    } else {
+      element.classList.remove("nowrap");
     }
+  }
 }
 
-  handleResize();
-  window.addEventListener('resize', handleResize);
-
-  
+handleResize();
+window.addEventListener("resize", handleResize);

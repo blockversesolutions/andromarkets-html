@@ -797,6 +797,9 @@
   .shape-404{
     display: none !important;
   }
+  .prizes-item{
+    flex-wrap: wrap;
+  }
 
 }
 @media all and (max-width: 480px) {
