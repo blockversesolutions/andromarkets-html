@@ -105,7 +105,7 @@
     font-size: 35px;
     line-height: 50px;
   }
-  
+
   .country-menu-parent img {
     width: 26px;
   }
@@ -285,29 +285,29 @@
   }
 }
 @media all and (max-width: 767px) {
-  h1{
-    font-size:34px;
+  h1 {
+    font-size: 34px;
     line-height: 45px;
   }
-  h2{
-    font-size:30px;
-    line-height:38px;
+  h2 {
+    font-size: 30px;
+    line-height: 38px;
   }
-  h3{
-    font-size:28px;
-    line-height:36px;
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
   }
-  h4{
-    font-size:26px;
-    line-height:34px;
+  h4 {
+    font-size: 26px;
+    line-height: 34px;
   }
-  h5{
-    font-size:24px;
+  h5 {
+    font-size: 24px;
     line-height: 30px;
   }
-  h6{
+  h6 {
     font-size: 20px;
-    line-height:30px;
+    line-height: 30px;
   }
   .maintenance-thumbnails-icon-1 {
     left: 17%;
@@ -341,7 +341,7 @@
   p {
     font-size: 15px !important;
   }
-  .warning-content p{
+  .warning-content p {
     font-size: 10px !important;
   }
   .col-megamenu {
@@ -621,30 +621,31 @@
   }
   .warning-content {
     padding-top: 15px;
-}
-.blog-details-section .common-heading-area,.blog-details-section .common-heading-area p{
-  text-align: left;
-}
+  }
+  .blog-details-section .common-heading-area,
+  .blog-details-section .common-heading-area p {
+    text-align: left;
+  }
 }
 @media all and (max-width: 575px) {
-  h1{
-    font-size:32px;
+  h1 {
+    font-size: 32px;
     line-height: 45px;
   }
-  h2{
-    font-size:28px;
-    line-height:36px;
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
   }
-  h3{
-    font-size:26px;
-    line-height:36px;
+  h3 {
+    font-size: 26px;
+    line-height: 36px;
   }
-  h4{
-    font-size:24px;
-    line-height:34px;
+  h4 {
+    font-size: 24px;
+    line-height: 34px;
   }
-  h5{
-    font-size:22px;
+  h5 {
+    font-size: 22px;
     line-height: 30px;
   }
   .maintenance-thumbnails-icon-1 {
@@ -783,45 +784,47 @@
   .disclaimer {
     font-size: 10px !important;
   }
-    .shape-404-after {
+  .shape-404-after {
     left: 0;
     top: 0;
     width: 100%;
     padding: 10px 0;
     transform: rotate(0deg);
-}
+  }
   .four_zero_four_bg h1 {
     font-size: 40px;
     padding-top: 60px;
   }
-  .shape-404{
+  .shape-404 {
     display: none !important;
   }
-  .prizes-item{
+  .prizes-item {
     flex-wrap: wrap;
   }
-
+  .campaigns-short-description h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 @media all and (max-width: 480px) {
-
-  h1{
-    font-size:30px;
-    line-height:40px;
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
   }
-  h2{
-    font-size:26px;
-    line-height:34px;
+  h2 {
+    font-size: 26px;
+    line-height: 34px;
   }
-  h3{
-    font-size:24px;
-    line-height:34px;
+  h3 {
+    font-size: 24px;
+    line-height: 34px;
   }
-  h4{
-    font-size:22px;
-    line-height:32px;
+  h4 {
+    font-size: 22px;
+    line-height: 32px;
   }
-  h5{
-    font-size:20px;
+  h5 {
+    font-size: 20px;
   }
   .country-menu.dropdown-menu[data-bs-popper] {
     left: -220px;

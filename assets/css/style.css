@@ -783,7 +783,6 @@ li.nav-item.dropdown li a {
 .blog-post-card .card:hover {
   box-shadow: 0px 19.934px 51.259px 0px rgba(0, 0, 0, 0.08);
 }
-
 .post-info p {
   text-align: center;
   line-height: 30px;
@@ -803,33 +802,7 @@ li.nav-item.dropdown li a {
     rgba(219, 173, 56, 0.466) 100%
   );
 }
-.bonus-thumbnails img {
-  opacity: 0;
-  transform: translateY(-100px);
-  transition: all 0.4s ease;
-}
-
-.bonus-thumbnails img.bounce-in {
-  animation: bounceFromTop 0.8s ease-out forwards;
-}
-
-@keyframes bounceFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  60% {
-    transform: translateY(20px);
-    opacity: 1;
-  }
-  80% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+ 
 
 .ptb100 {
   padding: 100px 0;
@@ -839,6 +812,23 @@ li.nav-item.dropdown li a {
 /* Start evaluation css */
 .market-evaluation-area {
   background: rgba(245, 196, 72, 0.06);
+}
+.slider-btn{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #f4b937;
+      background: linear-gradient(0deg, rgba(250, 188, 30, 0.63) 0%, rgba(255, 255, 255, 0.952) 49.48%, rgba(240, 177, 19, 0.767) 100%);
+  border-radius: 50%;
+  transition: 0.5s;
+ 
+}
+.slider-btn:hover{
+  color:#f4b937;
+  background: white;
 }
 
 .tab {
@@ -3470,7 +3460,7 @@ table {
   border-radius: 50%;
   background: #F5C44833;
   color: #F5C448;
-  font-size:28px;
+  font-size:26px;
   font-weight: 600;
 
 }
@@ -3497,7 +3487,7 @@ table {
 .condition-item ul{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
 }
 .condition-item h2{
   font-size: 24px;
@@ -3510,4 +3500,45 @@ table {
 .condition-item .prizes-item{
   background: #F5C448;
 
+}
+.campaign-card{
+  border: 1.5px solid #FFFFFF1A;
+  background: #FFFFFF1A;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px 18px;
+}
+.campaign-card p{
+  font-size: 18px;
+  color:#fff;
+}
+.campaign-card h4{
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.campaigns-list-item{
+  box-shadow: 0px 16.9px 25.36px 0px #C4CDDA40;
+background: #FFFFFF;
+border-radius: 20px;
+padding: 20px;
+}
+.campaigns-list-thumbnails{
+  border-radius:15px;
+  padding: 10px;
+  background-color:#F5F8F7;
+}
+.campaigns-short-description p{
+  color: #04151F;
+  line-height: 28px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.campaigns-short-description h4{
+font-weight: 600;
+font-size:30px;
+line-height:35px;
+color: #04151F;
+}.primary-btn-sm{
+  padding: 6px 12px;
 }
