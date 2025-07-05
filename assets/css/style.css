@@ -3480,8 +3480,13 @@ table {
   padding: 20px;
   padding-bottom: 40px;
 }
-.bonus-terms-condition-option,.condition-item ul{
-  padding-left: 30px;
+ 
+.bonus-terms-condition-option ul,.condition-item ul{
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  text-align: start;
+   padding-left: 30px;
   list-style-type: disc;
 }
 .condition-item ul{
@@ -3628,3 +3633,35 @@ background: linear-gradient(97.46deg, rgba(245, 196, 72, 0.09) 0%, rgba(255, 255
 }
 
 /* end prizes section css */
+
+/* Start ac type css */
+.account-feature-list-checked .ac-checked-icon,.account-feature-list-unchecked .ac-close-icon{
+  display: block;
+}
+.account-feature-list-checked .ac-close-icon,.account-feature-list-unchecked .ac-checked-icon {
+  display: none;
+}
+.account-type-feature-list ul li p{
+  font-size: 16px;
+  font-weight: 600;
+  color: #04151F;
+}
+.account-type-feature-list ul li{
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid #04151F1A;
+  align-items: center;
+}
+.carve-angle-code{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* end ac type css */
