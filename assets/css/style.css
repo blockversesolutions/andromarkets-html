@@ -3486,18 +3486,23 @@ table {
   flex-direction: column;
   gap: 15px; 
   text-align: start;
-   padding-left: 30px;
+   padding-left:20px;
   list-style-type: disc;
 }
 .condition-item ul{
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0px;
 }
 .condition-item h2{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
+  margin-bottom: 0;
   color: #000;;
+}
+.condition-item p{
+  font-size: 14px;
+  line-height:22px;
 }
 .condition-item .prizes-item .prizes-item-number{
   background-color: white;
@@ -3574,7 +3579,7 @@ color: #04151F;
 .star-number {
     position: absolute;
     right: 28px;
-    top: 50%;
+    top: 46%;
     transform: translateY(-50%);
     width: 75px;
     height: 70px;
@@ -3588,7 +3593,7 @@ color: #04151F;
 .star-number span {
   position: absolute;
   left: 29px;
-  top: 50%;
+  top: 56%;
   transform: translateY(-50%);
   font-size: 28px;
   font-weight: 600;
@@ -3641,6 +3646,7 @@ background: linear-gradient(97.46deg, rgba(245, 196, 72, 0.09) 0%, rgba(255, 255
 .account-feature-list-checked .ac-close-icon,.account-feature-list-unchecked .ac-checked-icon {
   display: none;
 }
+
 .account-type-feature-list ul li p{
   font-size: 16px;
   font-weight: 600;
@@ -3654,14 +3660,77 @@ background: linear-gradient(97.46deg, rgba(245, 196, 72, 0.09) 0%, rgba(255, 255
   border-bottom: 1.5px solid #04151F1A;
   align-items: center;
 }
-.carve-angle-code{
-  position: absolute;
-  top:0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+.account-type-feature-list ul li:last-child{
+  border: none;
+}
+.account-feature-list-unchecked{
+  opacity: 0.5;
+
+}
+.account-type-card-header h5{
+  margin: 0;
+}
+.account-type-card-header {
+    padding-left: 80px;
+    margin-bottom: 25px;
+}
+.account-feature-list-unchecked p{
+  font-weight: 400;
+}
+.account-type-card-cover {
+  position: relative;
+  overflow: hidden; /* important to avoid SVG overflow */
 }
 
-
+ 
+ 
+.account-type-card-box{
+  padding: 20px;
+}
 
 /* end ac type css */
+
+
+/* core code shape css */
+ 
+.account-type-card-box{
+  border: 1.5px solid #F5C44833;
+  background: #F5C44824;
+  padding: 30px;
+  border-radius:10px;
+  transition: 0.5s;
+}
+.account-type-icon-box{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  height: 71px;
+  width: 71px;
+  border: 1.5px solid #F5C44833;
+ background: #F5C44824;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.account-type-icon-outter{
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  border-radius: 50%;
+  height: 94px;
+  width: 94px;
+  background: white;
+  border: 1.5px solid #F5C44833;
+}
+
+ 
+.account-type-card-header p{
+  opacity: 0.7;
+  color: #04151F;
+}
+.account-type-card-header h5{
+  font-weight: 600;
+  font-size: 24px;
+}
