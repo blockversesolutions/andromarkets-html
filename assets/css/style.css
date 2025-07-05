@@ -3542,3 +3542,89 @@ color: #04151F;
 }.primary-btn-sm{
   padding: 6px 12px;
 }
+/* start prizes section css */
+
+.prize-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.prizes-number {
+  width: 230px;
+  height: 50px;
+  background: #F5C448;
+  clip-path: polygon(0 0, 100% 0, 91% 50%, 100% 100%, 0 100%, 10% 52%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.prizes-number h6 {
+  padding-left: 36px;
+  font-size: 26px;
+  color: #04151F;
+  font-weight: 600;
+}
+
+.star-number {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75px;
+    height: 70px;
+}
+
+.star-number img {
+  width: 75px;
+  height: 70px;
+}
+
+.star-number span {
+  position: absolute;
+  left: 29px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  font-weight: 600;
+}
+.top-prizes-section-list{
+  padding: 20px 0;
+ 
+transition: 0.5s;
+
+}
+.top-prizes-section-list:hover{
+background: linear-gradient(97.46deg, rgba(245, 196, 72, 0.09) 0%, rgba(255, 255, 255, 0.5) 49.48%, rgba(245, 196, 72, 0.09) 100%);
+}
+.top-prizes-section-list-odd .common-heading-area{
+  padding-right: 80px;
+  transition: 1s;
+}
+.top-prizes-section-list-event .common-heading-area,.top-prizes-section-list-event .prize-wrapper{
+  padding-left: 80px;
+  transition: 1s;
+}
+/* .top-prizes-section-list:hover .common-heading-area{
+  transform: scale(1.1);
+} */
+ .terms-condition-box{
+  background: #F5C4481A;
+  padding: 20px;
+  border-radius: 10px;
+ }
+ .terms-condition-btn{
+  text-decoration: underline;
+  transition: 0.5s;
+  line-height: 34px;
+  color: #04151F;
+ }
+  .terms-condition-btn:hover{
+    color:#F5C448 !important;
+      text-decoration: underline;
+  }
+.primary-color{
+   color:#F5C448;
+}
+
+/* end prizes section css */

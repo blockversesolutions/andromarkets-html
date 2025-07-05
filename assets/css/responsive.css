@@ -72,6 +72,14 @@
 }
 
 @media all and (max-width: 991px) {
+  .top-prizes-section-list-odd .common-heading-area{
+  padding-right: 0px;
+
+}
+.top-prizes-section-list-event .common-heading-area,.top-prizes-section-list-event .prize-wrapper{
+  padding-left:0px;
+
+}
   .footer-description img {
     margin-bottom: 30px;
   }
@@ -285,6 +293,17 @@
   }
 }
 @media all and (max-width: 767px) {
+  .alert-note a{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .alert-note{
+    text-align: center;
+  }
+  .top-prizes-section-list-event .col-md-6:last-child{
+    order: -2;
+  }
   h1 {
     font-size: 34px;
     line-height: 45px;
