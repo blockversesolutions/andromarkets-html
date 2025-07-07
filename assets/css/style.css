@@ -1370,6 +1370,7 @@ table {
   width: 50px;
   transition: 0.5s;
   border-radius: 50%;
+  text-align: center;
 }
 
 .social-menu ul li a:hover {
@@ -3495,14 +3496,14 @@ table {
   gap: 0px;
 }
 .condition-item h2{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 0;
   color: #000;;
 }
-.condition-item p{
-  font-size: 14px;
-  line-height:22px;
+.condition-item p {
+    font-size: 12px !important;
+    line-height: 22px;
 }
 .condition-item .prizes-item .prizes-item-number{
   background-color: white;
@@ -3511,6 +3512,11 @@ table {
   background: #F5C448;
 
 }
+
+.prizes-thumbnails-slider-5 img {
+    width: 100%;
+}
+
 .campaign-card{
   border: 1.5px solid #FFFFFF1A;
   background: #FFFFFF1A;
@@ -3679,10 +3685,42 @@ background: linear-gradient(97.46deg, rgba(245, 196, 72, 0.09) 0%, rgba(255, 255
 }
 .account-type-card-cover {
   position: relative;
+  transition: 0.3s;
   overflow: hidden; /* important to avoid SVG overflow */
 }
 
+.account-type-card-cover:hover {
+  transform: scale(1.04);
+  background: #F5C448;
+  border-radius: 10px;
+  overflow: inherit;
+}
  
+
+.account-type-card-cover:hover .account-type-icon-box { 
+  background: #fff;
+  border: 1.5px solid #F5C448; 
+} 
+
+.account-type-card-cover:hover .account-type-icon-outter { 
+  /* border: 1.5px solid transparent;  */
+}
+
+
+
+.account-type-icon-box img  {
+  transition: transform 1.5s ease; 
+}
+
+.account-type-card-cover:hover .account-type-icon-box img { 
+  /* filter: brightness(0) invert(1);  */
+  transform: rotate(360deg); 
+}
+ 
+.account-type-card-cover:hover .ac-close-icon img, 
+.account-type-card-cover:hover .ac-checked-icon img {
+  filter: brightness(0) invert(1);
+}
  
 .account-type-card-box{
   padding: 20px;
@@ -3694,16 +3732,18 @@ background: linear-gradient(97.46deg, rgba(245, 196, 72, 0.09) 0%, rgba(255, 255
 /* core code shape css */
  
 .account-type-card-box{
+  transition: 0.3s;
   border: 1.5px solid #F5C44833;
   background: #F5C44824;
   padding: 30px;
   border-radius:10px;
   transition: 0.5s;
+  height: 100%;
 }
 .account-type-icon-box{
-  position: absolute;
+  /* position: absolute;
   left: 10px;
-  top: 10px;
+  top: 10px; */
   border-radius: 50%;
   height: 71px;
   width: 71px;
@@ -3712,19 +3752,60 @@ background: linear-gradient(97.46deg, rgba(245, 196, 72, 0.09) 0%, rgba(255, 255
  display: flex;
  justify-content: center;
  align-items: center;
-
+ position: relative;
 }
-.account-type-icon-outter{
+
+/* .account-type-icon-box::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px; 
+    background: red;
+    border: 3px solid #fff; 
+    top: 62px;
+    left: -7px;
+    z-index: 1;
+    opacity: 0.9; 
+  border-radius: 0 0 100% 0;
+} */
+
+.moon-circle {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 75px;
+    left: -11px;
+    transform: rotate(28deg);
+}
+
+.moon-circle::before {
+  content: "";
   position: absolute;
-  left: -12px;
-  top: -12px;
+  width: 80px;
+  height: 80px;
+  background-color: red; /* match background */
   border-radius: 50%;
-  height: 94px;
-  width: 94px;
-  background: white;
-  border: 1.5px solid #F5C44833;
+  top: 0;
+  left: 15px; /* change this for crescent thickness */
 }
 
+
+.account-type-icon-outter {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    border-radius: 50%;
+    height: 99px;
+    width: 99px;
+    background: white;
+    /* border: 1.5px solid #F5C44833; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
  
 .account-type-card-header p{
   opacity: 0.7;

@@ -72,14 +72,13 @@
 }
 
 @media all and (max-width: 991px) {
-  .top-prizes-section-list-odd .common-heading-area{
-  padding-right: 0px;
-
-}
-.top-prizes-section-list-event .common-heading-area,.top-prizes-section-list-event .prize-wrapper{
-  padding-left:0px;
-
-}
+  .top-prizes-section-list-odd .common-heading-area {
+    padding-right: 0px;
+  }
+  .top-prizes-section-list-event .common-heading-area,
+  .top-prizes-section-list-event .prize-wrapper {
+    padding-left: 0px;
+  }
   .footer-description img {
     margin-bottom: 30px;
   }
@@ -293,15 +292,20 @@
   }
 }
 @media all and (max-width: 767px) {
-  .alert-note a{
+  .common-page-heading-section {
+    padding-bottom: 30px;
+  }
+
+  .alert-note a {
     display: block;
-    text-align: center;
+    text-align: right;
     width: 100%;
+    font-size: 11px;
   }
-  .alert-note{
-    text-align: center;
+  .terms-condition-box {
+    padding-bottom: 10px;
   }
-  .top-prizes-section-list-event .col-md-6:last-child{
+  .top-prizes-section-list-event .col-md-6:last-child {
     order: -2;
   }
   h1 {
@@ -484,6 +488,9 @@
     margin-top: 0;
     margin-bottom: 40px;
   }
+  .mt120 {
+    margin-top: 50px;
+  }
   .shadow-p30 {
     padding: 10px;
   }
@@ -647,6 +654,20 @@
   }
 }
 @media all and (max-width: 575px) {
+  .mt-100 {
+    margin-top: 40px;
+  }
+  .terms-condition-box p {
+    line-height: 22px;
+    text-align: start;
+    align-items: start !important;
+  }
+  .terms-condition-box p i {
+    margin-top: 3px;
+  }
+  .ptb100 {
+    padding: 40px 0;
+  }
   h1 {
     font-size: 32px;
     line-height: 45px;

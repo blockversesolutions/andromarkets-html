@@ -1,12 +1,18 @@
 :root{
   --primary:#dfcc;
 }
+
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-size: 16px;
   padding: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 ul {
