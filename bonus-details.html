@@ -377,7 +377,7 @@
           <div class="col-md-6">
             <div class="prizes-thumbnails-slider-1">
               <img src="assets/images/bonus/1.png" alt="images">
-              <img src="assets/images/bonus/1.png" alt="images">
+              <img src="assets/images/bonus/2.png" alt="images">
 
             </div>
             <!-- <div class="slider-btn-area text-center mt-5 d-flex justify-content-center g-15">
@@ -876,61 +876,203 @@
     document.getElementById("payment-option").click();
   </script>
   <script>
-    $(document).ready(function () {
-      if ($(".prizes-thumbnails-slider-1").length) {
-        $(".prizes-thumbnails-slider-1").slick({
-          dots: false,
-          infinite: true,
-          speed: 1500,
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          arrows: false,
-          prevArrow: $('.offer-slide-1-left'),
-          nextArrow: $('.offer-slide-1-right'),
-        });
-      }
-      if ($(".prizes-thumbnails-slider-2").length) {
-        $(".prizes-thumbnails-slider-2").slick({
-          dots: false,
-          infinite: true,
-          speed: 1500,
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 2500,
-          arrows: false,
-          prevArrow: $('.offer-slide-2-left'),
-          nextArrow: $('.offer-slide-2-right'),
-        });
-      }
-      if ($(".prizes-thumbnails-slider-3").length) {
-        $(".prizes-thumbnails-slider-3").slick({
-          dots: false,
-          infinite: true,
-          speed: 1500,
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 3000,
-          arrows: false,
-          prevArrow: $('.offer-slide-3-left'),
-          nextArrow: $('.offer-slide-3-right'),
-        });
-      }
-      if ($(".prizes-thumbnails-slider-4").length) {
-        $(".prizes-thumbnails-slider-4").slick({
-          dots: false,
-          infinite: true,
-          speed: 1500,
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 3500,
-          arrows: false,
-          prevArrow: $('.offer-slide-4-left'),
-          nextArrow: $('.offer-slide-4-right'),
-        });
-      }
+$(document).ready(function () {
+  const sliders = [
+    { selector: ".prizes-thumbnails-slider-1", speed: 2000 },
+    { selector: ".prizes-thumbnails-slider-2", speed: 2000 },
+    { selector: ".prizes-thumbnails-slider-3", speed: 2000 },
+    { selector: ".prizes-thumbnails-slider-4", speed: 2000 },
+  ];
 
+  const sliderState = {}; // Track each slider's active state
+
+  // Initialize Slick sliders
+  sliders.forEach((slider, index) => {
+    const $slider = $(slider.selector);
+
+    if ($slider.length) {
+      $slider.slick({
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        fade: true,
+        cssEase: 'ease-in-out',
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: slider.speed,
+        arrows: false,
+        prevArrow: $(`.offer-slide-${index + 1}-left`),
+        nextArrow: $(`.offer-slide-${index + 1}-right`),
+      });
+
+      sliderState[slider.selector] = false;
+    }
+  });
+
+  // Helper function to check if an element is in viewport
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top < window.innerHeight &&
+      rect.bottom > 0 &&
+      rect.left < window.innerWidth &&
+      rect.right > 0
+    );
+  }
+
+  // IntersectionObserver to pause/play based on visibility
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const $slider = $(entry.target);
+        const selector = '.' + $slider.attr('class').split(' ').find(cls => cls.startsWith('prizes-thumbnails-slider'));
+
+        if (!$slider.hasClass('slick-initialized')) return;
+
+        if (entry.isIntersecting) {
+          if (!sliderState[selector]) {
+            $slider.slick('slickPause');
+            $slider.slick('slickGoTo', 0, true);
+            setTimeout(() => {
+              $slider.slick('slickPlay');
+            }, 100);
+            sliderState[selector] = true;
+          }
+        } else {
+          $slider.slick('slickPause');
+          sliderState[selector] = false;
+        }
+      });
+    }, {
+      threshold: 0.6,
     });
+
+    sliders.forEach((slider) => {
+      const el = document.querySelector(slider.selector);
+      if (el) {
+        observer.observe(el);
+
+        // ✅ Manually trigger on load if already visible
+        if (isInViewport(el)) {
+          const $slider = $(slider.selector);
+          $slider.slick('slickPause');
+          $slider.slick('slickGoTo', 0, true);
+          setTimeout(() => {
+            $slider.slick('slickPlay');
+          }, 100);
+          sliderState[slider.selector] = true;
+        }
+      }
+    });
+  }
+});
+
+
+
+    // $(document).ready(function () {
+    //   const sliders = [
+    //     { selector: ".prizes-thumbnails-slider-1", speed: 2000 },
+    //     { selector: ".prizes-thumbnails-slider-2", speed: 2500 },
+    //     { selector: ".prizes-thumbnails-slider-3", speed: 3000 },
+    //     { selector: ".prizes-thumbnails-slider-4", speed: 3500 },
+    //   ];
+
+    //   sliders.forEach((slider, index) => {
+    //     if ($(slider.selector).length) {
+    //       $(slider.selector).slick({
+    //         dots: false,
+    //         infinite: true,
+    //         speed: 1500,
+    //         slidesToShow: 1,
+    //         autoplay: true,
+    //         autoplaySpeed: slider.speed,
+    //         arrows: false,
+    //         prevArrow: $(`.offer-slide-${index + 1}-left`),
+    //         nextArrow: $(`.offer-slide-${index + 1}-right`),
+    //       });
+    //     }
+    //   });
+ 
+    //   if ("IntersectionObserver" in window) {
+    //     const observer = new IntersectionObserver((entries) => {
+    //       entries.forEach((entry) => {
+    //         const $slider = $(entry.target);
+    //         if ($slider.hasClass('slick-initialized')) {
+    //           if (entry.isIntersecting) {
+    //             $slider.slick('slickPlay');
+    //           } else {
+    //             $slider.slick('slickPause');
+    //           }
+    //         }
+    //       });
+    //     }, {
+    //       threshold: 0.5,  
+    //     });
+ 
+    //     sliders.forEach((slider) => {
+    //       const el = document.querySelector(slider.selector);
+    //       if (el) observer.observe(el);
+    //     });
+    //   }
+    // });
+
+
+    // juel vai code 
+    // $(document).ready(function () {
+    //   if ($(".prizes-thumbnails-slider-1").length) {
+    //     $(".prizes-thumbnails-slider-1").slick({
+    //       dots: false,
+    //       infinite: true,
+    //       speed: 1500,
+    //       slidesToShow: 1,
+    //       autoplay: true,
+    //       autoplaySpeed: 2000,
+    //       arrows: false,
+    //       prevArrow: $('.offer-slide-1-left'),
+    //       nextArrow: $('.offer-slide-1-right'),
+    //     });
+    //   }
+    //   if ($(".prizes-thumbnails-slider-2").length) {
+    //     $(".prizes-thumbnails-slider-2").slick({
+    //       dots: false,
+    //       infinite: true,
+    //       speed: 1500,
+    //       slidesToShow: 1,
+    //       autoplay: true,
+    //       autoplaySpeed: 2500,
+    //       arrows: false,
+    //       prevArrow: $('.offer-slide-2-left'),
+    //       nextArrow: $('.offer-slide-2-right'),
+    //     });
+    //   }
+    //   if ($(".prizes-thumbnails-slider-3").length) {
+    //     $(".prizes-thumbnails-slider-3").slick({
+    //       dots: false,
+    //       infinite: true,
+    //       speed: 1500,
+    //       slidesToShow: 1,
+    //       autoplay: true,
+    //       autoplaySpeed: 3000,
+    //       arrows: false,
+    //       prevArrow: $('.offer-slide-3-left'),
+    //       nextArrow: $('.offer-slide-3-right'),
+    //     });
+    //   }
+    //   if ($(".prizes-thumbnails-slider-4").length) {
+    //     $(".prizes-thumbnails-slider-4").slick({
+    //       dots: false,
+    //       infinite: true,
+    //       speed: 1500,
+    //       slidesToShow: 1,
+    //       autoplay: true,
+    //       autoplaySpeed: 3500,
+    //       arrows: false,
+    //       prevArrow: $('.offer-slide-4-left'),
+    //       nextArrow: $('.offer-slide-4-right'),
+    //     });
+    //   }
+
+    // });
   </script>
 </body>
 
