@@ -3815,3 +3815,15 @@ background: linear-gradient(97.46deg, rgba(245, 196, 72, 0.09) 0%, rgba(255, 255
   font-weight: 600;
   font-size: 24px;
 }
+
+
+/* .bonus-slider-item .primary-btn:hover {
+    background: transparent; 
+    box-shadow: none;
+    opacity: 0.73;
+    border: 1px solid #dddd;
+} */
+
+.customer-satisfaction-text { 
+    /* padding-bottom: 37px; */
+}
