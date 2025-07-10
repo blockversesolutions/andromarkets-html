@@ -3872,3 +3872,7 @@ table {
   font-size: 40px;
   line-height: 55px;
 } 
+
+.bonus-deadline-text sup{
+    font-size: 24px;
+}
