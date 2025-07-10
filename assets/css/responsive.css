@@ -21,6 +21,9 @@
     padding: 15px;
     border-radius: 10px;
   }
+  .bonus-deadline-text sup {
+    font-size: 14px;
+  }
   .bonus-trade-heading h1 {
     font-size: 36px;
     line-height: 42px;
