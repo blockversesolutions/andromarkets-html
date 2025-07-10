@@ -21,6 +21,25 @@
     padding: 15px;
     border-radius: 10px;
   }
+  .bonus-trade-heading h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .bonus-chance-box h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .bonus-cmpaign-area .campaigns-short-description h4 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  .bonus-deadline-text {
+    font-size: 22px !important;
+  }
+  .bonus-trade-heading p {
+    font-size: 16px;
+    line-height: 30px;
+  }
   .megamenu::after {
     display: none;
   }
@@ -295,12 +314,19 @@
   .common-page-heading-section {
     padding-bottom: 30px;
   }
-
+  .bonus-cmpaign-area .campaigns-short-description h4 {
+    font-size: 23px;
+    line-height: 32px;
+  }
   .alert-note a {
     display: block;
     text-align: right;
     width: 100%;
     font-size: 11px;
+  }
+  .bonus-chance-box h2 {
+    font-size: 30px;
+    line-height: 30px;
   }
   .terms-condition-box {
     padding-bottom: 10px;
@@ -657,6 +683,9 @@
   .mt-100 {
     margin-top: 40px;
   }
+  .bonus-chance-box h2 {
+    font-size: 26px;
+  }
   .terms-condition-box p {
     line-height: 22px;
     text-align: start;
@@ -847,6 +876,10 @@
   }
 }
 @media all and (max-width: 480px) {
+  .common-heading-area h1 {
+    font-size: 17px !important;
+    line-height: 28px;
+  }
   h1 {
     font-size: 30px;
     line-height: 40px;
