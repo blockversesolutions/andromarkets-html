@@ -3502,8 +3502,8 @@ table {
   color: #000;;
 }
 .condition-item p {
-    font-size: 12px !important;
-    line-height: 22px;
+    font-size: 11px !important;
+    line-height: 20px;
 }
 .condition-item .prizes-item .prizes-item-number{
   background-color: white;
@@ -3827,3 +3827,23 @@ background: linear-gradient(97.46deg, rgba(245, 196, 72, 0.09) 0%, rgba(255, 255
 .customer-satisfaction-text { 
     padding-bottom: 37px;
 }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
