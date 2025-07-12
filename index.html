@@ -211,12 +211,14 @@
                       </div>
                       <div class="col-lg-3 col-md-6">
                         <div class="col-megamenu border-0">
-                          <h4>Our best spared and condition!</h4>
-                          <a href="#" class="primary-btn">Explore Now</a>
-                          <img
-                            src="assets/images/thumbnails/1.png"
-                            alt="icon"
-                          />
+                          <h6>Promotions & Bonuses</h6>
+                          <ul>
+                            <li>
+                              <a href="#" class="glow-on-hover d-flex">
+                                Bonuses</a
+                              >
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -581,44 +583,42 @@
         </div>
       </div>
     </section>
+
     <!-- End hero area -->
- 
 
     <!-- Modal -->
-    <!-- <div class="modal fade bonus-modal show d-block" id="bonusModal" tabindex="-1" aria-labelledby="bonusModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div
+      class="modal fade bonus-modal show d-block"
+      id="bonusModal"
+      tabindex="-1"
+      aria-labelledby="bonusModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content position-relative">
-          <button type="button" class="bonus-modal-close" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
-           
-          <div class="modal-body p-0">
-            <img src="assets/images/bonus/bonus-100/bonus-modal.png" class="img-fluid w-100 rounded-top" alt="Bonus Banner">
-            <div class="p-4 text-center bg-dark text-white"> 
-              <a href="#" class="primary-btn">Claim Bonus</a> 
-            </div>
-          </div> 
+          <button
+            type="button"
+            class="bonus-modal-close"
+            data-bs-dismiss="modal"
+          >
+            <i class="fas fa-times"></i>
+          </button>
 
+          <div class="modal-body p-0">
+            <a href="#">
+              <img
+                src="assets/images/bonus/bonus-100/bonus-extra-1.png"
+                class="img-fluid w-100 rounded-top"
+                alt="Bonus Banner"
+              />
+              <div class="p-4 text-center bg-dark text-white">
+                <a href="#" class="primary-btn">Claim Bonus</a>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </div> -->
-
-    <!-- start bonus area  -->
-    <section class="bonus-area mt-100"> 
-      <div class="container"> 
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="bonus-img">
-                <img src="assets/images/bonus/bonus-100/bonus.png" class="w-100" alt="">
-              </div> 
-            </div>
-            <div class="col-lg-6">
-              <div class="bonus-img">
-                <img src="assets/images/bonus/bonus-100/bonus.png" class="w-100" alt="">
-              </div> 
-            </div>
-          </div>
-      </div>
-    </section>
-    <!-- end bonus area  -->
+    </div>
 
     <!-- Start customer satisfaction -->
     <section class="customer-satisfaction-section mt-100">
@@ -1882,9 +1882,15 @@
               </div>
             </div>
           </div>
-          <div class="slider-btn-area text-center mt-5 d-flex justify-content-center g-15">
-            <span class="slider-btn slider-left-btn"> <i class="fa-solid fa-angle-left"></i>  </span>
-            <span class="slider-btn slider-right-btn"> <i class="fa-solid fa-angle-right"></i> </span>
+          <div
+            class="slider-btn-area text-center mt-5 d-flex justify-content-center g-15"
+          >
+            <span class="slider-btn slider-left-btn">
+              <i class="fa-solid fa-angle-left"></i>
+            </span>
+            <span class="slider-btn slider-right-btn">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
           </div>
         </div>
       </div>
@@ -2371,7 +2377,6 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
 
-
     <script>
       function evaluation(evt, coinmonitoring) {
         var i, tabcontent, tablinks;
@@ -2526,26 +2531,59 @@
             autoplay: true,
             autoplaySpeed: 2500,
             arrows: true,
-            prevArrow: $('.slider-left-btn'),
-            nextArrow: $('.slider-right-btn'),
+            prevArrow: $(".slider-left-btn"),
+            nextArrow: $(".slider-right-btn"),
           });
         }
       });
-
-
-
-    // bonus modal time and close script  
-    setTimeout(function () {
-      $(".bonus-modal").removeClass("show");
-    }, 5000);
-
-    $(".bonus-modal-close").click(function(){
-      $(".bonus-modal").removeClass("show");
-    })
-
-
-
-
     </script>
+    
+
+      <script>
+  const modalID = "#bonusModal";
+  const closeFlagKey = "bonusModalClosedAt";
+  const delay = 5 * 60 * 1000; // 5 minutes in ms
+
+  function hideModal() {
+    $(modalID).removeClass("show d-block").addClass("d-none");
+  }
+
+  function showModal() {
+    $(modalID).removeClass("d-none").addClass("show d-block");
+  }
+
+  function checkModal() {
+    const lastClosed = localStorage.getItem(closeFlagKey);
+    const now = Date.now();
+
+    if (!lastClosed) {
+      // No close recorded → always show
+      showModal();
+    } else {
+      const diff = now - parseInt(lastClosed);
+      if (diff >= delay) {
+        // 5 min passed → show again
+        localStorage.removeItem(closeFlagKey);
+        showModal();
+      } else {
+        // Still under 5 mins → hide modal
+        hideModal();
+      }
+    }
+  }
+
+  // On page load
+  document.addEventListener("DOMContentLoaded", function () {
+    checkModal();
+  });
+
+  // On close button click
+  document.querySelector(".bonus-modal-close").addEventListener("click", function () {
+    localStorage.setItem(closeFlagKey, Date.now());
+    hideModal();
+  });
+</script>
+
+
   </body>
 </html>

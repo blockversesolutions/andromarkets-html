@@ -3882,33 +3882,90 @@ table {
 }
 
 .bonus-modal { 
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
 }
 
 body.modal-open {
   overflow-y: hidden !important;
   padding-right: 0 !important;
 }
-
-
-.bonus-img img{
-  height: 150px;
-}
-
+ 
 button.bonus-modal-close {
     position: absolute;
     z-index: 9;
     border: none;
     background: transparent;
-    top: 12px;
-    right: 12px;
+    top: -12px;
+    right: -12px;
     font-size: 22px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     border-radius: 3px;
     width: 36px;
+    background-color: #e1ab21;
     height: 36px;
+    border-radius: 50%;
+    color: #fff;
 }
 
-.bonus-img {
-    box-shadow: 0 2px 10px #cfcd8b;
+ .bonus-modal {
+  display: none;
+}
+/* new code for animation */
+.glow-on-hover {
+    width:150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #f5c448, #ff7300, #fffb00, #ffd447, #1F1F1F, #ddcf0c, #F3F6F5, #ce8a0d, #8b6703);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+} 
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
