@@ -582,6 +582,44 @@
       </div>
     </section>
     <!-- End hero area -->
+ 
+
+    <!-- Modal -->
+    <!-- <div class="modal fade bonus-modal show d-block" id="bonusModal" tabindex="-1" aria-labelledby="bonusModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content position-relative">
+          <button type="button" class="bonus-modal-close" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+           
+          <div class="modal-body p-0">
+            <img src="assets/images/bonus/bonus-100/bonus-modal.png" class="img-fluid w-100 rounded-top" alt="Bonus Banner">
+            <div class="p-4 text-center bg-dark text-white"> 
+              <a href="#" class="primary-btn">Claim Bonus</a> 
+            </div>
+          </div> 
+
+        </div>
+      </div>
+    </div> -->
+
+    <!-- start bonus area  -->
+    <section class="bonus-area mt-100"> 
+      <div class="container"> 
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="bonus-img">
+                <img src="assets/images/bonus/bonus-100/bonus.png" class="w-100" alt="">
+              </div> 
+            </div>
+            <div class="col-lg-6">
+              <div class="bonus-img">
+                <img src="assets/images/bonus/bonus-100/bonus.png" class="w-100" alt="">
+              </div> 
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- end bonus area  -->
+
     <!-- Start customer satisfaction -->
     <section class="customer-satisfaction-section mt-100">
       <div class="container">
@@ -2493,6 +2531,21 @@
           });
         }
       });
+
+
+
+    // bonus modal time and close script  
+    setTimeout(function () {
+      $(".bonus-modal").removeClass("show");
+    }, 5000);
+
+    $(".bonus-modal-close").click(function(){
+      $(".bonus-modal").removeClass("show");
+    })
+
+
+
+
     </script>
   </body>
 </html>
