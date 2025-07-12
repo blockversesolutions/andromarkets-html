@@ -2537,53 +2537,52 @@
         }
       });
     </script>
-    
 
-      <script>
-  const modalID = "#bonusModal";
-  const closeFlagKey = "bonusModalClosedAt";
-    // 5 minutes in ms
+    <script>
+      const modalID = "#bonusModal";
+      const closeFlagKey = "bonusModalClosedAt";
+      const delay = 5 * 60 * 1000; // 5 minutes in ms
 
-  function hideModal() {
-    $(modalID).removeClass("show d-block").addClass("d-none");
-  }
-
-  function showModal() {
-    $(modalID).removeClass("d-none").addClass("show d-block");
-  }
-
-  function checkModal() {
-    const lastClosed = localStorage.getItem(closeFlagKey);
-    const now = Date.now();
-
-    if (!lastClosed) {
-      // No close recorded → always show
-      showModal();
-    } else {
-      const diff = now - parseInt(lastClosed);
-      if (diff >= delay) {
-        // 5 min passed → show again
-        localStorage.removeItem(closeFlagKey);
-        showModal();
-      } else {
-        // Still under 5 mins → hide modal
-        hideModal();
+      function hideModal() {
+        $(modalID).removeClass("show d-block").addClass("d-none");
       }
-    }
-  }
 
-  // On page load
-  document.addEventListener("DOMContentLoaded", function () {
-    checkModal();
-  });
+      function showModal() {
+        $(modalID).removeClass("d-none").addClass("show d-block");
+      }
 
-  // On close button click
-  document.querySelector(".bonus-modal-close").addEventListener("click", function () {
-    localStorage.setItem(closeFlagKey, Date.now());
-    hideModal();
-  });
-</script>
+      function checkModal() {
+        const lastClosed = localStorage.getItem(closeFlagKey);
+        const now = Date.now();
 
+        if (!lastClosed) {
+          // No close recorded → always show
+          showModal();
+        } else {
+          const diff = now - parseInt(lastClosed);
+          if (diff >= delay) {
+            // 5 min passed → show again
+            localStorage.removeItem(closeFlagKey);
+            showModal();
+          } else {
+            // Still under 5 mins → hide modal
+            hideModal();
+          }
+        }
+      }
 
+      // On page load
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(checkModal, 5000); // Show modal after 05 seconds
+      });
+
+      // On close button click
+      document
+        .querySelector(".bonus-modal-close")
+        .addEventListener("click", function () {
+          localStorage.setItem(closeFlagKey, Date.now());
+          hideModal();
+        });
+    </script>
   </body>
 </html>
