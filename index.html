@@ -588,7 +588,7 @@
 
     <!-- Modal -->
     <div
-      class="modal fade bonus-modal show d-block"
+      class="modal fade bonus-modal"
       id="bonusModal"
       tabindex="-1"
       aria-labelledby="bonusModalLabel"
@@ -2542,7 +2542,7 @@
       <script>
   const modalID = "#bonusModal";
   const closeFlagKey = "bonusModalClosedAt";
-  const delay = 5 * 60 * 1000; // 5 minutes in ms
+    // 5 minutes in ms
 
   function hideModal() {
     $(modalID).removeClass("show d-block").addClass("d-none");
