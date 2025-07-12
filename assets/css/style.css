@@ -3875,4 +3875,8 @@ table {
 
 .bonus-deadline-text sup{
     font-size: 24px;
+} 
+
+.condition-item > p {
+    margin-bottom: 8px;
 }
