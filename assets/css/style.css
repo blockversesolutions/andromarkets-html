@@ -1129,8 +1129,8 @@ table {
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.5s;
-  height: 64px;
-  width: 64px;
+  height:54px;
+  width: 54px;
   border-radius: 4px;
 }
 
@@ -1161,16 +1161,15 @@ table {
 .more-details-accordion .accordion-body {
   padding-top: 0;
 }
-
 .more-details-accordion button {
-  border: none;
-  padding: 9px 10px;
-  padding-left: 20px;
-  border-radius: 10px;
-  font-size: 24px;
-  color: #04151f;
-  background: #fff;
-  line-height: 30px;
+    border: none;
+    padding: 4px 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #04151f;
+    background: #fff;
+    line-height: 30px;
 }
 
 .more-details-accordion .accordion-button:not(.collapsed) {
@@ -4010,4 +4009,8 @@ button.bonus-modal-close {
     font-weight: 600;
     line-height: 22px;
     margin-bottom: 6px;
+}
+.accordion-button{
+  display: flex;
+  justify-content: space-between;
 }
