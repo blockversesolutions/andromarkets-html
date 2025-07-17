@@ -3889,7 +3889,10 @@ body.modal-open {
   overflow-y: hidden !important;
   padding-right: 0 !important;
 }
-
+.modal-body{
+  border: 5px solid #e1ab21;
+  border-radius: 5px;
+}
 button.bonus-modal-close {
   position: absolute;
   z-index: 9;

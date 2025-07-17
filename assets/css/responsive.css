@@ -881,10 +881,7 @@
   }
 }
 @media all and (max-width: 480px) {
-  .common-heading-area h1 {
-    font-size: 17px !important;
-    line-height: 28px;
-  }
+ 
   h1 {
     font-size: 30px;
     line-height: 40px;
