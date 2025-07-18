@@ -1129,8 +1129,8 @@ table {
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.5s;
-  height:54px;
-  width: 54px;
+  height:45px;
+  width: 45px;
   border-radius: 4px;
 }
 
@@ -1151,11 +1151,11 @@ table {
 }
 
 .more-details-accordion .accordion-body p {
-  font-size: 18px;
+  font-size: 16px;
   color: #04151f;
   opacity: 0.7;
   max-width: 90%;
-  line-height: 30px;
+  line-height:28px;
 }
 
 .more-details-accordion .accordion-body {
@@ -1166,7 +1166,7 @@ table {
     padding: 4px 10px;
     padding-left: 20px;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 20px;
     color: #04151f;
     background: #fff;
     line-height: 30px;
