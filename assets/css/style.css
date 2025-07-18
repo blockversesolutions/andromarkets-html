@@ -1074,27 +1074,22 @@ table {
   margin-bottom: 40px;
   box-shadow: 0px 16.904px 25.356px 0px rgba(196, 205, 218, 0.25);
 }
-
 .app-version-btn {
   display: inline-block;
 }
-
 .mr22 {
   margin-right: 22px;
 }
-
 .app-version-btn ul li.active {
   background-color: #2c88c9;
   border-radius: 10px;
   color: #fff;
 }
-
 .education-info-controls ul li.active a {
   background-color: #2c88c9;
   border-radius: 10px;
   color: #fff;
 }
-
 .app-version-btn ul li {
   cursor: pointer;
   padding: 10px 38px;
@@ -1102,7 +1097,6 @@ table {
   font-size: 18px;
   font-weight: 500;
 }
-
 .education-info-controls ul li a {
   cursor: pointer;
   padding: 10px 16px;
@@ -1111,120 +1105,101 @@ table {
   font-weight: 500;
   display: inline-block;
 }
-
 .app-version-content-body {
   margin: 40px 0;
   margin-bottom: 47px;
 }
-
 .app-download-btn {
   margin-left: 20px;
 }
-
 .accordion-button::after {
   background: #fdf3da;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' fill='%23F5C448' viewBox='0 0 16 16'%3E%3Cpath d='M8 1a1 1 0 0 1 1 1v5h5a1 1 0 0 1 0 2H9v5a1 1 0 0 1-2 0V9H2a1 1 0 0 1 0-2h5V2a1 1 0 0 1 1-1z'/%3E%3C/svg%3E");
-
   background-size: 18px 36px; /* Adjust icon size */
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.5s;
-  height:45px;
+  height: 45px;
   width: 45px;
   border-radius: 4px;
 }
-
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' fill='rgba(245, 196, 72, 1)' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
   background-size: 36px 36px;
 }
-
 .accordion-button::after {
   transition: all 0.5s;
 }
-
 .more-details-accordion .accordion-item {
   border: none;
   box-shadow: 0px 16.904px 25.356px 0px rgba(196, 205, 218, 0.25);
   margin-bottom: 20px;
   border-radius: 10px;
 }
-
 .more-details-accordion .accordion-body p {
   font-size: 16px;
   color: #04151f;
   opacity: 0.7;
   max-width: 90%;
-  line-height:28px;
+  line-height: 28px;
 }
 
 .more-details-accordion .accordion-body {
   padding-top: 0;
 }
 .more-details-accordion button {
-    border: none;
-    padding: 4px 10px;
-    padding-left: 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #04151f;
-    background: #fff;
-    line-height: 30px;
+  border: none;
+  padding: 4px 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #04151f;
+  background: #fff;
+  line-height: 30px;
 }
-
 .more-details-accordion .accordion-button:not(.collapsed) {
   background-color: transparent;
   border: none;
   outline: none;
   box-shadow: 0 0 0 transparent;
 }
-
 .pb70 {
   padding-bottom: 70px;
 }
-
 .mt30 {
   margin-top: 30px;
 }
-
 .app-download-btn ul li a {
   padding: 16px;
   display: block;
   min-width: 280px;
   margin-bottom: 20px;
 }
-
 .app-download-logo {
   margin-right: 20px;
 }
-
 .app-download-text h6 {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
   margin-bottom: 4px;
 }
-
 .app-download-text h4 {
   font-size: 24px;
   color: #fff;
   font-weight: 600;
   line-height: 28px;
 }
-
 .app-qr-code img {
   padding: 28px;
 }
-
 .appversionContent .common-heading-area h2 {
   font-size: 39px;
 }
-
 .appversionContent .common-heading-area h2,
 .appversionContent .common-heading-area p {
   color: #fff;
 }
-
 .app-btn-blur {
   border-radius: 10px;
   border: 1.5px solid rgba(255, 255, 255, 0.2);
@@ -3888,7 +3863,7 @@ body.modal-open {
   overflow-y: hidden !important;
   padding-right: 0 !important;
 }
-.modal-body{
+.modal-body {
   border: 5px solid #e1ab21;
   border-radius: 5px;
 }
@@ -3989,28 +3964,31 @@ button.bonus-modal-close {
   }
 }
 
-
-.promotions-bonus-area{
-  background: linear-gradient(97.46deg, rgba(245, 196, 72, 0.18) 0%, rgba(255, 255, 255, 0.5) 49.48%, rgba(245, 196, 72, 0.18) 100%);
-  padding:20px;
-  border-radius:15px;
-
+.promotions-bonus-area {
+  background: linear-gradient(
+    97.46deg,
+    rgba(245, 196, 72, 0.18) 0%,
+    rgba(255, 255, 255, 0.5) 49.48%,
+    rgba(245, 196, 72, 0.18) 100%
+  );
+  padding: 20px;
+  border-radius: 15px;
 }
-.promotions-bonus-content p{
-  color:#191D2A;
+.promotions-bonus-content p {
+  color: #191d2a;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   opacity: 0.7;
 }
 .promotions-bonus-content h5 {
-    color: #191D2A;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 22px;
-    margin-bottom: 6px;
+  color: #191d2a;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 6px;
 }
-.accordion-button{
+.accordion-button {
   display: flex;
   justify-content: space-between;
 }
